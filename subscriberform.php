@@ -8,7 +8,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     $body = "Name: " . $name . "\n\n" . "Message: " . $message;
 
     // Send the email
-    $to = "your_email@example.com";
+    $to = "AndrewEdwards1989@gmail.com";
     $headers = "From: " . $name . "\r\n";
 
     if(mail($to, $subject, $body, $headers)) {
