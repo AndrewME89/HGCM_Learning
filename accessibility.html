@@ -65,7 +65,13 @@
                 <a href="NA.html" class="nav-item nav-link">Night Audit</a>
                 <a href="Res.html" class="nav-item nav-link">Reservations</a>
                 <a href="General.html" class="nav-item nav-link">General Knowledge</a>
-                <a href="contacts.html" class="nav-item nav-link">Contacts</a>
+                <div class="nav-item dropdown">
+                    <a href="contacts.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Contacts</a>
+                    <div class="dropdown-menu fade-down m-0" style="right:0">
+                        <a href="StaffContacts.html" class="dropdown-item">Staff Contacts</a>
+                        <a href="ContractorContacts.html" class="dropdown-item">Contractor Contacts</a>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
@@ -74,8 +80,15 @@
     <!-- Main Page Start -->
 
     <div class="container-xxl py-5">
+
+        <button onclick="history.back()">Back</button></p>
+
         <div class="container">
-            <h2 class="section-title bg-white text-start text-primary pe-3">Accessibility</h2>
+            <div>
+                <div class="col wow fadeInUp" data-wow-delay="0.1s" style="min-height: 50px;">
+                </div>
+                <div class="col wow fadeInUp" data-wow-delay="0.3s">
+                    <h2 class="section-title bg-white text-start text-primary pe-3">Accessibility</h2>
 
             <p class="mb-4">Guests who require accessibility options are advised to enter the hotel basement through Pender Place (off of Little Bourke Street) and take the lift up to the lobby or rooms.</p>
             <p>This entrance is open from 7:00am - 11:00pm. For after hours access, guests will need to contact reception.</p>
@@ -93,9 +106,10 @@
             <p class="mb-4">Accessible Guest rooms - None</p>
             <p class="mb-4">Wheelchair accessible bathrooms - None</p>
             <p class="mb-4">Elevator door - 795 mm</p>
-
+            </div>
         </div>
     </div>
+</div>
         
     <!-- Main Page End -->
 

@@ -75,13 +75,13 @@
                 <a href="NA.html" class="nav-item nav-link">Night Audit</a>
                 <a href="Res.html" class="nav-item nav-link">Reservations</a>
                 <a href="General.html" class="nav-item nav-link">General Knowledge</a>
-                <a href="contacts.html" class="nav-item nav-link">Contacts</a>
-                <form id="form" role="search" class="nav-item nav-link">
-                    <input type="search" id="query" name="q"
-                     placeholder="Search..."
-                     aria-label="Search through site content">
-                    <button>Search</button>
-                  </form>
+                <div class="nav-item dropdown">
+                    <a href="contacts.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Contacts</a>
+                    <div class="dropdown-menu fade-down m-0" style="right:0">
+                        <a href="StaffContacts.html" class="dropdown-item">Staff Contacts</a>
+                        <a href="ContractorContacts.html" class="dropdown-item">Contractor Contacts</a>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
@@ -90,11 +90,22 @@
     <!-- Main Page Start -->
 
     <div class="container-xxl py-5">
+
+        <button onclick="history.back()">Back</button></p>
+
         <div class="container">
-            <h2 class="section-title bg-white text-start text-primary pe-3">TITLE</h2>
-
-            <p class="mb-4"></p>
-
+            <div>
+                <div class="col wow fadeInUp" data-wow-delay="0.1s" style="min-height: 50px;">
+                </div>
+                <div class="col wow fadeInUp" data-wow-delay="0.3s">
+                    <h2 class="section-title bg-white text-start text-primary pe-3"></h2>
+                    <p class="mb-4"></p>
+                    <p class="mb-4"></p>
+                    <p class="mb-4"></p>
+                    <p class="mb-4"></p>
+                    <p class="mb-4"></p>
+                </div>
+            </div>
         </div>
     </div>
         
@@ -150,23 +161,6 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-
-    <!-- Searchbar Javascript -->
-    <script>
-        const f = document.getElementById('form');
-        const q = document.getElementById('query');
-        const google = 'https://www.google.com/search?q=site%3A+';
-        const site = 'https://andrewme89.github.io/HGCM_Learning/';
-  
-        function submitted(event) {
-          event.preventDefault();
-          const url = google + site + '+' + q.value;
-          const win = window.open(url, '_blank');
-          win.focus();
-        }
-  
-        f.addEventListener('submit', submitted);
-    </script>
 
 </body>
 
