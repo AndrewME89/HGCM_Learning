@@ -1,0 +1,55 @@
+
+
+/*** Search Bar ***/
+
+.search {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.search input[type="text"] {
+    padding: 6px;
+    margin-right: 10px;
+    border: none;
+    font-size: 17px;
+    border-radius: 4px;
+}
+
+.search button {
+    padding: 6px 10px;
+    background: white;
+    color: #e20118;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.search button i {
+    font-size: 18px;
+}
+
+.search button:hover {
+    background: #e20118;
+    color: white;
+}
+
+.search {
+    justify-content: flex-start;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+.search input[type="text"] {
+    margin-right: 10px;
+    width: auto;
+}
+
+.search button {
+    padding: 4px 8px;
+}
+
+.search button i {
+    font-size: 14px;
+}
