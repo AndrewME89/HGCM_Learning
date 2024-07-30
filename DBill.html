@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Home</title>
+    <title>Direct Bills</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -23,15 +23,30 @@
     <!-- Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/searchbar/searchbar.css" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
-    
-    <!-- Google Verification -->
-    <meta name="google-site-verification" content="cRrwhV6szYAF8lr3spj4sVFLhHjIKYHH6Vb-P1irnOk" />
+
+    <style>
+        div.a {
+          text-indent: 50px;
+        }
+        div.b {
+          text-indent: 100px;
+        }
+    </style>
+
+    <style>
+        img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        }
+    </style>
 
 </head>
 
@@ -72,77 +87,46 @@
     </nav>
     <!-- Navbar End -->
 
+    <!-- Main Page Start -->
 
-    <!-- About Start -->
     <div class="container-xxl py-5">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
-                    <div class="position-relative h-100">
-                        <img class="img-fluid position-absolute w-100 h-100" src="img/EXTERIOR3.jpg" alt="" style="object-fit: cover;">
-                    </div>
-                </div>
 
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <h3 class="section-title bg-white text-start text-primary pe-3">Welcome to the HGC Melbourne</h3>
-                    <h3 class="section-title bg-white text-start text-primary pe-3">Knowledge Portal</h3></p>
-                    <p class="mb-4">The Knowledge Portal is a collection of procedural documentation and manuals to assist you in gaining the knowledge and skills required here at HGC Melbourne.</p>
-                    <p class="mb-4">These Standard Operating Procedures (SOPs) should be followed at all times to ensure consistent service of guests, while maintaining correct operating standards.</p>
-					<p class="mb-4">Using these SOPs will ensure you are prepared for anything, regardless of your role here at HGC Melbourne.</p>
-				</div>
-            </div><a href="Searchbar_TEST.html">SEARCH BAR TEST</a>
-        </div>
-    </div>
-    <!-- About End -->
+        <button onclick="history.back()">Back</button></p>
 
-    <!-- Categories Start -->
-    <div class="container-xxl py-5 category">
         <div class="container">
-            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h4 class="section-title bg-white text-center text-primary px-3">Manuals & Standard Operating Procedures</h4>
-            </div>
-            <div class="row g-3">
-                <div class="col-lg-7 col-md-6">
-                    <div class="row g-3">
-                        <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
-                            <a class="position-relative d-block overflow-hidden" href="GSA.html">
-                                <img class="img-fluid" src="img/LOBBY2.jpg" alt="">
-                                <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
-                                    <h5 class="m-0">Guest Services Agent</h5>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
-                            <a class="position-relative d-block overflow-hidden" href="NA.html">
-                                <img class="img-fluid" src="img/LOBBY1.jpg" alt="">
-                                <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
-                                    <h5 class="m-0">Night Audit</h5>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
-                            <a class="position-relative d-block overflow-hidden" href="Res.html">
-                                <img class="img-fluid" src="img/LOBBY3.jpg" alt="">
-                                <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
-                                    <h5 class="m-0">Reservations</h5>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
+            <div>
+                <div class="col wow fadeInUp" data-wow-delay="0.1s" style="min-height: 50px;">
                 </div>
-                <div class="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s" style="min-height: 350px;">
-                    <a class="position-relative d-block h-100 overflow-hidden" href="General.html">
-                        <img class="img-fluid position-absolute w-100 h-100" src="img/EXTERIOR2.jpg" alt="" style="object-fit: cover;">
-                        <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin:  1px;">
-                            <h5 class="m-0">General Knowledge</h5>
-                        </div>
-                    </a>
+                <div class="col wow fadeInUp" data-wow-delay="0.3s">
+                    <h2 class="section-title bg-white text-start text-primary pe-3">Direct Bills</h2>
+                    <p class="mb-4">Direct Billing is an arrangement between the hotel and company where it can be invoiced at the end of every month. In HMS, we can directly send the invoice to be sent to the guest company.</p>
+                    <p class="mb-4">On HMS, check in instructions should state DBA / DBC. This stands for Direct Booking Agent or Direct Booking Company.</p>
+                    <p class="mb-4">Please follow instructions very carefully as some incidentals the company will be covering for (eg. breakfast, parking)</p>
+                    <p class="mb-4">Anything that is not covered by company, the guest must pay directly to the hotel.</p>
+                    <h5 class="mb-4">To charge a Direct Bill on HMS:</h5>
+                    <ol type="1">
+                        <li>Double click on the guest profile and on the top right hand corner there should be a Chk Out Master button, please click and a pop up window will come up, click OK</li></p>
+                        <li>The check out folio should automatically appear, right click on Ledger #1 and choose payment</li></p>
+                        <li>Choose payment type as <b>Direct Bill</b> and automatically the voucher number should appear, <b>DO NOT REMOVE THIS</b>.</li></p>
+                        <li>Click NEXT and this should automatically charge the company and you can then check it out of the system</li></p>
+                        <li>If there is no voucher number provided, you can just put “.” & check it out of HMS</li></p>
+                        <li>There should be a chargeback attached to the guest registration card. Please write the room number on the top of paper and put it away along with all the other invoices in the Direct Bill pigeon hole</li></p>
+                    </ol>
+                    <h5 class="mb-4">Troubleshooting Direct Bills</h5>
+                    <p class="mb-4">If the voucher number is incorrect or possible incorrect company profile had been loaded to HMS, you will come across CREDIT STOP OR CASH ONLY OR EXCEED LIMIT OVERRIDING</p>
+                    <p class="mb-4">Credit stop or Cash Only stands for if the incorrect company was loaded to the guest profile or perhaps the company’s credit limit has gone over the amount.</p>
+                    <p class="mb-4">To troubleshoot CREDIT STOP OR CASH ONLY, first look at the guest profile on HMS:</p>
+                    <p class="mb-4">Does the company name match Booking Agent and Company tab?</p>
+                    <p class="mb-4">Booking Agent can be found on the bottom right corner of HMS</p>
+                    <p class="mb-4">Company tab can be found at the top left corner of HMS</p>
+                    <p class="mb-4">To troubleshoot EXCEED LIMIT OVERRIDING, you can override this by just putting “.” in the voucher number & check it out of HMS</p>
+                    <p class="mb-4">If for any reason, you are unable to charge and check out the guest on HMS. You will need to inform your Duty Manager or Reservations Team (Mon – Fri 9AM – 5PM)& make a virtual account of the reservation and transfer all the charges over to the new virtual folio and check out the original reservation once all ledgers are showing as $0.00.</p>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Categories End -->
         
+    <!-- Main Page End -->
 
     <!-- Footer Start -->
     <div style="background-color:black" class="container-fluid text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
@@ -194,6 +178,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
 </body>
 
 </html>

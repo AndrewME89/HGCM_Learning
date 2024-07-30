@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Creating a Reservation</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/searchbar/searchbar.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        div.a {
+          text-indent: 50px;
+        }
+        div.b {
+          text-indent: 100px;
+        }
+    </style>
+
+    <style>
+        img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div style="background-color:#e20118" id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h2 class="m-0 text-primary"><img src="img/NEW.jpg" width="110" height="75"></h2>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html"  class="nav-item nav-link active">Home</a>
+                <a href="GSA.html" class="nav-item nav-link">Guest Services Agent</a>
+                <a href="NA.html" class="nav-item nav-link">Night Audit</a>
+                <a href="Res.html" class="nav-item nav-link">Reservations</a>
+                <a href="General.html" class="nav-item nav-link">General Knowledge</a>
+                <div class="nav-item dropdown">
+                    <a href="contacts.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Contacts</a>
+                    <div class="dropdown-menu fade-down m-0" style="right:0">
+                        <a href="StaffContacts.html" class="dropdown-item">Staff Contacts</a>
+                        <a href="ContractorContacts.html" class="dropdown-item">Contractor Contacts</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Main Page Start -->
+
+    <div class="container-xxl py-5">
+
+        <button onclick="history.back()">Back</button></p>
+
+        <div class="container">
+            <div>
+                <div class="col wow fadeInUp" data-wow-delay="0.1s" style="min-height: 50px;">
+                </div>
+                <div class="col wow fadeInUp" data-wow-delay="0.3s">
+                    <h2 class="section-title bg-white text-start text-primary pe-3">Creating a Reservation</h2>
+
+                    <h5 class="mb-4">Private Bookings</h5>
+                    <ol type="1">
+                        <li>Get all the important details from guest/booker:</li></p>
+                            <ul>
+                                <li>Date of stay</li></p>
+                                <li>Room type (bedding configuration)</li></p>
+                                <li>How many pax</li></p>
+                                <li>Check if guest is GC Member and ask for membership number to confirm</li></p>
+                            </ul>
+                        <li>Check Availability & Rate</li></p>
+                        <p class="mb-4">In iHMS:</p>
+                            <ul>
+                                <li><b>Reservations > Rooms Availability > (3) Room Type Tab</b></li></p>
+                                <li>Adjust date range if needed</li></p>
+                                <li>Check for rates and open Rate Calculator <b>(M: > Operations > Reservations > Promotions & Calculators > Promotional Calculator)</b> to apply discounts. This should also be available on every desktop of FO Reception Computer.</li></p>
+                                <li>Ensure to apply additional 10% off to the rates for GC Rewards members.</li></p>
+                            </ul>
+                        <li>Provide Rate</li></p>
+                            <ul>
+                                <li>Always offer BAR & SAVER Rates and explain difference between the two rates</li></p>
+                                <li>We can match rates found online only if we are able to find it.</li></p>
+                                <li>Corporate guests can utilise corporate rates for personal stay.</li></p>                                
+                            </ul>
+                        <li>Create the booking</li></p>
+                            <ul>
+                                <li>Press Alt + C or click</li></p>
+                                <li>Fill up necessary information:</li></p>
+                                    <ul>
+                                        <li>Guest – locate if guest has an existing profile.</li></p>
+                                    </ul>
+                                        <ul>
+                                            <li>Type in guest name in correct sequence (Last Name, First Name) and ensure it is spelled correctly.</li></p>
+                                            <li>Press F2 or the three dots icon. New window will pop up with list of guest profile. Choose correct profile by matching contact number/company name. Edit profile and add/update credit card number to guarantee booking.</li></p>
+                                            <li>If no existing profile found, create new profile by clicking and ensure all details are filled out:</li></p>
+                                                <ul>
+                                                    <li>VIP Status</li></p>
+                                                    <li>Full Name (Last Name, First Name, Title)</li></p>
+                                                    <li>Contact Number</li></p>
+                                                    <li>Email (for booking confirmation purposes)</li></p>
+                                                    <li>Credit card details</li></p>
+                                                </ul>
+                                        </ul>
+                            </ul>
+                        <p class="mb-4">If GC Member and no existing profile yet, add GC Membership # & ensure VIP status is VIP 4.</p>
+                            <ul>
+                                <li>Company Name – locate if guest’s company is already in the system</li></p>
+                                    <ul>
+                                        <li>Use ‘Private Booking’ as company if booking directly over the phone or through email.</li></p>
+                                        <li>Create company if not yet in the system</li></p>
+                                    </ul>
+                                <li>Room Type – best rate type applicable will be in red coloured font. If multiple rate available, ensure to click on the best rate code applicable to the rate that had been quoted.</li></p>
+                                <li>Check In date</li></p>
+                                <li>Check Out date</li></p>
+                                <li>Number of Adults & Number of Children (only if applicable)</li></p>
+                                <li>Rate type</li></p>
+                                    <ul>
+                                        <li>Click on and list of rate code will pop up. Choose the best rate depending on the rate you’ve quoted to the guest.</li></p>
+                                    </ul>
+                                <li>Contact Person</li></p>
+                                    <ul>
+                                        <li>Get the booker’s name and contact number and add it under contact person’s details</li></p>
+                                        <li>If the guest who will be staying is the same person making the booking, type ‘self’ under contact person’s detail</li></p>
+                                    </ul>
+                                <li>Once all details are filled up, press Next twice</li></p>
+                                    <ul>
+                                        <li>Mkt Seg 4 & Source will automatically be filled up</li></p>
+                                    </ul>
+                            </ul>
+                        <li>Update the newly created booking</li></p>
+                            <ul>
+                                <li>Guest booking will pop up and the following details needs to be updated:</li></p>
+                                    <ul>
+                                        <li>Special Instructions – update Check in & Check Out Instructions. Refer to Special Instruction Guide (page 12) for the correct sequence.</li></p>
+                                        <li>Additional Items if any Add-Ons/requests were added and input/adjust fee under sales row if necessary</li></p>
+                                        <li>Update Rate under (3) Room Tab for private bookings</li></p>
+                                    </ul>
+                            </ul>
+                        <li>Send booking confirmation to the email address provided.</li></p>
+                    </ol>
+
+                    <h5 class="mb-4">Corporate Bookings</h5>
+                    <ol type="1">
+                        <li>Get all the important details from guest/booker:</li></p>
+                            <ul>
+                                <li>Date of stay</li></p>
+                                <li>Room type (bedding configuration)</li></p>
+                                <li>How many pax</li></p>
+                                <li>Check if guest is GC Member and ask for membership number to confirm</li></p>
+                                <li>Check if the guest works for a company that has a contracted rate with us (only if they have not mentioned it yet)</li></p>
+                            </ul>
+                        <li>Check Availability & Rate</li></p>
+                        <p class="mb-4">In iHMS:</p>
+                            <ul>
+                                <li><b>Reservations > Rooms Availability > (3) Room Type Tab > check room type availability.</b></li></p>
+                                <li>Adjust date range if needed</li></p>
+                                <li>Open Company Profile and check contracted rate. Check also if company has credit facility.</li></p>
+                            </ul>
+                        <li>Provide Rate</li></p>
+                            <ul>
+                                <li>Always advise inclusions such as breakfast (depending on their contract), Wi-Fi, Newspaper, 1x 600ml water each day, complimentary welcome drink upon arrival (except government & Shipping companies), 10% off bill at Encore (except shipping companies).</li></p>
+                                <li>We can match rates found online only if we are able to find it. If we match lower rate that guest has found online, ensure that corporate inclusions are also added, as this is part of their contract. When matching a lower rate for existing corporate companies, use the corporate rate code and adjust rate manually.</li></p>
+                            </ul>
+                            <p class="mb-4">Corporate surcharges apply for special events.</p>
+                        <li>Create the booking</li></p>
+                            <ul>
+                                <li>Follow same instruction in creating booking for private booking</li></p>
+                                <li>Locate same company details you’ve pulled out when you checked rates</li></p>
+                                <li>Rate Type</li></p>
+                                    <ul>
+                                        <li>Choose the rate code that is in red coloured font</li></p>
+                                    </ul>
+                            </ul>
+                        <li>Update the newly created booking</li></p>
+                            <ul>
+                                <li>Guest booking will pop up and the following details needs to be updated:</li></p>
+                                    <ul>
+                                        <li>Special Instructions – Check In, Check Out & Postings. Ensure that if there is chargeback for specific booking made to update booking with chargeback details and restrictions.</li></p>
+                                        <li>If guest is a regular guest, ensure to add VIP/Corp Guest on the Additional Items</li></p>
+                                        <li>Rate will automatically update with the contracted rate of company however this needs to be updated if surcharge applies. </li></p>
+                                    </ul>
+                            </ul>
+                        <li>Send booking confirmation to the email address provided.</li></p>
+                    </ol>
+
+                    <p class="mb-4"></p>
+                    <p class="mb-4"></p>
+                    <p class="mb-4"></p>
+                    <p class="mb-4"></p>
+                    <p class="mb-4"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <!-- Main Page End -->
+
+    <!-- Footer Start -->
+    <div style="background-color:black" class="container-fluid text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-md-6">
+                    <h4 class="text-white mb-3">Quick Links</h4>
+                    <a class="btn btn-link" href="index.html">Home</a>
+                    <a class="btn btn-link" href="GSA.html">Guest Services Agent</a>
+                    <a class="btn btn-link" href="NA.html">Night Audit</a>
+                    <a class="btn btn-link" href="Res.html">Reservations</a>
+                    <a class="btn btn-link" href="General.html">General Knowledge</a>
+                    <a class="btn btn-link" href="contacts.html">Contacts</a>
+                </div>
+                <div class="col-md-6">
+                    <h4 class="text-white mb-3">Contact</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>131 Lonsdale Street, Melbourne 3000</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>(03) 9656 4000</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>https://www.grandchancellorhotels.com/hotel-grand-chancellor-melbourne</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">HGC Melbourne Knowledge Portal</a>, All Rights Reserved.
+
+                        Designed By Andrew Edwards 2024
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
