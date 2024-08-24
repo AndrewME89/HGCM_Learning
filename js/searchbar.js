@@ -22,7 +22,7 @@ document.getElementById('searchButton').addEventListener('click', function() {
                             if (title.includes(query)) {
                                 return `
                                     <div class="result">
-                                        <a href="${page}" target="_blank">${doc.querySelector('title').innerText}</a>
+                                        <a href="${page}">${doc.querySelector('title').innerText}</a>
                                     </div>
                                 `;
                             }
@@ -46,18 +46,6 @@ document.getElementById('searchButton').addEventListener('click', function() {
     }
 });
 
-// Close the dropdown menu if the user clicks outside of it
-document.addEventListener('click', function(event) {
-    if (!document.getElementById('results').contains(event.target) &&
-        !event.target.matches('#searchButton')) {
-        document.getElementById('results').style.display = 'none'; // Hide the dropdown
-    }
-});
-
-// Open the results dropdown
-document.getElementById('searchInput').addEventListener('input', function() {
-    document.getElementById('results').style.display = 'block'; // Show the dropdown
-});
 
 document.getElementById('searchInput').addEventListener('keypress', function(event) {
     if (event.key === 'Enter') {
