@@ -80,6 +80,12 @@ body {
 
 
 /*** Navbar ***/
+.navbar {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
 .navbar .dropdown-toggle::after {
     border: none;
     content: "\f107";
@@ -96,6 +102,8 @@ body {
     font-size: 15px;
     text-transform: uppercase;
     outline: none;
+    display: flex;
+    align-items: center; /* Align items vertically */
 }
 
 .navbar-light .navbar-nav .nav-link:hover,
@@ -104,19 +112,21 @@ body {
 }
 
 @media (max-width: 991.98px) {
-    .navbar-light .navbar-nav .nav-link  {
-        margin-right: 0;
-        padding: 10px 0;
+    .navbar-light .navbar-nav .nav-link {
+        padding: 10px 0; /* Adjust padding for mobile view */
     }
-
+    
     .navbar-light .navbar-nav {
-        border-top: 1px solid #EEEEEE;
+        border-top: 1px solid #EEEEEE; /* Ensure border consistency */
     }
 }
 
 .navbar-light .navbar-brand,
 .navbar-light a.btn {
-    height: 75px;
+    height: 75px; /* Ensure consistent height */
+    display: flex;
+    align-items: center; /* Vertically center content */
+    padding: 0; /* Remove any extra padding */
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -151,6 +161,13 @@ body {
         transition: .5s;
         opacity: 1;
     }
+}
+
+/* Adjust spacing between navbar items */
+.navbar-nav .nav-item {
+    margin-right: 10px; /* Adjust spacing between items */
+    display: flex;
+    align-items: center; /* Align items vertically */
 }
 
 /*** Section Title ***/
@@ -295,4 +312,16 @@ button {
     margin: auto;
     width: 50%;
     padding: 10px;
-  }
+}
+
+figure {
+    margin: auto;
+}
+    
+figcaption {
+    color: #e20118;
+    font-style: italic;
+    font-size: small;
+    padding: 2px;
+    text-align: center;
+}
