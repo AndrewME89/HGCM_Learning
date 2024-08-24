@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Home</title>
+    <title>Updating Guest Registration Cards</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -30,6 +30,9 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <!-- Searchbar Stylesheet -->
+    <link href="css/searchbar.css" rel="stylesheet">
 
     <style>
         div.a {
@@ -70,6 +73,13 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <div class="nav-item nav-link">
+                    <div class="search-container">
+                        <input type="text" id="searchInput" placeholder="Search...">
+                        <button id="searchButton">Search</button>
+                        <div id="results" class="dropdown-menu fade-down m-0" data-bs-toggle="dropdown" aria-expanded="false"></div> <!-- Make sure this matches -->
+                    </div>
+                </div>    
                 <a href="index.html"  class="nav-item nav-link active">Home</a>
                 <a href="GSA.html" class="nav-item nav-link">Guest Services Agent</a>
                 <a href="NA.html" class="nav-item nav-link">Night Audit</a>
@@ -98,11 +108,43 @@
                 <div class="col wow fadeInUp" data-wow-delay="0.1s" style="min-height: 50px;">
                 </div>
                 <div class="col wow fadeInUp" data-wow-delay="0.3s">
-                    <h2 class="section-title bg-white text-start text-primary pe-3"></h2>
-                    <p class="mb-4"></p>
-                    <p class="mb-4"></p>
-                    <p class="mb-4"></p>
-                    <p class="mb-4"></p>
+                    <h2 class="section-title bg-white text-start text-primary pe-3">Updating Guest Registration Cards</h2>
+                    <p class="mb-4">When checking a guest in, you are required to ensure they provide certain details, such as:</p>
+                        <ul>
+                            <li>Sharing Guest name (if applicable)</li></p>
+                            <li>Email Address</li></p>
+                            <li>Mobile Number</li></p>
+                            <li>Signature</li></p>
+                        </ul>
+                    <p class="mb-4">Once you have retrieved these details, you must update them in iHMS.</p>
+                    <h5 class="mb-4">Procedure</h5>
+                        <ol type="1">
+                            <li>Open the guest folio.</li></p>
+                            <li>In the Corporate tab, update the EMail section.</li></p>
+                            <li>Then, update the Tel (Home/HP) section with the provided Mobile number.</li></p>
+                        </ol>
+                        <img src="img/UpdateReg01.png"></p>
+                    <p class="mb-4">Aside from these personal details, you will also need to update the bond type & amount, and enter the Pre Authorisation number in the Communications.</p>
+                    <ol type="1">
+                        <li>While still in the Corporate tab, update the Payment Status dropdown.</li></p>
+                        <p class="mb-4">If a Pre Authorisation has been taken as a bond, change the dropdown to "Pre-Authorisation Obtained".</p>
+                        <p class="mb-4">If the bond was taken by payment (Cash, Amex, Visa/MasterCard, etc) then keep the dropdown on "Deposit Paid".</p>
+                        <img src="img/UpdateReg02.png"></p>
+                        <li>Enter the amount taken for the Bond payment in the box below.</li></p>
+                        <img src="img/UpdateReg03.png"></p>
+                        <li>Next, open the Guests tab.</li></p>
+                        <li>Update the details for the Guests. You only require a first and last name for this guest.</li></p>
+                        <img src="img/UpdateReg04.png"></p>
+                        <li>Then, open the Communication tab.</li></p>
+                        <li>In the Check Out section, enter the Pre Authorisation number beneath the total amount of the booking.</li></p>
+                        <img src="img/UpdateReg05.png"></p>
+                        <li>Finally, if you have taken a payment for the Reservation, post it in the Transactions tab.</li></p>
+                        <li>Right-click and select Payment.</li></p>
+                        <li>Enter the amount taken for the reservation.</li></p>
+                        <li>Write the Transaction ID (last 6 digits of the RRN) in the Remarks</li></p>
+                        <img src="img/UpdateReg06.png"></p>
+                        <li>Click Next.</li></p>
+                    </ol>
                     <p class="mb-4"></p>
                 </div>
             </div>
@@ -158,6 +200,7 @@
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/searchbar.js"></script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>

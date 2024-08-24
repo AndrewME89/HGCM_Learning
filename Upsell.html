@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Home</title>
+    <title>Upselling Rooms</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -30,6 +30,12 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <!-- Searchbar Stylesheet -->
+    <link href="css/searchbar.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/ExcelSheetStylesheet.css" rel="stylesheet">
 
     <style>
         div.a {
@@ -70,6 +76,13 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <div class="nav-item nav-link">
+                    <div class="search-container">
+                        <input type="text" id="searchInput" placeholder="Search...">
+                        <button id="searchButton">Search</button>
+                        <div id="results" class="dropdown-menu fade-down m-0" data-bs-toggle="dropdown" aria-expanded="false"></div> <!-- Make sure this matches -->
+                    </div>
+                </div>    
                 <a href="index.html"  class="nav-item nav-link active">Home</a>
                 <a href="GSA.html" class="nav-item nav-link">Guest Services Agent</a>
                 <a href="NA.html" class="nav-item nav-link">Night Audit</a>
@@ -98,10 +111,103 @@
                 <div class="col wow fadeInUp" data-wow-delay="0.1s" style="min-height: 50px;">
                 </div>
                 <div class="col wow fadeInUp" data-wow-delay="0.3s">
-                    <h2 class="section-title bg-white text-start text-primary pe-3"></h2>
-                    <p class="mb-4"></p>
-                    <p class="mb-4"></p>
-                    <p class="mb-4"></p>
+                    <h2 class="section-title bg-white text-start text-primary pe-3">Upselling Rooms</h2>
+                    <p class="mb-4">There is always an opportunity to Upsell rooms to Arriving Guests. The only exception being on occsaions when the hotel is booked out.</p>
+                    <p class="mb-4">Some reasons to Upgrade a room include:</p>
+                        <ul>
+                            <li>More space for the Guests</li>
+                            <li>A better view</li>
+                            <li>More room for a Rollaway bed</li>
+                        </ul>
+                    <p class="mb-4">For a fee, any guest can Upgrade their room.</p>
+                    <table class="center" cellpadding="0" cellspacing="0" width="80%" style="border-collapse: collapse;table-layout:fixed">
+                        <colgroup>
+                        <col class="xl65" width="auto">
+                        <col class="xl65" width="auto">
+                        <col class="xl65" width="auto">
+                        </colgroup>
+                        <tbody>
+                        <tr height="20" style="height:15.0pt">
+                        <td height="20" class="xl68" width="33%" style="height:15.0pt">Initial Room Type</td>
+                        <td colspan="2" class="xl68" width="33%" style="border-left:none">Upgraded Room Type</td>
+                        <td colspan="2" class="xl68" width="33%" style="border-left:none">Upgraded Room Fee</td>
+                        </tr>
+                        <tr height="20" style="height:15.0pt">
+                        <td height="20" class="xl66" style="height:15.0pt;border-top:none">Classic Queen</td>
+                        <td colspan="2" class="xl66" style="border-left:none">Classic King</td>
+                        <td colspan="2" class="xl66" style="border-left:none">$10 per night</td>
+                        </tr>
+                        <tr height="20" style="height:15.0pt">
+                        <td height="20" class="xl66" style="height:15.0pt;border-top:none">Classic King</td>
+                        <td colspan="2" class="xl66" style="border-left:none">Superior Queen</td>
+                        <td colspan="2" class="xl66" style="border-left:none">$10 per night</td>
+                        </tr>
+                        <tr height="20" style="height:15.0pt">
+                        <td height="20" class="xl66" style="height:15.0pt;border-top:none">Superior Queen</td>
+                        <td colspan="2" class="xl66" style="border-left:none">Superior King</td>
+                        <td colspan="2" class="xl66" style="border-left:none">$10 per night</td>
+                        </tr>
+                        <tr height="20" style="height:15.0pt">
+                        <td height="20" class="xl66" style="height:15.0pt;border-top:none">Superior King</td>
+                        <td colspan="2" class="xl66" style="border-left:none">Premier King</td>
+                        <td colspan="2" class="xl66" style="border-left:none">$10 per night</td>
+                        </tr>
+                        <tr height="20" style="height:15.0pt">
+                        <td height="20" class="xl66" style="height:15.0pt;border-top:none">Classic Queen</td>
+                        <td colspan="2" class="xl66" style="border-left:none">Superior Queen</td>
+                        <td colspan="2" class="xl66" style="border-left:none">$20 per night</td>
+                        </tr>
+                        <tr height="20" style="height:15.0pt">
+                        <td height="20" class="xl66" style="height:15.0pt;border-top:none">Classic King</td>
+                        <td colspan="2" class="xl66" style="border-left:none">Superior King</td>
+                        <td colspan="2" class="xl66" style="border-left:none">$20 per night</td>
+                        </tr>
+                        <tr height="20" style="height:15.0pt">
+                        <td height="20" class="xl66" style="height:15.0pt;border-top:none">Superior Queen</td>
+                        <td colspan="2" class="xl66" style="border-left:none">Premier King</td>
+                        <td colspan="2" class="xl66" style="border-left:none">$20 per night</td>
+                        </tr>
+                        <tr height="20" style="height:15.0pt">
+                        <td height="20" class="xl66" style="height:15.0pt;border-top:none">Classic Queen</td>
+                        <td colspan="2" class="xl66" style="border-left:none">Superior King</td>
+                        <td colspan="2" class="xl66" style="border-left:none">$30 per night</td>
+                        </tr>
+                        <tr height="20" style="height:15.0pt">
+                        <td height="20" class="xl66" style="height:15.0pt;border-top:none">Classic King</td>
+                        <td colspan="2" class="xl66" style="border-left:none">Premier King</td>
+                        <td colspan="2" class="xl66" style="border-left:none">$30 per night</td>
+                        </tr>
+                        <tr>
+                        <td colspan="3" height="20" class="xl66" style="height:15.0pt"></td>
+                        </tr>
+                        <tr height="20" style="height:15.0pt">
+                        <td height="20" class="xl66" style="height:15.0pt;border-top:none">Classic Queen</td>
+                        <td colspan="2" class="xl66" style="border-left:none">Premier King</td>
+                        <td colspan="2" class="xl66" style="border-left:none">$40 per night</td>
+                        </tr>
+                        <tr height="20" style="height:15.0pt">
+                        <td height="20" class="xl66" style="height:15.0pt;border-top:none">Classic King</td>
+                        <td colspan="2" class="xl66" style="border-left:none">Premier King</td>
+                        <td colspan="2" class="xl66" style="border-left:none">$30 per night</td>
+                        </tr>
+                        <tr height="20" style="height:15.0pt">
+                        <td height="20" class="xl66" style="height:15.0pt;border-top:none">Superior Queen</td>
+                        <td colspan="2" class="xl66" style="border-left:none">Premier King</td>
+                        <td colspan="2" class="xl66" style="border-left:none">$25 per night</td>
+                        </tr>
+                        <tr height="20" style="height:15.0pt">
+                        <td height="20" class="xl66" style="height:15.0pt;border-top:none">Superior King</td>
+                        <td colspan="2" class="xl66" style="border-left:none">Premier King</td>
+                        <td colspan="2" class="xl66" style="border-left:none">$15 per night</td>
+                        </tr>
+                        <!--[if supportMisalignedColumns]-->
+                        <tr height="0" style="display:none">
+                        <td width="33%" style="width:33%"></td>
+                        <td width="33%" style="width:33%"></td>
+                        <td width="33%" style="width:33%"></td>
+                        </tr>
+                        <!--[endif]-->
+                        </tbody></table></p>
                     <p class="mb-4"></p>
                     <p class="mb-4"></p>
                 </div>
@@ -158,6 +264,7 @@
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/searchbar.js"></script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>

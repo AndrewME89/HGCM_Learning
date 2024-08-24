@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Folio Special Instructions</title>
+    <title>Folio Communications</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -30,6 +30,9 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <!-- Searchbar Stylesheet -->
+    <link href="css/searchbar.css" rel="stylesheet">
 
     <style>
         div.a {
@@ -70,6 +73,13 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <div class="nav-item nav-link">
+                    <div class="search-container">
+                        <input type="text" id="searchInput" placeholder="Search...">
+                        <button id="searchButton">Search</button>
+                        <div id="results" class="dropdown-menu fade-down m-0" data-bs-toggle="dropdown" aria-expanded="false"></div> <!-- Make sure this matches -->
+                    </div>
+                </div>    
                 <a href="index.html"  class="nav-item nav-link active">Home</a>
                 <a href="GSA.html" class="nav-item nav-link">Guest Services Agent</a>
                 <a href="NA.html" class="nav-item nav-link">Night Audit</a>
@@ -98,13 +108,13 @@
                 <div class="col wow fadeInUp" data-wow-delay="0.1s" style="min-height: 50px;">
                 </div>
                 <div class="col wow fadeInUp" data-wow-delay="0.3s">
-                    <h2 class="section-title bg-white text-start text-primary pe-3">Folio Special Instructions By Check Out Date Report</h2>
+                    <h2 class="section-title bg-white text-start text-primary pe-3">Folio Communications By Check Out Date Report</h2>
                     <p class="mb-4">To complete the Chargeback process of Night Audit, you will need to know which rooms are paying by Virtual Credit Card, and which have been paid by a company through Direct Bill.</p>
-                    <p class="mb-4">The easiest way to do this is to check the Folio Special Instructions by Check Out Date Report:</p>
-                    <p class="mb-4">In iHMS: <b>Reports → In House → Special Instructions By Check Out Date Report → *Check Out Date*.</b></p>
+                    <p class="mb-4">The easiest way to do this is to check the Folio Communications by Check Out Date Report:</p>
+                    <p class="mb-4">In iHMS: <b>Reports → In House → Communications By Check Out Date Report → *Check Out Date*.</b></p>
                     <img src="img/FolioSpex01.jpg" width="80%"></p>
-                    <p class="mb-4">This will show all of the Special Instructions for the rooms checking out on the selected date.</p>
-                    <p class="mb-4">Highlight the rooms with CC or DB in the special instructions, as well as the room name, number & Folio number.</p>
+                    <p class="mb-4">This will show all of the Communications for the rooms checking out on the selected date.</p>
+                    <p class="mb-4">Highlight the rooms with CC or DB in the Communications, as well as the room name, number & Folio number.</p>
                     <img src="img/FolioSpex02.png" width="60%"></p>
                     <p class="mb-4">Proceed with the <a href="Chargebacks.html">Chargebacks</a> using this report as a guide.</p>
                 </div>
@@ -161,6 +171,7 @@
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/searchbar.js"></script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>

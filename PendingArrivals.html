@@ -31,6 +31,9 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 
+    <!-- Searchbar Stylesheet -->
+    <link href="css/searchbar.css" rel="stylesheet">
+
     <style>
         div.a {
           text-indent: 50px;
@@ -70,6 +73,13 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <div class="nav-item nav-link">
+                    <div class="search-container">
+                        <input type="text" id="searchInput" placeholder="Search...">
+                        <button id="searchButton">Search</button>
+                        <div id="results" class="dropdown-menu fade-down m-0" data-bs-toggle="dropdown" aria-expanded="false"></div> <!-- Make sure this matches -->
+                    </div>
+                </div>    
                 <a href="index.html"  class="nav-item nav-link active">Home</a>
                 <a href="GSA.html" class="nav-item nav-link">Guest Services Agent</a>
                 <a href="NA.html" class="nav-item nav-link">Night Audit</a>
@@ -99,27 +109,52 @@
                 </div>
                 <div class="col wow fadeInUp" data-wow-delay="0.3s">
                     <h2 class="section-title bg-white text-start text-primary pe-3">Addressing Pending Arrivals</h2>
-
-            <p>As part of Night Audit, it is your responsibility to address any reservations that have not arrived before it is time to roll the system.</p>
-
-            <p>To do this, we first have to look at how the guest is paying:</p>
-
-            <div class="a">If the Special Instructions state that the guest is CC (Virtual Credit Card), DBA/DBC (Direct Bill) or PP (Pre Paid) the folio can be Checked In. This is because we have <div class="a">received payment for the reservation, whether through a third-party website such as Booking.com or Expedia, or a company.</div></div></p>
-            
-            <div class="a">If the instructions say the reservation is POA (Pay On Arrival) then you will have to attempt to take a Pre Authorisation for the first night of their stay. This is best done at <div class="a">around 12:30 to ensure that guests have time to update their payment details if their card is found to be declined or invalid.</div></div></p>
-
-            <p>On the Eftpos terminal:</p>
-            <ol type="1">
-                <li>Enter the amount required for one night of Accommodation</li></p>
-                <li>Select "Other" at the bottom left of the screen</li></p>
-                <li>Select "Pre Authorisation".</li></p>
-                <li>Enter the option "Manual".</li></p>
-                <li>Enter the Credit Card number as </li></p>
-            </ol>
-
-            <p>If the Pre Authorisation is Declined, then this is marked as a No Show.</p>
-
-            <p>If the Pre Authorisation is Approved, the reservation will be check in and marked as a "NON"</p>
+                        <p>As part of Night Audit, it is your responsibility to address any reservations that have not arrived before it is time to roll the system.</p>
+                        <p>To do this, we first have to look at how the guest is paying:</p>
+                        <ul>
+                            <li>If the Corporate tab Check In notes state that the guest is CC (Virtual Credit Card), DBA/DBC (Direct Bill) or PP (Pre Paid) the folio can be Checked In. This is because we have received payment for the reservation, whether through a third-party website such as Booking.com or Expedia, or a company.</li></p>
+                                <figure>
+                                    <img src="img/PendArr01.png" alt="Pending Arrivals" width="80%">
+                                    <figcaption>This booking is CC, meaning the Guest has already paid for this booking, and you will charge the Guest as part of your Chargebacks Procedure.</figcaption>
+                                </figure></p>
+                            <li>If the Corporate tab Check In notes say the reservation is POA (Pay On Arrival) then you will have to attempt to take a Pre Authorisation for the <b><u><i>first night</i></u></b> of their stay. This is best done at around 12:30am to ensure that guests have time to update their payment details if their card is found to be declined or invalid.</li></p>
+                                <figure>
+                                    <img src="img/PendArr02.png" alt="Pending Arrivals" width="80%">
+                                    <figcaption>This booking is POA, meaning that the Guest must Pay On Arrival.</figcaption>
+                                </figure></p>
+                        </ul>                        
+                        <p>On the Eftpos terminal:</p>
+                        <ol type="1">
+                            <li>Enter the amount required for the <b><u><i>first night</i></u></b> of Accommodation</li></p>
+                            <img src="img/PendArr03.jpg" alt="Pending Arrivals" width="20%">
+                            <li>Select "Other" at the bottom left of the screen</li></p>
+                            <img src="img/PendArr04.jpg" alt="Pending Arrivals" width="20%">
+                            <li>Select "Pre Authorisation".</li></p>
+                            <img src="img/PendArr05.jpg" alt="Pending Arrivals" width="20%">
+                            <li>Enter the option "Manual".</li></p>
+                            <img src="img/PendArr06.jpg" alt="Pending Arrivals" width="20%">
+                            <li>Enter the Credit Card number as shown on the Guest folio.</li></p>
+                        </ol>
+                        <p class="mb-4">If the Pre Authorisation is Approved, the reservation will be checked in and marked as a "NON"</p>
+                        <p class="mb-4">If the Pre Authorisation is Declined, it will be marked as a No Show.</p>
+                        <p class="mb-4">If the booking was made through a third-party website, such as Expedia or Booking.com, we will have to mark our No Shows through their website.</p>
+                        <h6 class="mb-4">Marking No Shows on Booking.com</h6>
+                            <ol type="1">
+                                <li>Search the Voucher number for the Reservation.</li></p>
+                                <li>Click the "Mark as a no show" button on the right-side of the screen.</li></p>
+                                <li>Select "Yes" to waive cancellation fees.</li></p>
+                                <li>Once the process is complete, Booking.com will automatically cancel the booking through iHMS. This normally takes a few minutes.</li></p>
+                            </ol>
+                        <h6 class="mb-4">Marking No Shows on Expedia.com</h6>
+                            <ol type="1">
+                                <li>Open the Reservations tab on the left of screen.</li></p>
+                                <li>Search the voucher number. The reservation will come up in a side-menu to the right.</li></p>
+                                <li>Click the "Mark as no show".</li></p>
+                                <li>Change the cancellation fee to $0.00 to waive the fees.</li></p>
+                            </ol>
+                                <h5 class="section-title bg-white text-start text-primary pe-3">Note:</h5>
+                                <p class="mb-4">Expedia bookings do <b><u><i>not</i></u></b> automatically cancel in our system.</p>
+                                <p class="mb-4">To cancel these bookings, you will have to right-click on the folio and </p>
             </div>
         </div>
     </div>
@@ -174,6 +209,7 @@
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/searchbar.js"></script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>

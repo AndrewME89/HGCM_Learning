@@ -31,6 +31,9 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 
+    <!-- Searchbar Stylesheet -->
+    <link href="css/searchbar.css" rel="stylesheet">
+
     <style>
         div.a {
           text-indent: 50px;
@@ -70,6 +73,13 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <div class="nav-item nav-link">
+                    <div class="search-container">
+                        <input type="text" id="searchInput" placeholder="Search...">
+                        <button id="searchButton">Search</button>
+                        <div id="results" class="dropdown-menu fade-down m-0" data-bs-toggle="dropdown" aria-expanded="false"></div> <!-- Make sure this matches -->
+                    </div>
+                </div>    
                 <a href="index.html"  class="nav-item nav-link active">Home</a>
                 <a href="GSA.html" class="nav-item nav-link">Guest Services Agent</a>
                 <a href="NA.html" class="nav-item nav-link">Night Audit</a>
@@ -105,7 +115,7 @@
                     <p class="mb-4">To do so:</p>
                         <ol type="1">
                             <li>Start by opening the Guest Folio</li></p>
-                            <li>Enter the Rate Details tab</li></p>
+                            <li>Enter the Transactions tab</li></p>
                             <li>Right-click on the screen and select "Payment"</li></p>
                             <li>Enter the payment amount</li></p>
                             <li>Ensure the payment type (Amex, Visa/MasterCard, etc) is correct</li></p>
@@ -122,7 +132,7 @@
                                 <ol type="a">
                                     <li>Open HMS: Reservation > Folio</li></p>
                                     <li>In the search box, input the keyword ‘Folio’ and click search. Ensure, we also change the search parameter to ‘search between’.</li></p>
-                                    <li>Open the folio, and go ot tab (4) Rate Details.</li></p>
+                                    <li>Open the folio, and go ot tab (4) Transactions.</li></p>
                                     <li>Right click on the screen and select ‘Payment’.</li></p>
                                     <li>The below window will be popping -up.</li></p>
                                     <li>Post the total cash amount.</li></p>
@@ -132,14 +142,14 @@
                         <ol type="1">
                             <li>Sort all of the card payment receipts into payment type: ‘Amex’, ‘Debit Card’,  ‘MasterCard’ and ‘Visa’.</li></p>
                             <li>Open HMS and search each payment type.</li></p>
-                            <li>Open the payment type folio, click on the ‘Rate details’ tab, right click and select payment.</li></p>
+                            <li>Open the payment type folio, click on the ‘Transactions’ tab, right click and select payment.</li></p>
                             <li>Each docket needs to be posted individually. Post the exact amount on the docket <u><b>opting out</b></u> of any surcharge.</li></p>
                                 <ol type="a">
                                     <li>In invoice amount at the top, it will show the total amount owed to the folio. In pay amount type enter the amount corresponding to each docket.</li></p>
                                     <li>Tick the ‘Opt-Out’ next to surcharge prevent the CC surcharge being added to this charge.</li></p>
                                 </ol>
                             <li>Repeat all of these steps until all receipts under that specific payment type have been charged off. The folio must be at zero once all of the receipts have been charged. </li></p>
-                            <li>If the folio isn’t at zero double check all the payments you charged off. If they are all correct and you are out by cents balance the folio by doing a manual posting of the amount the folio is out into the CC Surcharge postcode by right clicking in the ‘Rate Details’ tab and selecting manual posting. Select the drop-down menu for ‘Post Code’ and select ‘CC Surcharge’, in ‘Amount type they amount the folio is out by and in ‘Remark’ type ‘To Balance’, Click next and the folio will be on Zero. If the folio is out by more it could be a receipt that has been posted into the wrong folio. Ask for your Duty Manager assistance. </li></p>
+                            <li>If the folio isn’t at zero double check all the payments you charged off. If they are all correct and you are out by cents balance the folio by doing a manual posting of the amount the folio is out into the CC Surcharge postcode by right clicking in the ‘Transactions’ tab and selecting manual posting. Select the drop-down menu for ‘Post Code’ and select ‘CC Surcharge’, in ‘Amount type they amount the folio is out by and in ‘Remark’ type ‘To Balance’, Click next and the folio will be on Zero. If the folio is out by more it could be a receipt that has been posted into the wrong folio. Ask for your Duty Manager assistance. </li></p>
                             <li>Repeat the above steps for the next method of payment until all the charges have been posted and the folios are zero.</li></p>
                         </ol>
                 </div>
@@ -196,6 +206,7 @@
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/searchbar.js"></script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>

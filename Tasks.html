@@ -31,6 +31,9 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 
+    <!-- Searchbar Stylesheet -->
+    <link href="css/searchbar.css" rel="stylesheet">
+
     <style>
         div.a {
           text-indent: 50px;
@@ -70,6 +73,13 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <div class="nav-item nav-link">
+                    <div class="search-container">
+                        <input type="text" id="searchInput" placeholder="Search...">
+                        <button id="searchButton">Search</button>
+                        <div id="results" class="dropdown-menu fade-down m-0" data-bs-toggle="dropdown" aria-expanded="false"></div> <!-- Make sure this matches -->
+                    </div>
+                </div>    
                 <a href="index.html"  class="nav-item nav-link active">Home</a>
                 <a href="GSA.html" class="nav-item nav-link">Guest Services Agent</a>
                 <a href="NA.html" class="nav-item nav-link">Night Audit</a>
@@ -124,11 +134,11 @@
                                 </ol>
                             <img src="img/SetTask03.png"></p>
                             <li>Click ‘Next’ button </li></p>
-                            <li>The set task will appear in tab (6) special instruction in the message section of the window.</li></p>
+                            <li>The set task will appear in tab (6) Communication in the message section of the window.</li></p>
                             <li>You will see the reservations now has a small Light Globe Icon next to the name.</li></p>
                         </ol>
                     <h5 class="section-title bg-white text-start text-primary pe-3">Note:</h5>
-                    <p class="mb-4">Tasks can also be set up from the Special Instruction tab.</p>
+                    <p class="mb-4">Tasks can also be set up from the Communication tab.</p>
                         <ol type=1>
                             <li>Right click on the message section on tab (6) window.</li></p>
                             <img src="img/SetTask04.png"></p>
@@ -146,7 +156,7 @@
                             <li>Click ‘Cancel’ to close the window.</li></p>
                         </ol>
                     <h5 class="section-title bg-white text-start text-primary pe-3">Note:</h5>
-                    <p class="mb-4">Tasks can also be viewed in the message box in the Special Instruction tab.</p>
+                    <p class="mb-4">Tasks can also be viewed in the message box in the Communication tab.</p>
                     <h6 class="mb-4">Closing a Task</h6>
                     <p class="mb-4">Once the task is done/actioned, the person responsible for it must close the task.</p>
                         <ol type="1">
@@ -222,6 +232,7 @@
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/searchbar.js"></script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>

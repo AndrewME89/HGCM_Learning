@@ -31,6 +31,9 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 
+    <!-- Searchbar Stylesheet -->
+    <link href="css/searchbar.css" rel="stylesheet">
+
     <style>
         div.a {
           text-indent: 50px;
@@ -70,6 +73,13 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <div class="nav-item nav-link">
+                    <div class="search-container">
+                        <input type="text" id="searchInput" placeholder="Search...">
+                        <button id="searchButton">Search</button>
+                        <div id="results" class="dropdown-menu fade-down m-0" data-bs-toggle="dropdown" aria-expanded="false"></div> <!-- Make sure this matches -->
+                    </div>
+                </div>    
                 <a href="index.html"  class="nav-item nav-link active">Home</a>
                 <a href="GSA.html" class="nav-item nav-link">Guest Services Agent</a>
                 <a href="NA.html" class="nav-item nav-link">Night Audit</a>
@@ -100,12 +110,43 @@
                 <div class="col wow fadeInUp" data-wow-delay="0.3s">
                     <h2 class="section-title bg-white text-start text-primary pe-3">Preparing Arriving Guest Registration Cards</h2>
                     <p class="mb-4">The PM team is responsible for preparing the registration cards for next day arrivals.</p>
-                    <ol type="1">
-                        <li>Print out the registration cards for next day arrivals</li></p>
-                        <li>Print out ‘Chargeback Report’. Go through the report and highlights any reservations that require paperwork</li></p>
-                        <li>Print out all the required paperwork. Follow up missing chargeback with DM</li></p>
-                        <li>Prepare the reg cards – Attach paperwork, highlight required information & put a gold star sticker for VIPs, return guests and GC rewards members</li></p>
-                        <li>Put the reg cards aside for night team to sort out and file in arrival box</li></p>
+                        <h5>Printing the registration cards</h5>
+                            <ol type="1">
+                                <li>In HMS select Reports- Inhouse- Batch Registration.</li></p>
+                                <li>Select the appropriate date</li></p>
+                                <li>Move both the C and G values over to selected values</li></p>
+                                <li>Sort by guest name as shown below</li></p>
+                                <li>Print (A5 size) to the printer in the back office</li></p>
+                            </ol>
+                        <h5>Printing the arrival chargeback report</h5>
+                            <ol>
+                                <li>In HMS select Reports- Arrivals &ndash; Charge Back Report</li></p>
+                                <li>Select the appropriate date</li></p>
+                                <li>Sort by guest name as shown below</li></p>
+                                <li>Print out the report</li></p>
+                                <li>Go through the report and highlights any instructions with DBA, DBC or CC. Inform DM if there is any AA.</li></p>
+                            </ol>
+                        <h5>Printing the chargebacks</h5>
+                            <ol>
+                                <li>Go to M:\Reservation Chargeback's\. Select the appropriate year, month then the date.</li></p>
+                                <li>Print off the chargeback and/or related paperwork based on the highlighted Charge Back Report.</li></p>
+                                <li>If any paperwork from the charge back report is missing check the reservation email or inform Duty Manager to follow up.</li></p>
+                            </ol>
+                        <h5>Preparing the registration card.</h5>
+                            <ol>
+                                <li>Highlight the following parts of the Registration Card:</li></p>
+                                    <ul>
+                                        <li>Sharing Guest</li></p>
+                                        <li>Mobile</li></p>
+                                        <li>Email</li></p>
+                                        <li>Signature</li></p>
+                                    </ul>
+                                <p class="mb-4">These are the sections of the Registration card that the Guest must update and sign on Check In.</p>
+                                <li>Attach the chargeback and/or paperwork to the corresponding registration cards</li></p>
+                                <li>Put a golden star sticker for all VIP, Return guests and GC Rewards Member at the TOP right-hand corner of the registration card.</li></p>
+                                <li>Sort the Registration Cards in alphabetical order by the guest surname and place them in the arrival box.</li></p>
+                                <li>Place the Charge Back Report in the chargeback folder in back office</li></p>
+                            </ol>
                     </ol>
                 </div>
             </div>
@@ -161,6 +202,7 @@
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/searchbar.js"></script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>

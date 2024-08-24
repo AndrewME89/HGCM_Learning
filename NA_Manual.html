@@ -34,6 +34,9 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 
+    <!-- Searchbar Stylesheet -->
+    <link href="css/searchbar.css" rel="stylesheet">
+
     <!-- Slideshow Stylesheet -->
     <link href="css/slideshow.css" rel="stylesheet">
 
@@ -98,6 +101,13 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <div class="nav-item nav-link">
+                    <div class="search-container">
+                        <input type="text" id="searchInput" placeholder="Search...">
+                        <button id="searchButton">Search</button>
+                        <div id="results" class="dropdown-menu fade-down m-0" data-bs-toggle="dropdown" aria-expanded="false"></div> <!-- Make sure this matches -->
+                    </div>
+                </div>    
                 <a href="index.html"  class="nav-item nav-link active">Home</a>
                 <a href="GSA.html" class="nav-item nav-link">Guest Services Agent</a>
                 <a href="NA.html" class="nav-item nav-link">Night Audit</a>
@@ -470,7 +480,7 @@
                           <li>Check that the cash handed over by the Encore team is correct and place it into a cash envelope, making sure to write the correct details on the envelope.</li></p>
                           <li>Search "FOLIO" in iHMS. This will bring up all of the folios where payments are posted.</li></p>
                           <li>Double-click into the required Folio (AMEX/CASH/VISA etc)</li></p>
-                          <li>Select the "Rate Details" tab.</li></p>
+                          <li>Select the "Transactions" tab.</li></p>
                           <li>Right-Click and select "Payment".</li></p>
                           <li>Enter the payment amount in the “Pay Amount” section.</li></p>
                           <li>Check the "Opt-Out" box.</li></p>
@@ -486,7 +496,7 @@
                         Troubleshooting Cash & Credit Card Errors
                       </div>
                       <div class="content">
-                      <p>If any of the folios have a dollar amount remaining on them, the first step is to go back to the Rate Details tab in that folio and check that you haven’t missed a payment, or posted it more than once.</p>
+                      <p>If any of the folios have a dollar amount remaining on them, the first step is to go back to the Transactions tab in that folio and check that you haven’t missed a payment, or posted it more than once.</p>
                       <p>If all dockets have been entered correctly, check if there are any “CC Surcharge” postings. If there are, this means the “Opt-Out” box was not checked when posting a payment.</p>
                       <p>To correct these errors, follow the steps in the section “<a href="reversals.html">Reversals & Error Corrections</a>”.</p>
                       <p>If neither of these is an issue, check if there is a dollar amount present on the RAPTOR POSTING ERROR folio. If there is, see the <a href="NATips.html">Correcting “Raptor Posting Errors”</a> section</p>
@@ -504,8 +514,8 @@
                         <ul>
                           <li>Update the Phone Number and Email address.</li></p>
                           <li>Ensure that the “Payment Status” drop down has been updated to “Pre-Authorisation Obtained” and the “Deposit Amount” has been updated accordingly.</li></p>
-                          <li>Check that the Sharing Guest has been added into the “Other Guest” tab.</li></p>
-                          <li>Check that the Pre-Auth ID has been entered in the “Special Instructions” tab, and update any other notes in the Remarks section, such as if the bond is being covered by another room, etc.</li></p>
+                          <li>Check that the Sharing Guest has been added into the “Guests” tab.</li></p>
+                          <li>Check that the Pre-Auth ID has been entered in the “Communications” tab, and update any other notes in the Remarks section, such as if the bond is being covered by another room, etc.</li></p>
                           <li>Once all of these things have been updated, initial the CARD and UPD section on the bottom right of the Guest Registration Card and file it in the correct box under the bench on the right.</li></p>
                         </ul>
                         <div class="note">Note: Registration cards left in the "Follow Up" pigeonhole should be returned there after the details have been checked and updated.</p>
@@ -735,8 +745,8 @@
                       </div>
                       <div class="content">
                       <p>You will need to charge all CC and DBA rooms that are checking out today.</p>
-                      <p>To determine which rooms will need to be charged, print the Folio Special Instructions by Check Out Date Report at:</p>
-                      <p><b>Reports → In House → Folio Special Instruction by Check Out Date Report → *Ensure Date Is Correct* → PRINT.</b></p>
+                      <p>To determine which rooms will need to be charged, print the Folio Communications by Check Out Date Report at:</p>
+                      <p><b>Reports → In House → Folio Communication by Check Out Date Report → *Ensure Date Is Correct* → PRINT.</b></p>
                       <p>Highlight any "CC", "TRNSFR" "DBA" and "DBC" rooms. These are the rooms you will charge during this process.</p>
                       <h5>CC Charges</h5>
                         <ul>
@@ -758,14 +768,14 @@
                         <p>DBA and DBC rooms are rooms that will be charged to an account, such as a business or even the hotel itself.</p>
                       <h5>DBA / DBC Charges</h5>
                         <ul>
-                          <li>In the Rate Details tab of the guest folio, right-click and select Payment.</li></p>
+                          <li>In the Transactions tab of the guest folio, right-click and select Payment.</li></p>
                           <li>Change the Payment Type dropdown to DBILL, then click next.</li></p>
                           <li>If a Credit Stop/Cash Only error appears, you will need to email Reservations with the Folio number, guest name and a polite request to look into it.</li></p>
                         </ul>
                         <h5>Rooms marked "Transfer to":</h5>
                         <ul>
                           <li>Check the name of the folio the charges are to be transferred <b>TO</b> and note the folio number, then open the folio that needs to be transferred.</li></p>
-                          <li>In the “Rate Details” tab hold down “Ctrl” and select the items with a cost beside them, leaving the $0.00 items unselected</li></p>
+                          <li>In the “Transactions” tab hold down “Ctrl” and select the items with a cost beside them, leaving the $0.00 items unselected</li></p>
                           <li>Right click and select “Transfer”</li></p>
                           <li>In the “To Folio” section, begin typing the surname of the folio the charges are being moved to, check that the folio number is correct then - when you are certain you are transferring to the correct folio - click “Next”.</li></p>
                           <li></li></p>
@@ -812,7 +822,7 @@
                       <p>There are a few tasks that can be done at any stage throughout the night, and are great for utilising your time while waiting for the Parking sheet or Encore documents:</p>
                         <ul>
                           <li>Print The Expected Departure Summary Report</li></p>
-                          <li>Print The Folio Special Instruction By Check Out Date Report</li></p>
+                          <li>Print The Folio Communication By Check Out Date Report</li></p>
                           <li>Organise The Departure Reg Cards For The AM Shift</li></p>
                           <li>Pre-Auth Cancellations For The Previous Day</li></p>
                           <li>Action Room Service as Required (Night Owl Menu)</li></p>
@@ -830,18 +840,18 @@
                         <p>(If you are doing this before roll, make sure to update the date to <b>tomorrow</b>)</p>
                         <p><strong>Reports &rarr; Departures &rarr; Expected Departure Summary &rarr; *Ensure Date Is Correct* &rarr;</strong> PRINT.&nbsp;</p>
                         <p>Staple together, fold in half and put in the departures box</p>
-                        <div class="note">Note: Use this list or the "Folio Special Instructions by Check Out Date Report" to collect the reg cards which need to be moved to the Departures box for the morning team.</div>
+                        <div class="note">Note: Use this list or the "Folio Communications by Check Out Date Report" to collect the reg cards which need to be moved to the Departures box for the morning team.</div>
                       </div>
                     </div>
 
                             <!-- Slide 39 -->
                     <div class="slide">
                       <div class="heading">
-                        Print The Folio Special Instruction By Check Out Date Report
+                        Print The Folio Communication By Check Out Date Report
                       </div>
                       <div class="content">
                         <p>(If you are doing this before roll, make sure to update the date to <b>tomorrow</b>)</p>
-                        <p><strong>Reports &rarr; In House &rarr; Folio Special Instruction by Check Out Date Report &rarr; *Ensure Date Is Correct* &rarr;</strong> PRINT.&nbsp;</p>
+                        <p><strong>Reports &rarr; In House &rarr; Folio Communication by Check Out Date Report &rarr; *Ensure Date Is Correct* &rarr;</strong> PRINT.&nbsp;</p>
                         <p>Highlight any "CC", "TRNSFR" "DBA" and "DBC" rooms.&nbsp;</p>
                         <p>These rooms will be paid using the "MOTO" Eftpos machine and the details provided on the guests' registration card</p>
                         <div class="note">Note: Use this list or the "Expected Departure Summary Report" to collect the reg cards which need to be moved to the Departures box for the morning team</div>
@@ -855,7 +865,7 @@
                       </div>
                       <div class="content">
                         <p>Part of the Night GSA role is preparing the Departures bin for the AM team.&nbsp;</p>
-                        <p>Use the Expected Departure Summary Report or the Folio Special Instructions by Check Out Date Report to remove the required Guest Reg Cards from the storage bins under the desk.&nbsp;</p>
+                        <p>Use the Expected Departure Summary Report or the Folio Communications by Check Out Date Report to remove the required Guest Reg Cards from the storage bins under the desk.&nbsp;</p>
                         <p>Organise these Reg Cards into each section of the black Departure bin to the left of the middle computer</p>
                       </div>
                     </div>
@@ -1092,6 +1102,7 @@
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/searchbar.js"></script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>

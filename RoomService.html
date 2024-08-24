@@ -31,6 +31,9 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 
+    <!-- Searchbar Stylesheet -->
+    <link href="css/searchbar.css" rel="stylesheet">
+
     <style>
         div.a {
           text-indent: 50px;
@@ -70,6 +73,13 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <div class="nav-item nav-link">
+                    <div class="search-container">
+                        <input type="text" id="searchInput" placeholder="Search...">
+                        <button id="searchButton">Search</button>
+                        <div id="results" class="dropdown-menu fade-down m-0" data-bs-toggle="dropdown" aria-expanded="false"></div> <!-- Make sure this matches -->
+                    </div>
+                </div>    
                 <a href="index.html"  class="nav-item nav-link active">Home</a>
                 <a href="GSA.html" class="nav-item nav-link">Guest Services Agent</a>
                 <a href="NA.html" class="nav-item nav-link">Night Audit</a>
@@ -121,12 +131,16 @@
             <p class="mb-4">Once a Room Service order has been completed, it needs to be posted to the guest folio:</p>
 
             <ol type="1">
-                <li>Open the guest folio and click into the Rate Details tab.</li></p>
+                <li>Open the guest folio and click into the Transactions tab.</li></p>
+                <img src="img/RS_Post01.png" width="90%"></p>
                 <li>Right-click and select "Manual Posting".</li></p>
+                <img src="img/RS_Post02.png" width="90%"></p>
                 <li>Change the Post Code to "Room Service <strong><u>Food</u></strong> Supper" for meals, or "Room Service <u><strong>Beverage</u></strong> Supper" for drinks.</li></p>
                 <li>Enter the <strong><u>total</u></strong> amount for the food under Room Service Food Supper, and the <strong><u>total</u></strong> amount for drinks under Room Service Beverage Supper.</li></p>
                 <li>In the Remarks section, write the items that have been ordered, for example: 1 x MARG PIZZA, 1 X CHIPS, 2 X STICKY DATE. Do the same for the drinks.</li></p>
+                <img src="img/RS_Post03.png" width="50%"></p>
                 <li>Finally, if the order was delivered to the room, make another Manual Posting with the Post Code "Room Service Delivery Charge". The amount for this is always $5.00.</li></p>
+                <img src="img/RS_Post04.png" width="50%"></p>
             </ol>
             </div>
         </div>
@@ -182,6 +196,7 @@
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/searchbar.js"></script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>

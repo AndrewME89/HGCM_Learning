@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>B2Bs</title>
+    <title>Back to Backs (B2Bs)</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -29,6 +29,9 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <!-- Searchbar Stylesheet -->
+    <link href="css/searchbar.css" rel="stylesheet">
 
     <style>
         div.a {
@@ -61,6 +64,13 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <div class="nav-item nav-link">
+                    <div class="search-container">
+                        <input type="text" id="searchInput" placeholder="Search...">
+                        <button id="searchButton">Search</button>
+                        <div id="results" class="dropdown-menu fade-down m-0" data-bs-toggle="dropdown" aria-expanded="false"></div> <!-- Make sure this matches -->
+                    </div>
+                </div>    
                 <a href="index.html"  class="nav-item nav-link active">Home</a>
                 <a href="GSA.html" class="nav-item nav-link">Guest Services Agent</a>
                 <a href="NA.html" class="nav-item nav-link">Night Audit</a>
@@ -117,7 +127,7 @@
                                 <div class="a">a.	Right-click the folio and select Check-In.</div></p>
                                 <div class="a">b.	Change the Room drop-down to "Virtual" and complete the Check In process.</div></p>
                                 <div class="a">c.	Open the folio of the original reservation and transfer the Outstanding Balance to the new booking:</div></p>
-                                    <div class="b">i. Select the (4) Rate Details tab and highlight the charges you wish to transfer to the new booking.</div></p>
+                                    <div class="b">i. Select the (4) Transactions tab and highlight the charges you wish to transfer to the new booking.</div></p>
                                     <div class="b">ii. Right click, select “Transfer” and select the Virtual Room in “To Folio”. Click OK</div></p>
                             <li>There should be no charges left on the original booking. Proceed to check this folio out.</li></p>
                             <li>Return to the Virtual Folio and change the room to where the guest has been assigned.</li></p>
@@ -195,6 +205,7 @@
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/searchbar.js"></script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>

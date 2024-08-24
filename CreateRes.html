@@ -31,6 +31,9 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 
+    <!-- Searchbar Stylesheet -->
+    <link href="css/searchbar.css" rel="stylesheet">
+
     <style>
         div.a {
           text-indent: 50px;
@@ -70,6 +73,13 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <div class="nav-item nav-link">
+                    <div class="search-container">
+                        <input type="text" id="searchInput" placeholder="Search...">
+                        <button id="searchButton">Search</button>
+                        <div id="results" class="dropdown-menu fade-down m-0" data-bs-toggle="dropdown" aria-expanded="false"></div> <!-- Make sure this matches -->
+                    </div>
+                </div>    
                 <a href="index.html"  class="nav-item nav-link active">Home</a>
                 <a href="GSA.html" class="nav-item nav-link">Guest Services Agent</a>
                 <a href="NA.html" class="nav-item nav-link">Night Audit</a>
@@ -172,7 +182,7 @@
                             <ul>
                                 <li>Guest booking will pop up and the following details needs to be updated:</li></p>
                                     <ul>
-                                        <li>Special Instructions – update Check in & Check Out Instructions. Refer to Special Instruction Guide (page 12) for the correct sequence.</li></p>
+                                        <li>Communications – update Check in & Check Out Instructions. Refer to Communication Guide (page 12) for the correct sequence.</li></p>
                                         <li>Additional Items if any Add-Ons/requests were added and input/adjust fee under sales row if necessary</li></p>
                                         <li>Update Rate under (3) Room Tab for private bookings</li></p>
                                     </ul>
@@ -216,7 +226,7 @@
                             <ul>
                                 <li>Guest booking will pop up and the following details needs to be updated:</li></p>
                                     <ul>
-                                        <li>Special Instructions – Check In, Check Out & Postings. Ensure that if there is chargeback for specific booking made to update booking with chargeback details and restrictions.</li></p>
+                                        <li>Communications – Check In, Check Out & Postings. Ensure that if there is chargeback for specific booking made to update booking with chargeback details and restrictions.</li></p>
                                         <li>If guest is a regular guest, ensure to add VIP/Corp Guest on the Additional Items</li></p>
                                         <li>Rate will automatically update with the contracted rate of company however this needs to be updated if surcharge applies. </li></p>
                                     </ul>
@@ -283,6 +293,7 @@
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/searchbar.js"></script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>

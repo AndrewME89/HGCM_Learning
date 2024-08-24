@@ -31,6 +31,9 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 
+    <!-- Searchbar Stylesheet -->
+    <link href="css/searchbar.css" rel="stylesheet">
+
     <style>
         div.a {
           text-indent: 50px;
@@ -70,6 +73,13 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <div class="nav-item nav-link">
+                    <div class="search-container">
+                        <input type="text" id="searchInput" placeholder="Search...">
+                        <button id="searchButton">Search</button>
+                        <div id="results" class="dropdown-menu fade-down m-0" data-bs-toggle="dropdown" aria-expanded="false"></div> <!-- Make sure this matches -->
+                    </div>
+                </div>    
                 <a href="index.html"  class="nav-item nav-link active">Home</a>
                 <a href="GSA.html" class="nav-item nav-link">Guest Services Agent</a>
                 <a href="NA.html" class="nav-item nav-link">Night Audit</a>
@@ -118,7 +128,7 @@
                         </ul>
                         <li> Retrieve the Guest Registration Card and ask the guest to fill or confirm the highlighted details (Sharing Guest, Mobile, Email & Signature).</li></p>
                         <img src="img/CheckIn01.png" width="60%"></p>
-                        <li>While the guest is filling in their details, go to the Special Instructions tab. Read and understand the Check In instruction:</li></p>
+                        <li>While the guest is filling in their details, go to the Communications tab. Read and understand the Check In instruction:</li></p>
                         <ol type="a">
                             <li>Method of payment: POA, CC, Direct Bill, Pre-paid.</li></p>
                             <li>Inclusions such as breakfast, rollaway, water, newspaper (any item in brackets).</li></p>
@@ -144,7 +154,7 @@
                                 <ol type="i">
                                     <li>The guest who are covering; COV – all the folio numbers being covered</li></p>
                                     <img src="img/CheckIn04.png" width="60%"></p>
-                                    <li>The other guests that being covered; REF #Folio number of the covering room</li></p>
+                                    <li>The Guestss that being covered; REF #Folio number of the covering room</li></p>
                                     <img src="img/CheckIn05.png" width="60%"></p>
                                 </ol>
                         </ol>
@@ -260,6 +270,7 @@
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/searchbar.js"></script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>

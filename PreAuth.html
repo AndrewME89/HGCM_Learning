@@ -31,6 +31,9 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 
+    <!-- Searchbar Stylesheet -->
+    <link href="css/searchbar.css" rel="stylesheet">
+
     <style>
         div.a {
           text-indent: 50px;
@@ -70,6 +73,13 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <div class="nav-item nav-link">
+                    <div class="search-container">
+                        <input type="text" id="searchInput" placeholder="Search...">
+                        <button id="searchButton">Search</button>
+                        <div id="results" class="dropdown-menu fade-down m-0" data-bs-toggle="dropdown" aria-expanded="false"></div> <!-- Make sure this matches -->
+                    </div>
+                </div>    
                 <a href="index.html"  class="nav-item nav-link active">Home</a>
                 <a href="GSA.html" class="nav-item nav-link">Guest Services Agent</a>
                 <a href="NA.html" class="nav-item nav-link">Night Audit</a>
@@ -148,7 +158,7 @@
                                 <ul>
                                     <li>In (1) Corporate tab, change the payment status deposit paid to Pre-authorisation obtained.</li></p>
                                     <li>In (1) Corporate tab, then enter the deposit amount taken. (i.e: $100 / $200, etc..)</li></p>
-                                    <li>In (6) Special instruction tab, in Check out instruction box, enter the pre-auth id found on the docket.</li></p>
+                                    <li>In (6) Communication tab, in Check out instruction box, enter the pre-auth id found on the docket.</li></p>
                                 </ul>
                         </ol>
                     <h5 class="mb-4">Completing Pre-Authorisation.</h5>
@@ -296,6 +306,7 @@
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/searchbar.js"></script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>

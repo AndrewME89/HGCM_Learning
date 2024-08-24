@@ -29,6 +29,9 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <!-- Searchbar Stylesheet -->
+    <link href="css/searchbar.css" rel="stylesheet">
 </head>
 
 <body>
@@ -51,6 +54,13 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <div class="nav-item nav-link">
+                    <div class="search-container">
+                        <input type="text" id="searchInput" placeholder="Search...">
+                        <button id="searchButton">Search</button>
+                        <div id="results" class="dropdown-menu fade-down m-0" data-bs-toggle="dropdown" aria-expanded="false"></div> <!-- Make sure this matches -->
+                    </div>
+                </div>    
                 <a href="index.html"  class="nav-item nav-link active">Home</a>
                 <a href="GSA.html" class="nav-item nav-link">Guest Services Agent</a>
                 <a href="NA.html" class="nav-item nav-link">Night Audit</a>
@@ -113,7 +123,7 @@
                         <p class="mb-4"><i class="fa fa-arrow-right text-primary me-2"></i><a href="DepSummRep.html">Expected Departure Summary Report</a>
                         <p class="mb-4"><i class="fa fa-arrow-right text-primary me-2"></i><a href="Fire.html">Fire Safety Procedures</a>
                         <p class="mb-4"><i class="fa fa-arrow-right text-primary me-2"></i><a href="Walk.html">Floor Walk</a>
-                        <p class="mb-4"><i class="fa fa-arrow-right text-primary me-2"></i><a href="SpexInstRep.html">Folio Special Instructions By Check Out Date Report</a>
+                        <p class="mb-4"><i class="fa fa-arrow-right text-primary me-2"></i><a href="SpexInstRep.html">Folio Communications By Check Out Date Report</a>
                         <p class="mb-4"><i class="fa fa-arrow-right text-primary me-2"></i><a href="Functions.html">Functions</a>
                         <p class="mb-4"><i class="fa fa-arrow-right text-primary me-2"></i><a href="RoomTypes.html">General Room Information</a>
                         <p class="mb-4"><i class="fa fa-arrow-right text-primary me-2"></i><a href="Groups.html">Group Arrivals & Departures</a>
@@ -155,7 +165,7 @@
                         <p class="mb-4"><i class="fa fa-arrow-right text-primary me-2"></i><a href="Shipping.html">Shipping Companies</a>
                         <p class="mb-4"><i class="fa fa-arrow-right text-primary me-2"></i><a href="Silent.html">Silent Guests</a>
                         <p class="mb-4"><i class="fa fa-arrow-right text-primary me-2"></i><a href="smoking.html">Smoking Policy</a>
-                        <p class="mb-4"><i class="fa fa-arrow-right text-primary me-2"></i><a href="SpexGuide.html">Special Instructions Guide</a>
+                        <p class="mb-4"><i class="fa fa-arrow-right text-primary me-2"></i><a href="SpexGuide.html">Communications Guide</a>
                         <p class="mb-4"><i class="fa fa-arrow-right text-primary me-2"></i><a href="DBillProbs.html">Troubleshooting D-Bill Issues</a>
                         <p class="mb-4"><i class="fa fa-arrow-right text-primary me-2"></i><a href="iHMSProbs.html">Troubleshooting iHMS Outages</a>
                         <p class="mb-4"><i class="fa fa-arrow-right text-primary me-2"></i><a href="Buffet.html">Turning on the Buffet</a>
@@ -227,6 +237,7 @@
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/searchbar.js"></script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>

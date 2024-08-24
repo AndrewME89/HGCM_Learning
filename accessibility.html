@@ -30,6 +30,9 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 
+    <!-- Searchbar Stylesheet -->
+    <link href="css/searchbar.css" rel="stylesheet">
+
     <style>
         img {
           display: block;
@@ -60,6 +63,13 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <div class="nav-item nav-link">
+                    <div class="search-container">
+                        <input type="text" id="searchInput" placeholder="Search...">
+                        <button id="searchButton">Search</button>
+                        <div id="results" class="dropdown-menu fade-down m-0" data-bs-toggle="dropdown" aria-expanded="false"></div> <!-- Make sure this matches -->
+                    </div>
+                </div>    
                 <a href="index.html"  class="nav-item nav-link active">Home</a>
                 <a href="GSA.html" class="nav-item nav-link">Guest Services Agent</a>
                 <a href="NA.html" class="nav-item nav-link">Night Audit</a>
@@ -92,7 +102,7 @@
 
             <p class="mb-4">Guests who require accessibility options are advised to enter the hotel basement through Pender Place (off of Little Bourke Street) and take the lift up to the lobby or rooms.</p>
             <p>This entrance is open from 7:00am - 11:00pm. For after hours access, guests will need to contact reception.</p>
-            <img src="img/Accessibility.jpg" alt="Accessibility Map"></p>
+            <img src="img/Accessibility.jpg" alt="Accessibility Map" width="70%"></p>
 
             <h5>Accessing the Pool & Gym</h5>
             <p class="mb-4">There is currently no accessible entrance to the Pool & Gym.</p>
@@ -160,6 +170,7 @@
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/searchbar.js"></script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Home</title>
+    <title>Silent Guest Procedure</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -30,6 +30,9 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <!-- Searchbar Stylesheet -->
+    <link href="css/searchbar.css" rel="stylesheet">
 
     <style>
         div.a {
@@ -70,6 +73,13 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <div class="nav-item nav-link">
+                    <div class="search-container">
+                        <input type="text" id="searchInput" placeholder="Search...">
+                        <button id="searchButton">Search</button>
+                        <div id="results" class="dropdown-menu fade-down m-0" data-bs-toggle="dropdown" aria-expanded="false"></div> <!-- Make sure this matches -->
+                    </div>
+                </div>    
                 <a href="index.html"  class="nav-item nav-link active">Home</a>
                 <a href="GSA.html" class="nav-item nav-link">Guest Services Agent</a>
                 <a href="NA.html" class="nav-item nav-link">Night Audit</a>
@@ -98,12 +108,22 @@
                 <div class="col wow fadeInUp" data-wow-delay="0.1s" style="min-height: 50px;">
                 </div>
                 <div class="col wow fadeInUp" data-wow-delay="0.3s">
-                    <h2 class="section-title bg-white text-start text-primary pe-3"></h2>
-                    <p class="mb-4"></p>
-                    <p class="mb-4"></p>
-                    <p class="mb-4"></p>
-                    <p class="mb-4"></p>
-                    <p class="mb-4"></p>
+                    <h2 class="section-title bg-white text-start text-primary pe-3">Silent Guest Procedure</h2>
+                    <p class="mb-4">Guests may request to be a silent guest at any time during their stay.</p>
+                    <p class="mb-4">This means:</p>
+                        <ul>
+                            <li>We do <b><u><i>NOT</i></u></b> confirm to anyone if the guest is in-house while they are staying with us</li></p>
+                            <li>We do <b><u><i>NOT</i></u></b> transfer any phone calls to the room</li></p>
+                            <li>We do <b><u><i>NOT</i></u></b> allow any other people to go up to the room or issue keys if the name is not listed as sharing guest in HMS</li></p>
+                        </ul>
+                    <p class="mb-4">Silent guests may inform us should there be any exceptions.</p>
+                    <h5 class="mb-4">Procedure</h5>
+                        <ol type="1">
+                            <li>In guest folio in HMS, put ‘SILENT GUEST’ in the remark section</li></p>
+                            <li>On every desk phone in the front office area, stick a note saying:</li></p>
+                            <p class="mb-4">"Silent Guest - *Room Number* - *Check Out date*</p>
+                            <li>Update the silent guest in duty log. If guest is staying multiple nights, please ensure we add the silent guest daily</li></p>
+                        </ol>
                 </div>
             </div>
         </div>
@@ -158,6 +178,7 @@
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/searchbar.js"></script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
