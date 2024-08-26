@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>iHMS</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/searchbar/searchbar.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Searchbar Stylesheet -->
+    <link href="css/searchbar.css" rel="stylesheet">
+
+    <style>
+        div.a {
+          text-indent: 50px;
+        }
+        div.b {
+          text-indent: 100px;
+        }
+    </style>
+
+    <style>
+        img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        }
+    </style>
+
+    <style>
+        .frame {
+        height: 25px;      /* Equals maximum image height */
+        width: 160px;
+        border: 1px solid red;
+        white-space: nowrap; /* This is required unless you put the helper span closely near the img */
+        text-align: center;
+        margin: 1em 0;
+        }
+
+        .helper {
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+        }
+
+        image {
+        background: #e20118;
+        vertical-align: middle;
+        max-height: 25px;
+        max-width: 160px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div style="background-color:#e20118" id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h2 class="m-0 text-primary">
+                <img src="img/NEW.jpg" width="110" height="75">
+            </h2>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <div class="nav-item nav-link">
+                    <div class="search-container">
+                        <input type="text" id="searchInput" placeholder="Search...">
+                        <button id="searchButton">Search</button>
+                        <div id="results"></div>
+                    </div>
+                </div>   
+                <a href="index.html"  class="nav-item nav-link active">Home</a>
+                <a href="GSA.html" class="nav-item nav-link">Guest Services Agent</a>
+                <a href="NA.html" class="nav-item nav-link">Night Audit</a>
+                <a href="Res.html" class="nav-item nav-link">Reservations</a>
+                <a href="General.html" class="nav-item nav-link">General Knowledge</a>
+                <div class="nav-item nav-link dropdown">
+                    <a href="contacts.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Contacts</a>
+                    <div class="dropdown-menu fade-down m-0" style="right:0">
+                        <a href="StaffContacts.html" class="dropdown-item">Staff Contacts</a>
+                        <a href="ContractorContacts.html" class="dropdown-item">Contractor Contacts</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Main Page Start -->
+
+    <div class="container-xxl py-5">
+
+        <button onclick="history.back()">Back</button></p>
+
+        <div class="container">
+            <div>
+                <div class="col wow fadeInUp" data-wow-delay="0.1s" style="min-height: 50px;">
+                </div>
+                <div class="col wow fadeInUp" data-wow-delay="0.3s">
+                    <h2 class="section-title bg-white text-start text-primary pe-3">iHMS</h2>
+
+                    <p class="mb-4">Let's take a look at iHMS.</p>
+                    <p class="mb-4">This is what you will see when you first log on:</p>
+                    <img src="img/iHMS.png" width="90%"></p>
+                    
+                    <div class="switchcontainer">
+                        <div class="vertical-center">
+                            <h4 class="section-title bg-white text-start text-primary pe-3">Rooms</h4>
+                            <p class="mb-4">The first element you'll notice upon logging in, is the "Rooms" section.</p>
+                            <p class="mb-4">The Physical Rooms shows how many guest rooms the hotel has.</p>
+                            <p class="mb-4">Inventory Rooms refers to how many rooms are in our inventory.</p>
+                            <p class="mb-4">Out of Order is the rooms which are currently blocked for maintenance or other issues.</p>
+                            <p class="mb-4">Out of Service means that a room is temporarily unavailable. It may be a "Carry" room, or it may require some other attention.</p>
+                        </div>
+                        <img src="img/iHMS_rooms.png" class="floatright">
+                      </div>
+                      
+                      <div class="switchcontainer">
+                        <img src="img/iHMS_arrivals.png" class="floatleft">
+                        <div class="vertical-center">
+                            <h4 class="section-title bg-white text-start text-primary pe-3">Arrivals</h4>
+                            <p class="mb-4">The Arrivals section covers all reservations expected to <b>check <i><u>in</u></i></b> today.</p>
+                            <p class="mb-4">The Groups column shows the incoming groups. In this example, there is <b>one</b> group with <b>two</b> rooms booked, and they have both checked in.</p>
+                            <p class="mb-4">The acronym FIT means Fully Independent Traveller, which refers to people who are not affiliated with a Travel Agency, Company or Group.</p>
+                            <p class="mb-4">In our example, 68 rooms were expected to check in. 19 have already checked in, leaving 49 still to come.</p>
+                            <p class="mb-4">The Total section is the overview of the Arrivals. There were 70 expected check ins, 21 have checked in, and 49 are still to arrive.</p>
+                        </div>
+                      </div>
+
+                      <div class="switchcontainer">
+                        <div class="vertical-center">
+                            <h4 class="section-title bg-white text-start text-primary pe-3">Room Status</h4>
+                            <p class="mb-4">The Room Status section gives a quick overview of what condition the rooms are in.</p>
+                            <p class="mb-4">In this example, we can see that there are 2 clean rooms which are occupied, none are due to depart, 26 are vacant, and none are blocked.</p>
+                            <p class="mb-4">When it comes to our dirty rooms, 57 are occupied, none are due to depart, 74 are vacant, and none are blocked.</p>
+                            <p class="mb-4">Rooms marked Dirty / Occupied will likely be guests who have already stayed overnight.</p>
+                            <p class="mb-4">Vacant / Dirty rooms will be rooms that have been vacated, but not yet cleaned.</p>
+                        </div>
+                            <img src="img/iHMS_rmstatus.png" class="floatright">
+                      </div>
+                    
+                      <div class="switchcontainer">
+                        <img src="img/iHMS_departure.png" class="floatleft">
+                        <div class="vertical-center">
+                            <h4 class="section-title bg-white text-start text-primary pe-3">Departures</h4>
+                            <p class="mb-4">Much like the Arrivals section, the Departure module shows all the rooms expected to <b>check <i><u>out</u></i></b> today.</p>
+                            <p class="mb-4">In this examle, we can see that there were 56 check outs expected today.</p>
+                            <p class="mb-4">The actual check out number is also 56, meaning that all of our expected check-outs have already departed.</p>
+                            <p class="mb-4">The Due to Depart section shows 0, meaning there are no more check outs for the day.</p>
+                        </div>
+                      </div>
+
+                      <div class="switchcontainer">
+                        <div class="vertical-center">
+                            <h4 class="section-title bg-white text-start text-primary pe-3">VIP / Rewards Guest</h4>
+                            <p class="mb-4">The VIP / Rewards Guest element shows our arriving VIPs and GC Rewards members.</p>
+                            <p class="mb-4">As we can see from this example, we are expecting 3 VIP Guests.</p>
+                            <p class="mb-4">1 VIP Guest has already arrived.</p>
+                            <p class="mb-4">We're expecting 69 GC Rewards guests.</p>
+                            <p class="mb-4">20 of our expected GC Rewards guests have already arrived.</p>
+                        </div>
+                            <img src="img/iHMS_VIPs.png" class="floatright">
+                      </div>
+        
+                      <div class="switchcontainer">
+                          <img src="img/iHMS_live.png" class="floatleft">
+                              <div class="vertical-center">
+                                  <h4 class="section-title bg-white text-start text-primary pe-3">Live Status</h4>
+                                  <p class="mb-4">This section gives us an overview of what's happening in the venue right at this moment.</p>
+                                  <p class="mb-4">Here we can see that there are currently 59 guests in house.</p>
+                                  <p class="mb-4">There are 108 reservations in the system for today.</p>
+                                  <p class="mb-4">Our current occupancy percentage is 36.88%, <b><u><i>including</i></u></b> Out of Order rooms.</p>
+                                  <p class="mb-4"><b><u><i>Not</i></u></b> including Out of Order rooms, our occupancy is still at 36.88%.</p>
+                              </div>
+                      </div>
+
+                      <div class="switchcontainer">
+                          <div class="vertical-center">
+                              <h4 class="section-title bg-white text-start text-primary pe-3">Forecast</h4>
+                              <p class="mb-4">The forecast section isn't necessarily relevant to you, but it's good to understand what it means.</p>
+                              <p class="mb-4">Today, there are 108 rooms booked.</p>
+                              <p class="mb-4">We're expecting to have 175 adults, and 13 children in house.</p>
+                              <p class="mb-4">There are 52 rooms available after the expected bookings check in.</p>
+                              <p class="mb-4">It's expected that we will make a total of $14,174.97 from today's bookings.</p>
+                              <p class="mb-4">Our occupancy percentage - <b><u><i>including</i></u></b> our pending arrivals - is 67.5%.</p>
+                              <p class="mb-4">That percentage <b><u><i>excluding</i></u></b> pending arrivals is still 67.5%</p>
+                              <p class="mb-4">On average, our rooms today are priced at $131.25</p>
+                          </div>
+                              <img src="img/iHMS_forecast.png" class="floatright">
+                        </div>
+        
+                        <div class="switchcontainer">
+                            <img src="img/iHMS_history.png" class="floatleft">
+                                <div class="vertical-center">
+                                    <h4 class="section-title bg-white text-start text-primary pe-3">History & Forecast</h4>
+                                    <p class="mb-4">Like the Forecast, the History & Forecast section is not really relevant to you, but is still useful to know.</p>
+                                    <p class="mb-4">This chart shows the Average Room Rate, RevPAR (Revenue Per Available Room), and Occupancy for the current month.</p>
+                                    <p class="mb-4">The Average Room Rate is shown in red. On the 31st of July, 2024 the Average Room Rate was $139.58.</p>
+                                    <p class="mb-4">The RevPAR is in orange. It was 57.58 at the end of July in 2024.</p>
+                                    <p class="mb-4">The Occupancy percentage is in blue. The average occupancy percentage for 31/07/2024 was 41.25%.</p>
+                                </div>
+                        </div>
+                        
+                        <div class="switchcontainer">
+                            <div class="vertical-center">
+                                <h4 class="section-title bg-white text-start text-primary pe-3">Notifications</h4>
+                                <p class="mb-4">The Notifications section is where the tasks for the day will be displayed.</p>
+                                <p class="mb-4">These tasks will need to be addressed by the relevant department as requested in the task.</p>
+                            </div>
+                                <img src="img/iHMS_notifications.png" class="floatright">
+                        </div>
+        
+                        <div class="switchcontainer">
+                            <img src="img/iHMS_segments.png" class="floatleft">
+                                <div class="vertical-center">
+                                    <h4 class="section-title bg-white text-start text-primary pe-3">Market Segments</h4>
+                                    <p class="mb-4">This chart shows which market segment is most prevalent today.</p>
+                                    <p class="mb-4">In our example, the bulk of our guests today are under the Int Leis segment.</p>
+                                    <p class="mb-4">Folios under this segment are spending a total of $7,455.60.</p>
+                                    <p class="mb-4">As mentioned in the Forecast section, our total revenue for the day is $14,174.97.</p>
+                                </div>
+                        </div>
+
+                        <div class="switchcontainer">
+                            <div class="vertical-center">
+                                <h4 class="section-title bg-white text-start text-primary pe-3">Guest Requests</h4>
+                                <p class="mb-4">Any requests made by guests will show up in this section.</p>
+                                <p class="mb-4">As with the Notifications, these will need to be actioned as required.</p>
+                            </div>
+                                <img src="img/iHMS_requests.png" class="floatright">
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <!-- Main Page End -->
+
+    <!-- Footer Start -->
+    <div style="background-color:black" class="container-fluid text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-md-6">
+                    <h4 class="text-white mb-3">Quick Links</h4>
+                    <a class="btn btn-link" href="index.html">Home</a>
+                    <a class="btn btn-link" href="GSA.html">Guest Services Agent</a>
+                    <a class="btn btn-link" href="NA.html">Night Audit</a>
+                    <a class="btn btn-link" href="Res.html">Reservations</a>
+                    <a class="btn btn-link" href="General.html">General Knowledge</a>
+                    <a class="btn btn-link" href="contacts.html">Contacts</a>
+                </div>
+                <div class="col-md-6">
+                    <h4 class="text-white mb-3">Contact</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>131 Lonsdale Street, Melbourne 3000</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>(03) 9656 4000</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>https://www.grandchancellorhotels.com/hotel-grand-chancellor-melbourne</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">HGC Melbourne Knowledge Portal</a>, All Rights Reserved.
+
+                        Designed By Andrew Edwards 2024
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/searchbar.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

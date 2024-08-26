@@ -287,7 +287,7 @@ div.c {
 }
 
 /*** Center Images ***/
-img {
+img.center {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -310,7 +310,6 @@ button {
 
 .center {
     margin: auto;
-    width: 50%;
     padding: 10px;
 }
 
@@ -324,4 +323,23 @@ figcaption {
     font-size: small;
     padding: 2px;
     text-align: center;
+}
+
+.switchcontainer {
+    display: flex;
+    align-items: center; /* Vertically center content */
+    justify-content: space-between; /* Distribute space between child elements */
+    padding: 10px; /* Add padding to make the content breathe */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    margin-bottom: 20px; /* Add space between the switchcontainers */
+}
+
+.vertical-center {
+    flex-grow: 1; /* Allow text to take up remaining space */
+}
+
+.floatright, .floatleft {
+    max-width: 40%; /* Set max width of images */
+    margin: 0 15px; /* Add margin to the images */
+    border: 1px solid #000000; /* Add border to images */
 }

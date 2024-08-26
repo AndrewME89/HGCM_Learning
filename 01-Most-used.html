@@ -108,32 +108,71 @@
     </tbody></table></p>
 
     <!-- Video Playback -->
-<div id="VideoOuter">
-    <div class="sizing-div">
-      <div id="Video" class="constant-ratio">
-            <center>
-                <video controls>
-                <source src="vid/PendingArrivals.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video>
-            </center>
+    <div id="VideoOuter">
+        <div class="sizing-div">
+        <div id="Video" class="constant-ratio">
+                <center>
+                    <video controls>
+                    <source src="vid/PendingArrivals.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+                </center>
+            </div>
         </div>
     </div>
-</div>
 
     <!-- Floating Image Vert. Center in div -->
-        <div class="switchcontainer">
+    <div class="switchcontainer">
+        <div class="vertical-center">
+            <h4 class="section-title bg-white text-start text-primary pe-3">Right Align</h4>
+            <p class="mb-4"></p>
+        </div>
+            <img src="" class="floatright">
+        </div>
+    
+    <div class="switchcontainer">
+        <img src="" class="floatleft">
             <div class="vertical-center">
-                <h4 class="section-title bg-white text-start text-primary pe-3">Right Align</h4>
+                <h4 class="section-title bg-white text-start text-primary pe-3">Left Align</h4>
                 <p class="mb-4"></p>
             </div>
-                <img src="" class="floatright">
-          </div>
-        
-        <div class="switchcontainer">
-            <img src="" class="floatleft">
-                <div class="vertical-center">
-                    <h4 class="section-title bg-white text-start text-primary pe-3">Left Align</h4>
+    </div>
+
+    <!-- Slideshow Start -->
+    <div class="container-slideshow">
+        <div id="presentation-area">
+            <section class="presentation">
+                <div class="slide show">
+
+                        <!-- Slide 01 -->
+                    <div class="heading"></div>
+                    <div class="content">
                     <p class="mb-4"></p>
+                    <ul>
+                    <li></li></p>
+                    </ul>
+                    </div>
                 </div>
+            </section>
+
+            <section class="counter">
+            1 of 1
+            </section>
+
+            <section class="navigation">
+
+            <button id="small-screen" class="btn-screen">
+                <i class="fas fa-compress"></i>
+            </button>
+
+            <button id="left-btn" class="btn">
+                <i class="fas fa-solid fa-caret-left"></i>
+            </button>
+
+            <button id="right-btn" class="btn">
+                <i class="fa-solid fa-caret-right"></i>
+            </button>
+            </section>
         </div>
+    </div>
+    <!-- Slideshow End -->
