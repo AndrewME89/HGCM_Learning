@@ -1,0 +1,22 @@
+
+<div id="VideoOuter">
+    <div class="sizing-div">
+      <div id="Video" class="constant-ratio">
+            <center>
+                <video controls>
+                <source src="vid/PendingArrivals.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video>
+            </center>
+        </div>
+    </div>
+</div>
+
+<form id="sarchform" class="search2" method="get" action="source.html" />
+<input class="search2" id="test" type="text" name="search" size="10" maxlength="255"/>
+<script type="text/javascript">
+    document.getElementById('searchform').onsubmit = function() {
+        window.location = 'http://www.google.com/search?q=site:yourdomainname ' + document.getElementById('test').value;
+        return false;
+    }
+</script>

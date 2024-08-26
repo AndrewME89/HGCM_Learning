@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site-wide Title Search</title>
+    <style>
+        #results {
+            margin-top: 20px;
+        }
+        .result {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        .result a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        .result a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Search Page Titles</h1>
+    <input type="text" id="searchInput" placeholder="Search...">
+    <button id="searchButton">Search</button>
+
+    <div id="results"></div>
+
+    <script>
+        document.getElementById('searchButton').addEventListener('click', function() {
+            const query = document.getElementById('searchInput').value.toLowerCase();
+            const resultsDiv = document.getElementById('results');
+            resultsDiv.innerHTML = ''; // Clear previous results
+
+            if (query) {
+                fetch('https://andrewme89.github.io/HGCM_Learning/sitemap.xml')
+                    .then(response => response.text())
+                    .then(xmlText => {
+                        const parser = new DOMParser();
+                        const xmlDoc = parser.parseFromString(xmlText, 'application/xml');
+                        const urls = Array.from(xmlDoc.getElementsByTagName('loc')).map(loc => loc.textContent);
+
+                        urls.forEach(page => {
+                            fetch(page)
+                                .then(response => response.text())
+                                .then(html => {
+                                    const doc = parser.parseFromString(html, 'text/html');
+                                    const title = doc.querySelector('title').innerText.toLowerCase();
+
+                                    if (title.includes(query)) {
+                                        resultsDiv.innerHTML += `
+                                            <div class="result">
+                                                <a href="${page}" target="_blank">${doc.querySelector('title').innerText}</a>
+                                            </div>
+                                        `;
+                                    }
+                                })
+                                .catch(error => {
+                                    console.error('Error fetching page:', page, error);
+                                });
+                        });
+                    })
+                    .catch(error => {
+                        console.error('Error fetching sitemap:', error);
+                        resultsDiv.innerHTML = '<div class="result">Could not fetch sitemap.</div>';
+                    });
+            } else {
+                resultsDiv.innerHTML = '<div class="result">Please enter a search term.</div>';
+            }
+        });
+
+        document.getElementById('searchInput').addEventListener('keypress', function(event) {
+            if (event.key === 'Enter') {
+                document.getElementById('searchButton').click();
+            }
+        });
+    </script>
+</body>
+</html>

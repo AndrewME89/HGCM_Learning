@@ -32,24 +32,7 @@
     <link href="css/style.css" rel="stylesheet">
 
     <!-- Searchbar Stylesheet -->
-    <link href="css/searchbar.css" rel="stylesheet">
-
-    <style>
-        div.a {
-          text-indent: 50px;
-        }
-        div.b {
-          text-indent: 100px;
-        }
-    </style>
-
-    <style>
-        img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        }
-    </style>
+    <link href="css/searchbar.css" rel="stylesheet">    
 
 </head>
 
@@ -66,9 +49,7 @@
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
         <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <h2 class="m-0 text-primary">
-                <img src="img/NEW.jpg" width="110" height="75">
-            </h2>
+            <h2 class="m-0 text-primary"><img src="img/NEW.jpg" width="110" height="75"></h2>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -79,16 +60,9 @@
                     <div class="search-container">
                         <input type="text" id="searchInput" placeholder="Search...">
                         <button id="searchButton">Search</button>
-                        <div id="results" class="dropdown-menu fade-down m-0" data-bs-toggle="dropdown" aria-expanded="false"></div> <!-- Make sure this matches -->
+                        <div id="results"></div>
                     </div>
-                </div>    
-                <div class="nav-item nav-link">
-                    <div class="search-container">
-                        <input type="text" id="searchInput" placeholder="Search...">
-                        <button id="searchButton">Search</button>
-                        <div id="results" class="dropdown-menu fade-down m-0" data-bs-toggle="dropdown" aria-expanded="false"></div> <!-- Make sure this matches -->
-                    </div>
-                </div>    
+                </div>   
                 <a href="index.html"  class="nav-item nav-link active">Home</a>
                 <a href="GSA.html" class="nav-item nav-link">Guest Services Agent</a>
                 <a href="NA.html" class="nav-item nav-link">Night Audit</a>

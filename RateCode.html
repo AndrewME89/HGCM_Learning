@@ -35,23 +35,6 @@
     <link href="css/searchbar.css" rel="stylesheet">
 
     <style>
-        div.a {
-          text-indent: 50px;
-        }
-        div.b {
-          text-indent: 100px;
-        }
-    </style>
-
-    <style>
-        img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        }
-    </style>    
-
-    <style>
         table {
         font-family: arial, sans-serif;
         border-collapse: collapse;
@@ -137,23 +120,34 @@
                 <div class="col wow fadeInUp" data-wow-delay="0.3s">
                     <h2 class="section-title bg-white text-start text-primary pe-3">Rate Codes</h2>
                     <p class="mb-4">The rate for each room depends on what has been quoted, and needs to be adjusted accordingly when making reservations.</p>
-                    <table class="tableizer-table">
-                    <thead><tr class="tableizer-firstrow"><th>Rate Code</th><th>Description</th><th>Notes</th></tr></thead><tbody>
-                     <tr><td>ACMRO</td><td>ACMRO RO</td><td>SUPQ 150 RO</td></tr>
-                     <tr><td>ACMROB1</td><td>ACMRO B1</td><td>SUPQ 170 B1</td></tr>
-                     <tr><td>GDSBARBB</td><td>GDS Bar Includes Full Buffet Breakfast (GDS)</td><td>GDS Bar Includes Full Buffet Breakfast (GDS)</td></tr>
-                     <tr><td>GDSBARRO</td><td>GDS Bar Room Only Rate (GDS)</td><td>GDS Bar Room Only Rate (GDS)</td></tr>
-                     <tr><td>GDSPROMO</td><td>GDS Promotional Rates - No Refunds (GDS)</td><td>GDS Promotional Rates - No Refunds (GDS)</td></tr>
-                     <tr><td>GOVBB</td><td>GOVBB 190/200/210/220/235</td><td>GOVBB 190/200/210/220/235</td></tr>
-                     <tr><td>GOVRO</td><td>GOVRO 180/190/200/210/225</td><td>GOVRO 180/190/200/210/225</td></tr>
-                     <tr><td>INTBARBB</td><td>Internet Bed & Breakfast (1 Or 2 Pax) *Flexible Rate - Please Adjust*</td><td>Includes Full Buffet Breakfast For Up To 2 Pax</td></tr>
-                     <tr><td>INTBARRO</td><td>Internet Room Only Best Available Rate</td><td>*Flexible Rate - Please Adjust*</td></tr>
-                     <tr><td>INTSAVERBB</td><td>Internet BB **Saver Rate**</td><td>Internet BB - *Saver Rate*</td></tr>
-                     <tr><td>INTSAVERRO</td><td>Internet Saver Room Only Rate</td><td>*Flexible Rate - Please Adjust*</td></tr>
-                     <tr><td>LEIBARBB</td><td>Leisure Bed & Breakfast (1 Or 2 Pax) *Flexible Rate - Please Adjust*</td><td>Includes Full Buffet Breakfast For Up To 2 Pax</td></tr>
-                     <tr><td>LEIBARRO</td><td>Leisure Room Only Best Available Rate</td><td>Leisure Room Only Best Available Rate</td></tr>
-                     <tr><td>ZZCOMP</td><td>Complimentary RO</td><td></td></tr>
-                    </tbody></table>
+                    <ul>
+                        <li><strong>GOVBB &ndash; </strong>This stands for a Government rate INCLUSIVE of breakfast&nbsp;</li></p>
+                        <li><strong>GOVRO &ndash; </strong>This stands for Government rate ROOM ONLY</li></p>
+                        <li><strong>INTBARBB &ndash; </strong>This stands for Internet booking BAR rate (flexible up until 24 hours to cancel) INCLUSIVE of breakfast</li></p>
+                        <li><strong>INTBARRO &ndash; </strong>This stands for Internet booking BAR rate (flexible up until 24 hours to cancel) ROOM ONLY</li></p>
+                        <li><strong>INTSAVERBB &ndash; </strong>This stands for Internet booking SAVER rate (non-refundable rate) INCLUSIVE of breakfast</li></p>
+                        <li><strong>INTSAVERRO &ndash; </strong>This stands for Internet booking SAVER rate (non-refundable rate) ROOM ONLY&nbsp;</li></p>
+                        <li><strong>LEIBARBB </strong>&ndash; This stands for Leisure bookings BAR rate (flexible up to 24 hour to cancel) INCLUSIVE of breakfast. When making private bookings and direct reservations, the rate code to choose will <strong>always </strong>be either LEIBARBB or LEIBARRO (depending on the rate chosen)</li></p>
+                        <li><strong>LEIBARRO &ndash; </strong>This stands for Leisure bookings BAR rate (flexible up to 24 hours to cancel) ROOM ONLY</li></p>
+                        <li><strong>ZZCOMP &ndash; </strong>This will be used for any FOC rooms or Virtual folios you create</li></p>
+                    </ul>
+                        <table class="tableizer-table">
+                            <thead><tr class="tableizer-firstrow"><th>Rate Code</th><th>Description</th><th>Notes</th></tr></thead><tbody>
+                            <tr><td>ACMRO</td><td>ACMRO RO</td><td>SUPQ 150 RO</td></tr>
+                            <tr><td>ACMROB1</td><td>ACMRO B1</td><td>SUPQ 170 B1</td></tr>
+                            <tr><td>GDSBARBB</td><td>GDS Bar Includes Full Buffet Breakfast (GDS)</td><td>GDS Bar Includes Full Buffet Breakfast (GDS)</td></tr>
+                            <tr><td>GDSBARRO</td><td>GDS Bar Room Only Rate (GDS)</td><td>GDS Bar Room Only Rate (GDS)</td></tr>
+                            <tr><td>GDSPROMO</td><td>GDS Promotional Rates - No Refunds (GDS)</td><td>GDS Promotional Rates - No Refunds (GDS)</td></tr>
+                            <tr><td>GOVBB</td><td>GOVBB 190/200/210/220/235</td><td>GOVBB 190/200/210/220/235</td></tr>
+                            <tr><td>GOVRO</td><td>GOVRO 180/190/200/210/225</td><td>GOVRO 180/190/200/210/225</td></tr>
+                            <tr><td>INTBARBB</td><td>Internet Bed & Breakfast (1 Or 2 Pax) *Flexible Rate - Please Adjust*</td><td>Includes Full Buffet Breakfast For Up To 2 Pax</td></tr>
+                            <tr><td>INTBARRO</td><td>Internet Room Only Best Available Rate</td><td>*Flexible Rate - Please Adjust*</td></tr>
+                            <tr><td>INTSAVERBB</td><td>Internet BB **Saver Rate**</td><td>Internet BB - *Saver Rate*</td></tr>
+                            <tr><td>INTSAVERRO</td><td>Internet Saver Room Only Rate</td><td>*Flexible Rate - Please Adjust*</td></tr>
+                            <tr><td>LEIBARBB</td><td>Leisure Bed & Breakfast (1 Or 2 Pax) *Flexible Rate - Please Adjust*</td><td>Includes Full Buffet Breakfast For Up To 2 Pax</td></tr>
+                            <tr><td>LEIBARRO</td><td>Leisure Room Only Best Available Rate</td><td>Leisure Room Only Best Available Rate</td></tr>
+                            <tr><td>ZZCOMP</td><td>Complimentary RO</td><td></td></tr>
+                        </tbody></table>
                     <p class="mb-4"></p>
                     <p class="mb-4"></p>
                     <p class="mb-4"></p>
