@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>VIP Status</title>
+
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -32,7 +33,10 @@
     <link href="css/style.css" rel="stylesheet">
 
     <!-- Searchbar Stylesheet -->
-    <link href="css/searchbar.css" rel="stylesheet">    
+    <link href="css/searchbar.css" rel="stylesheet">
+
+    <!-- Excel Spreadsheet Stylesheet -->
+    <link href="css/ExcelSheetStylesheet.css" rel="stylesheet">
 
 </head>
 
@@ -57,18 +61,18 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <div class="nav-item nav-link">
-                    <div class="search-container">
+<div class="search-container">
                         <input type="text" id="searchInput" placeholder="Search...">
                         <button id="searchButton">Search</button>
                         <div id="results"></div>
                     </div>
-                </div>   
+                </div>    
                 <a href="index.html"  class="nav-item nav-link active">Home</a>
                 <a href="GSA.html" class="nav-item nav-link">Guest Services Agent</a>
                 <a href="NA.html" class="nav-item nav-link">Night Audit</a>
                 <a href="Res.html" class="nav-item nav-link">Reservations</a>
                 <a href="General.html" class="nav-item nav-link">General Knowledge</a>
-                <div class="nav-item nav-link dropdown">
+                <div class="nav-item dropdown">
                     <a href="contacts.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Contacts</a>
                     <div class="dropdown-menu fade-down m-0" style="right:0">
                         <a href="StaffContacts.html" class="dropdown-item">Staff Contacts</a>
@@ -92,92 +96,113 @@
                 </div>
                 <div class="col wow fadeInUp" data-wow-delay="0.3s">
                     <h2 class="section-title bg-white text-start text-primary pe-3">VIP Status</h2>
-                    <p class="mb-4">Below is the table with explanations relative to the VIP status</p>
-                        <table border="1" width="353" cellspacing="0" cellpadding="7">
-                            <tbody>
-                            <tr>
-                                <td colspan="2" width="73" height="6">
-                                    <p class="mb-4"><em><u><strong>VIP STATUS</strong></u></em></p>
-                                </td>
+                    <p class="mb-4">The goal of our VIP Guest Amenities Program is to provide exceptional service and create memorable experiences for our valued guests. We aim to make them feel special and appreciated, fostering loyalty and encouraging repeat visits.</p>
+
+                    <h5>VIP Status and Amenities</h5>
+
+                    <p class="mb-4">The following table outlines the different VIP statuses and associated amenities:</p>
+
+                    <table class="center" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse; table-layout: fixed;">
+                        <colgroup>
+                            <col class="xl65" width="auto">
+                            <col class="xl65" width="auto">
+                        </colgroup>
+                        <thead>
+                            <tr height="20" style="height: 15.0pt;">
+                                <th class="xl68" width="50%" style="height: 15.0pt;">GUEST STATUS</th>
+                                <th class="xl68" width="50%" style="height: 15.0pt;">DESCRIPTION</th>
                             </tr>
-                            <tr>
-                                <td width="73" height="6">
-                                    <p class="mb-4">VIP 1</p>
-                                </td>
-                                <td width="253">
-                                    <p class="mb-4">Very Important Guest</p>
-                                </td>
+                        </thead>
+                        <tbody>
+                            <tr height="20" style="height: 15.0pt;">
+                                <td class="xl66" style="height: 15.0pt;">VIP1</td>
+                                <td class="xl66" style="height: 15.0pt;">Very Important Guest</td>
                             </tr>
-                            <tr>
-                                <td width="73" height="6">
-                                    <p class="mb-4">VIP 2</p>
-                                </td>
-                                <td width="253">
-                                    <p class="mb-4">Anniversary Card and House Wine</p>
-                                </td>
+                            <tr height="20" style="height: 15.0pt;">
+                                <td class="xl66" style="height: 15.0pt;">VIP2</td>
+                                <td class="xl66" style="height: 15.0pt;">Anniversary Card and House Wine</td>
                             </tr>
-                            <tr>
-                                <td width="73" height="6">
-                                    <p class="mb-4">VIP 3</p>
-                                </td>
-                                <td width="253">
-                                    <p class="mb-4">Birthday Card and Birthday Plate</p>
-                                </td>
+                            <tr height="20" style="height: 15.0pt;">
+                                <td class="xl66" style="height: 15.0pt;">VIP3</td>
+                                <td class="xl66" style="height: 15.0pt;">Birthday Card and Birthday Plate</td>
                             </tr>
-                            <tr>
-                                <td width="73" height="6">
-                                    <p class="mb-4">VIP 4</p>
-                                </td>
-                                <td width="253">
-                                    <p class="mb-4">Complaint Guest</p>
-                                </td>
+                            <tr height="20" style="height: 15.0pt;">
+                                <td class="xl66" style="height: 15.0pt;">VIP4</td>
+                                <td class="xl66" style="height: 15.0pt;">Complaint Guest</td>
                             </tr>
-                            <tr>
-                                <td width="73" height="6">
-                                    <p class="mb-4">VIP 5</p>
-                                </td>
-                                <td width="253">
-                                    <p class="mb-4">GC rewards Member</p>
-                                </td>
+                            <tr height="20" style="height: 15.0pt;">
+                                <td class="xl66" style="height: 15.0pt;">VIP5</td>
+                                <td class="xl66" style="height: 15.0pt;">GC Rewards Member</td>
                             </tr>
-                            <tr>
-                                <td width="73" height="6">
-                                    <p class="mb-4">VIP 6</p>
-                                </td>
-                                <td width="253">
-                                    <p class="mb-4">Return Guest</p>
-                                </td>
+                            <tr height="20" style="height: 15.0pt;">
+                                <td class="xl66" style="height: 15.0pt;">VIP6</td>
+                                <td class="xl66" style="height: 15.0pt;">Return Guest</td>
                             </tr>
-                            <tr>
-                                <td width="73" height="6">
-                                    <p class="mb-4">No Show</p>
-                                </td>
-                                <td width="253">
-                                    <p class="mb-4">Guest did not turn up</p>
-                                </td>
+                            <tr height="20" style="height: 15.0pt;">
+                                <td class="xl66" style="height: 15.0pt;">VIP10</td>
+                                <td class="xl66" style="height: 15.0pt;">Corporate Guest</td>
                             </tr>
-                            <tr>
-                                <td width="73" height="6">
-                                    <p class="mb-4">BTP</p>
-                                </td>
-                                <td width="253">
-                                    <p class="mb-4">Business Travel Partner</p>
-                                </td>
+                            <tr height="20" style="height: 15.0pt;">
+                                <td class="xl66" style="height: 15.0pt;">VIP11</td>
+                                <td class="xl66" style="height: 15.0pt;">Leisure Guest</td>
                             </tr>
-                            <tr>
-                                <td width="73" height="5">
-                                    <p class="mb-4">BLACK</p>
-                                </td>
-                                <td width="253">
-                                    <p class="mb-4">Black listed Guest</p>
-                                </td>
+                            <tr height="20" style="height: 15.0pt;">
+                                <td class="xl66" style="height: 15.0pt;">NOSHOW</td>
+                                <td class="xl66" style="height: 15.0pt;">Guest did not turn up</td>
                             </tr>
-                            </tbody>
-                        </table><br>
-                        <ul>
-                            <li>Change the status from Normal to ____(appropriate status)<br /><br /></li>
-                            <li>The majority of bookings you will make will be VIP 11 (Leisure guests)</li>
-                        </ul>
+                            <tr height="20" style="height: 15.0pt;">
+                                <td class="xl66" style="height: 15.0pt;">BTP</td>
+                                <td class="xl66" style="height: 15.0pt;">Business Travel Partner</td>
+                            </tr>
+                            <tr height="20" style="height: 15.0pt;">
+                                <td class="xl66" style="height: 15.0pt;">BLACK</td>
+                                <td class="xl66" style="height: 15.0pt;">Blacklisted Guest</td>
+                            </tr>
+                        </tbody>
+                    </table></p>
+                    
+
+                    <h5>Standard VIP Amenities</h5>
+
+                    <p class="mb-4">All guests with VIP status (excluding No Show, BTP, and BLACKLIST) receive:</p>
+                    <ul>
+                    <li>Card</li></p>
+                    <li>Sparkling and Still Water</li></p>
+                    <li>Dressing Gown</li></p>
+                    <li>Slippers</li></p>
+                    </ul>
+
+                    <p class="mb-4">Additionally, return guests from their 5th stay onwards will also receive chocolates.</p>
+
+                    <h5>Upgrading VIP Status</h5>
+
+                    <p class="mb-4">If a guest stays frequently, the Front Office should reassess their VIP status. For instance, if a guest reaches 100 stays, the Front Office and Reservations Manager may upgrade their status from VIP 6 to VIP 1.</p>
+
+                    <h5>Return Guest Procedures</h5>
+
+                    <ul>
+                    <li>Upon arrival, present returning guests with a signed letter from Michelle, inquiring about their preferences to enhance their stay.</li></p>
+                    <li>Update the guest's profile in HMS to reflect their preferences.</li></p>
+                    <li>For guests declining GC Rewards membership, add "DECLINED" to their folio:</li></p>
+                    <ul>
+                    <li>Right-click the guest's name and select "Edit."</li></p>
+                    <li>Go to the "Personal/Preference" tab.</li></p>
+                    <li>Right-click in the blue "Loyalty Card" box and add "DECLINED."</li></p>
+                    <li>Add a note under the "Special Instruction" tab to indicate whether the guest was offered or declined GC Rewards.</li></p>
+                    </ul>
+                    <li>For guests accepting GC Rewards membership, follow the same process but add their generated GC number.</li></p>
+                    <li>Scan and save the signed letter in the M Drive under the guest's name for future reference.</li></p>
+                    </ul>
+
+                    <h5>GC Rewards</h5>
+                    <ul>
+                    <li>Guests staying for 2 nights should be invited to join the GC Rewards program. The PM Duty Manager updates the GC spreadsheet each shift while handling VIP arrivals. The Night GSA handwrites GC invitation cards (existing SOP applies).</li></p>
+                    <li>Return guests receive amenities every 5 stays based on their preferences from the survey letter. On other stays, provide a welcome back card and Haigh's chocolates.</li></p>
+                    </ul>
+
+                    <h5>Room Upgrades & Inspections</h5>
+
+                    <p class="mb-4">All guests with VIP status are eligible for room upgrades when available. Housekeeping, Maintenance, and Front Office should inspect the room before arrival.</p>
                 </div>
             </div>
         </div>

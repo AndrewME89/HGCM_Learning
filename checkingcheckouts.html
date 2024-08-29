@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Home</title>
+    <title>Ensure That All Guests Have Checked Out</title>
+
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -32,7 +33,10 @@
     <link href="css/style.css" rel="stylesheet">
 
     <!-- Searchbar Stylesheet -->
-    <link href="css/searchbar.css" rel="stylesheet">    
+    <link href="css/searchbar.css" rel="stylesheet">
+
+    <!-- Excel Spreadsheet Stylesheet -->
+    <link href="css/ExcelSheetStylesheet.css" rel="stylesheet">
 
 </head>
 
@@ -57,18 +61,18 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <div class="nav-item nav-link">
-                    <div class="search-container">
+<div class="search-container">
                         <input type="text" id="searchInput" placeholder="Search...">
                         <button id="searchButton">Search</button>
                         <div id="results"></div>
                     </div>
-                </div>   
+                </div>    
                 <a href="index.html"  class="nav-item nav-link active">Home</a>
                 <a href="GSA.html" class="nav-item nav-link">Guest Services Agent</a>
                 <a href="NA.html" class="nav-item nav-link">Night Audit</a>
                 <a href="Res.html" class="nav-item nav-link">Reservations</a>
                 <a href="General.html" class="nav-item nav-link">General Knowledge</a>
-                <div class="nav-item nav-link dropdown">
+                <div class="nav-item dropdown">
                     <a href="contacts.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Contacts</a>
                     <div class="dropdown-menu fade-down m-0" style="right:0">
                         <a href="StaffContacts.html" class="dropdown-item">Staff Contacts</a>
@@ -91,7 +95,38 @@
                 <div class="col wow fadeInUp" data-wow-delay="0.1s" style="min-height: 50px;">
                 </div>
                 <div class="col wow fadeInUp" data-wow-delay="0.3s">
-                    <h2 class="section-title bg-white text-start text-primary pe-3"></h2>
+                    <h2 class="section-title bg-white text-start text-primary pe-3">Ensure That All Guests Have Checked Out By 11:00 AM / 12:00 PM</h2>
+                    <p class="mb-4">At approximately 11:15 AM, generate the Expected Departure Summary Report (<b>Reports &rarr; Departures &rarr; Expected Departure Summary</b>) to identify rooms scheduled for departure today.</p>
+                        <ul>
+                            <li>For guests with approved late checkouts, note the requested departure time next to their room number on the report.</li></p>
+                        </ul>
+                        <h5><b>Follow-up on Unchecked Rooms</b></h5>
+                        <p class="mb-4">For any rooms still marked as occupied past the standard checkout time:</p>
+                        <ol>
+                        <li><b>Verify Non-B2B Status:</b></p>
+                            <ul>
+                                <li>In HMS, set the date range from today to tomorrow.</li></p>
+                                <li>Clear the search box and execute the search.</li></p>
+                                <li>Sort the results by guest name and manually review each entry.</li></p>
+                                <li>Pay close attention to "sharing guest" names, as some guests may use these for secondary bookings.</li></p>
+                            </ul>
+                        </li></p>    <li><b>Confirm Absence of Late Checkout Requests:</b></p>
+                        <ul>
+                            <li>Manually access the folio for each occupied room.</li></p>
+                            <li>Review both the "Remarks" section and "Checkout Instructions" for any recorded late checkout requests.</li></p>
+                        </ul>
+                        </li></p>    <li>
+                        <p class="mb-4"><b>Contact Guests:</b></p>
+                        <ul>
+                            <li>Call guests in rooms due to depart that have passed verification steps 1 and 2.</li></p>
+                            <li>Inquire about their anticipated departure time, given that it is past the standard checkout time.</li></p>
+                            <li>If a late checkout is requested, note this on your list and inform both the Duty Manager and Housekeeping.</li></p>
+                        </ul>
+                        </li></p>    </ol>
+                        <h5><b>Unreachable Guests</b></h5>
+                            <ul>
+                                <li>The Duty Manager will conduct a bag check for rooms where guests cannot be contacted.</li></p>
+                            </ul>
                 </div>
             </div>
         </div>

@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Modifying Reservations</title>
+
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -32,7 +33,10 @@
     <link href="css/style.css" rel="stylesheet">
 
     <!-- Searchbar Stylesheet -->
-    <link href="css/searchbar.css" rel="stylesheet">    
+    <link href="css/searchbar.css" rel="stylesheet">
+
+    <!-- Excel Spreadsheet Stylesheet -->
+    <link href="css/ExcelSheetStylesheet.css" rel="stylesheet">
 
 </head>
 
@@ -57,18 +61,18 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <div class="nav-item nav-link">
-                    <div class="search-container">
+<div class="search-container">
                         <input type="text" id="searchInput" placeholder="Search...">
                         <button id="searchButton">Search</button>
                         <div id="results"></div>
                     </div>
-                </div>   
+                </div>    
                 <a href="index.html"  class="nav-item nav-link active">Home</a>
                 <a href="GSA.html" class="nav-item nav-link">Guest Services Agent</a>
                 <a href="NA.html" class="nav-item nav-link">Night Audit</a>
                 <a href="Res.html" class="nav-item nav-link">Reservations</a>
                 <a href="General.html" class="nav-item nav-link">General Knowledge</a>
-                <div class="nav-item nav-link dropdown">
+                <div class="nav-item dropdown">
                     <a href="contacts.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Contacts</a>
                     <div class="dropdown-menu fade-down m-0" style="right:0">
                         <a href="StaffContacts.html" class="dropdown-item">Staff Contacts</a>
@@ -92,11 +96,35 @@
                 </div>
                 <div class="col wow fadeInUp" data-wow-delay="0.3s">
                     <h2 class="section-title bg-white text-start text-primary pe-3">Modifying Reservations</h2>
-                    <p class="mb-4">First check if we have the availability for the dates the guest wants to change.</p>
-                    <p class="mb-4">If there is availability, provide the new rates for the dates to the guest and advise them if needed.</p>
-                    <p class="mb-4">On HMS, you can change the dates automatically for direct reservations or through our hotel website by changing it through the Check-in and Check-out dates.</p>
-                    <p class="mb-4">If the guest has booked through a third-party website, they will need to make any modifications through that website.</p>
-                    <p class="mb-4">Once we have received confirmation of the changes, we can update the reservation accordingly.</p>
+                    <ol>
+                        <li>
+                            <h6>Verify Availability</h6>
+                            <ul>
+                                <li>Confirm room availability for the desired new dates.</li></p>
+                                <li>If available, provide the updated rates to the guest, including any applicable fees or adjustments.</li></p>
+                            </ul>
+                        </li></p>
+                        <li>
+                            <h6>Update Reservation (if applicable)</h6>
+                            <ul>
+                                <li>
+                                    <b>Direct Bookings & Hotel Website Bookings:</b></p>
+                                    <ul>
+                                        <li>In HMS, modify the "Check-in" and "Check-out" dates directly on the reservation.</li></p>
+                                    </ul>
+                                </li></p>            <li>
+                                    <b>Third-Party Bookings:</b></p>
+                                    <ul>
+                                        <li>Inform the guest that they need to make changes through the respective third-party website.</li></p>
+                                    </ul>
+                                </li></p>        </ul>
+                        </li></p>
+                        <li>
+                            <h6>Confirmation and Update</h6>
+                            <ul>
+                                <li>Upon receiving confirmation of the date change from the guest or third-party website, update the reservation accordingly in HMS.</li></p>
+                            </ul>
+                        </li></p></ol>
                 </div>
             </div>
         </div>

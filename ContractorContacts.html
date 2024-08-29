@@ -3,8 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Chargebacks & Payment Authorisation Forms</title>
-
+    <title>Contractor Contacts</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -24,7 +23,6 @@
     <!-- Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/searchbar/searchbar.css" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -35,9 +33,24 @@
     <!-- Searchbar Stylesheet -->
     <link href="css/searchbar.css" rel="stylesheet">
 
-    <!-- Excel Spreadsheet Stylesheet -->
-    <link href="css/ExcelSheetStylesheet.css" rel="stylesheet">
-
+    <!-- Table Style -->
+    <style>
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        td, th {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+          background-color: #dddddd;
+        }
+        </style>
 </head>
 
 <body>
@@ -72,67 +85,61 @@
                 <a href="NA.html" class="nav-item nav-link">Night Audit</a>
                 <a href="Res.html" class="nav-item nav-link">Reservations</a>
                 <a href="General.html" class="nav-item nav-link">General Knowledge</a>
-                <div class="nav-item dropdown">
-                    <a href="contacts.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Contacts</a>
-                    <div class="dropdown-menu fade-down m-0" style="right:0">
-                        <a href="StaffContacts.html" class="dropdown-item">Staff Contacts</a>
-                        <a href="ContractorContacts.html" class="dropdown-item">Contractor Contacts</a>
-                    </div>
-                </div>
+                <a href="contacts.html" class="nav-item nav-link">Contacts</a>
             </div>
         </div>
     </nav>
     <!-- Navbar End -->
+	
+	
+	    <!-- Main Page Start -->
+        <div class="container-xxl py-5">
 
-    <!-- Main Page Start -->
+            <button onclick="history.back()">Back</button></p>
+    
+            <div class="container">
+                <div>
+                    <div class="col wow fadeInUp" data-wow-delay="0.1s" style="min-height: 50px;">
+                    </div>
+                    <div class="col wow fadeInUp" data-wow-delay="0.3s">
+                        <h2 class="section-title bg-white text-start text-primary pe-3">Contractor Contacts</h2>
 
-    <div class="container-xxl py-5">
-
-        <button onclick="history.back()">Back</button></p>
-
-        <div class="container">
-            <div>
-                <div class="col wow fadeInUp" data-wow-delay="0.1s" style="min-height: 50px;">
-                </div>
-                <div class="col wow fadeInUp" data-wow-delay="0.3s">
-                    <h2 class="section-title bg-white text-start text-primary pe-3">Chargebacks & Payment Authorisation Forms</h2>
-                    <h5>Credit Card Authorization Form</h5>
-                    <p class="mb-4">This form authorizes the hotel to charge a credit card that cannot be physically presented at check-in or one that is not owned by the guest. The following must be provided with the completed form:</p>
-
-                    <ul>
-                    <li>Copy of the card owner's valid photo ID.</p>
-                    <li>Front and back copy of the nominated card.</p>
-                    </ul>
-
-                    <h5>Permanent Authorization Form</h5>
-                    <p class="mb-4">This form is offered to corporate clients who prefer to use the same payment method for all their bookings, streamlining the process and eliminating the need to provide a new credit card authorization for each reservation. </p>
-
-                    <p class="mb-4">Permanent Authorization Forms are valid from the date of submission to the hotel until the end of the calendar year. These forms must be updated annually, even if the provided credit card has not yet expired.</p>
-
-                    <h5>Credit Application Form</h5>
-                    <p class="mb-4">Companies requesting to establish a credit account with the hotel should complete this form. The accounts team will handle the application, process invoices, and manage payment collection from the company.</p>
-
-                    <p class="mb-4">Once a company's credit account is set up, check-in and payment instructions will automatically default to "Direct Bill" (DB) unless otherwise specified during the reservation process. Companies can also choose to provide permanent authorization to utilise their credit facility for all bookings.</p>
-
-                    <h5>Accessing Forms</h5>
-
-                    <ul>
-                    <li>Chargeback forms can be accessed and saved at: M:\Reservation Chargebacks\ along with other chargebacks from OTA bookings.</li></p>
-                    <li>Credit Card Authorization and Permanent Authorization forms are available at: M:\Operations\Reservations\Payments - Forms & Details.</li></p>
-                    </ul>
-
-                    <h5>Important Reminders</h5>
-
-                    <ul>
-                    <li>The credit card authorization form and all required supporting documents must be submitted to the hotel before or upon the guest's arrival. If the authorization form is not received in time, the guest must provide the full accommodation fee and bond on their own credit card before receiving room keys.</li></p>
-                    <li>Carefully verify that the name, signature, and credit card details on the authorization form match before accepting it.</li></p>
-                    </ul>
-                </div>
+                        <table class="center" style="border-collapse: collapse; table-layout: auto;" width="100%" cellspacing="0" cellpadding="0">
+                            <colgroup>
+                                <col class="xl65" />
+                                <col class="xl65" />
+                                <col class="xl65" />
+                                <col class="xl65" />
+                                <col class="xl65" />
+                                <col class="xl65" />
+                            </colgroup>
+                            <thead>
+                                <tr style="background-color: #e20118; color: white; font-size: large;">
+                                    <th class="xl68" style="text-align: center; height: 15pt;">Name</th>
+                                    <th class="xl68" style="text-align: center; border-left: none;">Position</th>
+                                    <th class="xl68" style="text-align: center; border-left: none;">Mobile</th>
+                                    <th class="xl68" style="text-align: center; border-left: none;">Extension</th>
+                                    <th class="xl68" style="text-align: center; border-left: none;">Direct Line</th>
+                                    <th class="xl68" style="text-align: center; border-left: none;">Email</th>
+                                </tr>                                
+                            </thead>
+                            <tbody>
+                                <tr style="height: 15.0pt;">
+                                    <td class="xl66" style="height: 15pt;">Haydn Grant</td>
+                                    <td class="xl66" style="border-left: none;">General Manager</td>
+                                    <td class="xl66" style="border-left: none;">0412 628 628</td>
+                                    <td class="xl66" style="border-left: none;">4151</td>
+                                    <td class="xl66" style="border-left: none;">9656 4151</td>
+                                    <td class="xl66" style="border-left: none;">gmhgc@hgcmelbourne.com.au</td>
+                                </tr>
+                            </tbody>
+                        </table>
             </div>
         </div>
     </div>
-        
-    <!-- Main Page End -->
+</div>
+	    <!-- Main Page End -->	
+    
 
     <!-- Footer Start -->
     <div style="background-color:black" class="container-fluid text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
@@ -163,6 +170,14 @@
 
                         Designed By Andrew Edwards 2024
                     </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="">Home</a>
+                            <a href="">Cookies</a>
+                            <a href="">Help</a>
+                            <a href="">FAQs</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -185,7 +200,6 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-
 </body>
 
 </html>

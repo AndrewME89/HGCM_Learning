@@ -35,28 +35,7 @@
     <link href="css/searchbar.css" rel="stylesheet">
 
     <!-- Excel Spreadsheet Stylesheet -->
-    <link href="css/ExcelSheetStylesheet.css" rel="stylesheet">    
-
-    <!-- Column Layout -->
-    <style>
-        * {
-        box-sizing: border-box;
-        }
-        
-        /* Create two equal columns that floats next to each other */
-        .column {
-        float: left;
-        width: 50%;
-        padding: 10px;
-        }
-        
-        /* Clear floats after the columns */
-        .row:after {
-        content: "";
-        display: table;
-        clear: both;
-        }
-    </style>    
+    <link href="css/ExcelSheetStylesheet.css" rel="stylesheet">
 
 </head>
 
@@ -81,18 +60,18 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <div class="nav-item nav-link">
-                    <div class="search-container">
+<div class="search-container">
                         <input type="text" id="searchInput" placeholder="Search...">
                         <button id="searchButton">Search</button>
                         <div id="results"></div>
                     </div>
-                </div>   
+                </div>    
                 <a href="index.html"  class="nav-item nav-link active">Home</a>
                 <a href="GSA.html" class="nav-item nav-link">Guest Services Agent</a>
                 <a href="NA.html" class="nav-item nav-link">Night Audit</a>
                 <a href="Res.html" class="nav-item nav-link">Reservations</a>
                 <a href="General.html" class="nav-item nav-link">General Knowledge</a>
-                <div class="nav-item nav-link dropdown">
+                <div class="nav-item dropdown">
                     <a href="contacts.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Contacts</a>
                     <div class="dropdown-menu fade-down m-0" style="right:0">
                         <a href="StaffContacts.html" class="dropdown-item">Staff Contacts</a>
@@ -116,130 +95,74 @@
                 </div>
                 <div class="col wow fadeInUp" data-wow-delay="0.3s">
                     <h2 class="section-title bg-white text-start text-primary pe-3">Commissions</h2>
-                    <p>Commissions are done on a monthly basis. Some companies will send through their commission invoice and for some OTAs, we will have to retrieve them from their respective extranets.</p>
-                    <p>Commissions are for accommodation only. If the company is also paying for meals, parking, etc., only the accommodation rate will be commissionable.</p>
-                    <p>Below is a rough guide on the percentage of commission companies&rsquo; charges per booking:</p>
-                        <table width="616" cellspacing="0" cellpadding="7">
-                            <tbody>
-                            <tr>
-                            <td width="191">
-                            <p><u><strong>Commission Percentage</strong></u></p>
-                            </td>
-                            <td width="190">
-                            <p><u><strong>Nett or Gross</strong></u></p>
-                            </td>
-                            </tr>
-                            <tr>
-                            <td width="190">
-                            <p><strong>Booking.com</strong></p>
-                            </td>
-                            <td width="191">
-                            <p>15</p>
-                            </td>
-                            <td width="190">
-                            <p>Gross</p>
-                            </td>
-                            </tr>
-                            <tr>
-                            <td width="190">
-                            <p><strong>Entertainment Card</strong></p>
-                            </td>
-                            <td width="191">
-                            <p>5</p>
-                            </td>
-                            <td width="190">
-                            <p>Gross</p>
-                            </td>
-                            </tr>
-                            <tr>
-                            <td width="190">
-                            <p><strong>Expedia</strong></p>
-                            </td>
-                            <td width="191">
-                            <p>15</p>
-                            </td>
-                            <td width="190">
-                            <p>Nett &amp; Gross</p>
-                            </td>
-                            </tr>
-                            <tr>
-                            <td width="190">
-                            <p><strong>HotelBeds</strong></p>
-                            </td>
-                            <td width="191">
-                            <p>25</p>
-                            </td>
-                            <td width="190">
-                            <p>Nett</p>
-                            </td>
-                            </tr>
-                            <tr>
-                            <td width="190">
-                            <p><strong>Hotel Travel</strong></p>
-                            </td>
-                            <td width="191">
-                            <p>13</p>
-                            </td>
-                            <td width="190">
-                            <p>Nett</p>
-                            </td>
-                            </tr>
-                            <tr>
-                            <td width="190">
-                            <p><strong>HRS</strong></p>
-                            </td>
-                            <td width="191">
-                            <p>15</p>
-                            </td>
-                            <td width="190">
-                            <p>Nett &amp; Gross</p>
-                            </td>
-                            </tr>
-                            <tr>
-                            <td width="190">
-                            <p><strong>Jetstar</strong></p>
-                            </td>
-                            <td width="191">
-                            <p>13.2</p>
-                            </td>
-                            <td width="190">
-                            <p>Nett</p>
-                            </td>
-                            </tr>
-                            <tr>
-                            <td width="190">
-                            <p><strong>Need It Now</strong></p>
-                            </td>
-                            <td width="191">
-                            <p>15</p>
-                            </td>
-                            <td width="190">
-                            <p>Nett</p>
-                            </td>
-                            </tr>
-                            <tr>
-                            <td width="190">
-                            <p><strong>Revato/HotelsCombined</strong></p>
-                            </td>
-                            <td width="191">
-                            <p>13</p>
-                            </td>
-                            <td width="190">
-                            <p>Gross</p>
-                            </td>
-                            </tr>
-                            <tr>
-                            <td width="190">
-                            <p><strong>FCTG</strong></p>
-                            </td>
-                            <td width="191">
-                            <p>20</p>
-                            </td>
-                            <td width="190">
-                            <p>Nett</p>
-                            </td>
-                            </tr>
-                            </tbody>
+                    <p class="mb-4">Commissions are processed on a monthly basis. Some companies will provide their commission invoices directly, while invoices for OTAs must be retrieved from their respective extranets.</p>
+                    <p class="mb-4">Commissions apply exclusively to accommodation revenue. If a company's payment includes additional services like meals or parking, only the accommodation portion is subject to commission.</p>
+                    <p class="mb-4">The following table outlines approximate commission percentages charged by various companies per booking:</p>
+                    <table class="center" style="border-collapse: collapse; table-layout: fixed;" width="80%" cellspacing="0" cellpadding="0"><colgroup> <col class="xl65" width="auto" /> <col class="xl65" width="auto" /> <col class="xl65" width="auto" /> </colgroup>
+                        <tbody>
+                        <tr style="height: 15.0pt;">
+                        <td class="xl68" style="height: 15.0pt;" width="33%" height="20"></td>
+                        <td class="xl68" style="height: 15.0pt;" width="33%" height="20">Commission percentage</td>
+                        <td class="xl68" style="border-left: none;" colspan="2" width="33%">Nett or Gross</td>
+                        </tr>
+                        <tr style="height: 15.0pt;">
+                        <td class="xl66" style="height: 15.0pt; border-top: none;" height="20">Booking.com</td>
+                        <td class="xl66" style="height: 15.0pt; border-top: none;" height="20">15</td>
+                        <td class="xl66" style="border-left: none;" colspan="2">Gross</td>
+                        </tr>
+                        <tr style="height: 15.0pt;">
+                        <td class="xl66" style="height: 15.0pt; border-top: none;" height="20">Entertainment Card</td>
+                        <td class="xl66" style="height: 15.0pt; border-top: none;" height="20">5</td>
+                        <td class="xl66" style="border-left: none;" colspan="2">Gross<br /></td>
+                        </tr>
+                        <tr style="height: 15.0pt;">
+                        <td class="xl66" style="height: 15.0pt; border-top: none;" height="20">Expedia</td>
+                        <td class="xl66" style="height: 15.0pt; border-top: none;" height="20">15</td>
+                        <td class="xl66" style="border-left: none;" colspan="2">Nett & gross</td>
+                        </tr>
+                        <tr style="height: 15.0pt;">
+                        <td class="xl66" style="height: 15.0pt; border-top: none;" height="20">HotelBeds</td>
+                        <td class="xl66" style="height: 15.0pt; border-top: none;" height="20">25</td>
+                        <td class="xl66" style="border-left: none;" colspan="2">Nett</td>
+                        </tr>
+                        <tr style="height: 15.0pt;">
+                        <td class="xl66" style="height: 15.0pt; border-top: none;" height="20">Hotel Travel</td>
+                        <td class="xl66" style="height: 15.0pt; border-top: none;" height="20">13</td>
+                        <td class="xl66" style="border-left: none;" colspan="2">Nett</td>
+                        </tr>
+                        <tr style="height: 15.0pt;">
+                        <td class="xl66" style="height: 15.0pt; border-top: none;" height="20">HRS</td>
+                        <td class="xl66" style="height: 15.0pt; border-top: none;" height="20">15</td>
+                        <td class="xl66" style="border-left: none;" colspan="2">Nett & gross</td>
+                        </tr>
+                        <tr style="height: 15.0pt;">
+                        <td class="xl66" style="height: 15.0pt; border-top: none;" height="20">Jetstar</td>
+                        <td class="xl66" style="height: 15.0pt; border-top: none;" height="20">13.2</td>
+                        <td class="xl66" style="border-left: none;" colspan="2">Nett</td>
+                        </tr>
+                        <tr style="height: 15.0pt;">
+                        <td class="xl66" style="height: 15.0pt; border-top: none;" height="20">Need it Now</td>
+                        <td class="xl66" style="height: 15.0pt; border-top: none;" height="20">15</td>
+                        <td class="xl66" style="border-left: none;" colspan="2">Nett</td>
+                        </tr>
+                        <tr style="height: 15.0pt;">
+                        <td class="xl66" style="height: 15.0pt; border-top: none;" height="20">Revato/Hotels Combined</td>
+                        <td class="xl66" style="height: 15.0pt; border-top: none;" height="20">13</td>
+                        <td class="xl66" style="border-left: none;" colspan="2">Gross</td>
+                        </tr>
+                        <tr style="height: 15.0pt;">
+                        <td class="xl66" style="height: 15.0pt; border-top: none;" height="20">FCTG</td>
+                        <td class="xl66" style="height: 15.0pt; border-top: none;" height="20">20</td>
+                        <td class="xl66" style="border-left: none;" colspan="2">Nett</td>
+                        </tr>
+                        <!-- [if supportMisalignedColumns]-->
+                        <tr style="display: none;">
+                        <td style="width: 33%;" width="33%"></td>
+                        <td style="width: 33%;" width="33%"></td>
+                        <td style="width: 33%;" width="33%"></td>
+                        <td style="width: 33%;" width="33%"></td>
+                        </tr>
+                        <!--[endif]--></tbody>
                         </table>
                 </div>
             </div>

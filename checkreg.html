@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Home</title>
+    <title>Cross-Check Departing Reg Cards Against Expected Departure Summary</title>
+
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -32,7 +33,10 @@
     <link href="css/style.css" rel="stylesheet">
 
     <!-- Searchbar Stylesheet -->
-    <link href="css/searchbar.css" rel="stylesheet">    
+    <link href="css/searchbar.css" rel="stylesheet">
+
+    <!-- Excel Spreadsheet Stylesheet -->
+    <link href="css/ExcelSheetStylesheet.css" rel="stylesheet">
 
 </head>
 
@@ -57,18 +61,18 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <div class="nav-item nav-link">
-                    <div class="search-container">
+<div class="search-container">
                         <input type="text" id="searchInput" placeholder="Search...">
                         <button id="searchButton">Search</button>
                         <div id="results"></div>
                     </div>
-                </div>   
+                </div>    
                 <a href="index.html"  class="nav-item nav-link active">Home</a>
                 <a href="GSA.html" class="nav-item nav-link">Guest Services Agent</a>
                 <a href="NA.html" class="nav-item nav-link">Night Audit</a>
                 <a href="Res.html" class="nav-item nav-link">Reservations</a>
                 <a href="General.html" class="nav-item nav-link">General Knowledge</a>
-                <div class="nav-item nav-link dropdown">
+                <div class="nav-item dropdown">
                     <a href="contacts.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Contacts</a>
                     <div class="dropdown-menu fade-down m-0" style="right:0">
                         <a href="StaffContacts.html" class="dropdown-item">Staff Contacts</a>
@@ -91,7 +95,40 @@
                 <div class="col wow fadeInUp" data-wow-delay="0.1s" style="min-height: 50px;">
                 </div>
                 <div class="col wow fadeInUp" data-wow-delay="0.3s">
-                    <h2 class="section-title bg-white text-start text-primary pe-3"></h2>
+                    <h2 class="section-title bg-white text-start text-primary pe-3">Cross-Check Departing Reg Cards Against Expected Departure Summary</h2>
+                    <p class="mb-4">Ensure all guest registration cards scheduled for departure today are accounted for by comparing them against the printed Expected Departure Summary Report.</p>
+                    <h5 class="mb-4">Printing the Expected Departure Summary Report</h5>
+                        <ol>
+                            <li><b>Access the Report in iHMS</b>: Navigate to Reports → Departures → Expected Departure Summary within the iHMS system.</li></p>
+                            <li><b>Select Date</b>: Choose the current date and click 'OK.'</li></p>
+                            <li><b>Print</b>: Print the report single-sided.</li></p>
+                        </ol>
+                    <h5 class="section-title bg-white text-start text-primary pe-3">Note:</h5>
+                    <p class="mb-4">This report only displays rooms scheduled to depart today. Rooms that have already departed will not be included. Therefore, it's essential that the night team prints this report first thing in the morning after the system has rolled over.</p>
+                    <h5 class="mb-4">Procedure</h5>
+                        <ol>
+                            <li>Compare Registration Cards to the Report:</li></p>
+                                <ul>
+                                    <li>Carefully review the report, verifying that every registration card listed corresponds to a card in the departure box.</li></p>
+                                    <li>Highlight the room number on the report once you've confirmed its presence in the departure box.</li></p>
+                                    <li>Make a note of any 'B2B' or 'NON' designations.</li></p>
+                                </ul>
+                            <li>Investigate Missing Registration Cards:</li></p>
+                                <ul>
+                                    <li>If a registration card is missing, check the following locations:</li></p>
+                                        <ul>
+                                            <li>The registration card bin.</li></p>
+                                            <li>For room moves, check if the card is still filed under the previous room number.</li></p>
+                                            <li>The back bench and all pigeonholes.</li></p>
+                                        </ul>
+                                    <li>If you are unable to locate a registration card, report this to the Duty Manager.</li></p>
+                                </ul>
+                            <li>Complete the Report:</li></p>
+                                <ul>
+                                    <li>Once all registration cards have been accounted for, write "Departure - DD.MM.YY" (using the current departure date) on the back of the report.</li></p>
+                                    <li>Return the completed report to the departures box.</li></p>
+                                </ul>
+                        </ol>
                 </div>
             </div>
         </div>

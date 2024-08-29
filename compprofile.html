@@ -32,7 +32,10 @@
     <link href="css/style.css" rel="stylesheet">
 
     <!-- Searchbar Stylesheet -->
-    <link href="css/searchbar.css" rel="stylesheet">    
+    <link href="css/searchbar.css" rel="stylesheet">
+
+    <!-- Excel Spreadsheet Stylesheet -->
+    <link href="css/ExcelSheetStylesheet.css" rel="stylesheet">
 
 </head>
 
@@ -57,18 +60,18 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <div class="nav-item nav-link">
-                    <div class="search-container">
+<div class="search-container">
                         <input type="text" id="searchInput" placeholder="Search...">
                         <button id="searchButton">Search</button>
                         <div id="results"></div>
                     </div>
-                </div>   
+                </div>    
                 <a href="index.html"  class="nav-item nav-link active">Home</a>
                 <a href="GSA.html" class="nav-item nav-link">Guest Services Agent</a>
                 <a href="NA.html" class="nav-item nav-link">Night Audit</a>
                 <a href="Res.html" class="nav-item nav-link">Reservations</a>
                 <a href="General.html" class="nav-item nav-link">General Knowledge</a>
-                <div class="nav-item nav-link dropdown">
+                <div class="nav-item dropdown">
                     <a href="contacts.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Contacts</a>
                     <div class="dropdown-menu fade-down m-0" style="right:0">
                         <a href="StaffContacts.html" class="dropdown-item">Staff Contacts</a>
@@ -92,96 +95,29 @@
                 </div>
                 <div class="col wow fadeInUp" data-wow-delay="0.3s">
                     <h2 class="section-title bg-white text-start text-primary pe-3">Creating a Company Profile</h2>
-                    <p>Step 1: Open HMS</p>
-                    <ul>
-                    <li>
-                    <p>Guest &amp; Company &gt; Company</p>
-                    </li>
-                    <li>
-                    <p>Check first if company is already in HMS.</p>
-                    </li>
-                    <li>
-                    <p>Type company name and click search, if not existing yet click: <img src="file:///C:/Users/Andrew/AppData/Local/Temp/lu125888ywiic.tmp/lu125888ywim1_tmp_d129565f.png"></p>
-                    </li>
-                    </ul>
-                    <p><img class="center" src="file:///C:/Users/Andrew/AppData/Local/Temp/lu125888ywiic.tmp/lu125888ywim1_tmp_1169336c.jpg"></p>
-                    <ul>
-                    <li>
-                    <p>Fill up necessary information:</p>
-                    </li>
-                    </ul>
-                    <p><u>(1) Main</u></p>
-                    <center>
-                    <table dir="ltr" width="689" cellspacing="0" cellpadding="7">
-                    <tbody>
-                    <tr>
-                    <td width="331" height="9">
-                    <ul>
-                    <li>
-                    <p>Status (VIP10)</p>
-                    </li>
-                    </ul>
-                    </td>
-                    <td width="331">
-                    <ul>
-                    <li>
-                    <p>Contact Details (Tel, Fax, Email &amp; Website)</p>
-                    </li>
-                    </ul>
-                    </td>
-                    </tr>
-                    <tr>
-                    <td width="331" height="9">
-                    <ul>
-                    <li>
-                    <p>Short Code (optional)</p>
-                    </li>
-                    </ul>
-                    </td>
-                    <td width="331">
-                    <ul>
-                    <li>
-                    <p>Staff in Charge &amp; Source</p>
-                    </li>
-                    </ul>
-                    </td>
-                    </tr>
-                    <tr>
-                    <td width="331" height="9">
-                    <ul>
-                    <li>
-                    <p>Name</p>
-                    </li>
-                    </ul>
-                    </td>
-                    <td width="331">
-                    <ul>
-                    <li>
-                    <p>Billing &amp; Mailing Address</p>
-                    </li>
-                    </ul>
-                    </td>
-                    </tr>
-                    <tr>
-                    <td width="331" height="28">
-                    <ul>
-                    <li>
-                    <p>IATA Number (only for agencies, not for corporate companies)</p>
-                    </li>
-                    </ul>
-                    </td>
-                    <td width="331">
-                    <ul>
-                    <li>
-                    <p>Market Segment <em>(refer to pages 7-8 of this manual)</em></p>
-                    </li>
-                    </ul>
-                    </td>
-                    </tr>
-                    </tbody>
-                    </table>
-                    </center>
-                    <p><img class="center" src="file:///C:/Users/Andrew/AppData/Local/Temp/lu125888ywiic.tmp/lu125888ywim1_tmp_1311ac12.png" width="100%"></p>
+                    <p class="mb-4">Company profiles within HMS store essential information about businesses that interact with your hotel. These profiles help streamline processes like reservations, billing, and reporting, ensuring efficient and accurate handling of corporate accounts.</p>
+                    <p class="mb-4">Maintaining up-to-date and comprehensive company profiles contributes to a seamless guest experience and effective business operations.</p>
+                        <ol>
+                            <li><b>Access the Company Search</b></li></p>
+                                <ol>
+                                    <li>In iHMS, navigate to Guest & Company → Company.</li></p>
+                                    <li>Enter the company name in the search field and click Search.</li></p>
+                                </ol>
+                            <li><b>Initiate New Profile Creation</b></li></p>
+                            <p class="mb-4">If the company is not found in the search results, click the Create New Company button.</p>
+                            <li><b>Complete the Company Profile</b></li></p>
+                            <p class="mb-4">Update the following sections:</p>
+                            <ul>
+                                <li>Status (VIP code)</li></p>
+                                <li>Contact details (phone number, fax, email & website)</li></p>
+                                <li>Short code (optional)</li></p>
+                                <li>Staff in charge & source</li></p>
+                                <li>Name</li></p>
+                                <li>Billing & mail address</li></p>
+                                <li>IATA Number (only for agencies, not for corporate companies)</li></p>
+                                <li>Market Segment</li></p>
+                            </ul>
+                        </ol>
                 </div>
             </div>
         </div>

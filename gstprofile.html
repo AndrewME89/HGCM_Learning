@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Creating a Guest Profile</title>
+
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -32,7 +33,10 @@
     <link href="css/style.css" rel="stylesheet">
 
     <!-- Searchbar Stylesheet -->
-    <link href="css/searchbar.css" rel="stylesheet">    
+    <link href="css/searchbar.css" rel="stylesheet">
+
+    <!-- Excel Spreadsheet Stylesheet -->
+    <link href="css/ExcelSheetStylesheet.css" rel="stylesheet">
 
 </head>
 
@@ -57,18 +61,18 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <div class="nav-item nav-link">
-                    <div class="search-container">
+<div class="search-container">
                         <input type="text" id="searchInput" placeholder="Search...">
                         <button id="searchButton">Search</button>
                         <div id="results"></div>
                     </div>
-                </div>   
+                </div>    
                 <a href="index.html"  class="nav-item nav-link active">Home</a>
                 <a href="GSA.html" class="nav-item nav-link">Guest Services Agent</a>
                 <a href="NA.html" class="nav-item nav-link">Night Audit</a>
                 <a href="Res.html" class="nav-item nav-link">Reservations</a>
                 <a href="General.html" class="nav-item nav-link">General Knowledge</a>
-                <div class="nav-item nav-link dropdown">
+                <div class="nav-item dropdown">
                     <a href="contacts.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Contacts</a>
                     <div class="dropdown-menu fade-down m-0" style="right:0">
                         <a href="StaffContacts.html" class="dropdown-item">Staff Contacts</a>
@@ -92,92 +96,47 @@
                 </div>
                 <div class="col wow fadeInUp" data-wow-delay="0.3s">
                     <h2 class="section-title bg-white text-start text-primary pe-3">Creating a Guest Profile</h2>
-                    <p>Step 1: Open HMS</p>
-                    <ul>
-                    <li>
-                    <p>Click the Guest &amp; Company &gt; Guest</p>
-                    </li>
-                    <li>
-                    <p>Type in the guest name and click <img src="file:///C:/Users/Andrew/AppData/Local/Temp/lu125888ywiic.tmp/lu125888ywils_tmp_d129565f.png" alt="" width="33" height="25" name="Picture 56" border="0" /></p>
-                    </li>
-                    <li>
-                    <p>Name format will always be <u><strong>LAST NAME, FIRST NAME, TITLE </strong></u>and always in upper case</p>
-                    </li>
-                    </ul>
-                    <p><img src="file:///C:/Users/Andrew/AppData/Local/Temp/lu125888ywiic.tmp/lu125888ywils_tmp_eb15af16.png" alt="" width="487" height="195" name="Picture 55" border="0" /></p>
-                    <ul>
-                    <li>
-                    <p>Fill&nbsp;in the necessary information:</p>
-                    </li>
-                    </ul>
-                    <p><u>(1) Main</u></p>
-                    <table width="531" cellspacing="0" cellpadding="7">
-                    <tbody>
-                    <tr>
-                    <td width="251">
-                    <ul>
-                    <li>
-                    <p>Status</p>
-                    </li>
-                    </ul>
-                    </td>
-                    <td width="251">
-                    <ul>
-                    <li>
-                    <p>Telephone / Mobile Number</p>
-                    </li>
-                    </ul>
-                    </td>
-                    </tr>
-                    <tr>
-                    <td width="251" height="24">
-                    <ul>
-                    <li>
-                    <p>Full Name</p>
-                    </li>
-                    </ul>
-                    <p>(LAST NAME, FIRST NAME, Title)</p>
-                    </td>
-                    <td width="251">
-                    <ul>
-                    <li>
-                    <p>Email Address</p>
-                    </li>
-                    </ul>
-                    </td>
-                    </tr>
-                    <tr>
-                    <td width="251" height="2">
-                    <ul>
-                    <li>
-                    <p>Gender</p>
-                    </li>
-                    </ul>
-                    </td>
-                    <td width="251">
-                    <ul>
-                    <li>
-                    <p>Country and City if known</p>
-                    </li>
-                    </ul>
-                    </td>
-                    </tr>
-                    </tbody>
-                    </table>
-                    <p><u> (2) Personal/Preference</u></p>
-                    <ul>
-                    <li>
-                    <p>Credit Card Details</p>
-                    <ul>
-                    <li>
-                    <p>Right click and choose Add Credit Card Info</p>
-                    </li>
-                    <li>
-                    <p>Fill up with the guest&rsquo;s/booker&rsquo;s credit card details and press next.</p>
-                    </li>
-                    </ul>
-                    </li>
-                    </ul>
+                    <ol>
+                        <li>
+                            <p class="mb-4"><b>Access Guest Search</b></p>
+                            <ul>
+                                <li>In HMS, navigate to <b>Guest & Company</b> &gt; <b>Guest</b>.</li></p>
+                                <li>Type the guest's name in the search field and click <b>Search</b>.</li></p>
+                            </ul>
+                            <p class="mb-4"><b>Name Format:</b> Always enter the name in uppercase using the format: LAST NAME, FIRST NAME, TITLE.</p>
+                        </li></p>
+                        <li>
+                            <p class="mb-4"><b>Initiate New Profile Creation</b></p>
+                            <ul>
+                                <li>If the guest is not found, click the <b>Create New Guest</b> button.</li></p>
+                            </ul>
+                        </li></p>
+                        <li>
+                            <p class="mb-4"><b>Complete the Guest Profile</b></p>
+                            <p class="mb-4">Fill in the required information in the following sections:</p>
+                            <ul>
+                                <li>
+                                    <p class="mb-4"><b>(1) Main</b></p>
+                                    <ul>
+                                        <li><b>Status</b></li></p>
+                                        <li><b>Telephone / Mobile Number</b></li></p>
+                                        <li><b>Full Name</b> (LAST NAME, FIRST NAME, Title)</li></p>
+                                        <li><b>Email Address</b></li></p>
+                                        <li><b>Gender</b></li></p>
+                                        <li><b>Country and City</b> (if known)</li></p>
+                                    </ul>
+                                </li></p>            <li>
+                                    <p class="mb-4"><b>(2) Personal/Preference</b></p>
+                                    <ul>
+                                        <li><b>Credit Card Details:</b></p>
+                                            <ul>
+                                                <li>Right-click and choose <b>Add Credit Card Info</b>.</li></p>
+                                                <li>Enter the guest's or booker's credit card details and click <b>Next</b>.</li></p>
+                                            </ul>
+                                        </li></p>                </ul>
+                                </li></p>        </ul>
+                        </li></p></ol>
+                    
                 </div>
             </div>
         </div>

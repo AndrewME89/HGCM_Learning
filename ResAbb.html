@@ -35,28 +35,7 @@
     <link href="css/searchbar.css" rel="stylesheet">
 
     <!-- Excel Spreadsheet Stylesheet -->
-    <link href="css/ExcelSheetStylesheet.css" rel="stylesheet">    
-
-    <!-- Column Layout -->
-    <style>
-        * {
-        box-sizing: border-box;
-        }
-        
-        /* Create two equal columns that floats next to each other */
-        .column {
-        float: left;
-        width: 50%;
-        padding: 10px;
-        }
-        
-        /* Clear floats after the columns */
-        .row:after {
-        content: "";
-        display: table;
-        clear: both;
-        }
-    </style>
+    <link href="css/ExcelSheetStylesheet.css" rel="stylesheet">
 
 </head>
 
@@ -119,81 +98,74 @@
                     <p class="mb-4">The Communications tab in a guest folio is where you will find all the information you may need about a booking.</p>
                     <p class="mb-4">Inclusions, charges to be transferred and type of payment are all shown in the Communications using abbreviations.</p>
                     <h5 class="mb-4">Payment Methods:</h5>
-                    <table class="center" cellpadding="0" cellspacing="0" width="80%" style="border-collapse: collapse;table-layout:fixed">
-                    <colgroup>
-                    <col class="xl65" width="auto">
-                    <col class="xl65" width="auto">
-                    <col class="xl65" width="auto">
-                    </colgroup>
-                    <tbody>
-                    <tr height="20" style="height:15.0pt">
-                    <td height="20" class="xl68" width="33%" style="height:15.0pt">Booking Agent</td>
-                    <td colspan="2" class="xl68" width="33%" style="border-left:none">Payment Method</td>
-                    </tr>
-                    <tr height="20" style="height:15.0pt">
-                    <td height="20" class="xl66" style="height:15.0pt;border-top:none">AOT</td>
-                    <td colspan="2" class="xl66" style="border-left:none">DB</td>
-                    </tr>
-                    <tr height="20" style="height:15.0pt">
-                    <td height="20" class="xl66" style="height:15.0pt;border-top:none">Booking.com</td>
-                    <td class="xl66" style="border-top:none;border-left:none">CC</td>
-                    <td class="xl66" style="border-top:none;border-left:none">POA</td>
-                    </tr>
-                    <tr height="20" style="height:15.0pt">
-                    <td height="20" class="xl66" style="height:15.0pt;border-top:none">Entertainment Card</td>
-                    <td colspan="2" class="xl66" style="border-left:none">CC</td>
-                    </tr>
-                    <tr height="40" style="height:30.0pt">
-                    <td height="40" class="xl66" style="height:30.0pt;border-top:none">Expedia</td>
-                    <td class="xl67" width="33%" style="border-top:none;border-left:none;">CC<br> (Expedia Collects Booking)</td>
-                    <td class="xl67" width="33%" style="border-top:none;border-left:none;">POA<br> (Hotel Collects Booking)</td>
-                    </tr>
-                    <tr height="20" style="height:15.0pt">
-                    <td height="20" class="xl66" style="height:15.0pt;border-top:none">Flight Center</td>
-                    <td colspan="2" class="xl66" style="border-left:none">DB</td>
-                    </tr>
-                    <tr height="20" style="height:15.0pt">
-                    <td height="20" class="xl66" style="height:15.0pt;border-top:none">GDS Bookings</td>
-                    <td class="xl66" style="border-top:none;border-left:none">POA</td>
-                    <td class="xl66" style="border-top:none;border-left:none">CC</td>
-                    </tr>
-                    <tr height="20" style="height:15.0pt">
-                    <td height="20" class="xl66" style="height:15.0pt;border-top:none">GC / CC Rewards Redemption</td>
-                    <td colspan="2" class="xl66" style="border-left:none">DB</td>
-                    </tr>
-                    <tr height="20" style="height:15.0pt">
-                    <td height="20" class="xl66" style="height:15.0pt;border-top:none">HGC Website</td>
-                    <td colspan="2" class="xl66" style="border-left:none">POA</td>
-                    </tr>
-                    <tr height="20" style="height:15.0pt">
-                    <td height="20" class="xl66" style="height:15.0pt;border-top:none">HotelBeds / Travelcube</td>
-                    <td colspan="2" class="xl66" style="border-left:none">DB</td>
-                    </tr>
-                    <tr height="20" style="height:15.0pt">
-                    <td height="20" class="xl66" style="height:15.0pt;border-top:none">Hotel Reservation Service (HRS)</td>
-                    <td class="xl66" style="border-top:none;border-left:none">CC</td>
-                    <td class="xl66" style="border-top:none;border-left:none">POA</td>
-                    </tr>
-                    <tr height="20" style="height:15.0pt">
-                    <td height="20" class="xl66" style="height:15.0pt;border-top:none">LIDO</td>
-                    <td colspan="2" class="xl66" style="border-left:none">DB</td>
-                    </tr>
-                    <tr height="20" style="height:15.0pt">
-                    <td height="20" class="xl66" style="height:15.0pt;border-top:none">Need it Now</td>
-                    <td colspan="2" class="xl66" style="border-left:none">DB</td>
-                    </tr>
-                    <tr height="20" style="height:15.0pt">
-                    <td height="20" class="xl66" style="height:15.0pt;border-top:none">Qantas / Hooroo / Jetstar</td>
-                    <td colspan="2" class="xl66" style="border-left:none">CC</td>
-                    </tr>
-                    <!--[if supportMisalignedColumns]-->
-                    <tr height="0" style="display:none">
-                    <td width="33%" style="width:33%"></td>
-                    <td width="33%" style="width:33%"></td>
-                    <td width="33%" style="width:33%"></td>
-                    </tr>
-                    <!--[endif]-->
-                    </tbody></table></p>
+                        <table class="center" cellpadding="0" cellspacing="0" width="80%" style="border-collapse: collapse;table-layout:fixed">
+                        <colgroup>
+                        <col class="xl65" width="auto">
+                        <col class="xl65" width="auto">
+                        <col class="xl65" width="auto">
+                        </colgroup>
+                        <tbody>
+                        <tr height="20" style="height:15.0pt">
+                        <td height="20" class="xl68" width="33%" style="height:15.0pt">Booking Agent</td>
+                        <td colspan="2" class="xl68" width="33%" style="border-left:none">Payment Method</td>
+                        </tr>
+                        <tr height="20" style="height:15.0pt">
+                        <td height="20" class="xl66" style="height:15.0pt;border-top:none">AOT</td>
+                        <td colspan="2" class="xl66" style="border-left:none">DB</td>
+                        </tr>
+                        <tr height="20" style="height:15.0pt">
+                        <td height="20" class="xl66" style="height:15.0pt;border-top:none">Booking.com</td>
+                        <td class="xl66" style="border-top:none;border-left:none">CC</td>
+                        <td class="xl66" style="border-top:none;border-left:none">POA</td>
+                        </tr>
+                        <tr height="20" style="height:15.0pt">
+                        <td height="20" class="xl66" style="height:15.0pt;border-top:none">Entertainment Card</td>
+                        <td colspan="2" class="xl66" style="border-left:none">CC</td>
+                        </tr>
+                        <tr height="40" style="height:30.0pt">
+                        <td height="40" class="xl66" style="height:30.0pt;border-top:none">Expedia</td>
+                        <td class="xl67" width="33%" style="border-top:none;border-left:none;">CC<br> (Expedia Collects Booking)</td>
+                        <td class="xl67" width="33%" style="border-top:none;border-left:none;">POA<br> (Hotel Collects Booking)</td>
+                        </tr>
+                        <tr height="20" style="height:15.0pt">
+                        <td height="20" class="xl66" style="height:15.0pt;border-top:none">Flight Center</td>
+                        <td colspan="2" class="xl66" style="border-left:none">DB</td>
+                        </tr>
+                        <tr height="20" style="height:15.0pt">
+                        <td height="20" class="xl66" style="height:15.0pt;border-top:none">GDS Bookings</td>
+                        <td class="xl66" style="border-top:none;border-left:none">POA</td>
+                        <td class="xl66" style="border-top:none;border-left:none">CC</td>
+                        </tr>
+                        <tr height="20" style="height:15.0pt">
+                        <td height="20" class="xl66" style="height:15.0pt;border-top:none">GC / CC Rewards Redemption</td>
+                        <td colspan="2" class="xl66" style="border-left:none">DB</td>
+                        </tr>
+                        <tr height="20" style="height:15.0pt">
+                        <td height="20" class="xl66" style="height:15.0pt;border-top:none">HGC Website</td>
+                        <td colspan="2" class="xl66" style="border-left:none">POA</td>
+                        </tr>
+                        <tr height="20" style="height:15.0pt">
+                        <td height="20" class="xl66" style="height:15.0pt;border-top:none">HotelBeds / Travelcube</td>
+                        <td colspan="2" class="xl66" style="border-left:none">DB</td>
+                        </tr>
+                        <tr height="20" style="height:15.0pt">
+                        <td height="20" class="xl66" style="height:15.0pt;border-top:none">Hotel Reservation Service (HRS)</td>
+                        <td class="xl66" style="border-top:none;border-left:none">CC</td>
+                        <td class="xl66" style="border-top:none;border-left:none">POA</td>
+                        </tr>
+                        <tr height="20" style="height:15.0pt">
+                        <td height="20" class="xl66" style="height:15.0pt;border-top:none">LIDO</td>
+                        <td colspan="2" class="xl66" style="border-left:none">DB</td>
+                        </tr>
+                        <tr height="20" style="height:15.0pt">
+                        <td height="20" class="xl66" style="height:15.0pt;border-top:none">Need it Now</td>
+                        <td colspan="2" class="xl66" style="border-left:none">DB</td>
+                        </tr>
+                        <tr height="20" style="height:15.0pt">
+                        <td height="20" class="xl66" style="height:15.0pt;border-top:none">Qantas / Hooroo / Jetstar</td>
+                        <td colspan="2" class="xl66" style="border-left:none">CC</td>
+                        </tr>
+                        </tbody></table></p>
                     <h6 class="mb-4">Examples:</h6>
                     <p class="mb-4"><b>POA 170 RO</b>: Guest will Pay Own Account (POA) at $170 p/night. This covers <b>only</b> the cost of the room. A Bond <b><u><i>is</i></u></b> required for this reservation.</p>
                     <p class="mb-4"><b>POA 170 B1</b>: Guest will Pay Own Account (POA) at $170 p/night with Breakfast included for <b>1</b> guest. A Bond <b><u><i>is</i></u></b> required for this reservation.</p>
