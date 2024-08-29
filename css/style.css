@@ -342,4 +342,34 @@ figcaption {
     max-width: 40%; /* Set max width of images */
     margin: 0 15px; /* Add margin to the images */
     border: 1px solid #000000; /* Add border to images */
+    clear: right;
+}
+
+.image-stack {
+    display: flex;
+    flex-direction: column;
+    float: right;
+}
+
+.stacked-image {
+    margin-bottom: 10px; /* Adjusts space between the images */
+    max-width: 100%; /* Ensure images are responsive */
+}
+
+* {
+box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+float: left;
+width: 50%;
+padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+content: "";
+display: table;
+clear: both;
 }

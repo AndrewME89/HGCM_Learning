@@ -1,74 +1,74 @@
-tr
-	{mask-border-source:auto;}
-col
-	{mask-border-source:auto;}
-br
-	{-ms-text-autospace:same-cell;}
-.style0
-	{-moz-border-image:General;
-	text-align:general;
-	vertical-align:bottom;
-	white-space:nowrap;
-	offset-rotate:0;
-	-moz-background-origin:auto;
-	motion-path:auto;
-	color:black;
-	font-size:11.0pt;
-	font-weight:400;
-	font-style:normal;
-	text-decoration:none;
-	font-family:"Aptos Narrow", sans-serif;
-	-ms-touch-select:0;
-	border:none;
-	motion-rotation:locked visible;
-	list-style-image:Normal;
-	-ms-scroll-limit:0;}
-td
-	{list-style-image:style0;
-	padding-top:1px;
-	padding-right:1px;
-	padding-left:1px;
-	mask-image:padding;
-	color:black;
-	font-size:11.0pt;
-	font-weight:400;
-	font-style:normal;
-	text-decoration:none;
-	font-family:"Aptos Narrow", sans-serif;
-	-ms-touch-select:0;
-	-moz-border-image:General;
-	text-align:general;
-	vertical-align:bottom;
-	border:none;
-	-moz-background-origin:auto;
-	motion-path:auto;
-	-ms-flex-direction:locked visible;
-	white-space:nowrap;
-	offset-rotate:0;}
-.xl65
-	{list-style-image:style0;
-	text-align:center;
-	vertical-align:middle;}
-.xl66
-	{list-style-image:style0;
-	text-align:center;
-	vertical-align:middle;
-	border:.5pt solid windowtext;}
-.xl67
-	{list-style-image:style0;
-	text-align:center;
-	vertical-align:middle;
-	border:.5pt solid windowtext;
-	white-space:normal;}
-.xl68
-	{list-style-image:style0;
-	color:white;
-	text-align:center;
-	vertical-align:middle;
-	border:.5pt solid windowtext;
-	background:#E20118;
-	motion-path:black none;}
+.style0 {
+    color: black;
+    font-size: 11pt;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    vertical-align: middle;
+    white-space: normal;
+    border: none;
+}
+
+td {
+    padding: 5px;
+    color: black;
+    font-size: 11pt;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    vertical-align: middle; /* Vertically align content in the center */
+    border: none;
+    white-space: nowrap; /* Prevents text wrapping, so columns fit content */
+    padding: 10px;
+	text-align: center;
+}
+
+.xl65,
+.xl66,
+.xl67,
+.xl68 {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.xl66,
+.xl67,
+.xl68 {
+    border: 0.5pt solid windowtext;
+}
+
+.xl68 {
+    color: white;
+    background: #E20118;
+}
 
 .center {
-	margin-left: auto;
-	margin-right: auto;}
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table {
+    border-collapse: collapse;
+    table-layout: auto; /* Ensures columns fit to content */
+    max-width: 100%; /* Ensures the table does not exceed 100% of page width */
+    width: 100%; /* Ensures the table takes up 100% of available width */
+}
+
+/* Alternate row colors */
+tr:nth-child(odd) {
+    background-color: #D3D3D3; /* Light grey for odd rows */
+}
+
+tr:nth-child(even) {
+    background-color: #ffffff; /* White for even rows */
+}
+
+/* Apply alternate colors only to cells that do not contain h5 tags */
+td:not(:has(h5)) {
+    background-color: inherit; /* Inherit the row color */
+}
+
+/* Ensures that the vertical alignment affects the content */
+td h5 {
+    vertical-align: middle; /* If you need specific alignment for h5 */
+}

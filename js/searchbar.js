@@ -11,7 +11,6 @@ document.getElementById('searchButton').addEventListener('click', function() {
                 const xmlDoc = parser.parseFromString(xmlText, 'application/xml');
                 const urls = Array.from(xmlDoc.getElementsByTagName('loc')).map(loc => loc.textContent);
 
-                // Keep track of promises
                 const fetchPromises = urls.map(page => 
                     fetch(page)
                         .then(response => response.text())
@@ -32,9 +31,9 @@ document.getElementById('searchButton').addEventListener('click', function() {
                         })
                 );
 
-                // Once all promises are resolved, display results
                 Promise.all(fetchPromises).then(results => {
                     resultsDiv.innerHTML = results.filter(result => result).join('');
+                    resultsDiv.style.display = 'block'; // Show the results
                 });
             })
             .catch(error => {
@@ -46,6 +45,16 @@ document.getElementById('searchButton').addEventListener('click', function() {
     }
 });
 
+// Close the dropdown when clicking outside of it
+document.addEventListener('click', function(event) {
+    const resultsDiv = document.getElementById('results');
+    const searchInput = document.getElementById('searchInput');
+    const searchButton = document.getElementById('searchButton');
+
+    if (!resultsDiv.contains(event.target) && !searchInput.contains(event.target) && !searchButton.contains(event.target)) {
+        resultsDiv.style.display = 'none';
+    }
+});
 
 document.getElementById('searchInput').addEventListener('keypress', function(event) {
     if (event.key === 'Enter') {
