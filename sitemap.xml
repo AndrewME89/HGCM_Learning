@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
-		<loc>https://www.andrewme89.github.io/HGCM_Learning/TopUp.html</loc>
-		<priority>0.60</priority>
-		<lastmod>2024-08-30</lastmod>
-	</url>
-	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/iHMS.html</loc>
 		<lastmod>2024-08-27</lastmod>
 	</url>
@@ -123,7 +118,7 @@
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/dutylog.html</loc>
-		<lastmod>2024-08-29</lastmod>
+		<lastmod>2024-08-30</lastmod>
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/StartShift.html</loc>
@@ -386,6 +381,10 @@
 		<lastmod>2024-08-30</lastmod>
 	</url>
 	<url>
+		<loc>https://www.andrewme89.github.io/HGCM_Learning/TopUp.html</loc>
+		<lastmod>2024-08-30</lastmod>
+	</url>
+	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/Chargebacks.html</loc>
 		<lastmod>2024-08-30</lastmod>
 	</url>
@@ -499,7 +498,7 @@
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/ContractorContacts.html</loc>
-		<lastmod>2024-08-29</lastmod>
+		<lastmod>2024-08-30</lastmod>
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/ShiftBalance.html</loc>
