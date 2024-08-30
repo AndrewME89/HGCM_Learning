@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
+		<loc>https://www.andrewme89.github.io/HGCM_Learning/TopUp.html</loc>
+		<priority>0.60</priority>
+		<lastmod>2024-08-30</lastmod>
+	</url>
+	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/iHMS.html</loc>
 		<lastmod>2024-08-27</lastmod>
 	</url>
@@ -18,7 +23,7 @@
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/resbtp.html</loc>
-		<lastmod>2024-08-29</lastmod>
+		<lastmod>2024-08-30</lastmod>
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/commis.html</loc>
@@ -46,11 +51,11 @@
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/makeres.html</loc>
-		<lastmod>2024-08-29</lastmod>
+		<lastmod>2024-08-30</lastmod>
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/resconf.html</loc>
-		<lastmod>2024-08-29</lastmod>
+		<lastmod>2024-08-30</lastmod>
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/compprofile.html</loc>
@@ -70,7 +75,7 @@
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/cxlres.html</loc>
-		<lastmod>2024-08-29</lastmod>
+		<lastmod>2024-08-30</lastmod>
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/vip.html</loc>
@@ -78,7 +83,7 @@
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/secondEff.html</loc>
-		<lastmod>2024-08-25</lastmod>
+		<lastmod>2024-08-30</lastmod>
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/reqpaperwork.html</loc>
@@ -90,11 +95,7 @@
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/actiontasks.html</loc>
-		<lastmod>2024-08-28</lastmod>
-	</url>
-	<url>
-		<loc>https://www.andrewme89.github.io/HGCM_Learning/inhouse_cashguest.html</loc>
-		<lastmod>2024-08-29</lastmod>
+		<lastmod>2024-08-30</lastmod>
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/checklist.html</loc>
@@ -142,7 +143,7 @@
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/Walk.html</loc>
-		<lastmod>2024-08-25</lastmod>
+		<lastmod>2024-08-30</lastmod>
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/Wake.html</loc>
@@ -150,7 +151,7 @@
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/Virt.html</loc>
-		<lastmod>2024-08-29</lastmod>
+		<lastmod>2024-08-30</lastmod>
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/Upsell.html</loc>
@@ -158,19 +159,19 @@
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/UpdRegCard.html</loc>
-		<lastmod>2024-08-25</lastmod>
+		<lastmod>2024-08-30</lastmod>
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/Transactions.html</loc>
-		<lastmod>2024-08-29</lastmod>
+		<lastmod>2024-08-30</lastmod>
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/Tills.html</loc>
-		<lastmod>2024-08-25</lastmod>
+		<lastmod>2024-08-30</lastmod>
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/Tasks.html</loc>
-		<lastmod>2024-08-29</lastmod>
+		<lastmod>2024-08-30</lastmod>
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/Storage.html</loc>
@@ -182,19 +183,19 @@
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/SpexInstRep.html</loc>
-		<lastmod>2024-08-25</lastmod>
+		<lastmod>2024-08-30</lastmod>
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/SpexGuide.html</loc>
-		<lastmod>2024-08-25</lastmod>
+		<lastmod>2024-08-30</lastmod>
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/smoking.html</loc>
-		<lastmod>2024-08-25</lastmod>
+		<lastmod>2024-08-30</lastmod>
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/Silent.html</loc>
-		<lastmod>2024-08-25</lastmod>
+		<lastmod>2024-08-30</lastmod>
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/Shipping.html</loc>
@@ -202,11 +203,11 @@
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/Segments.html</loc>
-		<lastmod>2024-08-29</lastmod>
+		<lastmod>2024-08-30</lastmod>
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/Roubler.html</loc>
-		<lastmod>2024-08-25</lastmod>
+		<lastmod>2024-08-30</lastmod>
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/RoomTypes.html</loc>
@@ -226,11 +227,11 @@
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/ResAbb.html</loc>
-		<lastmod>2024-08-29</lastmod>
+		<lastmod>2024-08-30</lastmod>
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/Refund.html</loc>
-		<lastmod>2024-08-25</lastmod>
+		<lastmod>2024-08-30</lastmod>
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/RateCode.html</loc>
@@ -242,11 +243,11 @@
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/packages.html</loc>
-		<lastmod>2024-08-29</lastmod>
+		<lastmod>2024-08-30</lastmod>
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/Noise.html</loc>
-		<lastmod>2024-08-29</lastmod>
+		<lastmod>2024-08-30</lastmod>
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/NextShift.html</loc>
@@ -270,27 +271,23 @@
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/Lost.html</loc>
-		<lastmod>2024-08-29</lastmod>
+		<lastmod>2024-08-30</lastmod>
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/Login.html</loc>
-		<lastmod>2024-08-25</lastmod>
+		<lastmod>2024-08-30</lastmod>
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/LCO.html</loc>
-		<lastmod>2024-08-25</lastmod>
-	</url>
-	<url>
-		<loc>https://www.andrewme89.github.io/HGCM_Learning/Laundry.html</loc>
-		<lastmod>2024-08-29</lastmod>
+		<lastmod>2024-08-30</lastmod>
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/Invoices.html</loc>
-		<lastmod>2024-08-25</lastmod>
+		<lastmod>2024-08-30</lastmod>
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/Incidentals.html</loc>
-		<lastmod>2024-08-29</lastmod>
+		<lastmod>2024-08-30</lastmod>
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/iHMSProbs.html</loc>
@@ -298,7 +295,7 @@
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/GstList.html</loc>
-		<lastmod>2024-08-29</lastmod>
+		<lastmod>2024-08-30</lastmod>
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/Groups.html</loc>
@@ -314,43 +311,47 @@
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/FOCWater.html</loc>
-		<lastmod>2024-08-25</lastmod>
+		<lastmod>2024-08-30</lastmod>
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/Fire.html</loc>
 		<lastmod>2024-08-29</lastmod>
 	</url>
 	<url>
+		<loc>https://www.andrewme89.github.io/HGCM_Learning/phoneetiquette.html</loc>
+		<lastmod>2024-08-30</lastmod>
+	</url>
+	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/EndShift.html</loc>
-		<lastmod>2024-08-25</lastmod>
+		<lastmod>2024-08-30</lastmod>
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/DepSummRep.html</loc>
-		<lastmod>2024-08-25</lastmod>
+		<lastmod>2024-08-30</lastmod>
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/DepRegCard.html</loc>
-		<lastmod>2024-08-25</lastmod>
+		<lastmod>2024-08-30</lastmod>
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/Res.html</loc>
-		<lastmod>2024-08-27</lastmod>
+		<lastmod>2024-08-30</lastmod>
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/introom.html</loc>
 		<lastmod>2024-08-30</lastmod>
 	</url>
 	<url>
-		<loc>https://www.andrewme89.github.io/HGCM_Learning/PendingArrivals.html</loc>
-		<lastmod>2024-08-25</lastmod>
+		<loc>https://www.andrewme89.github.io/HGCM_Learning/addresspend.html</loc>
+		<lastmod>2024-08-30</lastmod>
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/Parking.html</loc>
-		<lastmod>2024-08-29</lastmod>
+		<lastmod>2024-08-30</lastmod>
 	</url>
 	<url>
-		<loc>https://www.andrewme89.github.io/HGCM_Learning/NA_pendings.html</loc>
-		<lastmod>2024-08-24</lastmod>
+		<loc>https://www.andrewme89.github.io/HGCM_Learning/checkpend.html</loc>
+		<lastmod>2024-08-30</lastmod>
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/NA_Manual.html</loc>
@@ -366,7 +367,7 @@
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/Handover.html</loc>
-		<lastmod>2024-08-25</lastmod>
+		<lastmod>2024-08-30</lastmod>
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/GSA.html</loc>
@@ -378,39 +379,35 @@
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/emails.html</loc>
-		<lastmod>2024-08-24</lastmod>
+		<lastmod>2024-08-30</lastmod>
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/dryclean.html</loc>
-		<lastmod>2024-08-29</lastmod>
-	</url>
-	<url>
-		<loc>https://www.andrewme89.github.io/HGCM_Learning/Check-in_out.html</loc>
-		<lastmod>2024-08-25</lastmod>
+		<lastmod>2024-08-30</lastmod>
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/Chargebacks.html</loc>
-		<lastmod>2024-08-25</lastmod>
+		<lastmod>2024-08-30</lastmod>
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/CBReport.html</loc>
-		<lastmod>2024-08-25</lastmod>
+		<lastmod>2024-08-30</lastmod>
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/CashGuestList.html</loc>
-		<lastmod>2024-08-29</lastmod>
+		<lastmod>2024-08-30</lastmod>
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/Bond.html</loc>
-		<lastmod>2024-08-29</lastmod>
+		<lastmod>2024-08-30</lastmod>
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/BinChecks.html</loc>
-		<lastmod>2024-08-29</lastmod>
+		<lastmod>2024-08-30</lastmod>
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/B2B.html</loc>
-		<lastmod>2024-08-25</lastmod>
+		<lastmod>2024-08-30</lastmod>
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/accessibility.html</loc>
@@ -422,39 +419,39 @@
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/DBill.html</loc>
-		<lastmod>2024-08-25</lastmod>
+		<lastmod>2024-08-30</lastmod>
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/CutKey.html</loc>
-		<lastmod>2024-08-25</lastmod>
+		<lastmod>2024-08-30</lastmod>
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/CreateRes.html</loc>
-		<lastmod>2024-08-25</lastmod>
+		<lastmod>2024-08-30</lastmod>
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/CorpRates.html</loc>
-		<lastmod>2024-08-29</lastmod>
+		<lastmod>2024-08-30</lastmod>
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/contractor.html</loc>
-		<lastmod>2024-08-29</lastmod>
+		<lastmod>2024-08-30</lastmod>
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/CheckB2B.html</loc>
-		<lastmod>2024-08-29</lastmod>
+		<lastmod>2024-08-30</lastmod>
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/Check12.html</loc>
-		<lastmod>2024-08-29</lastmod>
+		<lastmod>2024-08-30</lastmod>
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/Check-out.html</loc>
-		<lastmod>2024-08-25</lastmod>
+		<lastmod>2024-08-30</lastmod>
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/Check-in.html</loc>
-		<lastmod>2024-08-25</lastmod>
+		<lastmod>2024-08-30</lastmod>
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/CCAuthAndTransfer.html</loc>
@@ -466,15 +463,15 @@
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/Boxes.html</loc>
-		<lastmod>2024-08-25</lastmod>
+		<lastmod>2024-08-30</lastmod>
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/BlackFolder.html</loc>
-		<lastmod>2024-08-29</lastmod>
+		<lastmod>2024-08-30</lastmod>
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/Bfast.html</loc>
-		<lastmod>2024-08-25</lastmod>
+		<lastmod>2024-08-30</lastmod>
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/Audit.html</loc>
@@ -486,7 +483,7 @@
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/ArrRegCard.html</loc>
-		<lastmod>2024-08-28</lastmod>
+		<lastmod>2024-08-30</lastmod>
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/ArrDepRM.html</loc>
@@ -494,7 +491,7 @@
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/ARPendRep.html</loc>
-		<lastmod>2024-08-29</lastmod>
+		<lastmod>2024-08-30</lastmod>
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/lib/waypoints/links.php</loc>
@@ -506,11 +503,11 @@
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/ShiftBalance.html</loc>
-		<lastmod>2024-08-29</lastmod>
+		<lastmod>2024-08-30</lastmod>
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/RoomService.html</loc>
-		<lastmod>2024-08-29</lastmod>
+		<lastmod>2024-08-30</lastmod>
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/Template.html</loc>
@@ -522,6 +519,6 @@
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/Taxis.html</loc>
-		<lastmod>2024-08-25</lastmod>
+		<lastmod>2024-08-30</lastmod>
 	</url>
 </urlset>

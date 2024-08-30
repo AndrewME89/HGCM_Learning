@@ -23,7 +23,6 @@
     <!-- Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/searchbar/searchbar.css" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -32,8 +31,10 @@
     <link href="css/style.css" rel="stylesheet">
 
     <!-- Searchbar Stylesheet -->
-    <link href="css/searchbar.css" rel="stylesheet">    
+    <link href="css/searchbar.css" rel="stylesheet">
 
+    <!-- Table Stylesheet -->
+    <link href="css/ExcelSheetStylesheet.css" rel="stylesheet">
 </head>
 
 <body>
@@ -92,25 +93,38 @@
                 </div>
                 <div class="col wow fadeInUp" data-wow-delay="0.3s">
                     <h2 class="section-title bg-white text-start text-primary pe-3">Chargebacks</h2>
-                    <p class="mb-4">You will need to charge all CC and DBA rooms that are checking out today.</p>
-                    <p class="mb-4">To determine which rooms will need to be charged, print the Folio Communications by Check Out Date Report at:</p>
-                    <p class="mb-4"><b>Reports → In House → Folio Communication by Check Out Date Report → *Ensure Date Is Correct* → PRINT.</b></p>
-                    <p class="mb-4">Highlight any "CC", "TRNSFR" "DBA" and "DBC" rooms. These are the rooms you will charge during this process.</p>
+                    <p>It's essential to process charges for all CC and DBA rooms scheduled for check-out today.</p>
+
+                    <h5>Identifying Rooms to be Charged</h5>
+
+                    <p>Generate the Folio Communications by Check Out Date Report:</p>
+
+                    <ol>
+                    <li>In iHMS, navigate to <b>Reports</b> → <b>In House</b> → <b>Folio Communication by Check Out Date Report</b>.</p>
+                    <li>Ensure the date is set to today's date and click "PRINT".</li></p>
+                    <li>Highlight any rooms marked as "CC," "TRNSFR," "DBA," or "DBC." These are the rooms you'll be processing charges for.</li></p>
+                    </ol>
+
                     <h5>CC Charges</h5>
-                    <ul>
-                        <li>Open SiteMinder in Google Chrome and login. Use the Voucher Number in the bottom left of the guest folio to search SiteMinder, then open the reservation.</li></p>
-                        <li>Scroll down to the Credit Card details (bottom right of screen). If neede, click the eye icon to show the card details.</li></p>
-                        <li>On the MOTO terminal: <b>Enter the amount to be charged → Other → Manual Card Entry → Mail Order.</b></li></p>
-                        <li>Use the card details provided by SiteMinder to complete the transaction.</li></p>
-                        <li>Post the payment to the guest folio as you did with the Encore transactions earlier, writing the room number on the front of the payment docket, and the folio number on the back.</li></p>
-                    </ul>
+
+                    <ol>
+                    <li>Log in to SiteMinder in Google Chrome.</li></p>
+                    <li>Use the Voucher Number from the bottom left of the guest folio to search for the reservation in SiteMinder and open it.</li></p>
+                    <li>Scroll down to the Credit Card details (bottom right). Click the eye icon if necessary to reveal the card details.</li></p>
+                    <li>On the MOTO terminal: Enter the amount to be charged → Other → Manual Card Entry → Mail Order.</li></p>
+                    <li>Use the card details from SiteMinder to complete the transaction.</li></p>
+                    <li>Post the payment to the guest folio, similar to how you handled Encore transactions earlier. Write the room number on the front of the payment docket and the folio number on the back.</li></p>
+                    </ol>
+
                     <h5>DBA / DBC Charges</h5>
-                    <p class="mb-4">DBA and DBC rooms are rooms that will be charged to an account, such as a business or even the hotel itself.</p>
-                    <ul>
-                        <li>In the Transactions tab of the guest folio, right-click and select Payment.</li></p>
-                        <li>Change the Payment Type dropdown to DBILL, then click next.</li></p>
-                        <li>If a Credit Stop/Cash Only error appears, you will need to email Reservations with the Folio number, guest name and a polite request to look into it.</li></p>
-                    </ul>
+
+                    <p>DBA and DBC rooms are charged to an account (business or hotel).</p>
+
+                    <ol>
+                    <li>In the guest folio's "Transactions" tab, right-click and select "Payment."</li></p>
+                    <li>Change the "Payment Type" to "DBILL" and click "Next."</li></p>
+                    <li>If a "Credit Stop/Cash Only" error occurs, email Reservations with the folio number, guest name, and a polite request for assistance.</li></p>
+                    </ol>
                 </div>
             </div>
         </div>

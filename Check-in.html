@@ -23,7 +23,6 @@
     <!-- Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/searchbar/searchbar.css" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -32,8 +31,10 @@
     <link href="css/style.css" rel="stylesheet">
 
     <!-- Searchbar Stylesheet -->
-    <link href="css/searchbar.css" rel="stylesheet">    
+    <link href="css/searchbar.css" rel="stylesheet">
 
+    <!-- Table Stylesheet -->
+    <link href="css/ExcelSheetStylesheet.css" rel="stylesheet">
 </head>
 
 <body>
@@ -94,7 +95,8 @@
                     <h2 class="section-title bg-white text-start text-primary pe-3">Check In Procedure</h2>
                     <p class="mb-4">It is part of your responsibility to Check Guests in and out of the hotel.</p>
                     <p class="mb-4">It is important that this is done quickly, efficiently and correctly, to ensure our guests have a satisfactory experience.</p>
-                    <h3 class="mb-4">Procedure</h3>
+
+                    <h5 class="mb-4">Procedure</h5>
                     <ol type="1">
                         <li>Smile and welcome the Guest to the Hotel. If you recognise them as a return guest, acknowledge this by welcoming them back to the hotel.</li></p>
                         <li>Confirm the Guest’s name and request a Photo ID.</li></p>
@@ -105,100 +107,103 @@
                             <li>That the name on the credit card matches the name on both the ID and the Reservation.</li></p>
                         </ul>
                         <li>In iHMS open the Guest folio by searching their surname.</li></p>
-                        <li>In the Corporate tab, ensure that both the first and last name given match, and confirm the length of stay</li></p>
+                        <li>In the Corporate tab, ensure that both the first and last name given match, and confirm the length of stay.</li></p>
                         <ul>
                             <li>For Roll Res (B2B), all paperwork, payment and pre-authorisation for both bookings <u><b>must</b></u> be done on the day of arrival.</li></p>
                         </ul>
-                        <li> Retrieve the Guest Registration Card and ask the guest to fill or confirm the highlighted details (Sharing Guest, Mobile, Email & Signature).</li></p>
+                        <li>Retrieve the Guest Registration Card and ask the guest to fill or confirm the highlighted details (Sharing Guest, Mobile, Email & Signature).</li></p>
                         <img class="center" src="img/CheckIn01.png" width="60%"></p>
                         <li>While the guest is filling in their details, go to the Communications tab. Read and understand the Check In instruction:</li></p>
                         <ol type="a">
                             <li>Method of payment: POA, CC, Direct Bill, Pre-paid.</li></p>
                             <li>Inclusions such as breakfast, rollaway, water, newspaper (any item in brackets).</li></p>
-                            <li>Other additional incidentals that being covered by company or agent.</li></p>
+                            <li>Other additional incidentals that are being covered by the company or agent.</li></p>
                         </ol>
                         <img class="center" src="img/CheckIn02.png" width="60%"></p>
                         <img class="center" src="img/CheckIn03.png" width="60%"></p>
-                        <li>Process the payment and/or pre-authorisation based on check in instruction. Ensure we thoroughly explain the pre-authorisation process emphasising on the release process.</li></p>
+                        <li>Process the payment and/or pre-authorisation based on check-in instructions. Ensure we thoroughly explain the pre-authorisation process, emphasizing the release process.</li></p>
                         <div class="center">
-                        <p class="mb-4">Other types of security bond:</p>
-                        <ul>
-                            <li>Cash - $300 per room per stay</li></p>
-                            <li>EFTPOS card - $300 per room per stay</li></p>
-                            <li>Guest tapping their cards using phones or smart watch - $300 per room per stay</li></p>
-                            <p class="mb-4">*Guest must know their pin number to process refund on check out*</p>
-                            <p class="mb-4">*Update the credit card details in HMS*</p>
-                        </ul>
+                            <p class="mb-4">Other types of security bond:</p>
+                            <ul>
+                                <li>Cash - $300 per room per stay</li></p>
+                                <li>EFTPOS card - $300 per room per stay</li></p>
+                                <li>Guest tapping their cards using phones or smart watch - $300 per room per stay</li></p>
+                                <p class="mb-4">*Guest must know their pin number to process a refund on check out*</p>
+                                <p class="mb-4">*Update the credit card details in HMS*</p>
+                            </ul>
                         </div>
                         <ol type="a">
                             <li>POA bookings require full payment for the accommodation and a separate pre-authorisation/security deposit of $100.</li></p>
-                            <li>PP/CC/DBA/DBC bookings require only $100 security bond unless being covered by company (All charges back-ACB or Z).</li></p>
-                            <li>If a guest is covering payment and/or bond for multiple rooms, process the amount correctly. Write the following on the top right-hand corner of the registration card as follow;</li></p>
-                                <ol type="i">
-                                    <li>The guest who are covering; COV – all the folio numbers being covered</li></p>
-                                    <img class="center" src="img/CheckIn04.png" width="60%"></p>
-                                    <li>The Guestss that being covered; REF #Folio number of the covering room</li></p>
-                                    <img class="center" src="img/CheckIn05.png" width="60%"></p>
-                                </ol>
+                            <li>PP/CC/DBA/DBC bookings require only a $100 security bond unless being covered by the company (All charges back-ACB or Z).</li></p>
+                            <li>If a guest is covering payment and/or bond for multiple rooms, process the amount correctly. Write the following on the top right-hand corner of the registration card as follows:</li></p>
+                            <ol type="i">
+                                <li>The guest who is covering; COV → all the folio numbers being covered.</li></p>
+                                <img class="center" src="img/CheckIn04.png" width="60%"></p>
+                                <li>The Guests that are being covered; REF → #Folio number of the covering room.</li></p>
+                                <img class="center" src="img/CheckIn05.png" width="60%"></p>
+                            </ol>
                         </ol>
-                        <li>Skim through the registration card ensuring;</li></p>
+                        <li>Skim through the registration card ensuring:</li></p>
                         <ol type="a">
-                            <li>MUST have – Signature, contact number, email and sharing guests (If applicable)</li></p>
-                            <li>If guest tick for parking; confirm either VIP Parking or Golden Square and advise guest accordingly.</li></p>
-                            <li>If a guest tick for newspaper and it is not included in the rate – Advise guest the cost and update HMS.</li></p>
-                            <li>If a guest tick for wakeup call - Confirm the time</li></p>
-                            <li>If a guest tick for emergency assistance – Confirm with the guest and give out the ‘Emergency Assistance Form’ to be filled out and update HMS.</li></p>
+                            <li>MUST have – Signature, contact number, email, and sharing guests (If applicable).</li></p>
+                            <li>If the guest ticks for parking; confirm either VIP Parking or Golden Square and advise the guest accordingly.</li></p>
+                            <li>If a guest ticks for a newspaper and it is not included in the rate – Advise the guest of the cost and update HMS.</li></p>
+                            <li>If a guest ticks for a wakeup call - Confirm the time.</li></p>
+                            <li>If a guest ticks for emergency assistance – Confirm with the guest and give out the ‘Emergency Assistance Form’ to be filled out and update HMS.</li></p>
                         </ol>
-                        <li>Checking in the guest in HMS.</li></p>
+                        <li>Check in the guest in HMS.</li></p>
                         <ol type="a">
-                            <li>Click Check In button on the top right-hand corner of the window</li></p>
-                            <li>A pop-up window will appear</li></p>
-                            <li>The room must be vacant and clean before the guest can be checked in</li></p>
+                            <li>Click Check-In button on the top right-hand corner of the window.</li></p>
+                            <li>A pop-up window will appear.</li></p>
+                            <li>The room must be vacant and clean before the guest can be checked in.</li></p>
                             <img class="center" src="img/CheckIn06.png" width="60%"></p>
                             <li>Enter the following fields (if not already entered):</li></p>
-                                <ul>
-                                    <li>Type of Payment</li></p>
-                                    <li>Guest Name as written on Credit Card </li></p>
-                                    <li>CC Number</li></p>
-                                    <li>Expiry Date</li></p>
-                                    <li>Voucher Number (if D-bill)</li></p>
-                                </ul>
-                            <li>Click Next and update the following information on the next window</li></p>
-                                <ul>
-                                    <li>If market segment is “Direct Internet” change the “Int-Pending” to either “Int Leis” or “Int Corp”</li></p>
-                                    <li>The correct nationality, region and country of the guest</li></p>
-                                    <img class="center" src="img/CheckIn07.png" width="25%"></p>
-                                </ul>
-                            <li>Click Process to complete Check In.</li></p>
+                            <ul>
+                                <li>Type of Payment.</li></p>
+                                <li>Guest Name as written on Credit Card.</li></p>
+                                <li>CC Number.</li></p>
+                                <li>Expiry Date.</li></p>
+                                <li>Voucher Number (if D-bill).</li></p>
+                            </ul>
+                            <li>Click Next and update the following information on the next window:</li></p>
+                            <ul>
+                                <li>If the market segment is “Direct Internet” change the “Int-Pending” to either “Int Leis” or “Int Corp”.</li></p>
+                                <li>The correct nationality, region, and country of the guest.</li></p>
+                                <img class="center" src="img/CheckIn07.png" width="25%"></p>
+                            </ul>
+                            <li>Click Process to complete Check-In.</li></p>
                         </ol>
-                        <li>Issue room keys. If the reservation is a Roll Res (B2B) cut keys for the entire length of stay.</li></p>
-                        <li>Explain to guests of any inclusion, coverage by company/agent and any limits associated to the coverage.</li></p>
-                        <li>Issue any relevant voucher (BTP welcome drinks, GC Rewards Promo, Hotel Promo)</li></p>
+                        <li>Issue room keys. If the reservation is a Roll Res (B2B), cut keys for the entire length of stay.</li></p>
+                        <li>Explain to guests any inclusion, coverage by company/agent, and any limits associated with the coverage.</li></p>
+                        <li>Issue any relevant voucher (BTP welcome drinks, GC Rewards Promo, Hotel Promo).</li></p>
                         <li>Initial next to CI and UPD on the bottom right of the Registration Card and bid the guest an enjoyable stay.</li></p>
                     </ol>
-                    <h3 class="mb-4">Check in Prior to 2:00PM</h3>
+
+                    <h5 class="mb-4">Check-in Prior to 2:00 PM</h5>
                     <ol type="1">
-                        <li>Follow standard check in procedure.</li></p>
+                        <li>Follow standard check-in procedure.</li></p>
                         <ol type="a">
                             <li>If the room is Occupied/Dirty or Vacant/Dirty, re-assign the guest to an available room.</li></p>
                             <ol type="i">
                                 <li>In (1) Corporate tab, click the three dots beside the room number (red box below).</li></p>
-                                <li>This will bring up bringing up any Vacant/Clean room by default. Select that room and click ‘OK’ to assign another room.</li></p>
+                                <li>This will bring up any Vacant/Clean room by default. Select that room and click ‘OK’ to assign another room.</li></p>
                             </ol>
-                            <li>If no rooms are ready and another room cannot be assigned due to special requests, advise the guest that check in time at the hotel is 2.00pm, and at this stage we do not have a room available, however their luggage can be stored away. </li></p>
+                            <li>If no rooms are ready and another room cannot be assigned due to special requests, advise the guest that check-in time at the hotel is 2:00 PM, and at this stage, we do not have a room available. However, their luggage can be stored away.</li></p>
                         </ol>
-                        <li>Paperwork, payment and pre-authorisation must be completed upon arrival regardless of the time before storing luggage.</li></p>
-                        <li>Offer to call the guests if the room is ready before 2pm. The complete registration card then to be put on the bin with a note said “RNR” or “Please call” and placed in the RNR pigeon hole located on near the left reception terminal</li></p>
-                        <li>Rush the room with housekeeping once the room is vacant in HMS</li></p>
-                        <li>Once the room is ready, and the registration card is completed, then guest can be checked in to the system and key cut. If there is “Please call”, call the guest to inform that their room is ready.</li></p>
+                        <li>Paperwork, payment, and pre-authorisation must be completed upon arrival regardless of the time before storing luggage.</li></p>
+                        <li>Offer to call the guests if the room is ready before 2:00 PM. The completed registration card should be put in the bin with a note saying “RNR” or “Please call” and placed in the RNR pigeon hole located near the left reception terminal.</li></p>
+                        <li>Rush the room with housekeeping once the room is vacant in HMS.</li></p>
+                        <li>Once the room is ready, and the registration card is completed, the guest can be checked in to the system and keys cut. If there is a “Please call” note, call the guest to inform them that their room is ready.</li></p>
                     </ol>
+
                     <h5 class="section-title bg-white text-start text-primary pe-3">Notes:</h5>
                     <ul>
-                        <li>We can only check in guest if the name on the reservation matches the photo ID. If does not match, we CANNOT check the guest in unless they have a confirmation or we request the guest to call the guest on the reservation to confirm the details.</li></p>
-                        <li>NO underage (below 18) guests to be checked in without adults accompanying them for full duration of their stays.</li></p>
-                        <li> The most important section in guest registration card is Signature. Please ensure that guest have read and understood the terms and conditions of the hotel before signing and before issuing keys. Hotel policies are nonnegotiable and cannot be altered. Signature must be obtained before issuing keys and the person who provided the preauthorisation (card holder and if not the same person on the booking) should also sign in the registration card.</li></p>
-                        <li>Sharing Guest Name: this is to ensure that every person in the room is accounted for and for us to check if the maximum number of people per room is being breached. This is also used by Night Audit Team every time they do security checks after hours.</li></p>
+                        <li>We can only check in a guest if the name on the reservation matches the photo ID. If it does not match, we CANNOT check the guest in unless they have a confirmation or we request the guest to call the person on the reservation to confirm the details.</li></p>
+                        <li>NO underage (under 18) guests are to be checked in without adults accompanying them for the full duration of their stay.</li></p>
+                        <li>The most important section in the guest registration card is the Signature. Please ensure that the guest has read and understood the terms and conditions of the hotel before signing and before issuing keys. Hotel policies are non-negotiable and cannot be altered. The signature must be obtained before issuing keys, and the person who provided the preauthorisation (card holder and if not the same person on the booking) should also sign the registration card.</li></p>
+                        <li>Sharing Guest Name: This is to ensure that every person in the room is accounted for and for us to check if the maximum number of people per room is being breached. This is also used by the Night Audit Team every time they do security checks after hours.</li></p>
                     </ul>
+
                 </div>
             </div>
         </div>

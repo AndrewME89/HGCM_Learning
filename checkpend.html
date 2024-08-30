@@ -3,8 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Troubleshooting SAFLOK</title>
-
+    <title>Check Pending Arrivals, Departures & Room Moves</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -24,7 +23,6 @@
     <!-- Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/searchbar/searchbar.css" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -34,10 +32,6 @@
 
     <!-- Searchbar Stylesheet -->
     <link href="css/searchbar.css" rel="stylesheet">
-
-    <!-- Excel Spreadsheet Stylesheet -->
-    <link href="css/ExcelSheetStylesheet.css" rel="stylesheet">
-
 </head>
 
 <body>
@@ -83,49 +77,42 @@
         </div>
     </nav>
     <!-- Navbar End -->
+	
+	
+	    <!-- Main Page Start -->
 
-    <!-- Main Page Start -->
+        <div class="container-xxl py-5">
 
-    <div class="container-xxl py-5">
+            <button onclick="history.back()">Back</button></p>
 
-        <button onclick="history.back()">Back</button></p>
+            <div class="container">
+                <div>
+                    <div class="col wow fadeInUp" data-wow-delay="0.1s" style="min-height: 50px;">
+                    </div>
+                    <div class="col wow fadeInUp" data-wow-delay="0.3s">
+                        <h2 class="section-title bg-white text-start text-primary pe-3">Check Pending Arrivals, Departures & Room Moves</h2>
+                        <p class="mb-4">Before initiating the system rollover (Night Audit), it's crucial to address any pending check-ins, check-outs, or room moves.</p>
 
-        <div class="container">
-            <div>
-                <div class="col wow fadeInUp" data-wow-delay="0.1s" style="min-height: 50px;">
-                </div>
-                <div class="col wow fadeInUp" data-wow-delay="0.3s">
-                    <h2 class="section-title bg-white text-start text-primary pe-3">Troubleshooting SAFLOK</h2>
-                    <p>In the event of SAFLOK system downtime, impacting the Front Office's ability to cut keys, the SAFLOK computer server in the server room can be checked and potentially restarted.</p>
+                        <p class="mb-4">You will be responsible for handling pending arrivals, while the Duty Manager will manage any room moves or pending departures.</p>
 
-                    <h5>Accessing the SAFLOK Server</h5>
+                        <h5>Generating and Distributing Reports</h5>
 
-                    <p>Upon entering the server room, locate the computer on the right-hand side. Refer to the image below for visual guidance.</p>
+                        <p class="mb-4">In iHMS, access the following reports:</p>
 
-                    <p></p>
+                        <ol>
+                        <li><b>Reports → Before Night Audit Reports → Expected Arrival Summary</b>: Print the first page and compare it to the Guest Registration Cards in the box.</p>
+                        <li><b>Reports → Before Night Audit Reports → Expected Departure Summary</b>: Print this report (unless it's empty) and provide it to the Duty Manager.</p>
+                        <li><b>Reports → HouseKeeping → Live Scheduled Room Change</b>: Print this report (unless it's empty) and provide it to the Duty Manager.</p>
+                        </ol>
 
-                    <h5>Verifying SAFLOK System Status</h5>
-
-                    <ol>
-                    <li>Use the keyboard and mouse on the right-hand side to log in to the computer. Utilize the following credentials:</li></p>
-                    <ul>
-                    <li>Username: hgcm\administrator</li></p>
-                    <li>Password: melb@131</li></p>
-                    </ul>
-                    <li>Once the desktop loads, click on the small arrow icon in the bottom right corner of the screen (near the date and time).</li></p>
-                    <li>Check if the blue CRS SAFLOK symbol is visible in the system tray.</li></p>
-                    <li>If the symbol is not displayed, double-click the CRS icon on the desktop to initiate the CRS program. This should also start the SAFLOK system.</li></p>
-                    </ol>
-
-                    <h5>Rebooting the SAFLOK Server</h5>
-
-                    <p>While this server does not necessitate a regular weekly reboot, if the system encounters issues, you can reboot it. Follow the same instructions provided for rebooting other servers, using the aforementioned login credentials.</p>
+                        <p class="mb-4">By completing these tasks, you'll help ensure a seamless system rollover and contribute to efficient hotel operations.</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-        
-    <!-- Main Page End -->
+
+	    <!-- Main Page End -->	
+    
 
     <!-- Footer Start -->
     <div style="background-color:black" class="container-fluid text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
@@ -156,6 +143,14 @@
 
                         Designed By Andrew Edwards 2024
                     </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="">Home</a>
+                            <a href="">Cookies</a>
+                            <a href="">Help</a>
+                            <a href="">FAQs</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -178,7 +173,6 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-
 </body>
 
 </html>

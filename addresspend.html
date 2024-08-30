@@ -3,8 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Troubleshooting SAFLOK</title>
-
+    <title>Addressing Pending Arrivals</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -24,7 +23,6 @@
     <!-- Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/searchbar/searchbar.css" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -35,9 +33,8 @@
     <!-- Searchbar Stylesheet -->
     <link href="css/searchbar.css" rel="stylesheet">
 
-    <!-- Excel Spreadsheet Stylesheet -->
+    <!-- Table Stylesheet -->
     <link href="css/ExcelSheetStylesheet.css" rel="stylesheet">
-
 </head>
 
 <body>
@@ -61,7 +58,7 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <div class="nav-item nav-link">
-<div class="search-container">
+                    <div class="search-container">
                         <input type="text" id="searchInput" placeholder="Search...">
                         <button id="searchButton">Search</button>
                         <div id="results"></div>
@@ -95,35 +92,57 @@
                 <div class="col wow fadeInUp" data-wow-delay="0.1s" style="min-height: 50px;">
                 </div>
                 <div class="col wow fadeInUp" data-wow-delay="0.3s">
-                    <h2 class="section-title bg-white text-start text-primary pe-3">Troubleshooting SAFLOK</h2>
-                    <p>In the event of SAFLOK system downtime, impacting the Front Office's ability to cut keys, the SAFLOK computer server in the server room can be checked and potentially restarted.</p>
-
-                    <h5>Accessing the SAFLOK Server</h5>
-
-                    <p>Upon entering the server room, locate the computer on the right-hand side. Refer to the image below for visual guidance.</p>
-
-                    <p></p>
-
-                    <h5>Verifying SAFLOK System Status</h5>
-
-                    <ol>
-                    <li>Use the keyboard and mouse on the right-hand side to log in to the computer. Utilize the following credentials:</li></p>
-                    <ul>
-                    <li>Username: hgcm\administrator</li></p>
-                    <li>Password: melb@131</li></p>
-                    </ul>
-                    <li>Once the desktop loads, click on the small arrow icon in the bottom right corner of the screen (near the date and time).</li></p>
-                    <li>Check if the blue CRS SAFLOK symbol is visible in the system tray.</li></p>
-                    <li>If the symbol is not displayed, double-click the CRS icon on the desktop to initiate the CRS program. This should also start the SAFLOK system.</li></p>
-                    </ol>
-
-                    <h5>Rebooting the SAFLOK Server</h5>
-
-                    <p>While this server does not necessitate a regular weekly reboot, if the system encounters issues, you can reboot it. Follow the same instructions provided for rebooting other servers, using the aforementioned login credentials.</p>
-                </div>
+                    <h2 class="section-title bg-white text-start text-primary pe-3">Addressing Pending Arrivals</h2>
+                        <p class="mb-4">As part of Night Audit, it is your responsibility to address any reservations that have not arrived before it is time to roll the system.</p>
+                        <p class="mb-4">To do this, we first have to look at how the guest is paying:</p>
+                        <ul>
+                            <li>If the Corporate tab Check In notes state that the guest is CC (Virtual Credit Card), DBA/DBC (Direct Bill) or PP (Pre Paid) the folio can be Checked In. This is because we have received payment for the reservation, whether through a third-party website such as Booking.com or Expedia, or a company.</li></p>
+                                <figure>
+                                    <img class="center" src="img/PendArr01.png" alt="Pending Arrivals" width="80%">
+                                    <figcaption>This booking is CC, meaning the Guest has already paid for this booking, and you will charge the Guest as part of your Chargebacks Procedure.</figcaption>
+                                </figure></p>
+                            <li>If the Corporate tab Check In notes say the reservation is POA (Pay On Arrival) then you will have to attempt to take a Pre Authorisation for the <b><u><i>first night</i></u></b> of their stay. This is best done at around 12:30am to ensure that guests have time to update their payment details if their card is found to be declined or invalid.</li></p>
+                                <figure>
+                                    <img class="center" src="img/PendArr02.png" alt="Pending Arrivals" width="80%">
+                                    <figcaption>This booking is POA, meaning that the Guest must Pay On Arrival.</figcaption>
+                                </figure></p>
+                        </ul>                        
+                        <p class="mb-4">On the Eftpos terminal:</p>
+                        <ol type="1">
+                            <li>Enter the amount required for the <b><u><i>first night</i></u></b> of Accommodation</li></p>
+                            <img class="center" src="img/PendArr03.jpg" alt="Pending Arrivals" width="20%">
+                            <li>Select "Other" at the bottom left of the screen</li></p>
+                            <img class="center" src="img/PendArr04.jpg" alt="Pending Arrivals" width="20%">
+                            <li>Select "Pre Authorisation".</li></p>
+                            <img class="center" src="img/PendArr05.jpg" alt="Pending Arrivals" width="20%">
+                            <li>Enter the option "Manual".</li></p>
+                            <img class="center" src="img/PendArr06.jpg" alt="Pending Arrivals" width="20%">
+                            <li>Enter the Credit Card number as shown on the Guest folio.</li></p>
+                        </ol>
+                        <p class="mb-4">If the Pre Authorisation is Approved, the reservation will be checked in and marked as a "NON"</p>
+                        <p class="mb-4">If the Pre Authorisation is Declined, it will be marked as a No Show.</p>
+                        <p class="mb-4">If the booking was made through a third-party website, such as Expedia or Booking.com, we will have to mark our No Shows through their website.</p>
+                        <h6 class="mb-4">Marking No Shows on Booking.com</h6>
+                            <ol type="1">
+                                <li>Search the Voucher number for the Reservation.</li></p>
+                                <li>Click the "Mark as a no show" button on the right-side of the screen.</li></p>
+                                <li>Select "Yes" to waive cancellation fees.</li></p>
+                                <li>Once the process is complete, Booking.com will automatically cancel the booking through iHMS. This normally takes a few minutes.</li></p>
+                            </ol>
+                        <h6 class="mb-4">Marking No Shows on Expedia.com</h6>
+                            <ol type="1">
+                                <li>Open the Reservations tab on the left of screen.</li></p>
+                                <li>Search the voucher number. The reservation will come up in a side-menu to the right.</li></p>
+                                <li>Click the "Mark as no show".</li></p>
+                                <li>Change the cancellation fee to $0.00 to waive the fees.</li></p>
+                            </ol>
+                                <h5 class="section-title bg-white text-start text-primary pe-3">Note:</h5>
+                                <p class="mb-4">Expedia bookings do <b><u><i>not</i></u></b> automatically cancel in our system.</p>
+                                <p class="mb-4">To cancel these bookings, you will have to right-click on the folio and </p>
             </div>
         </div>
     </div>
+</div>
         
     <!-- Main Page End -->
 
