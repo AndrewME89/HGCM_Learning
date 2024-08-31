@@ -40,42 +40,6 @@
     <!-- Slideshow Stylesheet -->
     <link href="css/slideshow.css" rel="stylesheet">
 
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-      
-      /* Create two equal columns that floats next to each other */
-      .column {
-        float: left;
-        width: 50%;
-        padding: 10px;
-        height: 300px; /* Should be removed. Only for demonstration */
-      }
-      
-      /* Clear floats after the columns */
-      .row:after {
-        content: "";
-        display: table;
-        clear: both;
-      }
-      </style>
-
-      <style>
-      table { 
-        border: 1px solid #000; border-collapse: collapse; text-align: center; 
-      }
-      table td { 
-        border-left: 1px solid #000; 
-      }
-      table td:first-child { 
-        border-left: 1px solid #000;
-      }
-      table th {
-        border-left: 1px solid #000;
-      }
-      </style>
-
 </head>
 
 <body>
@@ -139,7 +103,7 @@
                       <div class="heading">Let's take a look at iHMS.</div>
                       <div class="content">
                         <p class="mb-4">This is what you will see when you first log on:</p>
-                        <img src="img/iHMS.png" width="90%"></p>
+                        <img src="img/iHMS.png" class="center" width="100%"></p>
                       </div>
                     </div>
               
@@ -149,11 +113,14 @@
                       <div class="content">
                         <div class="switchcontainer">
                           <div class="vertical-center">
-                              <p class="mb-4">The first element you'll notice upon logging in, is the "Rooms" section.</p>
-                              <p class="mb-4">The Physical Rooms shows how many guest rooms the hotel has.</p>
-                              <p class="mb-4">Inventory Rooms refers to how many rooms are in our inventory.</p>
-                              <p class="mb-4">Out of Order is the rooms which are currently blocked for maintenance or other issues.</p>
-                              <p class="mb-4">Out of Service means that a room is temporarily unavailable. It may be a "Carry" room, or it may require some other attention.</p>
+                            <p class="mb-4">Upon logging into iHMS, the prominent "Rooms" section offers a snapshot of the hotel's room inventory and their current statuses.</p>
+                            <ul>
+                              <li><strong>Physical Rooms:</strong> This displays the total number of guest rooms available in the hotel.</li></p>
+                              <li><strong>Inventory Rooms:</strong> Indicates how many rooms are currently sellable within the inventory.</li></p>
+                              <li><strong>Out of Order:</strong> These are rooms that have been blocked due to maintenance or other issues, making them unavailable for guests.</li></p>
+                              <li><strong>Out of Service:</strong> This status signifies that a room is temporarily unavailable, potentially due to being a "Carry" room or requiring specific attention.</li></p>
+                            </ul>
+                            <p class="mb-4">This section provides a crucial overview of room availability, enabling you to efficiently manage reservations and guest inquiries.</p>
                           </div>
                           <img src="img/iHMS_rooms.png" class="floatright">
                         </div>
@@ -166,11 +133,14 @@
                       <div class="content">
                         <div class="switchcontainer">
                           <div class="vertical-center">
-                              <p class="mb-4">The Arrivals section covers all reservations expected to <b>check <i><u>in</u></i></b> today.</p>
-                              <p class="mb-4">The Groups column shows the incoming groups. In this example, there is <b>one</b> group with <b>two</b> rooms booked, and they have both checked in.</p>
-                              <p class="mb-4">The acronym FIT means Fully Independent Traveller, which refers to people who are not affiliated with a Travel Agency, Company or Group.</p>
-                              <p class="mb-4">In our example, 68 rooms were expected to check in. 19 have already checked in, leaving 49 still to come.</p>
-                              <p class="mb-4">The Total section is the overview of the Arrivals. There were 70 expected check ins, 21 have checked in, and 49 are still to arrive.</p>
+                            <p class="mb-4">The Arrivals section within the PMS displays all reservations anticipated to check in on the current day. Key components of this section include:</p>
+                            <ul>
+                                <li><strong>Groups:</strong> This column lists any incoming groups. In the example, one group with two rooms has already checked in.</li></p>
+                                <li><strong>FIT (Fully Independent Traveler):</strong> FIT denotes guests not affiliated with a travel agency, company, or group.</li></p>
+                                <li><strong>Expected Check-Ins:</strong> The example shows 68 rooms were expected to check in, with 19 already checked in and 49 pending.</li></p>
+                                <li><strong>Total:</strong> This provides an overview of arrivals, showing the total expected check-ins, the number already checked in, and the number remaining.</li></p>
+                            </ul>
+                            <p class="mb-4">This section offers a quick snapshot of the day's arrivals, helping you efficiently manage guest check-ins and allocate resources effectively.</p>
                           </div>
                             <img src="img/iHMS_arrivals.png" class="floatright">
                         </div>
@@ -181,16 +151,31 @@
                     <div class="slide">
                       <div class="heading">Room Status</div>
                       <div class="content">
-                        <div class="switchcontainer">
                           <div class="vertical-center">
-                              <p class="mb-4">The Room Status section gives a quick overview of what condition the rooms are in.</p>
-                              <p class="mb-4">In this example, we can see that there are 2 clean rooms which are occupied, none are due to depart, 26 are vacant, and none are blocked.</p>
-                              <p class="mb-4">When it comes to our dirty rooms, 57 are occupied, none are due to depart, 74 are vacant, and none are blocked.</p>
-                              <p class="mb-4">Rooms marked Dirty / Occupied will likely be guests who have already stayed overnight.</p>
-                              <p class="mb-4">Vacant / Dirty rooms will be rooms that have been vacated, but not yet cleaned.</p>
+                            <img src="img/iHMS_rmstatus.png" style="float: right; border: 1px solid black;">
+                            <p class="mb-4">The Room Status section provides a real-time snapshot of room conditions:</p>
+                            <p class="mb-4">In the provided example, we can observe:</p>
+                            
+                            <ul>
+                            <li><strong>Clean & Occupied:</strong> 2 rooms</li></p>
+                            <li><strong>Clean & Due to Depart:</strong> 0 rooms</li></p>
+                            <li><strong>Clean & Vacant:</strong> 26 rooms</li></p>
+                            <li><strong>Clean & Blocked:</strong> 0 rooms</li></p>
+                            <li><strong>Dirty & Occupied:</strong> 57 rooms</li></p>
+                            <li><strong>Dirty & Due to Depart:</strong> 0 rooms</li></p>
+                            <li><strong>Dirty & Vacant:</strong> 74 rooms</li></p>
+                            <li><strong>Dirty & Blocked:</strong> 0 rooms</li></p>
+                            </ul>
+                            
+                            <p class="mb-4">Interpreting these statuses:</p>
+                            
+                            <ul>
+                            <li><strong>Dirty/Occupied</strong> Occupied rooms awaiting cleaning.</li></p>
+                            <li><strong>Vacant/Dirty</strong> Recently vacated rooms requiring cleaning.</li></p>
+                            </ul>
+                            
+                            <p class="mb-4">This information streamlines room allocation, housekeeping tasks, and operational management.</p>
                           </div>
-                              <img src="img/iHMS_rmstatus.png" class="floatright">
-                        </div>
                       </div>
                     </div>
               
@@ -200,10 +185,23 @@
                       <div class="content">
                         <div class="switchcontainer">
                           <div class="vertical-center">
-                              <p class="mb-4">Much like the Arrivals section, the Departure module shows all the rooms expected to <b>check <i><u>out</u></i></b> today.</p>
-                              <p class="mb-4">In this examle, we can see that there were 56 check outs expected today.</p>
-                              <p class="mb-4">The actual check out number is also 56, meaning that all of our expected check-outs have already departed.</p>
-                              <p class="mb-4">The Due to Depart section shows 0, meaning there are no more check outs for the day.</p>
+                            <p class="mb-4">This section shows rooms expected to check out today, helping track and manage guest departures.</p>
+
+                            <p class="mb-4">Key points from the example:</p>
+                            <ul>
+                                <li><strong>Expected Check-Outs:</strong> 56</li></p>
+                                <li><strong>Actual Check-Outs:</strong> 56</li></p>
+                                <li><strong>Due to Depart:</strong> 0</li></p>
+                            </ul>
+                            
+                            <p class="mb-4">This data is crucial for:</p>
+                            <ul>
+                                <li>Tracking guest departures</li></p>
+                                <li>Resolving check-out discrepancies</li></p>
+                                <li>Ensuring room turnover for new arrivals</li></p>
+                            </ul>
+                            
+                            <p class="mb-4">Monitoring this section helps with efficient departures and improves the guest experience.</p>
                           </div>
                             <img src="img/iHMS_departure.png" class="floatright">
                         </div>
@@ -216,11 +214,14 @@
                       <div class="content">
                         <div class="switchcontainer">
                           <div class="vertical-center">
-                              <p class="mb-4">The VIP / Rewards Guest element shows our arriving VIPs and GC Rewards members.</p>
-                              <p class="mb-4">As we can see from this example, we are expecting 3 VIP Guests.</p>
-                              <p class="mb-4">1 VIP Guest has already arrived.</p>
-                              <p class="mb-4">We're expecting 69 GC Rewards guests.</p>
-                              <p class="mb-4">20 of our expected GC Rewards guests have already arrived.</p>
+                            <p class="mb-4">This section displays upcoming VIP guests and GC Rewards members, allowing you to tailor their arrival experience.</p>
+                            <p class="mb-4"><strong>Example:</strong> 3 VIPs are expected, with 1 arrived. 69 GC Rewards members are expected, with 20 already checked in.</p>
+                            <p class="mb-4">This data helps you:</p>
+                            <ul>
+                                <li>Prepare personalized welcomes for VIPs.</li></p>
+                                <li>Recognize GC Rewards members and offer benefits.</li></p>
+                                <li>Anticipate special guest needs.</li></p>
+                            </ul>
                           </div>
                               <img src="img/iHMS_VIPs.png" class="floatright">
                         </div>
@@ -233,11 +234,16 @@
                       <div class="content">
                         <div class="switchcontainer">
                           <div class="vertical-center">
-                              <p class="mb-4">This section gives us an overview of what's happening in the venue right at this moment.</p>
-                              <p class="mb-4">Here we can see that there are currently 59 guests in house.</p>
-                              <p class="mb-4">There are 108 reservations in the system for today.</p>
-                              <p class="mb-4">Our current occupancy percentage is 36.88%, <b><u><i>including</i></u></b> Out of Order rooms.</p>
-                              <p class="mb-4"><b><u><i>Not</i></u></b> including Out of Order rooms, our occupancy is still at 36.88%.</p>
+                            <p class="mb-4">This section offers a real-time view of hotel occupancy:</p>
+
+                            <ul>
+                            <li><strong>Guests In-House:</strong> Current checked-in guests (e.g., 59).</p>
+                            <li><strong>Reservations:</strong> Total reservations for today (e.g., 108).</p>
+                            <li><strong>Occupancy % (incl. OOO):</strong> Occupied rooms relative to total rooms (e.g., 36.88%).</p>
+                            <li><strong>Occupancy % (excl. OOO):</strong> Occupied rooms relative to available rooms (e.g., 36.88%).</p>
+                            </ul>
+                            
+                            <p class="mb-4">This information helps assess occupancy, anticipate staffing needs, and identify upselling opportunities.</p>
                           </div>
                             <img src="img/iHMS_live.png" class="floatright">
                         </div>
@@ -248,19 +254,22 @@
                     <div class="slide">
                       <div class="heading">Forecast</div>
                       <div class="content">
-                        <div class="switchcontainer">
                           <div class="vertical-center">
-                              <p class="mb-4">The forecast section isn't necessarily relevant to you, but it's good to understand what it means.</p>
-                              <p class="mb-4">Today, there are 108 rooms booked.</p>
-                              <p class="mb-4">We're expecting 175 adults, and 13 children in house.</p>
-                              <p class="mb-4">There will be 52 rooms available after all guests check in.</p>
-                              <p class="mb-4">It's expected that we will make a total of $14,174.97 from today's bookings.</p>
-                              <p class="mb-4">Our occupancy - <b><u><i>including</i></u></b> pending arrivals - is 67.5%.</p>
-                              <p class="mb-4">That percentage <b><u><i>excluding</i></u></b> pending arrivals is still 67.5%</p>
-                              <p class="mb-4">On average, our rooms today are priced at $131.25</p>
+                              <img src="img/iHMS_forecast.png" style="float: right; border: 1px solid black;" width="50%">
+                            <p class="mb-4">The 'Forecast' section offers key insights into today's hotel performance:</p>
+
+                            <ul>
+                                <li><strong>Rooms Booked:</strong> Confirmed reservations.</li></p>
+                                <li><strong>Expected Guests:</strong> Anticipated arrivals.</li></p>
+                                <li><strong>Available Rooms:</strong> Rooms left after check-ins.</li></p>
+                                <li><strong>Projected Revenue:</strong> Estimated total revenue.</li></p>
+                                <li><strong>Occupancy (incl. pending):</strong> Occupied rooms (including expected).</li></p>
+                                <li><strong>Occupancy (excl. pending):</strong> Currently occupied rooms.</li></p>
+                                <li><strong>ADR:</strong> Average room price.</li></p>
+                            </ul>
+                            
+                            <p class="mb-4">Though mainly for management, this data can help you anticipate guest needs and occupancy fluctuations.</p>
                           </div>
-                              <img src="img/iHMS_forecast.png" class="floatright">
-                        </div>
                       </div>
                     </div>
                                       
@@ -268,16 +277,20 @@
                     <div class="slide">
                       <div class="heading">History & Forecast</div>
                       <div class="content">
-                        <div class="switchcontainer">
                               <div class="vertical-center">
-                                  <p class="mb-4">Like the Forecast, the History & Forecast section is not really relevant to you, but is still useful to know.</p>
-                                  <p class="mb-4">This chart shows the Average Room Rate, RevPAR (Revenue Per Available Room), and Occupancy for the current month.</p>
-                                  <p class="mb-4">The Average Room Rate is shown in red. On the 31st of July, 2024 the Average Room Rate was $139.58.</p>
-                                  <p class="mb-4">The RevPAR is in orange. It was 57.58 at the end of July in 2024.</p>
-                                  <p class="mb-4">The Occupancy percentage is in blue. The average occupancy percentage for 31/07/2024 was 41.25%.</p>
+                                <p>Although less directly relevant to your daily tasks, the History & Forecast section offers valuable insights into the hotel's performance trends.</p>
+
+                                <p>This chart displays three key metrics for the current month:</p>
+                                
+                                <ul>
+                                <li><strong>Average Room Rate (ARR):</strong> Represented in red, this is the average price per sold room for the given period (e.g., $139.58 on July 31, 2024).</li></p>
+                                <li><strong>RevPAR (Revenue Per Available Room):</strong> Displayed in orange, this metric reflects the revenue generated per available room, whether occupied or not (e.g., 57.58 on July 31, 2024).</li></p>
+                                <li><strong>Occupancy:</strong> Shown in blue, this indicates the percentage of occupied rooms during the period (e.g., 41.25% on July 31, 2024).</li></p>
+                                </ul>
+                                
+                                <p>Familiarize yourself with these metrics to better understand the hotel's performance and inform your guest interactions.</p>
                               </div>
-                          <img src="img/iHMS_history.png" class="floatright">
-                        </div>
+                          <img src="img/iHMS_history.png" height="40%" style="border: 1px solid black;" class="center">
                       </div>
                     </div>
               
@@ -285,13 +298,12 @@
                     <div class="slide">
                       <div class="heading">Notifications</div>
                       <div class="content">
-                        <div class="switchcontainer">
                           <div class="vertical-center">
-                              <p class="mb-4">The Notifications section is where the tasks for the day will be displayed.</p>
-                              <p class="mb-4">These tasks will need to be addressed by the relevant department as requested in the task.</p>
+                            <p class="mb-4">The Notifications section in the system serves as a centralized hub for displaying daily tasks.</p>
+                            <p class="mb-4">Each task in the Notifications section will be assigned to the relevant department responsible for its completion.</p>
+                            <p class="mb-4">It's crucial to review the Notifications section regularly and address assigned tasks promptly to ensure smooth hotel operations.</p>
+                              <img src="img/iHMS_notifications.png" class="center" style="border: 1px solid black;">
                           </div>
-                              <img src="img/iHMS_notifications.png" class="floatright">
-                      </div>
                       </div>
                     </div>
               
@@ -299,15 +311,13 @@
                     <div class="slide">
                       <div class="heading">Market Segments</div>
                       <div class="content">
-                        <div class="switchcontainer">
                               <div class="vertical-center">
-                                  <p class="mb-4">This chart shows which market segment is most prevalent today.</p>
-                                  <p class="mb-4">In our example, the bulk of our guests today are under the Int Leis segment.</p>
-                                  <p class="mb-4">Folios under this segment are spending a total of $7,455.60.</p>
-                                  <p class="mb-4">As mentioned in the Forecast section, our total revenue for the day is $14,174.97.</p>
+                          <img src="img/iHMS_segments.png" style="border: 1px solid black; float: right;" width="50%">
+                                <p class="mb-4">This chart visually represents the distribution of guest bookings across various market segments for the current day.</p>
+                                <p class="mb-4">In this specific example, the majority of guests fall under the <b>Int Leis</b> segment, contributing a total of $7,455.60 in revenue.</p>
+                                <p class="mb-4">As previously noted in the Forecast section, the overall projected revenue for today is $14,174.97.</p>
+                                <p class="mb-4">Understanding the dominant market segment allows you to tailor your services and anticipate the specific needs and expectations of today's guests.</p>
                               </div>
-                          <img src="img/iHMS_segments.png" class="floatright">
-                        </div>
                       </div>
                     </div>
                     
@@ -315,13 +325,11 @@
                     <div class="slide">
                       <div class="heading">Guest Requests</div>
                       <div class="content">
-                        <div class="switchcontainer">
                           <div class="vertical-center">
-                              <p class="mb-4">Any requests made by guests will show up in this section.</p>
-                              <p class="mb-4">As with the Notifications, these will need to be actioned as required.</p>
+                            <p class="mb-4">This section centralizes guest requests, enabling you to track and fulfill them efficiently.</p>
+                            <p class="mb-4">Similar to Notifications, addressing these requests promptly ensures guest satisfaction.</p>
+                              <img src="img/iHMS_requests.png" class="center" style="border: 1px solid black;">
                           </div>
-                              <img src="img/iHMS_requests.png" class="floatright">
-                        </div>
                       </div>
                     </div>
                     
@@ -331,18 +339,26 @@
                         <div class="content">
                             <div class="switchcontainer">
                                 <div class="vertical-center">
-                                    <p class="mb-4">The Client Management tab is where we can view, edit and merge both guest and company profiles.</p>
-                                    <p class="mb-4">To view & edit a profile, select guest or company, depending on what you need.</p>
-                                    <p class="mb-4">Search the required name and double-click to open the profile.</p>
-                                    <p class="mb-4">Make any required changes, then save & exit the profile.</p>
-                                    <p class="mb-4">To merge profiles, first search for the required name.</p>
-                                    <p class="mb-4">Select the Main Guest, then the Other Guest profiles that need to be merged.</p>
-                                    <p class="mb-4">Click Merge.</p>
-                                    <p class="mb-4">This should consolidate all of the other profiles into the selected Main Guest profile.</p>
+                                  <p class="mb-4">The Client Management tab lets you view, edit, and merge guest/company profiles.</p>
+
+                                  <h5>Viewing and Editing</h5>
+                                  <ol>
+                                    <li>Select "Guest" or "Company".</li></p>
+                                    <li>Search and double-click the profile.</li></p>
+                                    <li>Make changes and save.</li></p>
+                                  </ol>
+                                  
+                                  <h5>Merging</h5>
+                                  <ol>
+                                    <li>Search for the name.</li></p>
+                                    <li>Select the "Main Guest" profile.</li></p>
+                                    <li>Select the profiles to merge.</li></p>
+                                    <li>Click "Merge" to combine them into the "Main Guest" profile.</li></p>
+                                  </ol>
                                 </div>
                                 <div class="image-stack">
-                                    <img src="img/iHMS_clientman01.png" class="stacked-image">
-                                    <img src="img/iHMS_clientman02.png" class="stacked-image">
+                                    <img src="img/iHMS_clientman01.png" style="border: 1px solid black;" class="stacked-image">
+                                    <img src="img/iHMS_clientman02.png" style="border: 1px solid black;" class="stacked-image">
                                 </div>
                             </div>
                         </div>
@@ -354,12 +370,14 @@
                       <div class="content">
                         <div class="switchcontainer">
                           <div class="vertical-center">
-                              <p class="mb-4">The Booking tab is where reservations are made and modified.</p>
-                              <p class="mb-4">Each selection allows the user to perform a different task based in the reservations process.</p>
-                              <p class="mb-4">Both Create Reservation & Quick Reservation allow you to make a new booking.</p>
-                              <p class="mb-4">Manage Folio gives you a quick overview of details for each folio, and lets you quickly open and alter bookings.</p>
-                              <p class="mb-4">Manage Reservation & Manage Reservation (By Page) do much the same as Manage Folio, though with less details immediately available at a glance.</p>
-                              <p class="mb-4">Manage Suspended Reservation does ... (NO IDEA)</p>
+                            <p class="mb-4">The Booking tab is central to creating, modifying, and managing guest reservations in iHMS.</p>
+                            <p class="mb-4">Key options within this tab:</p>
+                            <ul>
+                                <li><strong>Create Reservation & Quick Reservation:</strong> Make new guest bookings.</li></p>
+                                <li><strong>Manage Folio:</strong> Detailed view and editing of guest bookings.</li></p>
+                                <li><strong>Manage Reservation & Manage Reservation (By Page):</strong> Similar to Manage Folio, but with less initial detail.</li></p>
+                                <li><strong>Manage Suspended Reservation:</strong> Handle reservations on hold or needing special attention.</li></p>
+                            </ul>
                           </div>
                               <img src="img/iHMS_booking01.png" class="floatright">
                         </div>
@@ -368,28 +386,29 @@
                     
                           <!-- Slide 15 -->
                     <div class="slide">
-                      <div class="heading">Booking Tab Part 2</div>
-                      <div class="content">
-                        <div class="switchcontainer">
-                          <div class="vertical-center">
-                              <p class="mb-4">Manage Tasks allows the user to add and edit Tasks.</p>
-                              <p class="mb-4">On this page, you can see all of the current tasks, whether they are open/closed and who needs to action which Task.</p>
+                        <div class="heading">Booking Tab Part 2</div>
+                          <div class="content">
+                            <div class="switchcontainer">
+                              <div class="vertical-center">
+                                <h5>Manage Tasks</h5>
+                                <p class="mb-4">This section allows adding and modifying tasks. View current tasks, their status, and assigned personnel.</p>
+                                
+                                <h5>Groups</h5>
+                                <p class="mb-4">Primarily used by Reservations, this section manages group bookings. </p>
+                                <ul>
+                                <li><strong>Create Group Reservation:</strong> Make new bookings for groups.</li></p>
+                                <li><strong>Manage Group Reservation:</strong> Manage existing group bookings.</li></p>
+                                <li><strong>Manage Master Allotment:</strong> Handle rooms allocated to a group's master folio.</li></p>
+                                <li><strong>Manage Sub Allotment:</strong> Manage sub-allotments within a group folio.</li></p>
+                                </ul>
+                              </div>
+                                <div class="image-stack">
+                                    <img src="img/iHMS_booking02.png" style="border: 1px solid black;" class="stacked-image">
+                                    <img src="img/iHMS_booking03.png" style="border: 1px solid black;" class="stacked-image">
+                                </div>
                           </div>
-                              <img src="img/iHMS_booking02.png" class="floatright">
-                        </div>
-                        <div class="switchcontainer">
-                          <div class="vertical-center">
-                              <p class="mb-4">The Groups section is much like the Reservation options, but for Group bookings instead of singular guests.</p>
-                              <p class="mb-4">The Reservations Department will utilise these functions; you will likely not need this section at all.</p>
-                              <p class="mb-4">Create Group Reservation is fairly self-explanatory. This option allows you to create a reservation for a group of people, such as a tour group.</p>
-                              <p class="mb-4">Manage Group Reservation allows you to quickly and easily manage a booking for a group.</p>
-                              <p class="mb-4">Manage Master Allotment lets you manage the rooms allotted to the master folio of a group.</p>
-                              <p class="mb-4">Manage Sub Allotment allows you to manage the sub-allotments of a group folio.</p>
-                          </div>
-                              <img src="img/iHMS_booking03.png" class="floatright">
                         </div>
                       </div>
-                    </div>
                     
                           <!-- Slide 16 -->
                     <div class="slide">
@@ -397,13 +416,16 @@
                       <div class="content">
                         <div class="switchcontainer">
                           <div class="vertical-center">
-                              <p class="mb-4">The Front Desk tab is going to be the main tab you will utilise as a GSA.</p>
-                              <p class="mb-4">The Arrivals option allows you to quickly view all of the arrivals for the day.</p>
-                              <p class="mb-4">In House lets you view all of the guests that are currently checked in.</p>
-                              <p class="mb-4">Departures is where you will find the expected departures for the day.</p>
-                              <p class="mb-4">Manage House Account is where the current Virtual Folios can be viewed.</p>
-                              <p class="mb-4">If a guest has requested an Express Check Out, you will find it in this page.</p>
-                              <p class="mb-4">Recent Check In/Out shows the most recent check ins and check outs in the system.</p>
+                            <p class="mb-4">The Front Desk tab is your main workspace in iHMS.</p>
+                            <ul>
+                                <li><strong>Arrivals:</strong> Overview of today's expected check-ins.</li></p>
+                                <li><strong>In House:</strong> List of currently checked-in guests.</li></p>
+                                <li><strong>Departures:</strong> Rooms scheduled to check out today.</li></p>
+                                <li><strong>Manage House Account:</strong> View and manage current Virtual Folios.</li></p>
+                                <li><strong>Express Check-Outs:</strong> Guest requests for Express Check-Out.</li></p>
+                                <li><strong>Recent Check In/Out:</strong> Log of recent arrivals and departures.</li></p>
+                            </ul>
+                            <p class="mb-4">Familiarize yourself with these functions to manage check-ins, check-outs, and other front desk tasks.</p>
                           </div>
                               <img src="img/iHMS_frontdesk.png" class="floatright">
                         </div>
@@ -416,12 +438,16 @@
                       <div class="content">
                         <div class="switchcontainer">
                           <div class="vertical-center">
-                              <p class="mb-4">The Front Desk Workspace dropdown allows for batch room assignment, charge and payment posting, as well as some extra options for keys. <span style="color:#e20118">WILL THIS BE OUR NEW KEY CUTTING SYSTEM???</span></p>
-                              <p class="mb-4">Batching allows us to quickly allocate rooms, post charges and payments to a collection of folios.</p>
-                              <p class="mb-4">For example, on the Batch Room Assignment page you can type the allocated rooms numbers into the rooms that are currently unassigned, and allocate them all at once.</p>
-                              <p class="mb-4">Similarly, charges and payments can be batched in their respective pages and posted all at once.</p>
-                              <p class="mb-4">Guest Requests lets you quickly add any request a guest makes into the system. It will display in the Guest Request (Summary View) section of the home page.</p>
-                              <p class="mb-4">Issue Additional / Replacement Key will let you make a note that extra (or replacement) keys have been cut for the room.</p>
+                            <p class="mb-4">The Front Desk Workspace dropdown in iHMS offers tools for batch room assignment, charge and payment posting, and key management. These enhance efficiency by performing actions on multiple folios at once.</p>
+
+                            <h5>Batch Processing</h5>
+                            <p class="mb-4">Batching allows quick allocation of rooms, posting of charges, and processing of payments for multiple folios. For example, the Batch Room Assignment page lets you assign several unassigned rooms by simply entering the allocated room numbers. Similarly, you can batch charges and payments on their respective pages and post them all together.</p>
+                            
+                            <h5>Guest Requests</h5>
+                            <p class="mb-4">The "Guest Requests" option enables quick logging of guest requests into the system. These appear in the "Guest Request (Summary View)" section on the home page for visibility and timely action.</p>
+                            
+                            <h5>Key Management</h5>
+                            <p class="mb-4">The "Issue Additional / Replacement Key" function lets you document issuing extra or replacement keys for a specific room.</p>
                           </div>
                             <img src="img/iHMS_frontdesk.png" class="floatright">
                         </div>
