@@ -1,4 +1,3 @@
-/********** Template CSS **********/
 :root {
     /* Define root CSS variables for colors */
     --primary: #e20118; /* Primary color */
@@ -457,8 +456,8 @@ figcaption {
     background-color: var(--primary); /* Background color */
     color: #fff; /* Text color */
     border-radius: 50%; /* Circular button */
-    width: 48px; /* Width */
-    height: 48px; /* Height */
+    width: 50px; /* Width */
+    height: 50px; /* Height */
     display: flex; /* Flexbox for centering */
     align-items: center; /* Center icon vertically */
     justify-content: center; /* Center icon horizontally */
