@@ -448,3 +448,26 @@ figcaption {
     display: table; /* Display as table */
     clear: both; /* Clear floats */
 }
+
+.back-to-top {
+    position: fixed; /* Fix the button to the viewport */
+    bottom: 20px; /* Distance from the bottom */
+    right: 20px; /* Distance from the right */
+    z-index: 1000; /* Ensure it’s above other elements */
+    background-color: var(--primary); /* Background color */
+    color: #fff; /* Text color */
+    border-radius: 50%; /* Circular button */
+    width: 48px; /* Width */
+    height: 48px; /* Height */
+    display: flex; /* Flexbox for centering */
+    align-items: center; /* Center icon vertically */
+    justify-content: center; /* Center icon horizontally */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Shadow for better visibility */
+    text-align: center; /* Center text/icon */
+    font-size: 24px; /* Icon size */
+}
+
+.back-to-top:hover {
+    background-color: darken(var(--primary), 10%); /* Darker color on hover */
+    transition: background-color 0.3s; /* Smooth color transition */
+}
