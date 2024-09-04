@@ -40,44 +40,8 @@
     <!-- Slideshow Stylesheet -->
     <link href="css/slideshow.css" rel="stylesheet">
 
-    <!-- Font Awesome Icon CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-      
-      /* Create two equal columns that floats next to each other */
-      .column {
-        float: left;
-        width: 50%;
-        padding: 10px;
-        height: 300px; /* Should be removed. Only for demonstration */
-      }
-      
-      /* Clear floats after the columns */
-      .row:after {
-        content: "";
-        display: table;
-        clear: both;
-      }
-      </style>
-
-      <style>
-      table { 
-        border: 1px solid #000; border-collapse: collapse; text-align: center; 
-      }
-      table td { 
-        border-left: 1px solid #000; 
-      }
-      table td:first-child { 
-        border-left: 1px solid #000;
-      }
-      table th {
-        border-left: 1px solid #000;
-      }
-      </style>
+    <!-- Table Stylesheet -->
+    <link rel="stylesheet" href="css/ExcelSheetStylesheet.css">
 
 </head>
 
@@ -572,45 +536,42 @@
                             Today → “Postcode Range” Start At “Accomodation” → “Postcode Range” End At “Visa/Mastercard” → Enter → PRINT</b></li></p>
                           <li>These reports should be arranged as follows:</li></p>
                       </ul>
-                      <table style="margin-left:auto;margin-right:auto;width:100%;">
+
+                        <table class="center" style="width: 100%;" cellspacing="2%" cellpadding="2%">
                         <colgroup>
-                            <col class="xl65" width="33%">
-                            <col class="xl65" width="33%">
-                            <col class="xl65" width="33%">
+                            <col style="width: auto;">
+                            <col style="width: auto;">
+                            <col style="width: auto;">
                         </colgroup>
+                        <tbody>
                         <thead>
-                            <tr style="background-color: #f2f2f2; color: #333; font-size: 16px;">
-                            <th style="background-color: #e20118; text-align: center; border: 1px solid black; vertical-align: middle; height: 15pt;">
-                                <h5 style="color: #ffffff; margin: 0;">To Keep:</h5>
-                            </th>
-                            <th style="background-color: #e20118; text-align: center; border: 1px solid black; vertical-align: middle; height: 15pt;">
-                                <h5 style="color: #ffffff; margin: 0;">To Duty Manager:</h5>
-                            </th>
-                            <th style="background-color: #e20118; text-align: center; border: 1px solid black; vertical-align: middle; height: 15pt;">
-                                <h5 style="color: #ffffff; margin: 0;">To the Day Bag:</h5>
-                            </th>
+                            <tr style="background-color: #e20118; color: white;">
+                              <th style="text-align: center;"><h5>To Keep:</h5></th>
+                              <th style="text-align: center;"><h5>To Duty Manager:</h5></td>
+                              <th style="text-align: center;"><h5>To the Day Bag:</h5></td>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr style="height: 15pt;">
-                            <td style="border: 1px solid black; height: 15pt; text-align: center; vertical-align: middle;">American Express</td>
-                            <td style="border: 1px solid black; height: 15pt; text-align: center; vertical-align: middle;"><u><b>ALL</b></u> ENCORE pages</td>
-                            <td rowspan="4" style="border: 1px solid black; height: 60pt; text-align: center; vertical-align: middle;">Everything else</td>
+                            <tr>
+                            <td>American Express</td>
+                            <td><u><b>ALL</b></u> ENCORE pages</td>
+                            <td rowspan="4">Everything else</td>
                             </tr>
-                            <tr style="height: 15pt;">
-                            <td style="border: 1px solid black; height: 15pt; text-align: center; vertical-align: middle;">Eftpos</td>
-                            <td style="border: 1px solid black; height: 15pt; text-align: center; vertical-align: middle;"><u><b>ALL</b></u> FOOTLIGHTS pages</td>
+                            <tr>
+                            <td>Eftpos</td>
+                            <td><u><b>ALL</b></u> FOOTLIGHTS pages</td>
                             </tr>
-                            <tr style="height: 15pt;">
-                            <td style="border: 1px solid black; height: 15pt; text-align: center; vertical-align: middle;">Visa/MasterCard</td>
-                            <td style="border: 1px solid black; height: 15pt; text-align: center; vertical-align: middle;"><u><b>ALL</b></u> ROOM SERVICE pages <u><b>EXCEPT</b></u> "Supper" & "Delivery" pages</td>
+                            <tr>
+                            <td>Visa/MasterCard</td>
+                            <td><u><b>ALL</b></u> ROOM SERVICE pages <u><b>EXCEPT</b></u> "Supper" & "Delivery" pages</td>
                             </tr>
-                            <tr style="height: 15pt;">
-                            <td style="border: 1px solid black; height: 15pt; text-align: center; vertical-align: middle;">(Any card payments)</td>
-                            <td style="border: 1px solid black; height: 15pt; text-align: center; vertical-align: middle;">Movies</td>
+                            <tr>
+                            <td>(Any card payments)</td>
+                            <td>Movies</td>
                             </tr>
                         </tbody>
-                        </table><br>
+                        </table>
+                        <br>
                         <p class="mb-4">Once these reports have been placed in the Day Bag pile, you can move this pile to the Back Office, under the label “Day Bag”, which is between the two computers.</p>
                       </div>
                     </div>

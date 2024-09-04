@@ -34,6 +34,9 @@
     <!-- Searchbar Stylesheet -->
     <link href="css/searchbar.css" rel="stylesheet">
 
+    <!-- Tables Stylesheet -->
+    <link href="css/ExcelSheetStylesheet.css" rel="stylesheet">
+
     <!-- Excel Spreadsheet Stylesheet -->
     <link href="css/ExcelSheetStylesheet.css" rel="stylesheet">
 
@@ -97,130 +100,153 @@
                     <h2 class="section-title bg-white text-start text-primary pe-3">Fire Safety Procedures</h2>
                     <p class="mb-4">In the case of a Fire or Evacuation we are required to follow certain protocols.</p>
                     <p class="mb-4">It is important that we follow these procedures to ensure not only the safety of our patrons, but our own as well.</p>
-                    <p class="mb-4">In the case of emergecies such as these, it is important to remember the chain of command, as different personnael have different roles in these events.</p>
-                    <p style="text-align: center;"><u><b>Chief Fire Warden</b></u></p>
-                    <p style="text-align: center;">Duty Manager</p>
-                    <p style="text-align: center;"></p>
-                    <p style="text-align: center;"><u><b>Deputy Warden</b></u></p>
-                    <p style="text-align: center;">Guest Service Agent (Main)</p>
-                    <p style="text-align: center;">Maintenance Manager</p>
-                    <p style="text-align: center;">Food & Beverage Supervisor</p>
-                    <p style="text-align: center;">Stand By: Chef, Executive Housekeeper</p>
-                    <p style="text-align: center;"></p>
-                    <p style="text-align: center;"><u><b>Wardens</b></u></p>
-                    <p style="text-align: center;">Food & Beverage Attendant</p>
-                    <p style="text-align: center;">Reservations Agent</p>
-                    <p style="text-align: center;">Administration Staff</p>
-                    <p style="text-align: center;">Maintenance Handyperson</p>
-                    <p style="text-align: center;">Housekeeping Supervisor</p>
-                    <p style="text-align: center;"></p>
-                    <p style="text-align: center;"><b>Kitchen Team</b></p>
-                    <p style="text-align: center;">Ensure Gas Main is switched off at Emergency Switch</p>
-                    <p style="text-align: center;"></p>
-                    <p style="text-align: center;"><b>Housekeeping Attendants / Public Areas</b></p>
-                    <p style="text-align: center;">Ensure store rooms are secure and evacuate building to muster point using fire stairs.</p>
-                    <p style="text-align: center;">Assist guests and provide directions where necessary.</p>
-                    <p style="text-align: center;"></p>
-                    <h5 style="text-align: center;">After hours - Night Audit</h5>
-                    <p style="text-align: center;"><u><b>Chief Fire Warden</b></u></p>
-                    <p style="text-align: center;">Night Manager</p>
-                    <p style="text-align: center;"><u><b>Deputy Warden</b></u></p>
-                    <p style="text-align: center;">Night Guest Service Agent</p>
-                    <p style="text-align: center;">Stand By: All remaining staff</p>
+                    <p class="mb-4">In the case of emergecies such as these, it is important to remember the chain of command, as different personnel have different roles in these events:</p>
+
+                    <div class="three-column-layout">
+                        <div class="column">
+                            <p style="text-align: center;"><u><b>Chief Fire Warden</b></u></p>
+                            <p style="text-align: center;">Duty Manager</p>
+                            <p style="text-align: center;"></p>
+                        </div>
+                        <div class="column">
+                            <p style="text-align: center;"><u><b>Deputy Warden</b></u></p>
+                            <p style="text-align: center;">Guest Service Agent (Main)</p>
+                            <p style="text-align: center;">Maintenance Manager</p>
+                            <p style="text-align: center;">Food & Beverage Supervisor</p>
+                            <p style="text-align: center;">Stand By: Chef, Executive Housekeeper</p>
+                            <p style="text-align: center;"></p>
+                        </div>
+                        <div class="column">
+                            <p style="text-align: center;"><u><b>Wardens</b></u></p>
+                            <p style="text-align: center;">Food & Beverage Attendant</p>
+                            <p style="text-align: center;">Reservations Agent</p>
+                            <p style="text-align: center;">Administration Staff</p>
+                            <p style="text-align: center;">Maintenance Handyperson</p>
+                            <p style="text-align: center;">Housekeeping Supervisor</p>
+                            <p style="text-align: center;"></p>
+                        </div>
+                    </div>
+
+                    <div class="three-column-layout">
+                        <div class="column">
+                            <p style="text-align: center;"><u><b>Kitchen Team</b></u></p>
+                            <p style="text-align: center;">Ensure Gas Main is switched off at Emergency Switch</p>
+                            <p style="text-align: center;"></p>
+                        </div>
+                        <div class="column">
+                            <p style="text-align: center;"><u><b>Housekeeping Attendants / Public Areas</b></u></p>
+                            <p style="text-align: center;">Ensure store rooms are secure and evacuate building to muster point using fire stairs.</p>
+                            <p style="text-align: center;">Assist guests and provide directions where necessary.</p>
+                            <p style="text-align: center;"></p>
+                        </div>
+                        <div class="column">
+                            <p style="text-align: center;"><u><b>After hours - Night Audit</b></u></p>
+                            <p style="text-align: center;"><u><b>Chief Fire Warden</b></u></p>
+                            <p style="text-align: center;">Night Manager</p>
+                            <p style="text-align: center;"><u><b>Deputy Warden</b></u></p>
+                            <p style="text-align: center;">Night Guest Service Agent</p>
+                        </div>
+                    </div>
+                    
+
                     <p class="mb-4">You will be required to perform certain tasks depending on your position in this hierarchy.</p>
                     <p class="mb-4">The following table explains what those tasks will be:</p>
-                    <table class="center" style="width: 100%; border-collapse: collapse;" width="100%" cellspacing="10px" cellpadding="10px">
+
+                    <table class="center" style="width: auto;" cellspacing="2%" cellpadding="2%">
                         <colgroup>
-                        <col class="xl65" width="33.33%">
-                        <col class="xl65" width="33.33%">
-                        <col class="xl65" width="33.33%">
+                            <col style="width: 33.33%;">
+                            <col style="width: 33.33%;">
+                            <col style="width: 33.33%;">
                         </colgroup>
                         <tbody>
-                        <tr>
-                        <td class="xl68" colspan="5" width="33.33%">
-                        <h4 style="text-align: center; color: white;">IN THE EVENT OF A FIRE ALARM</h4>
-                        </td>
-                        </tr>
-                        <tr>
-                        <td class="xl66" style="border-top: none; text-align: center;">Wardens</td>
-                        <td class="xl66" style="border-top: none; text-align: center;">Deputy Warden</td>
-                        <td class="xl66" style="border-left: none; text-align: center;" colspan="3">Chief Warden (Duty Manager)</td>
-                        </tr>
-                        <tr>
-                        <td class="xl66" style="border-top: none; text-align: center;">Report to Duty Manager</td>
-                        <td class="xl66" style="border-top: none; text-align: center; height: auto;">Lockdown lifts once the evacuation tone (T9 key) is activated or as instructed by DM.</td>
-                        <td class="xl66" style="border-top: none; border-left: none; text-align: center;" colspan="3">Proceed to Fire Panel</td>
-                        </tr>                        
-                        <tr>
-                        <td class="xl66" style="border-top: none; text-align: center;">Assist guests as needed</td>
-                        <td class="xl66" style="border-top: none; text-align: center;">Print Contingency Report</td>
-                        <td class="xl67" style="border-top: none; border-left: none; text-align: center;" colspan="3" width="33.33%">Check LCD screen for the location of the alarm activation - Do NOT go up to investigate</td>
-                        </tr>
-                        <tr>
-                        <td class="xl66" style="border-top: none; text-align: center;">Direct Guests to the evacuation point</td>
-                        <td class="xl66" style="border-top: none; text-align: center;">Open the Car Park garage door</td>
-                        <td class="xl67" style="border-top: none; border-left: none; text-align: center;" colspan="3" width="33.33%">Contact building Manager, Head of Departments, supervisors including Houseman (pm shift) OR direct wardens to make calls</td>
-                        </tr>
-                        <tr>
-                        <td class="xl66" style="border-top: none; text-align: center;">Await further instructions from Fire Brigade / DM</td>
-                        <td class="xl66" style="border-top: none; text-align: center;">Set the Entrance glass door to open mode</td>
-                        <td class="xl66" style="border-left: none; text-align: center;" colspan="3">Advise AGM, EAM, Maintenance Manager & FOM</td>
-                        </tr>
-                        <tr>
-                        <td class="xl66" style="border-top: none; text-align: center;">Assist in reinhabitation process</td>
-                        <td class="xl66" style="border-top: none; text-align: center;">Prop open the fire door in the lobby</td>
-                        <td class="xl66" style="border-top: none; border-left: none; text-align: center;" colspan="3">Await Fire Brigade arrival at Fire Panel</td>
-                        </tr>
-                        <tr>
-                        <td class="xl66" style="border-top: none; text-align: center;"></td>
-                        <td class="xl66" style="border-top: none; text-align: center;">Go to Basement and direct guests</td>
-                        <td class="xl66" style="border-left: none; text-align: center;" colspan="3">Check and communicate with GSA to ensure all reception tasks are complete</td>
-                        </tr>
-                        <tr>
-                        <td class="xl66" style="border-top: none; text-align: center;"></td>
-                        <td class="xl66" style="border-top: none; text-align: center;">Direct Guests to evacuation point</td>
-                        <td class="xl66" style="border-left: none; text-align: center;" colspan="3">Evacuate once the alarm sounds 'Whoop' 'Whoop'</td>
-                        </tr>
-                        <tr>
-                        <td class="xl66" style="border-top: none; text-align: center;"></td>
-                        <td class="xl66" style="border-top: none; text-align: center;">Await further instructions from Fire Brigade / DM</td>
-                        <td class="xl66" style="border-left: none; text-align: center;" colspan="3">Direct Fire Brigade to site - Direct wardens to fire exit points</td>
-                        </tr>
-                        <tr>
-                        <td class="xl66" style="border-top: none; text-align: center;"></td>
-                        <td class="xl66" style="border-top: none; text-align: center;">Assist in reinhabitation process</td>
-                        <td class="xl66" style="border-top: none; border-left: none; text-align: center;" colspan="3">Assist in reinhabitation process (service recovery)</td>
-                        </tr>
-                        <tr>
-                        <td class="xl66" style="border-top: none; text-align: center;"></td>
-                        <td class="xl66" style="border-top: none; text-align: center;"></td>
-                        <td class="xl66" style="border-left: none; text-align: center;" colspan="3">Advise AGM, EAM, Maintenance Manager & FOM & Building Manager</td>
-                        </tr>
-                        <tr>
-                        <td class="xl66" style="border-top: none; text-align: center;"></td>
-                        <td class="xl66" style="border-top: none; text-align: center;"></td>
-                        <td class="xl66" style="border-left: none; text-align: center;" colspan="3">Complete incident report within 24 hours</td>
-                        </tr>
-                        <tr>
-                        <td class="xl66" style="border-top: none; text-align: center;"></td>
-                        <td class="xl66" style="border-top: none; text-align: center;"></td>
-                        <td class="xl66" style="border-left: none; text-align: center;" colspan="3">OR</td>
-                        </tr>
-                        <tr>
-                        <td class="xl66" style="border-top: none; text-align: center;"></td>
-                        <td class="xl66" style="border-top: none; text-align: center;"></td>
-                        <td class="xl66" style="border-left: none; text-align: center;" colspan="3">Announce False Alarm - with Fire Brigade approval over PA</td>
-                        </tr>
-                        <tr>
-                        <td class="xl66" style="border-top: none; text-align: center;"></td>
-                        <td class="xl66" style="border-top: none; text-align: center;"></td>
-                        <td class="xl66" style="border-left: none; text-align: center;" colspan="3">Advise AGM, EAM, Maintenance Manager & FOM & Building Manager</td>
-                        </tr>
-                        <tr>
-                        <td class="xl66" style="border-top: none; text-align: center;" colspan="5"><b>Evacuation Assembly Point - 129 Lonsdale St</b></td>
-                        </tr>
+
+                        <thead>
+                            <tr style="background-color: #e20118;">
+                                <th style="text-align: center;" colspan="3"><h5>IN THE EVENT OF A FIRE ALARM</h5></th>
+                            </tr>
+                        </thead>
+                            <tr>
+                                <td>Wardens</td>
+                                <td>Deputy Warden</td>
+                                <td colspan="3">Chief Warden (Duty Manager)</td>
+                            </tr>
+                            <tr>
+                                <td>Report to Duty Manager</td>
+                                <td>Lockdown lifts once the evacuation tone (T9 key) is activated or as instructed by DM.</td>
+                                <td colspan="3">Proceed to Fire Panel</td>
+                            </tr>
+                            <tr>
+                                <td>Assist guests as needed</td>
+                                <td>Print Contingency Report</td>
+                                <td colspan="3">Check LCD screen for the location of the alarm activation - Do NOT go up to investigate</td>
+                            </tr>
+                            <tr>
+                                <td>Direct Guests to the evacuation point</td>
+                                <td>Open the Car Park garage door</td>
+                                <td colspan="3">Contact building Manager, Head of Departments, supervisors including Houseman (pm shift) OR direct wardens to make calls</td>
+                            </tr>
+                            <tr>
+                                <td>Await further instructions from Fire Brigade / DM</td>
+                                <td>Set the Entrance glass door to open mode</td>
+                                <td colspan="3">Advise AGM, EAM, Maintenance Manager & FOM</td>
+                            </tr>
+                            <tr>
+                                <td>Assist in reinhabitation process</td>
+                                <td>Prop open the fire door in the lobby</td>
+                                <td colspan="3">Await Fire Brigade arrival at Fire Panel</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Go to Basement and direct guests</td>
+                                <td colspan="3">Check and communicate with GSA to ensure all reception tasks are complete</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Direct Guests to evacuation point</td>
+                                <td colspan="3">Evacuate once the alarm sounds 'Whoop' 'Whoop'</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Await further instructions from Fire Brigade / DM</td>
+                                <td colspan="3">Direct Fire Brigade to site - Direct wardens to fire exit points</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Assist in reinhabitation process</td>
+                                <td colspan="3">Assist in reinhabitation process (service recovery)</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td colspan="3">Advise AGM, EAM, Maintenance Manager & FOM & Building Manager</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td colspan="3">Complete incident report within 24 hours</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td colspan="3">OR</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td colspan="3">Announce False Alarm - with Fire Brigade approval over PA</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td colspan="3">Advise AGM, EAM, Maintenance Manager & FOM & Building Manager</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" style="background-color: #e20118;"><b><h5 style="color: white;">Evacuation Assembly Point - 129 Lonsdale St</h5></b></td>
+                            </tr>
                         </tbody>
-                        </table><br>
+                    </table>
+                        
+                        <br>
                     <p class="mb-4">Below is a more in-depth breakdown of each persons role in an emergency situation:</p>
                     <h5>Duty Manager (Chief Warden)</h5>
                     <ol>

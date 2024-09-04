@@ -1,275 +1,299 @@
 /********** Template CSS **********/
 :root {
-    --primary: #e20118;
-    --light: #F0FBFC;
-    --dark: #181d38;
+    /* Define root CSS variables for colors */
+    --primary: #e20118; /* Primary color */
+    --light: #F0FBFC; /* Light color */
+    --dark: #181d38; /* Dark color */
 }
 
+/*** Typography ***/
 .fw-medium {
+    /* Medium font-weight */
     font-weight: 600 !important;
 }
 
 .fw-semi-bold {
+    /* Semi-bold font-weight */
     font-weight: 700 !important;
 }
 
-.back-to-top {
-    position: fixed;
-    display: none;
-    right: 45px;
-    bottom: 45px;
-    z-index: 99;
-}
-
 body {
+    /* Set base font size for the body */
     font-size: 16px;
 }
 
 /*** Spinner ***/
 #spinner {
+    /* Spinner hidden by default */
     opacity: 0;
     visibility: hidden;
     transition: opacity .5s ease-out, visibility 0s linear .5s;
-    z-index: 99999;
+    z-index: 99999; /* High z-index to overlay other elements */
 }
 
 #spinner.show {
-    transition: opacity .5s ease-out, visibility 0s linear 0s;
+    /* Spinner visible with opacity 1 when 'show' class is added */
     visibility: visible;
     opacity: 1;
+    transition: opacity .5s ease-out, visibility 0s linear 0s;
 }
-
 
 /*** Button ***/
 .btn {
-    font-family: 'Nunito', sans-serif;
-    font-weight: 600;
-    transition: .5s;
+    /* Base styles for buttons */
+    font-family: 'Nunito', sans-serif; /* Font family for buttons */
+    font-weight: 600; /* Medium font-weight */
+    transition: .5s; /* Smooth transition for hover effects */
 }
 
 .btn.btn-primary,
 .btn.btn-secondary {
+    /* Button text color for primary and secondary buttons */
     color: #FFFFFF;
 }
 
+.btn-square, .btn-sm-square, .btn-lg-square {
+    /* Common styles for square buttons */
+    padding: 0; /* Remove padding */
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    font-weight: normal; /* Normal font-weight */
+    border-radius: 0; /* Square corners */
+}
+
 .btn-square {
+    /* Size for square buttons */
     width: 38px;
     height: 38px;
 }
 
 .btn-sm-square {
+    /* Size for small square buttons */
     width: 32px;
     height: 32px;
 }
 
 .btn-lg-square {
+    /* Size for large square buttons */
     width: 48px;
     height: 48px;
 }
 
-.btn-square,
-.btn-sm-square,
-.btn-lg-square {
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: normal;
-    border-radius: 0px;
-}
-
-
 /*** Navbar ***/
 .navbar {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    /* Base styles for navbar */
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+    box-sizing: border-box; /* Include padding and border in width and height */
 }
 
 .navbar .dropdown-toggle::after {
+    /* Style for dropdown arrow icon */
     border: none;
-    content: "\f107";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    vertical-align: middle;
-    margin-left: 8px;
+    content: "\f107"; /* FontAwesome icon */
+    font-family: "Font Awesome 5 Free"; /* FontAwesome font family */
+    font-weight: 900; /* Bold weight for icon */
+    vertical-align: middle; /* Align icon vertically */
+    margin-left: 8px; /* Space between icon and text */
 }
 
 .navbar-light .navbar-nav .nav-link {
-    margin-right: 30px;
-    padding: 25px 0;
-    color: #FFFFFF;
-    font-size: 15px;
-    text-transform: uppercase;
-    outline: none;
-    display: flex;
-    align-items: center; /* Align items vertically */
+    /* Style for navigation links */
+    margin-right: 30px; /* Space between links */
+    padding: 25px 0; /* Vertical padding */
+    color: #FFFFFF; /* Text color */
+    font-size: 15px; /* Font size */
+    text-transform: uppercase; /* Uppercase text */
+    outline: none; /* Remove outline */
+    display: flex; /* Flexbox for alignment */
+    align-items: center; /* Center items vertically */
 }
 
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
-    color: var(--primary);
+    /* Style for active and hovered navigation links */
+    color: var(--primary); /* Primary color for hover/active state */
 }
 
 @media (max-width: 991.98px) {
+    /* Responsive adjustments for screens smaller than 992px */
     .navbar-light .navbar-nav .nav-link {
-        padding: 10px 0; /* Adjust padding for mobile view */
+        padding: 10px 0; /* Adjust padding for mobile */
     }
     
     .navbar-light .navbar-nav {
-        border-top: 1px solid #EEEEEE; /* Ensure border consistency */
+        border-top: 1px solid #EEEEEE; /* Add top border for mobile */
     }
 }
 
 .navbar-light .navbar-brand,
 .navbar-light a.btn {
-    height: 75px; /* Ensure consistent height */
-    display: flex;
-    align-items: center; /* Vertically center content */
-    padding: 0; /* Remove any extra padding */
+    /* Style for brand and button in navbar */
+    height: 75px; /* Consistent height */
+    display: flex; /* Flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    padding: 0; /* Remove padding */
 }
 
 .navbar-light .navbar-nav .nav-link {
+    /* Adjust text color and weight for links in light navbar */
     color: var(--dark);
     font-weight: 500;
 }
 
 .navbar-light.sticky-top {
-    top: -100px;
-    transition: .5s;
+    /* Style for sticky navbar effect */
+    top: -100px; /* Hide navbar off-screen initially */
+    transition: .5s; /* Smooth transition for sticky effect */
 }
 
 @media (min-width: 992px) {
+    /* Dropdown menu styles for larger screens */
     .navbar .nav-item .dropdown-menu {
-        display: block;
-        margin-top: 0;
-        opacity: 0;
-        visibility: hidden;
-        transition: .5s;
+        display: block; /* Show dropdown menu */
+        margin-top: 0; /* No margin above menu */
+        opacity: 0; /* Hidden by default */
+        visibility: hidden; /* Hidden by default */
+        transition: .5s; /* Smooth transition for dropdown */
     }
 
     .navbar .dropdown-menu.fade-down {
-        top: 100%;
-        transform: rotateX(-75deg);
-        transform-origin: 0% 0%;
+        /* Animation for dropdown menu */
+        top: 100%; /* Position menu below the nav item */
+        transform: rotateX(-75deg); /* Initial rotation */
+        transform-origin: 0% 0%; /* Transform origin */
     }
 
     .navbar .nav-item:hover .dropdown-menu {
-        top: 100%;
-        transform: rotateX(0deg);
-        visibility: visible;
-        transition: .5s;
-        opacity: 1;
+        /* Show dropdown menu on hover */
+        top: 100%; /* Position menu below the nav item */
+        transform: rotateX(0deg); /* Reset rotation */
+        visibility: visible; /* Show menu */
+        opacity: 1; /* Fully visible */
     }
 }
 
-/* Adjust spacing between navbar items */
 .navbar-nav .nav-item {
-    margin-right: 10px; /* Adjust spacing between items */
-    display: flex;
-    align-items: center; /* Align items vertically */
+    /* Spacing between navbar items */
+    margin-right: 10px;
+    display: flex; /* Flexbox for alignment */
+    align-items: center; /* Center items vertically */
 }
 
 /*** Section Title ***/
 .section-title {
-    position: relative;
-    display: inline-block;
-    text-transform: uppercase;
+    /* Base style for section titles */
+    position: relative; /* Positioning for pseudo-elements */
+    display: inline-block; /* Inline-block for title */
+    text-transform: uppercase; /* Uppercase text */
+}
+
+.section-title::before, .section-title::after {
+    /* Base style for pseudo-elements */
+    position: absolute; /* Absolute positioning */
+    content: ""; /* Empty content */
+    height: 2px; /* Height of the line */
+    background: var(--primary); /* Primary color for line */
+    z-index: -1; /* Place behind text */
 }
 
 .section-title::before {
-    position: absolute;
-    content: "";
-    width: calc(100% + 80px);
-    height: 2px;
-    top: 4px;
-    left: -40px;
-    background: var(--primary);
-    z-index: -1;
+    /* Left border line */
+    width: calc(100% + 80px); /* Extend beyond title width */
+    top: 4px; /* Position from top */
+    left: -40px; /* Position from left */
 }
 
 .section-title::after {
-    position: absolute;
-    content: "";
-    width: calc(100% + 120px);
-    height: 2px;
-    bottom: 5px;
-    left: -60px;
-    background: var(--primary);
-    z-index: -1;
+    /* Bottom border line */
+    width: calc(100% + 120px); /* Extend beyond title width */
+    bottom: 5px; /* Position from bottom */
+    left: -60px; /* Position from left */
 }
 
 .section-title.text-start::before {
-    width: calc(100% + 40px);
-    left: 0;
+    /* Adjust left border line for text-start alignment */
+    width: calc(100% + 40px); /* Extend beyond title width */
+    left: 0; /* Align with left edge */
 }
 
 .section-title.text-start::after {
-    width: calc(100% + 60px);
-    left: 0;
+    /* Adjust bottom border line for text-start alignment */
+    width: calc(100% + 60px); /* Extend beyond title width */
+    left: 0; /* Align with left edge */
 }
 
 /*** Footer ***/
 .footer .btn.btn-social {
-    margin-right: 5px;
-    width: 35px;
-    height: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--light);
-    font-weight: normal;
-    border: 1px solid #FFFFFF;
-    border-radius: 35px;
-    transition: .3s;
+    /* Style for social buttons in footer */
+    margin-right: 5px; /* Space between buttons */
+    width: 35px; /* Width of the button */
+    height: 35px; /* Height of the button */
+    display: flex; /* Flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    color: var(--light); /* Text color */
+    font-weight: normal; /* Normal font-weight */
+    border: 1px solid #FFFFFF; /* Border around button */
+    border-radius: 35px; /* Circular button */
+    transition: .3s; /* Smooth transition for hover effects */
 }
 
 .footer .btn.btn-social:hover {
-    color: var(--primary);
+    /* Hover effect for social buttons */
+    color: var(--primary); /* Change text color on hover */
 }
 
 .footer .btn.btn-link {
-    display: block;
-    margin-bottom: 5px;
-    padding: 0;
-    text-align: left;
-    color: #FFFFFF;
-    font-size: 15px;
-    font-weight: normal;
-    text-transform: capitalize;
-    transition: .3s;
+    /* Style for link buttons in footer */
+    display: block; /* Block display */
+    margin-bottom: 5px; /* Space below button */
+    padding: 0; /* Remove padding */
+    text-align: left; /* Align text to left */
+    color: #FFFFFF; /* Text color */
+    font-size: 15px; /* Font size */
+    font-weight: normal; /* Normal font-weight */
+    text-transform: capitalize; /* Capitalize text */
+    transition: .3s; /* Smooth transition for hover effects */
 }
 
 .footer .btn.btn-link::before {
-    position: relative;
-    content: "\f105";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    margin-right: 10px;
+    /* Style for icon before link text */
+    position: relative; /* Relative positioning */
+    content: "\f105"; /* FontAwesome icon */
+    font-family: "Font Awesome 5 Free"; /* FontAwesome font family */
+    font-weight: 900; /* Bold weight for icon */
+    margin-right: 10px; /* Space between icon and text */
 }
 
 .footer .btn.btn-link:hover {
-    letter-spacing: 1px;
-    box-shadow: none;
+    /* Hover effect for link buttons */
+    letter-spacing: 1px; /* Increase letter-spacing */
+    box-shadow: none; /* Remove box-shadow on hover */
 }
 
 .footer .copyright {
-    padding: 25px 0;
-    font-size: 15px;
-    border-top: 1px solid rgba(256, 256, 256, .1);
+    /* Style for copyright section */
+    padding: 25px 0; /* Vertical padding */
+    font-size: 15px; /* Font size */
+    border-top: 1px solid rgba(256, 256, 256, .1); /* Top border */
 }
 
 .footer .copyright a {
-    color: var(--light);
+    /* Style for links in the copyright section */
+    color: var(--light); /* Light color for links */
 }
 
 .footer .footer-menu a {
-    margin-right: 15px;
-    padding-right: 15px;
-    border-right: 1px solid rgba(255, 255, 255, .1);
+    /* Style for menu links in footer */
+    margin-right: 15px; /* Space between links */
+    padding-right: 15px; /* Padding on right */
+    border-right: 1px solid rgba(255, 255, 255, .1); /* Right border */
 }
 
 .footer .footer-menu a:last-child {
+    /* Remove border and margin for last link */
     margin-right: 0;
     padding-right: 0;
     border-right: none;
@@ -277,99 +301,150 @@ body {
 
 /*** Indented Text ***/
 div.a {
+    /* Text indentation for div.a */
     text-indent: 50px;
 }
+
 div.b {
+    /* Text indentation for div.b */
     text-indent: 100px;
 }
+
 div.c {
+    /* Text indentation for div.c */
     text-indent: 10px;
 }
 
 /*** Center Images ***/
 img.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    }
+    /* Center images horizontally */
+    display: block; /* Block display */
+    margin-left: auto; /* Auto margins for centering */
+    margin-right: auto; /* Auto margins for centering */
+}
 
 div.note {
-    font-size: 16px
+    /* Style for notes */
+    font-size: 16px; /* Font size */
 }
 
+/*** Buttons ***/
 button {
-    background-color: #e20118; /* Red */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+    /* Style for general buttons */
+    background-color: var(--primary); /* Background color */
+    border: none; /* Remove border */
+    color: white; /* Text color */
+    padding: 15px 32px; /* Padding */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove text decoration */
+    display: inline-block; /* Inline-block display */
+    font-size: 16px; /* Font size */
 }
 
+/*** Centering and Layout ***/
 .center {
-    margin: auto;
-    padding: 10px;
+    /* Center element with padding */
+    margin: auto; /* Center horizontally */
+    padding: 10px; /* Padding */
 }
 
 figure {
-    margin: auto;
+    /* Center figure element */
+    margin: auto; /* Center horizontally */
 }
-    
+
 figcaption {
-    color: #e20118;
-    font-style: italic;
-    font-size: small;
-    padding: 2px;
-    text-align: center;
+    /* Style for figcaption */
+    color: var(--primary); /* Primary color */
+    font-style: italic; /* Italic text */
+    font-size: small; /* Small font size */
+    padding: 2px; /* Padding */
+    text-align: center; /* Center text */
 }
 
 .switchcontainer {
-    display: flex;
-    align-items: center; /* Vertically center content */
-    justify-content: space-between; /* Distribute space between child elements */
-    padding: 10px; /* Add padding to make the content breathe */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
-    margin-bottom: 20px; /* Add space between the switchcontainers */
+    /* Container for switch with alignment */
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between items */
+    padding: 10px; /* Padding */
+    box-sizing: border-box; /* Include padding and border in width and height */
+    margin-bottom: 20px; /* Space below container */
 }
 
 .vertical-center {
-    flex-grow: 1; /* Allow text to take up remaining space */
+    /* Center item vertically */
+    flex-grow: 1; /* Allow item to grow and fill available space */
 }
 
 .floatright, .floatleft {
-    max-width: 40%; /* Set max width of images */
-    margin: 0 15px; /* Add margin to the images */
-    border: 1px solid #000000; /* Add border to images */
-    clear: right;
+    /* Float elements with a border */
+    max-width: 40%; /* Maximum width */
+    margin: 0 15px; /* Margin */
+    border: 1px solid #000000; /* Border */
 }
 
 .image-stack {
-    display: flex;
-    flex-direction: column;
-    float: right;
+    /* Stack images vertically and float right */
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Vertical stacking */
+    float: right; /* Float right */
 }
 
 .stacked-image {
-    margin-bottom: 10px; /* Adjusts space between the images */
-    max-width: 100%; /* Ensure images are responsive */
+    /* Style for images in stack */
+    margin-bottom: 10px; /* Space between stacked images */
+    max-width: 100%; /* Ensure images don’t exceed container width */
 }
 
-* {
-box-sizing: border-box;
-}
-
-/* Create two equal columns that floats next to each other */
+/*** Column Layouts ***/
 .column {
-float: left;
-width: 50%;
-padding: 10px;
+    /* Flexbox column layout */
+    flex: 1; /* Grow to fill available space */
+    margin: 0 10px; /* Margin between columns */
+    box-sizing: border-box; /* Include padding and border in width and height */
 }
 
-/* Clear floats after the columns */
 .row:after {
-content: "";
-display: table;
-clear: both;
+    /* Clear floats for row elements */
+    content: ""; /* Empty content */
+    display: table; /* Display as table */
+    clear: both; /* Clear floats */
+}
+
+.three-column-layout {
+    /* Three-column layout with space between columns */
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Space between columns */
+    margin-bottom: 20px; /* Space below layout */
+}
+
+.column p, .column h5 {
+    /* Style for paragraphs and headings in columns */
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+    text-align: center; /* Center text */
+}
+
+.column p + p, .column h5 + p {
+    /* Add margin between consecutive paragraphs and headings */
+    margin-top: 10px;
+}
+
+/* Deprecated/Extra Styles (Remove if not needed) */
+* {
+    box-sizing: border-box; /* Include padding and border in width and height */
+}
+
+.column {
+    float: left; /* Float columns left */
+    width: 50%; /* Width of columns */
+    padding: 10px; /* Padding */
+    height: 300px; /* Height (Remove if not needed) */
+}
+
+.row:after {
+    content: ""; /* Clear floats */
+    display: table; /* Display as table */
+    clear: both; /* Clear floats */
 }

@@ -34,6 +34,9 @@
     <!-- Searchbar Stylesheet -->
     <link href="css/searchbar.css" rel="stylesheet">
 
+    <!-- Tables Stylesheet -->
+    <link href="css/ExcelSheetStylesheet.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -108,44 +111,36 @@
 
                     <p class="mb-4">Arrange these reports as follows:</p>
 
-                    <table style="margin-left:auto;margin-right:auto;width:1200px;">
-                    <colgroup>
-                        <col class="xl65" width="33%">
-                        <col class="xl65" width="33%">
-                        <col class="xl65" width="33%">
-                    </colgroup>
-                    <thead>
-                        <tr style="background-color: #f2f2f2; color: #333; font-size: 16px;">
-                        <th style="background-color: #e20118; text-align: center; border: 1px solid black; vertical-align: middle; height: 15pt;">
-                            <h5 style="color: #ffffff; margin: 0;">To Keep:</h5>
-                        </th>
-                        <th style="background-color: #e20118; text-align: center; border: 1px solid black; vertical-align: middle; height: 15pt;">
-                            <h5 style="color: #ffffff; margin: 0;">To Duty Manager:</h5>
-                        </th>
-                        <th style="background-color: #e20118; text-align: center; border: 1px solid black; vertical-align: middle; height: 15pt;">
-                            <h5 style="color: #ffffff; margin: 0;">To the Day Bag:</h5>
-                        </th>
+                    <table class="center" style="width: 100%;" cellspacing="2%" cellpadding="2%">
+                        <colgroup>
+                            <col />
+                            <col />
+                            <col />
+                        </colgroup>
+                        <tbody>
+                        <tr>
+                        <td>To keep:</td>
+                        <td>To the Duty Manager:</td>
+                        <td colspan="3">To the Day Bag:</td>
                         </tr>
-                    </thead>
-                    <tbody>
-                        <tr style="height: 15pt;">
-                        <td style="border: 1px solid black; height: 15pt; text-align: center; vertical-align: middle;">American Express</td>
-                        <td style="border: 1px solid black; height: 15pt; text-align: center; vertical-align: middle;"><u><b>ALL</b></u> ENCORE pages</td>
-                        <td rowspan="4" style="border: 1px solid black; height: 60pt; text-align: center; vertical-align: middle;">Everything else</td>
+                        <tr>
+                        <td>American Express</td>
+                        <td><strong>ALL</strong> ENCORE pages</td>
+                        <td rowspan="4">Everything else</td>
                         </tr>
-                        <tr style="height: 15pt;">
-                        <td style="border: 1px solid black; height: 15pt; text-align: center; vertical-align: middle;">Eftpos</td>
-                        <td style="border: 1px solid black; height: 15pt; text-align: center; vertical-align: middle;"><u><b>ALL</b></u> FOOTLIGHTS pages</td>
+                        <tr>
+                        <td>Eftpos</td>
+                        <td><strong>ALL</strong> FOOTLIGHTS pages</td>
                         </tr>
-                        <tr style="height: 15pt;">
-                        <td style="border: 1px solid black; height: 15pt; text-align: center; vertical-align: middle;">Visa/MasterCard</td>
-                        <td style="border: 1px solid black; height: 15pt; text-align: center; vertical-align: middle;"><u><b>ALL</b></u> ROOM SERVICE pages <u><b>EXCEPT</b></u> "Supper" & "Delivery" pages</td>
+                        <tr>
+                        <td>Visa / MasterCard</td>
+                        <td><u><strong>ALL</strong></u>&nbsp;ROOM SERVICE pages&nbsp;<u><strong>EXCEPT</strong></u>&nbsp;"Supper" &amp; "Delivery" pages</td>
                         </tr>
-                        <tr style="height: 15pt;">
-                        <td style="border: 1px solid black; height: 15pt; text-align: center; vertical-align: middle;">(Any card payments)</td>
-                        <td style="border: 1px solid black; height: 15pt; text-align: center; vertical-align: middle;">Movies</td>
+                        <tr>
+                        <td>Any card payments</td>
+                        <td>Movies</td>
                         </tr>
-                    </tbody>
+                        </tbody>
                     </table>
 
                     <br>

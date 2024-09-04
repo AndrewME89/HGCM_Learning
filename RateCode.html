@@ -34,32 +34,8 @@
     <!-- Searchbar Stylesheet -->
     <link href="css/searchbar.css" rel="stylesheet">
 
-    <style>
-        table {
-        font-family: arial, sans-serif;
-        border-collapse: collapse;
-        width: 100%;
-        }
-        
-        td, th {
-        border-left: 1px solid #000;
-        border-right: 1px solid #000; 
-        text-align: left;
-        padding: 8px;
-        }
-        
-        tr:nth-child(even) {
-        background-color: #dddddd;
-        }
-        
-        th {
-        background-color: #e20118;
-        color: #fff;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        }
-    </style>
+    <!-- Table Stylesheet -->
+    <link href="css/ExcelSheetStylesheet.css" rel="stylesheet">
 
 </head>
 
@@ -134,97 +110,93 @@
                     <li><b>LEIBARRO:</b> Leisure booking at Best Available Rate (flexible cancellation up to 24 hours before arrival), room only. Use this rate code for private bookings and direct reservations when breakfast is not included.</p>
                     <li><b>ZZCOMP:</b> Reserved for complimentary rooms or virtual folios.</p>
                     </ul>
-                    <table class="center" cellpadding="0" cellspacing="0" width="80%" style="border-collapse: collapse; table-layout: fixed;">
+
+                    <table class="center" style="width: 100%;" cellspacing="2%" cellpadding="2%">
                         <colgroup>
-                            <col width="33%" />
-                            <col width="33%" />
-                            <col width="34%" />
+                            <col style="width: auto;">
+                            <col style="width: auto;">
+                            <col style="width: auto;">
                         </colgroup>
                         <thead>
-                            <tr height="20" style="height: 15.0pt;">
-                                <th class="xl68" style="text-align: center; background-color: #e20118; color: white; font-size: large;">Rate Code</th>
-                                <th class="xl68" style="text-align: center; background-color: #e20118; color: white; font-size: large;">Description</th>
-                                <th class="xl68" style="text-align: center; background-color: #e20118; color: white; font-size: large;">Notes</th>
+                            <tr style="background-color: #e20118; color: white; font-size: large;">
+                                <th style="text-align: center;"><h5>Rate Code</h5></th>
+                                <th style="text-align: center;"><h5>Description</h5></th>
+                                <th style="text-align: center;"><h5>Notes</h5></th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr height="20" style="height: 15.0pt;">
-                                <td class="xl66" style="border: 1px solid black; text-align: center;">ACMRO</td>
-                                <td class="xl66" style="border: 1px solid black; text-align: center;">ACMRO RO</td>
-                                <td class="xl66" style="border: 1px solid black; text-align: center;">SUPQ 150 RO</td>
+                            <tr>
+                                <td>ACMRO</td>
+                                <td>ACMRO RO</td>
+                                <td>SUPQ 150 RO</td>
                             </tr>
-                            <tr height="20" style="height: 15.0pt;">
-                                <td class="xl66" style="border: 1px solid black; text-align: center;">ACMROB1</td>
-                                <td class="xl66" style="border: 1px solid black; text-align: center;">ACMRO B1</td>
-                                <td class="xl66" style="border: 1px solid black; text-align: center;">SUPQ 170 B1</td>
+                            <tr>
+                                <td>ACMROB1</td>
+                                <td>ACMRO B1</td>
+                                <td>SUPQ 170 B1</td>
                             </tr>
-                            <tr height="20" style="height: 15.0pt;">
-                                <td class="xl66" style="border: 1px solid black; text-align: center;">GDSBARBB</td>
-                                <td class="xl66" style="border: 1px solid black; text-align: center;">GDS Bar Includes Full Buffet Breakfast (GDS)</td>
-                                <td class="xl66" style="border: 1px solid black; text-align: center;">GDS Bar Includes Full Buffet Breakfast (GDS)</td>
+                            <tr>
+                                <td>GDSBARBB</td>
+                                <td>GDS Bar Includes Full Buffet Breakfast (GDS)</td>
+                                <td>GDS Bar Includes Full Buffet Breakfast (GDS)</td>
                             </tr>
-                            <tr height="20" style="height: 15.0pt;">
-                                <td class="xl66" style="border: 1px solid black; text-align: center;">GDSBARRO</td>
-                                <td class="xl66" style="border: 1px solid black; text-align: center;">GDS Bar Room Only Rate (GDS)</td>
-                                <td class="xl66" style="border: 1px solid black; text-align: center;">GDS Bar Room Only Rate (GDS)</td>
+                            <tr>
+                                <td>GDSBARRO</td>
+                                <td>GDS Bar Room Only Rate (GDS)</td>
+                                <td>GDS Bar Room Only Rate (GDS)</td>
                             </tr>
-                            <tr height="20" style="height: 15.0pt;">
-                                <td class="xl66" style="border: 1px solid black; text-align: center;">GDSPROMO</td>
-                                <td class="xl66" style="border: 1px solid black; text-align: center;">GDS Promotional Rates - No Refunds (GDS)</td>
-                                <td class="xl66" style="border: 1px solid black; text-align: center;">GDS Promotional Rates - No Refunds (GDS)</td>
+                            <tr>
+                                <td>GDSPROMO</td>
+                                <td>GDS Promotional Rates - No Refunds (GDS)</td>
+                                <td>GDS Promotional Rates - No Refunds (GDS)</td>
                             </tr>
-                            <tr height="20" style="height: 15.0pt;">
-                                <td class="xl66" style="border: 1px solid black; text-align: center;">GOVBB</td>
-                                <td class="xl66" style="border: 1px solid black; text-align: center;">GOVBB 190/200/210/220/235</td>
-                                <td class="xl66" style="border: 1px solid black; text-align: center;">GOVBB 190/200/210/220/235</td>
+                            <tr>
+                                <td>GOVBB</td>
+                                <td>GOVBB 190/200/210/220/235</td>
+                                <td>GOVBB 190/200/210/220/235</td>
                             </tr>
-                            <tr height="20" style="height: 15.0pt;">
-                                <td class="xl66" style="border: 1px solid black; text-align: center;">GOVRO</td>
-                                <td class="xl66" style="border: 1px solid black; text-align: center;">GOVRO 180/190/200/210/225</td>
-                                <td class="xl66" style="border: 1px solid black; text-align: center;">GOVRO 180/190/200/210/225</td>
+                            <tr>
+                                <td>GOVRO</td>
+                                <td>GOVRO 180/190/200/210/225</td>
+                                <td>GOVRO 180/190/200/210/225</td>
                             </tr>
-                            <tr height="20" style="height: 15.0pt;">
-                                <td class="xl66" style="border: 1px solid black; text-align: center;">INTBARBB</td>
-                                <td class="xl66" style="border: 1px solid black; text-align: center;">Internet Bed & Breakfast (1 Or 2 Pax) *Flexible Rate - Please Adjust*</td>
-                                <td class="xl66" style="border: 1px solid black; text-align: center;">Includes Full Buffet Breakfast For Up To 2 Pax</td>
+                            <tr>
+                                <td>INTBARBB</td>
+                                <td>Internet Bed & Breakfast (1 Or 2 Pax) *Flexible Rate - Please Adjust*</td>
+                                <td>Includes Full Buffet Breakfast For Up To 2 Pax</td>
                             </tr>
-                            <tr height="20" style="height: 15.0pt;">
-                                <td class="xl66" style="border: 1px solid black; text-align: center;">INTBARRO</td>
-                                <td class="xl66" style="border: 1px solid black; text-align: center;">Internet Room Only Best Available Rate</td>
-                                <td class="xl66" style="border: 1px solid black; text-align: center;">*Flexible Rate - Please Adjust*</td>
+                            <tr>
+                                <td>INTBARRO</td>
+                                <td>Internet Room Only Best Available Rate</td>
+                                <td>*Flexible Rate - Please Adjust*</td>
                             </tr>
-                            <tr height="20" style="height: 15.0pt;">
-                                <td class="xl66" style="border: 1px solid black; text-align: center;">INTSAVERBB</td>
-                                <td class="xl66" style="border: 1px solid black; text-align: center;">Internet BB **Saver Rate**</td>
-                                <td class="xl66" style="border: 1px solid black; text-align: center;">Internet BB - *Saver Rate*</td>
+                            <tr>
+                                <td>INTSAVERBB</td>
+                                <td>Internet BB **Saver Rate**</td>
+                                <td>Internet BB - *Saver Rate*</td>
                             </tr>
-                            <tr height="20" style="height: 15.0pt;">
-                                <td class="xl66" style="border: 1px solid black; text-align: center;">INTSAVERRO</td>
-                                <td class="xl66" style="border: 1px solid black; text-align: center;">Internet Saver Room Only Rate</td>
-                                <td class="xl66" style="border: 1px solid black; text-align: center;">*Flexible Rate - Please Adjust*</td>
+                            <tr>
+                                <td>INTSAVERRO</td>
+                                <td>Internet Saver Room Only Rate</td>
+                                <td>*Flexible Rate - Please Adjust*</td>
                             </tr>
-                            <tr height="20" style="height: 15.0pt;">
-                                <td class="xl66" style="border: 1px solid black; text-align: center;">LEIBARBB</td>
-                                <td class="xl66" style="border: 1px solid black; text-align: center;">Leisure Bed & Breakfast (1 Or 2 Pax) *Flexible Rate - Please Adjust*</td>
-                                <td class="xl66" style="border: 1px solid black; text-align: center;">Includes Full Buffet Breakfast For Up To 2 Pax</td>
+                            <tr>
+                                <td>LEIBARBB</td>
+                                <td>Leisure Bed & Breakfast (1 Or 2 Pax) *Flexible Rate - Please Adjust*</td>
+                                <td>Includes Full Buffet Breakfast For Up To 2 Pax</td>
                             </tr>
-                            <tr height="20" style="height: 15.0pt;">
-                                <td class="xl66" style="border: 1px solid black; text-align: center;">LEIBARRO</td>
-                                <td class="xl66" style="border: 1px solid black; text-align: center;">Leisure Room Only Best Available Rate</td>
-                                <td class="xl66" style="border: 1px solid black; text-align: center;">Leisure Room Only Best Available Rate</td>
+                            <tr>
+                                <td>LEIBARRO</td>
+                                <td>Leisure Room Only Best Available Rate</td>
+                                <td>Leisure Room Only Best Available Rate</td>
                             </tr>
-                            <tr height="20" style="height: 15.0pt;">
-                                <td class="xl66" style="border: 1px solid black; text-align: center;">ZZCOMP</td>
-                                <td class="xl66" style="border: 1px solid black; text-align: center;">Complimentary RO</td>
-                                <td class="xl66" style="border: 1px solid black; text-align: center;"></td>
+                            <tr>
+                                <td>ZZCOMP</td>
+                                <td>Complimentary RO</td>
+                                <td></td>
                             </tr>
                         </tbody>
                     </table>
-                    
-                    <p class="mb-4"></p>
-                    <p class="mb-4"></p>
-                    <p class="mb-4"></p>
-                    <p class="mb-4"></p>
                 </div>
             </div>
         </div>
