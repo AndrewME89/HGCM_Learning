@@ -356,7 +356,7 @@ figcaption {
     /* Style for figcaption */
     color: var(--primary); /* Primary color */
     font-style: italic; /* Italic text */
-    font-size: small; /* Small font size */
+    font-size: medium; /* Small font size */
     padding: 2px; /* Padding */
     text-align: center; /* Center text */
 }
