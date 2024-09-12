@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Chargeback Report</title>
+    <title>Printing The Chargeback Report</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -46,19 +46,20 @@
     </div>
     <!-- Spinner End -->
 
-
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
-        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <h2 class="m-0 text-primary"><img src="img/NEW.jpg" width="110" height="75"></h2>
-        </a>
-        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-0">
+    <!-- Navbar Wrapper Start -->
+    <div class="navbar-wrapper">
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+            <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+                <h2 class="m-0 text-primary"><img src="img/NEW.jpg" width="110" height="75"></h2>
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <div class="nav-item nav-link">
-<div class="search-container">
+                    <div class="search-container">
                         <input type="text" id="searchInput" placeholder="Search...">
                         <button id="searchButton">Search</button>
                         <div id="results"></div>
@@ -81,18 +82,22 @@
     </nav>
     <!-- Navbar End -->
 
+    <!-- Back Button -->
+    <button class="back-button" onclick="history.back()">
+        <i class="bi bi-arrow-left"></i>
+    </button>        
+</div>
+<!-- Navbar Wrapper End -->
+
     <!-- Main Page Start -->
 
     <div class="container-xxl py-5">
-
-        <button onclick="history.back()">Back</button></p>
-
         <div class="container">
             <div>
                 <div class="col wow fadeInUp" data-wow-delay="0.1s" style="min-height: 50px;">
                 </div>
                 <div class="col wow fadeInUp" data-wow-delay="0.3s">
-                    <h2 class="section-title bg-white text-start text-primary pe-3">Chargeback Report</h2>
+                    <h2 class="section-title bg-white text-start text-primary pe-3">Printing The Chargeback Report</h2>
                     <p class="mb-4">The PM team is responsible for preparing registration cards for guests arriving the next day.</p>
 
                     <h5>Procedure</h5>
@@ -160,10 +165,8 @@
     </div>
     <!-- Footer End -->
 
-
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

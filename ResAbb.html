@@ -48,47 +48,52 @@
     </div>
     <!-- Spinner End -->
 
-
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
-        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <h2 class="m-0 text-primary"><img src="img/NEW.jpg" width="110" height="75"></h2>
-        </a>
-        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <div class="nav-item nav-link">
-<div class="search-container">
-                        <input type="text" id="searchInput" placeholder="Search...">
-                        <button id="searchButton">Search</button>
-                        <div id="results"></div>
+    <!-- Navbar Wrapper Start -->
+    <div class="navbar-wrapper">
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+            <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+                <h2 class="m-0 text-primary"><img src="img/NEW.jpg" width="110" height="75"></h2>
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <div class="nav-item nav-link">
+                        <div class="search-container">
+                            <input type="text" id="searchInput" placeholder="Search...">
+                            <button id="searchButton">Search</button>
+                            <div id="results"></div>
+                        </div>
                     </div>
-                </div>    
-                <a href="index.html"  class="nav-item nav-link active">Home</a>
-                <a href="GSA.html" class="nav-item nav-link">Guest Services Agent</a>
-                <a href="NA.html" class="nav-item nav-link">Night Audit</a>
-                <a href="Res.html" class="nav-item nav-link">Reservations</a>
-                <a href="General.html" class="nav-item nav-link">General Knowledge</a>
-                <div class="nav-item dropdown">
-                    <a href="contacts.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Contacts</a>
-                    <div class="dropdown-menu fade-down m-0" style="right:0">
-                        <a href="StaffContacts.html" class="dropdown-item">Staff Contacts</a>
-                        <a href="ContractorContacts.html" class="dropdown-item">Contractor Contacts</a>
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="GSA.html" class="nav-item nav-link">Guest Services Agent</a>
+                    <a href="NA.html" class="nav-item nav-link">Night Audit</a>
+                    <a href="Res.html" class="nav-item nav-link">Reservations</a>
+                    <a href="General.html" class="nav-item nav-link">General Knowledge</a>
+                    <div class="nav-item dropdown">
+                        <a href="contacts.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Contacts</a>
+                        <div class="dropdown-menu fade-down m-0" style="right:0">
+                            <a href="StaffContacts.html" class="dropdown-item">Staff Contacts</a>
+                            <a href="ContractorContacts.html" class="dropdown-item">Contractor Contacts</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </nav>
-    <!-- Navbar End -->
+        </nav>
+        <!-- Navbar End -->
+
+        <!-- Back Button -->
+        <button class="back-button" onclick="history.back()">
+            <i class="bi bi-arrow-left"></i>
+        </button>
+    </div>
+    <!-- Navbar Wrapper End -->
 
     <!-- Main Page Start -->
 
     <div class="container-xxl py-5">
-
-        <button onclick="history.back()">Back</button></p>
-
         <div class="container">
             <div>
                 <div class="col wow fadeInUp" data-wow-delay="0.1s" style="min-height: 50px;">
@@ -97,49 +102,54 @@
                     <h2 class="section-title bg-white text-start text-primary pe-3">Reservation Abbreviations</h2>
                     <p class="mb-4">The Communications tab in a guest folio is your central source of information regarding a booking. It includes details about inclusions, charges to be transferred, and the payment type, all conveyed using abbreviations.</p>
                     <p class="mb-4">It's essential to carefully read and understand the Communications for every folio you handle during check-in or check-out processes.</p>
-                    
+
                     <h5 class="mb-4">Communication Format</h5>
                     <p class="mb-4">All instructions within the Communications tab must adhere to the following format and be in uppercase:</p>
-                    <p class="mb-4"><b><span style="color:purple">PAYMENT METHOD</span> <span style="color: green">RATE</span> <span style="color: goldenrod">(INCLUSIONS)</span> + <span style="color: rgb(0, 119, 255)">ADDITIONAL ITEMS</span> <span style="color: hotpink">POE</span> - <span style="color: #e20118">BTP</span> <span style="color: navy">**PERM AUTH**</span></b><br>ROOM TYPE</p>
-                    
+                    <p class="mb-4"><b><span style="color:purple">PAYMENT METHOD</span> <span style="color: green">RATE</span> <span style="color: goldenrod">(INCLUSIONS)</span> + <span style="color: rgb(0, 119, 255)">ADDITIONAL ITEMS</span> <span style="color: hotpink">POE</span> - <span style="color: #e20118">BTP</span> <span style="color: navy">**PERM AUTH**</span></b>
+                        <br>ROOM TYPE</p>
+
                     <p class="mb-4">Example:</p>
                     <img class="center" src="img/SpexGuide01.png" width="60%"> </p>
-                    
+
                     <ul>
                         <li>Abbreviations should be in alphabetical order (e.g., <span style="color:#e20118"><b>B1INW</b></span>).</li></p>
                         <li>The rate is displayed without a '$' sign.</li></p>
                         <li>For multiple nights:</li></p>
                         <ul>
-                            <li>With the same rate:</li></p>
+                            <li>With the same rate:</li>
+                            </p>
                             <img class="center" src="img/SpexGuide02.png" width="30%"> </p>
-                            <li>With different rates:</li></p>
+                            <li>With different rates:</li>
+                            </p>
                             <img class="center" src="img/SpexGuide03.png" width="30%"> </p>
                         </ul>
                         <li>Anything in brackets is included in the rate:</li></p>
                         <img class="center" src="img/SpexGuide04.png" width="30%"> </p>
                         <ul>
-                            <li>$186 rate includes room and breakfast for 2</li></p>
+                            <li>$186 rate includes room and breakfast for 2</li>
+                            </p>
                         </ul>
                         <li>Any additional charges are to be added after the '+' sign:</li></p>
                         <img class="center" src="img/SpexGuide05.png" width="30%"> </p>
                         <ul>
-                            <li>Guest to pay an extra $40 rollaway bed fee (not included in the $210.60 rate)</li></p>
+                            <li>Guest to pay an extra $40 rollaway bed fee (not included in the $210.60 rate)</li>
+                            </p>
                         </ul>
                         <li>Multiple payment method Communication:</li></p>
-                            <p class="mb-4">Must be separated by ‘//’</p>
-                            <img class="center" src="img/SpexGuide06.png" width="30%"> </p>
-                            <li>First 2 nights have been prepaid, and the last 2 nights are to be settled by the Guest.</li></p>
+                        <p class="mb-4">Must be separated by ‘//’</p>
+                        <img class="center" src="img/SpexGuide06.png" width="30%"> </p>
+                        <li>First 2 nights have been prepaid, and the last 2 nights are to be settled by the Guest.</li></p>
                     </ul>
-                    
+
                     <h5 class="mb-4">Chargeback</h5>
                     <p class="mb-4">If a company sends a CC authorisation or chargeback, it is important to update the following boxes:</p>
                     <ul>
                         <li><b>Check In:</b> Communication + Room type</li></p>
-                        <li><b>Check Out:</b> Late Check Out Time, Chargeback Restrictions, Email address for invoice, Pre-authorisation/Bond Information</li></p>
+                        <li><b>Check-out:</b> Late Check-out Time, Chargeback Restrictions, Email address for invoice, Pre-authorisation/Bond Information</li></p>
                         <li><b>Posting:</b> further information regarding posting, charges, payment & instructions</li></p>
                         <img class="center" src="img/SpexGuide07.png" width="45%"> </p>
                     </ul>
-                    
+
                     <h5 class="mb-4">Remarks – Pop-Up Notes:</h5>
                     <p class="mb-4">These are the notes that will initially pop up when the folio is opened. Important information and notes are added here by both FO & Res.</p>
                     <img class="center" src="img/SpexGuide08.png" width="40%"> </p>
@@ -147,254 +157,273 @@
                         <li>Each note added in the remarks should include staff initials and the date when the notes were added.</li></p>
                         <li>Any corresponding updates to the initial note should be added below the original note.</li></p>
                     </ul>
-                    
+
                     <h5 class="mb-4">Payment Methods:</h5>
-                    
+
                     <table class="center" style="width: 100%;" cellspacing="2%" cellpadding="2%">
                         <colgroup>
                             <col style="width: 33.33%;">
-                            <col style="width: 33.33%;">
-                            <col style="width: 33.33%;">
+                                <col style="width: 33.33%;">
+                                    <col style="width: 33.33%;">
                         </colgroup>
                         <thead>
                             <tr style="background-color: #e20118; color: white; font-size: large;">
-                                <th style="text-align: center;"><h5>Booking Agent</h5></th>
-                                <th style="text-align: center;" colspan="3"><h5>Payment Method</h5></th>
+                                <th style="text-align: center;">
+                                    <h5>Booking Agent</h5></th>
+                                <th style="text-align: center;" colspan="3">
+                                    <h5>Payment Method</h5></th>
                             </tr>
                         </thead>
                         <tbody>
-                        <tr>
-                        <td>AOT</td>
-                        <td colspan="2">DB</td>
-                        </tr>
-                        <tr>
-                        <td>Booking.com</td>
-                        <td>CC</td>
-                        <td>POA</td>
-                        </tr>
-                        <tr>
-                        <td>Entertainment Card</td>
-                        <td colspan="2">CC</td>
-                        </tr>
-                        <tr>
-                        <td>Expedia</td>
-                        <td>CC<br> (Expedia Collects Booking)</td>
-                        <td>POA<br> (Hotel Collects Booking)</td>
-                        </tr>
-                        <tr>
-                        <td>Flight Center</td>
-                        <td colspan="2">DB</td>
-                        </tr>
-                        <tr>
-                        <td>GDS Bookings</td>
-                        <td>POA</td>
-                        <td>CC</td>
-                        </tr>
-                        <tr>
-                        <td>GC / CC Rewards Redemption</td>
-                        <td colspan="2">DB</td>
-                        </tr>
-                        <tr>
-                        <td>HGC Website</td>
-                        <td colspan="2">POA</td>
-                        </tr>
-                        <tr>
-                        <td>HotelBeds / Travelcube</td>
-                        <td colspan="2">DB</td>
-                        </tr>
-                        <tr>
-                        <td>Hotel Reservation Service (HRS)</td>
-                        <td>CC</td>
-                        <td>POA</td>
-                        </tr>
-                        <tr>
-                        <td>LIDO</td>
-                        <td colspan="2">DB</td>
-                        </tr>
-                        <tr>
-                        <td>Need it Now</td>
-                        <td colspan="2">DB</td>
-                        </tr>
-                        <tr>
-                        <td>Qantas / Hooroo / Jetstar</td>
-                        <td colspan="2">CC</td>
-                        </tr>
-                        </tbody></table>
-                    
-                    </p>
-                        <h6 class="mb-4">Examples:</h6>
+                            <tr>
+                                <td>AOT</td>
+                                <td colspan="2">DB</td>
+                            </tr>
+                            <tr>
+                                <td>Booking.com</td>
+                                <td>CC</td>
+                                <td>POA</td>
+                            </tr>
+                            <tr>
+                                <td>Entertainment Card</td>
+                                <td colspan="2">CC</td>
+                            </tr>
+                            <tr>
+                                <td>Expedia</td>
+                                <td>CC
+                                    <br> (Expedia Collects Booking)</td>
+                                <td>POA
+                                    <br> (Hotel Collects Booking)</td>
+                            </tr>
+                            <tr>
+                                <td>Flight Center</td>
+                                <td colspan="2">DB</td>
+                            </tr>
+                            <tr>
+                                <td>GDS Bookings</td>
+                                <td>POA</td>
+                                <td>CC</td>
+                            </tr>
+                            <tr>
+                                <td>GC / CC Rewards Redemption</td>
+                                <td colspan="2">DB</td>
+                            </tr>
+                            <tr>
+                                <td>HGC Website</td>
+                                <td colspan="2">POA</td>
+                            </tr>
+                            <tr>
+                                <td>HotelBeds / Travelcube</td>
+                                <td colspan="2">DB</td>
+                            </tr>
+                            <tr>
+                                <td>Hotel Reservation Service (HRS)</td>
+                                <td>CC</td>
+                                <td>POA</td>
+                            </tr>
+                            <tr>
+                                <td>LIDO</td>
+                                <td colspan="2">DB</td>
+                            </tr>
+                            <tr>
+                                <td>Need it Now</td>
+                                <td colspan="2">DB</td>
+                            </tr>
+                            <tr>
+                                <td>Qantas / Hooroo / Jetstar</td>
+                                <td colspan="2">CC</td>
+                            </tr>
+                        </tbody>
+                    </table>
 
-                        <p class="mb-4"><b>POA 170 RO</b>: Guest will Pay on Own Account (POA) at $170 per night. This covers only the cost of the room. A bond is required for this reservation.</p>
-                        
-                        <p class="mb-4"><b>POA 170 B1</b>: Guest will Pay on Own Account (POA) at $170 per night, including breakfast for 1 guest. A bond is required for this reservation.</p>
-                        
-                        <p class="mb-4"><b>CC 475/544 RO POE</b>: Accommodation charges have been paid by Credit Card, either through a third-party website or by CC Authorisation. The guest is responsible for paying their own extras (POE). A bond is required for this reservation.</p>
-                        
-                        <p class="mb-4"><b>CC 170 B1 M P POE</b>: Accommodation charges, breakfast for 1 guest, meals, and parking have been paid by Credit Card (either through a third-party website or by CC Authorisation). Alcohol is not included. The guest is responsible for paying their own extras (POE). A bond is required for this reservation.</p>
-                        
-                        <p class="mb-4"><b>DB 170 B1 M P POE</b>: Accommodation charges, breakfast for 1 guest, meals, and parking have been paid by Direct Bill. Alcohol is not included. The guest is responsible for paying their own extras (POE). A bond is required for this reservation.</p>
-                        
-                        <p class="mb-4"><b>DB 170/180 RO POE</b>: Accommodation charges have been paid by Direct Bill. The guest is responsible for paying their own extras (POE). A bond is required for this reservation.</p>
-                        
-                        <p class="mb-4"><b>DB 170 B1 AA</b>: Accommodation charges and breakfast for 1 guest have been paid by Direct Bill, but we are awaiting authorisation (AA). The guest is responsible for paying their own extras (POE). A bond is required for this reservation.</p>
-                        
-                        <p class="mb-4"><b>DB 170 B1 POE</b>: Accommodation charges and breakfast for 1 guest have been paid by Direct Bill. The guest is responsible for paying their own extras (POE). A bond is required for this reservation.</p>
-                        
-                        <p class="mb-4"><b>ACB 170/188</b>: All charges are covered by the company. A bond is not required for this reservation.</p>
-                        
-                        <p class="mb-4"><b>FOC</b>: Accommodation is Free of Charge (FOC). The guest is responsible for paying their own extras (POE).</p>
-                        
-                        <p class="mb-4"><b>FOC AC</b>: No charges are to be made to this reservation.</p>
-                        
-                        <p class="mb-4">The Room Type is to be entered under the Payment Instructions (CLASQ / CLASK / SUPQ / SUPK / PREM).</p>
-                        
-                        <p class="mb-4">Occasionally, there will be extra notes associated with some bookings. For example, if breakfast for one guest is included but is required for a second guest, Reservations will add a note in the payment instructions.</p>
-                        
-                        <p class="mb-4">For example:</p>
-                        <p class="mb-4"><b>POA 176.22*2 B1<br>CLASQ - Additional breakfast to be charged at $22</b></p>
-                        <p class="mb-4">In the above example, one breakfast is covered as part of the booking. If another is required, it is to be charged at $22.00 instead of the standard rate.</p>
+                    </p>
+                    <h6 class="mb-4">Examples:</h6>
+
+                    <p class="mb-4"><b>POA 170 RO</b>: Guest will Pay on Own Account (POA) at $170 per night. This covers only the cost of the room. A bond is required for this reservation.</p>
+
+                    <p class="mb-4"><b>POA 170 B1</b>: Guest will Pay on Own Account (POA) at $170 per night, including breakfast for 1 guest. A bond is required for this reservation.</p>
+
+                    <p class="mb-4"><b>CC 475/544 RO POE</b>: Accommodation charges have been paid by Credit Card, either through a third-party website or by CC Authorisation. The guest is responsible for paying their own extras (POE). A bond is required for this reservation.</p>
+
+                    <p class="mb-4"><b>CC 170 B1 M P POE</b>: Accommodation charges, breakfast for 1 guest, meals, and parking have been paid by Credit Card (either through a third-party website or by CC Authorisation). Alcohol is not included. The guest is responsible
+                        for paying their own extras (POE). A bond is required for this reservation.</p>
+
+                    <p class="mb-4"><b>DB 170 B1 M P POE</b>: Accommodation charges, breakfast for 1 guest, meals, and parking have been paid by Direct Bill. Alcohol is not included. The guest is responsible for paying their own extras (POE). A bond is required for this
+                        reservation.</p>
+
+                    <p class="mb-4"><b>DB 170/180 RO POE</b>: Accommodation charges have been paid by Direct Bill. The guest is responsible for paying their own extras (POE). A bond is required for this reservation.</p>
+
+                    <p class="mb-4"><b>DB 170 B1 AA</b>: Accommodation charges and breakfast for 1 guest have been paid by Direct Bill, but we are awaiting authorisation (AA). The guest is responsible for paying their own extras (POE). A bond is required for this reservation.</p>
+
+                    <p class="mb-4"><b>DB 170 B1 POE</b>: Accommodation charges and breakfast for 1 guest have been paid by Direct Bill. The guest is responsible for paying their own extras (POE). A bond is required for this reservation.</p>
+
+                    <p class="mb-4"><b>ACB 170/188</b>: All charges are covered by the company. A bond is not required for this reservation.</p>
+
+                    <p class="mb-4"><b>FOC</b>: Accommodation is Free of Charge (FOC). The guest is responsible for paying their own extras (POE).</p>
+
+                    <p class="mb-4"><b>FOC AC</b>: No charges are to be made to this reservation.</p>
+
+                    <p class="mb-4">The Room Type is to be entered under the Payment Instructions (CLASQ / CLASK / SUPQ / SUPK / PREM).</p>
+
+                    <p class="mb-4">Occasionally, there will be extra notes associated with some bookings. For example, if breakfast for one guest is included but is required for a second guest, Reservations will add a note in the payment instructions.</p>
+
+                    <p class="mb-4">For example:</p>
+                    <p class="mb-4"><b>POA 176.22*2 B1<br>CLASQ - Additional breakfast to be charged at $22</b></p>
+                    <p class="mb-4">In the above example, one breakfast is covered as part of the booking. If another is required, it is to be charged at $22.00 instead of the standard rate.</p>
                     <h5 class="mb-4">Inclusions:</h5>
 
                     <table class="center" style="width: 100%;" cellspacing="2%" cellpadding="2%">
                         <colgroup>
                             <col style="width: 50%;">
-                            <col style="width: 50%;">
+                                <col style="width: 50%;">
                         </colgroup>
                         <thead>
                             <tr style="background-color: #e20118; color: white; font-size: large;">
-                                <th style="text-align: center;"><h5>Definition</h5></th>
-                                <th style="text-align: center;" colspan="3"><h5>Abbreviation</h5></th>
+                                <th style="text-align: center;">
+                                    <h5>Definition</h5></th>
+                                <th style="text-align: center;" colspan="3">
+                                    <h5>Abbreviation</h5></th>
                             </tr>
                         </thead>
                         <tbody>
-                        <tr>
-                        <td>Breakfast for 1</td>
-                        <td colspan="2">B1</td>
-                        </tr>
-                        <tr>
-                        <td>Breakfast for 2</td>
-                        <td colspan="2">B2</td>
-                        </tr>
-                        <tr>
-                        <td>Breakfast for 3</td>
-                        <td colspan="2">B3</td>
-                        </tr>
-                        <tr>
-                        <td>Baby Cot</td>
-                        <td colspan="2">C</td>
-                        </tr>
-                        <tr>
-                        <td>2 Course Dinner</td>
-                        <td colspan="2">2D</td>
-                        </tr>
-                        <tr>
-                        <td>3 Course Dinner</td>
-                        <td colspan="2">3D</td>
-                        </tr>
-                        <tr>
-                        <td>Early Check In</td>
-                        <td colspan="2">ECI</td>
-                        </tr>
-                        <tr>
-                        <td>Internet / WiFi</td>
-                        <td colspan="2">I</td>
-                        </tr>
-                        <tr>
-                        <td>Late Check Out</td>
-                        <td colspan="2">LCO</td>
-                        </tr>
-                        <tr>
-                        <td>Meals</td>
-                        <td colspan="2">M (no alcohol)</td>
-                        </tr>
-                        <tr>
-                        <td>Parking</td>
-                        <td colspan="2">P</td>
-                        </tr>
-                        <tr>
-                        <td>Rollaway Bed</td>
-                        <td colspan="2">R</td>
-                        </tr>
-                        <tr>
-                        <td>Upgrade</td>
-                        <td colspan="2">U</td>
-                        </tr>
-                        <tr>
-                        <td>No Pre-auth Required</td>
-                        <td colspan="2">NPAR</td>
-                        </tr>
-                        <tr>
-                        <td>Awaiting Authorisation</td>
-                        <td colspan="2">AA</td>
-                        </tr>
-                        </tbody></table></p>
+                            <tr>
+                                <td>Breakfast for 1</td>
+                                <td colspan="2">B1</td>
+                            </tr>
+                            <tr>
+                                <td>Breakfast for 2</td>
+                                <td colspan="2">B2</td>
+                            </tr>
+                            <tr>
+                                <td>Breakfast for 3</td>
+                                <td colspan="2">B3</td>
+                            </tr>
+                            <tr>
+                                <td>Baby Cot</td>
+                                <td colspan="2">C</td>
+                            </tr>
+                            <tr>
+                                <td>2 Course Dinner</td>
+                                <td colspan="2">2D</td>
+                            </tr>
+                            <tr>
+                                <td>3 Course Dinner</td>
+                                <td colspan="2">3D</td>
+                            </tr>
+                            <tr>
+                                <td>Early Check In</td>
+                                <td colspan="2">ECI</td>
+                            </tr>
+                            <tr>
+                                <td>Internet / WiFi</td>
+                                <td colspan="2">I</td>
+                            </tr>
+                            <tr>
+                                <td>Late Check-out</td>
+                                <td colspan="2">LCO</td>
+                            </tr>
+                            <tr>
+                                <td>Meals</td>
+                                <td colspan="2">M (no alcohol)</td>
+                            </tr>
+                            <tr>
+                                <td>Parking</td>
+                                <td colspan="2">P</td>
+                            </tr>
+                            <tr>
+                                <td>Rollaway Bed</td>
+                                <td colspan="2">R</td>
+                            </tr>
+                            <tr>
+                                <td>Upgrade</td>
+                                <td colspan="2">U</td>
+                            </tr>
+                            <tr>
+                                <td>No Pre-auth Required</td>
+                                <td colspan="2">NPAR</td>
+                            </tr>
+                            <tr>
+                                <td>Awaiting Authorisation</td>
+                                <td colspan="2">AA</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </p>
                     <h5 class="mb-4">Others:</h5>
 
                     <table class="center" style="width: 100%;" cellspacing="2%" cellpadding="2%">
                         <colgroup>
                             <col style="width: 50%;">
-                            <col style="width: 50%;">
+                                <col style="width: 50%;">
                         </colgroup>
                         <thead>
                             <tr style="background-color: #e20118; color: white; font-size: large;">
-                                <th style="text-align: center;"><h5>Definition</h5></th>
-                                <th style="text-align: center;" colspan="3"><h5>Abbreviation</h5></th>
+                                <th style="text-align: center;">
+                                    <h5>Definition</h5></th>
+                                <th style="text-align: center;" colspan="3">
+                                    <h5>Abbreviation</h5></th>
                             </tr>
                         </thead>
                         <tbody>
-                        <tr>
-                        <td>Business Travel Program</td>
-                        <td colspan="2">BTP</td>
-                        </tr>
-                        <tr>
-                        <td>Do Not Unblock</td>
-                        <td colspan="2">DNUB</td>
-                        </tr>
-                        <tr>
-                        <td>Long Stay Guest</td>
-                        <td colspan="2">LSG</td>
-                        </tr>
-                        <tr>
-                        <td>Estimated Time of Arrival</td>
-                        <td colspan="2">ETA</td>
-                        </tr>
-                        <tr>
-                        <td>Estimated Time of Departure</td>
-                        <td colspan="2">ETD</td>
-                        </tr>
-                        <tr>
-                        <td>Regular Guest Amenities</td>
-                        <td colspan="2">RGA</td>
-                        </tr>
-                        </tbody></table></p>
+                            <tr>
+                                <td>Business Travel Program</td>
+                                <td colspan="2">BTP</td>
+                            </tr>
+                            <tr>
+                                <td>Do Not Unblock</td>
+                                <td colspan="2">DNUB</td>
+                            </tr>
+                            <tr>
+                                <td>Long Stay Guest</td>
+                                <td colspan="2">LSG</td>
+                            </tr>
+                            <tr>
+                                <td>Estimated Time of Arrival</td>
+                                <td colspan="2">ETA</td>
+                            </tr>
+                            <tr>
+                                <td>Estimated Time of Departure</td>
+                                <td colspan="2">ETD</td>
+                            </tr>
+                            <tr>
+                                <td>Regular Guest Amenities</td>
+                                <td colspan="2">RGA</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </p>
                     <h5 class="mb-4">Corporate Booking Inclusions:</h5>
 
                     <table class="center" style="width: 100%;" cellspacing="2%" cellpadding="2%">
                         <colgroup>
                             <col style="width: 50%;">
-                            <col style="width: 50%;">
+                                <col style="width: 50%;">
                         </colgroup>
                         <thead>
                             <tr style="background-color: #e20118; color: white; font-size: large;">
-                                <th style="text-align: center;"><h5>Inclusion</h5></th>
-                                <th style="text-align: center;" colspan="3"><h5>Abbreviation</h5></th>
+                                <th style="text-align: center;">
+                                    <h5>Inclusion</h5></th>
+                                <th style="text-align: center;" colspan="3">
+                                    <h5>Abbreviation</h5></th>
                             </tr>
                         </thead>
                         <tbody>
-                        <tr>
-                        <td>Wi-Fi, 1 x 400ml water</td>
-                        <td colspan="2">IW</td>
-                        </tr>
-                        <tr>
-                        <td>Breakfast for 1, Wi-Fi, 1 x 400ml water</td>
-                        <td colspan="2">B1IW</td>
-                        </tr>
-                        </tbody></table></p>
+                            <tr>
+                                <td>Wi-Fi, 1 x 400ml water</td>
+                                <td colspan="2">IW</td>
+                            </tr>
+                            <tr>
+                                <td>Breakfast for 1, Wi-Fi, 1 x 400ml water</td>
+                                <td colspan="2">B1IW</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </p>
                 </div>
             </div>
         </div>
     </div>
-        
+
     <!-- Main Page End -->
 
     <!-- Footer Start -->
@@ -422,9 +451,7 @@
             <div class="copyright">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">HGC Melbourne Knowledge Portal</a>, All Rights Reserved.
-
-                        Designed By Andrew Edwards 2024
+                        &copy; <a class="border-bottom" href="#">HGC Melbourne Knowledge Portal</a>, All Rights Reserved. Designed By Andrew Edwards 2024
                     </div>
                 </div>
             </div>
@@ -432,10 +459,8 @@
     </div>
     <!-- Footer End -->
 
-
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

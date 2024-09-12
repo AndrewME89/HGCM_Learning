@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Completing the Audit</title>
+    <title>Auditing Transactions for the Day</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -48,105 +48,123 @@
     </div>
     <!-- Spinner End -->
 
-
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
-        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <h2 class="m-0 text-primary"><img src="img/NEW.jpg" width="110" height="75"></h2>
-        </a>
-        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <div class="nav-item nav-link">
-<div class="search-container">
-                        <input type="text" id="searchInput" placeholder="Search...">
-                        <button id="searchButton">Search</button>
-                        <div id="results"></div>
+    <!-- Navbar Wrapper Start -->
+    <div class="navbar-wrapper">
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+            <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+                <h2 class="m-0 text-primary"><img src="img/NEW.jpg" width="110" height="75"></h2>
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <div class="nav-item nav-link">
+                        <div class="search-container">
+                            <input type="text" id="searchInput" placeholder="Search...">
+                            <button id="searchButton">Search</button>
+                            <div id="results"></div>
+                        </div>
                     </div>
-                </div>    
-                <a href="index.html"  class="nav-item nav-link active">Home</a>
-                <a href="GSA.html" class="nav-item nav-link">Guest Services Agent</a>
-                <a href="NA.html" class="nav-item nav-link">Night Audit</a>
-                <a href="Res.html" class="nav-item nav-link">Reservations</a>
-                <a href="General.html" class="nav-item nav-link">General Knowledge</a>
-                <div class="nav-item dropdown">
-                    <a href="contacts.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Contacts</a>
-                    <div class="dropdown-menu fade-down m-0" style="right:0">
-                        <a href="StaffContacts.html" class="dropdown-item">Staff Contacts</a>
-                        <a href="ContractorContacts.html" class="dropdown-item">Contractor Contacts</a>
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="GSA.html" class="nav-item nav-link">Guest Services Agent</a>
+                    <a href="NA.html" class="nav-item nav-link">Night Audit</a>
+                    <a href="Res.html" class="nav-item nav-link">Reservations</a>
+                    <a href="General.html" class="nav-item nav-link">General Knowledge</a>
+                    <div class="nav-item dropdown">
+                        <a href="contacts.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Contacts</a>
+                        <div class="dropdown-menu fade-down m-0" style="right:0">
+                            <a href="StaffContacts.html" class="dropdown-item">Staff Contacts</a>
+                            <a href="ContractorContacts.html" class="dropdown-item">Contractor Contacts</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </nav>
-    <!-- Navbar End -->
+        </nav>
+        <!-- Navbar End -->
+
+        <!-- Back Button -->
+        <button class="back-button" onclick="history.back()">
+            <i class="bi bi-arrow-left"></i>
+        </button>
+    </div>
+    <!-- Navbar Wrapper End -->
 
     <!-- Main Page Start -->
 
     <div class="container-xxl py-5">
-
-        <button onclick="history.back()">Back</button></p>
-
         <div class="container">
             <div>
                 <div class="col wow fadeInUp" data-wow-delay="0.1s" style="min-height: 50px;">
                 </div>
                 <div class="col wow fadeInUp" data-wow-delay="0.3s">
-                    <h2 class="section-title bg-white text-start text-primary pe-3">Completing the Audit</h2>
+                    <h2 class="section-title bg-white text-start text-primary pe-3">Auditing Transactions for the Day</h2>
                     <p class="mb-4">The most important part of the Night Audit role is the Audit itself. It is crucial that everything in the venue is balanced; otherwise, the system cannot close the business day.</p>
-                    <img src="img/Audit_TFBD_01.png" class="center">
                     <p class="mb-4">It is essential that you complete the <a href="BlackFolder.html">Organizing the Black Folder</a> step before continuing with the Audit.</p>
                     <p class="mb-4">In iHMS, select: <b>Reports</b> → <b>Before Night Audit Reports</b> → <b>Transaction For Business Day</b></p>
+                    <img src="img/Audit_TFBD_01.png" class="center">
                     <ol type="1">
-                    <li>Set Charge Date "Start of Range" to <u>Today</u>.</p></li></p>
-                    <li>Set Charge Date "End of Range" to <u>Today</u>.</p></li></p>
-                    <li>Change Select Postcode Range "Start of Range" to <u>Accommodation</u>.</p></li></p>
-                    <li>Change Select Postcode Range "End of Range" to <u>Visa/Mastercard</u>.</p></li></p>
-                    <img src="img/Audit_TFBD_02.png" class="center">
-                    <li>Click OK.</p></li></p>
-                    <li>Print the entirety of this report.</p></li></p>
+                        <li>Set Charge Date "Start of Range" to <u>Today</u>.</p>
+                        </li></p>
+                        <li>Set Charge Date "End of Range" to <u>Today</u>.</p>
+                        </li></p>
+                        <li>Change Select Postcode Range "Start of Range" to <u>Accommodation</u>.</p>
+                        </li></p>
+                        <li>Change Select Postcode Range "End of Range" to <u>Visa/Mastercard</u>.</p>
+                        </li></p>
+                        <img src="img/Audit_TFBD_02.png" class="center">
+                        <li>Click OK.</p>
+                        </li></p>
+                        <li>Print the entirety of this report.</p>
+                        </li></p>
                     </ol>
 
                     <p class="mb-4">Arrange these reports as follows:</p>
 
                     <table class="center" style="width: 100%;" cellspacing="2%" cellpadding="2%">
                         <colgroup>
-                            <col />
-                            <col />
-                            <col />
+                            <col style="width: auto;">
+                                <col style="width: auto;">
+                                    <col style="width: auto;">
                         </colgroup>
                         <tbody>
-                        <tr>
-                        <td>To keep:</td>
-                        <td>To the Duty Manager:</td>
-                        <td colspan="3">To the Day Bag:</td>
-                        </tr>
-                        <tr>
-                        <td>American Express</td>
-                        <td><strong>ALL</strong> ENCORE pages</td>
-                        <td rowspan="4">Everything else</td>
-                        </tr>
-                        <tr>
-                        <td>Eftpos</td>
-                        <td><strong>ALL</strong> FOOTLIGHTS pages</td>
-                        </tr>
-                        <tr>
-                        <td>Visa / MasterCard</td>
-                        <td><u><strong>ALL</strong></u>&nbsp;ROOM SERVICE pages&nbsp;<u><strong>EXCEPT</strong></u>&nbsp;"Supper" &amp; "Delivery" pages</td>
-                        </tr>
-                        <tr>
-                        <td>Any card payments</td>
-                        <td>Movies</td>
-                        </tr>
-                        </tbody>
+                            <thead>
+                                <tr style="background-color: #e20118; color: white;">
+                                    <th style="text-align: center;">
+                                        <h5>To Keep:</h5></th>
+                                    <th style="text-align: center;">
+                                        <h5>To Duty Manager:</h5></td>
+                                        <th style="text-align: center;">
+                                            <h5>To the Day Bag:</h5></td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>American Express</td>
+                                    <td><u><b>ALL</b></u> ENCORE pages</td>
+                                    <td rowspan="4">Everything else</td>
+                                </tr>
+                                <tr>
+                                    <td>Eftpos</td>
+                                    <td><u><b>ALL</b></u> FOOTLIGHTS pages</td>
+                                </tr>
+                                <tr>
+                                    <td>Visa/MasterCard</td>
+                                    <td><u><b>ALL</b></u> ROOM SERVICE pages <u><b>EXCEPT</b></u> "Supper" & "Delivery" pages</td>
+                                </tr>
+                                <tr>
+                                    <td>(Any card payments)</td>
+                                    <td>Movies</td>
+                                </tr>
+                            </tbody>
                     </table>
 
                     <br>
 
                     <p class="mb-4">Once the extra reports have been placed in the Day Bag pile, you can move it to the Back Office, under the label “Day Bag”, which is between the two computers.</p>
-                    <p class="mb-4">Unstaple any payment receipts from the previous shift's Transaction for Business Day Reports, and place them neatly back on the pile they came from. Discard any previous Reports to avoid confusion, as you have just printed out the updated one.</p>
+                    <p class="mb-4">Unstaple any payment receipts from the previous shift's Transaction for Business Day Reports, and place them neatly back on the pile they came from. Discard any previous Reports to avoid confusion, as you have just printed out the
+                        updated one.</p>
                     <p class="mb-4">Organize the payment receipts by room number as stated on the Transaction for Business Day Report and highlight the amount & transaction number after confirming the details are correct.</p>
                     <p class="mb-4">Neatly staple the payment receipts to the corresponding Transaction for Business Day Report page (AMEX receipts to the American Express page, etc).</p>
                     <p class="mb-4">Once completed, create a new Day Bag pile with the transactions sorted alphabetically (AR Pending on top, Visa/Mastercard at the bottom).</p>
@@ -154,7 +172,7 @@
             </div>
         </div>
     </div>
-        
+
     <!-- Main Page End -->
 
     <!-- Footer Start -->
@@ -182,9 +200,7 @@
             <div class="copyright">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">HGC Melbourne Knowledge Portal</a>, All Rights Reserved.
-
-                        Designed By Andrew Edwards 2024
+                        &copy; <a class="border-bottom" href="#">HGC Melbourne Knowledge Portal</a>, All Rights Reserved. Designed By Andrew Edwards 2024
                     </div>
                 </div>
             </div>
@@ -192,10 +208,8 @@
     </div>
     <!-- Footer End -->
 
-
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

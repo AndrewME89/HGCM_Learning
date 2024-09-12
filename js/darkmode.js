@@ -1,12 +1,18 @@
-document.addEventListener('DOMContentLoaded', function() {
-    if (localStorage.getItem('dark-mode') === 'enabled') {
-        document.body.classList.add('dark-mode');
-        document.querySelector('.navbar').classList.add('dark-mode');
-    }
-});
+const toggleButton = document.getElementById('dark-mode-toggle');
+const body = document.body;
 
-document.getElementById('darkModeToggle').addEventListener('click', function() {
-    const isDarkMode = document.body.classList.toggle('dark-mode');
-    document.querySelector('.navbar').classList.toggle('dark-mode');
-    localStorage.setItem('dark-mode', isDarkMode ? 'enabled' : 'disabled');
+// Check if dark mode was previously enabled
+if (localStorage.getItem('dark-mode') === 'enabled') {
+  body.classList.add('dark-mode');
+}
+
+toggleButton.addEventListener('click', () => {
+  body.classList.toggle('dark-mode');
+  
+  // Save the user's preference
+  if (body.classList.contains('dark-mode')) {
+    localStorage.setItem('dark-mode', 'enabled');
+  } else {
+    localStorage.setItem('dark-mode', 'disabled');
+  }
 });

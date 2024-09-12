@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Check In</title>
+    <title>Check-In Procedure</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -46,19 +46,20 @@
     </div>
     <!-- Spinner End -->
 
-
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
-        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <h2 class="m-0 text-primary"><img src="img/NEW.jpg" width="110" height="75"></h2>
-        </a>
-        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-0">
+    <!-- Navbar Wrapper Start -->
+    <div class="navbar-wrapper">
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+            <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+                <h2 class="m-0 text-primary"><img src="img/NEW.jpg" width="110" height="75"></h2>
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <div class="nav-item nav-link">
-<div class="search-container">
+                    <div class="search-container">
                         <input type="text" id="searchInput" placeholder="Search...">
                         <button id="searchButton">Search</button>
                         <div id="results"></div>
@@ -81,18 +82,22 @@
     </nav>
     <!-- Navbar End -->
 
+    <!-- Back Button -->
+    <button class="back-button" onclick="history.back()">
+        <i class="bi bi-arrow-left"></i>
+    </button>        
+</div>
+<!-- Navbar Wrapper End -->
+
     <!-- Main Page Start -->
 
     <div class="container-xxl py-5">
-
-        <button onclick="history.back()">Back</button></p>
-
         <div class="container">
             <div>
                 <div class="col wow fadeInUp" data-wow-delay="0.1s" style="min-height: 50px;">
                 </div>
                 <div class="col wow fadeInUp" data-wow-delay="0.3s">
-                    <h2 class="section-title bg-white text-start text-primary pe-3">Check In Procedure</h2>
+                    <h2 class="section-title bg-white text-start text-primary pe-3">Check-In Procedure</h2>
                     <p class="mb-4">Checking guests in and out of the hotel is a key part of your role. It's important to perform these tasks quickly, efficiently, and accurately to ensure a positive guest experience.</p>
                     <ol>
                     <li>Smile and welcome the guest to the hotel. If they are a returning guest, acknowledge this with a warm welcome back.</li></p>
@@ -208,7 +213,7 @@
 
                     <h5 class="section-title bg-white text-start text-primary pe-3">Notes:</h5>
                     <ul>
-                    <li>We can only check in a guest if the name on the reservation matches the photo ID. If it does not match, we CANNOT check the guest in unless they have a confirmation or we request the guest to call the person on the reservation to confirm the details.</li></p>
+                    <li>We can only check-in a guest if the name on the reservation matches the photo ID. If it does not match, we CANNOT check the guest in unless they have a confirmation or we request the guest to call the person on the reservation to confirm the details.</li></p>
                     <li>NO underage (under 18) guests are to be checked in without adults accompanying them for the full duration of their stay.</li></p>
                     <li>The most important section on the guest registration card is the Signature. Please ensure that the guest has read and understood the terms and conditions of the hotel before signing and before issuing keys. Hotel policies are non-negotiable and cannot be altered. The signature must be obtained before issuing keys, and the person who provided the pre-authorisation (cardholder and if not the same person on the booking) should also sign the registration card.</li></p>
                     <li>Sharing Guest Name: This is to ensure that every person in the room is accounted for and to check if the maximum number of people per room is being breached. This is also used by the Night Audit Team every time they do security checks after hours.</li>
@@ -256,10 +261,8 @@
     </div>
     <!-- Footer End -->
 
-
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

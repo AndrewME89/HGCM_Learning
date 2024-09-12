@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Check Out</title>
+    <title>Check-out Procedure</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -46,19 +46,20 @@
     </div>
     <!-- Spinner End -->
 
-
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
-        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <h2 class="m-0 text-primary"><img src="img/NEW.jpg" width="110" height="75"></h2>
-        </a>
-        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-0">
+    <!-- Navbar Wrapper Start -->
+    <div class="navbar-wrapper">
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+            <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+                <h2 class="m-0 text-primary"><img src="img/NEW.jpg" width="110" height="75"></h2>
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <div class="nav-item nav-link">
-<div class="search-container">
+                    <div class="search-container">
                         <input type="text" id="searchInput" placeholder="Search...">
                         <button id="searchButton">Search</button>
                         <div id="results"></div>
@@ -81,18 +82,22 @@
     </nav>
     <!-- Navbar End -->
 
+    <!-- Back Button -->
+    <button class="back-button" onclick="history.back()">
+        <i class="bi bi-arrow-left"></i>
+    </button>        
+</div>
+<!-- Navbar Wrapper End -->
+
     <!-- Main Page Start -->
 
     <div class="container-xxl py-5">
-
-        <button onclick="history.back()">Back</button></p>
-
         <div class="container">
             <div>
                 <div class="col wow fadeInUp" data-wow-delay="0.1s" style="min-height: 50px;">
                 </div>
                 <div class="col wow fadeInUp" data-wow-delay="0.3s">
-                    <h2 class="section-title bg-white text-start text-primary pe-3">Check Out Procedure</h2>
+                    <h2 class="section-title bg-white text-start text-primary pe-3">Check-out Procedure</h2>
                     <p class="mb-4">For the AM Shift, the bulk of a GSA's responsibilities is to ensure a quick and efficient Check-Out process for our Guests.</p>
 
                     <h5>Procedure</h5>
@@ -102,7 +107,7 @@
                     <li>Search the room number or surname and bring their booking up on the screen. Confirm their name to ensure the right guest is checking out.
                         <img src="img/checkin01.png" class="center" width="75%"></p>
                     <li>Click the "I like to..." button on the top right-hand corner of the window.</li></p>
-                    <li>A pop-up window will appear. Select "Check Out".</li></p>
+                    <li>A pop-up window will appear. Select "Check-out".</li></p>
                     <li>Another pop-up will appear warning that any changes on the reservation will be saved. Click "Yes".</li></p>
                     <li>This will bring up the check-out window.
                         <img src="img/checkout01.png" class="center" width="75%"></p>
@@ -122,7 +127,7 @@
                     <li>In the remarks section, write: "TRANS ID – 123456" (the last six digits of the RRN on the receipt) for all card transactions.</li></p>
                     <li>Click ‘Next’.</li></p>
                     <li>If the guest requires a Tax Invoice, right-click on the ledger you would like to print and choose the ‘Print Ledger Invoice’ option.</li></p>
-                    <li>Once all the ledgers are zero balance, click "Check Out" (bottom right hand corner).</li></p>
+                    <li>Once all the ledgers are zero balance, click "Check-out" (bottom right hand corner).</li></p>
                     <li>Reiterate the procedure of the pre-authorisation release.</li></p>
                     <li>The guest may also wish to have their luggage stored for a later pick-up. If so, tag the bags and give the receipts to the guest, and place the bags in the luggage store room.</li></p>
                     <li>Bid them a farewell and a safe journey.</li></p>
@@ -131,7 +136,7 @@
                     <h5 class="section-title bg-white text-start text-primary pe-3">Notes:</h5>
                     <h6>Pay Attention To:</h6>
                     <ul>
-                    <li>Payment method and Check Out instructions.</li></p>
+                    <li>Payment method and Check-out instructions.</li></p>
                     <li>Incidentals to be settled either directly by the guest or covered by packages or companies.</li></p>
                     <li>Payment method, CC type, and amount as different credit cards will incur different surcharges.</li></p>
                     <li>Incorrect postings will affect your end-of-shift credit card balance.</li></p>
@@ -183,10 +188,8 @@
     </div>
     <!-- Footer End -->
 
-
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

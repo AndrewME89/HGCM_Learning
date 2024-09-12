@@ -49,47 +49,52 @@
     </div>
     <!-- Spinner End -->
 
-
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
-        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <h2 class="m-0 text-primary"><img src="img/NEW.jpg" width="110" height="75"></h2>
-        </a>
-        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <div class="nav-item nav-link">
-<div class="search-container">
-                        <input type="text" id="searchInput" placeholder="Search...">
-                        <button id="searchButton">Search</button>
-                        <div id="results"></div>
+    <!-- Navbar Wrapper Start -->
+    <div class="navbar-wrapper">
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+            <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+                <h2 class="m-0 text-primary"><img src="img/NEW.jpg" width="110" height="75"></h2>
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <div class="nav-item nav-link">
+                        <div class="search-container">
+                            <input type="text" id="searchInput" placeholder="Search...">
+                            <button id="searchButton">Search</button>
+                            <div id="results"></div>
+                        </div>
                     </div>
-                </div>    
-                <a href="index.html"  class="nav-item nav-link active">Home</a>
-                <a href="GSA.html" class="nav-item nav-link">Guest Services Agent</a>
-                <a href="NA.html" class="nav-item nav-link">Night Audit</a>
-                <a href="Res.html" class="nav-item nav-link">Reservations</a>
-                <a href="General.html" class="nav-item nav-link">General Knowledge</a>
-                <div class="nav-item dropdown">
-                    <a href="contacts.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Contacts</a>
-                    <div class="dropdown-menu fade-down m-0" style="right:0">
-                        <a href="StaffContacts.html" class="dropdown-item">Staff Contacts</a>
-                        <a href="ContractorContacts.html" class="dropdown-item">Contractor Contacts</a>
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="GSA.html" class="nav-item nav-link">Guest Services Agent</a>
+                    <a href="NA.html" class="nav-item nav-link">Night Audit</a>
+                    <a href="Res.html" class="nav-item nav-link">Reservations</a>
+                    <a href="General.html" class="nav-item nav-link">General Knowledge</a>
+                    <div class="nav-item dropdown">
+                        <a href="contacts.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Contacts</a>
+                        <div class="dropdown-menu fade-down m-0" style="right:0">
+                            <a href="StaffContacts.html" class="dropdown-item">Staff Contacts</a>
+                            <a href="ContractorContacts.html" class="dropdown-item">Contractor Contacts</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </nav>
-    <!-- Navbar End -->
+        </nav>
+        <!-- Navbar End -->
+
+        <!-- Back Button -->
+        <button class="back-button" onclick="history.back()">
+            <i class="bi bi-arrow-left"></i>
+        </button>
+    </div>
+    <!-- Navbar Wrapper End -->
 
     <!-- Main Page Start -->
 
     <div class="container-xxl py-5">
-
-        <button onclick="history.back()">Back</button></p>
-
         <div class="container">
             <div>
                 <div class="col wow fadeInUp" data-wow-delay="0.1s" style="min-height: 50px;">
@@ -98,63 +103,81 @@
                     <h2 class="section-title bg-white text-start text-primary pe-3">Top Ups</h2>
                     <p class="mb-4">When a guest's incidentals exceed their $100.00 bond, a "Top-Up" is necessary to cover the additional charges.</p>
                     <p class="mb-4"><b>Example:</b> If a guest's Encore dinner bill totals $123.00, their bond needs a $23.00 Top-Up.</p>
-                    
+
                     <h5>Procedure</h5>
                     <ol>
-                    <li><b>Review Check-In Instructions:</b></p>
-                    <ul>
-                    <li>Right-click on each checked-in folio and select "Check Out View".</li></p>
-                    <li>Review the "Instruction" tab for any notes about charges. ACB rooms will have all charges billed to the company or credit card on file. RO covers Room Only, etc. Refer to the <a href="SpexGuide.html">Special Instructions Guide</a> for further details.</li></p>
-                    </ul>
-                    </li></p>
-                    <li><b>Arrange Charges:</b></p>
-                    <ul>
-                    <li>Accommodation in the top left.</li></p>
-                    <li>Incidentals (Room Service, Cash Bond, Encore, Footlights, etc.) in the top right.</li></p>
-                    <li>Mistakes and $0 charges in the bottom left.</li></p>
-                    </ul>
-                    </li></p>
-                    <li><b>Create a "DUMMY" Ledger (if needed):</b></p>
-                    <ul>
-                    <li>If the bottom left ledger doesn't allow additions, create a "DUMMY" ledger.</li></p>
-                    <li>Select the guest's name in the top right, then use the down arrow on the keyboard.</li></p>
-                    <li>Type "DUMMY" into the field and click the three dots to the right.</li></p>
-                    <li>In the pop-up, select the "Guest" radio button and click "SEARCH".</li></p>
-                    <li>Double-click the first option, which will indicate the country as Aruba.</li></p>
-                    </ul>
-                    </li></p>
-                    <li><b>Identify Top-Up Needs:</b></p>
-                    <ul>
-                    <li>After arranging charges, check the guest's name at the top right of the pop-up. If the ledger exceeds $100, a Top-Up is needed for the excess amount.</li></p>
-                    </ul>
-                    </li></p>
-                    <li><b>Generate In-House Folio Limit Report:</b></p>
-                    <ul>
-                    <li>In iHMS, go to: <b>Reports → In House → In House Folio Limit Report → PRINT</b>.</li></p>
-                    <li>Highlight amounts in the far right column <b><u><i>exceeding</i></u></b> $100.</li></p>
-                    <li>Note any amounts <b><u><i>under</i></u></b> $100 in the left column for further review.</li></p>
-                    </ul>
-                    </li></p>
-                    <li><b>Process the Top-Up:</b></p>
-                    <ul>
-                    <li>Check the TSP number on the Bond docket attached to the Guest Registration Card.</li></p>
-                    <li>Use the corresponding terminal to process the Top-Up:</li></p>
-                    <li>On the Eftpos terminal: <b>Menu → Search Transactions → Enter 4-digit card number → View → Select the transaction with the same time → Adjust → Update the amount → Submit</b>.</li></p>
-                    <li>Attach the Top-Up docket to the Guest Registration Card.</li></p>
-                    </ul>
-                    </li></p>
+                        <li><b>Review Check-In Instructions:</b></p>
+                            <ul>
+                                <li>Right-click on each checked-in folio and select "Check-out View".</li>
+                                </p>
+                                <li>Review the "Instruction" tab for any notes about charges. ACB rooms will have all charges billed to the company or credit card on file. RO covers Room Only, etc. Refer to the <a href="SpexGuide.html">Special Instructions Guide</a>                                    for further details.</li>
+                                </p>
+                            </ul>
+                        </li></p>
+                        <li><b>Arrange Charges:</b></p>
+                            <ul>
+                                <li>Accommodation in the top left.</li>
+                                </p>
+                                <li>Incidentals (Room Service, Cash Bond, Encore, Footlights, etc.) in the top right.</li>
+                                </p>
+                                <li>Mistakes and $0 charges in the bottom left.</li>
+                                </p>
+                            </ul>
+                        </li></p>
+                        <li><b>Create a "DUMMY" Ledger (if needed):</b></p>
+                            <ul>
+                                <li>If the bottom left ledger doesn't allow additions, create a "DUMMY" ledger.</li>
+                                </p>
+                                <li>Select the guest's name in the top right, then use the down arrow on the keyboard.</li>
+                                </p>
+                                <li>Type "DUMMY" into the field and click the three dots to the right.</li>
+                                </p>
+                                <li>In the pop-up, select the "Guest" radio button and click "SEARCH".</li>
+                                </p>
+                                <li>Double-click the first option, which will indicate the country as Aruba.</li>
+                                </p>
+                            </ul>
+                        </li></p>
+                        <li><b>Identify Top-Up Needs:</b></p>
+                            <ul>
+                                <li>After arranging charges, check the guest's name at the top right of the pop-up. If the ledger exceeds $100, a Top-Up is needed for the excess amount.</li>
+                                </p>
+                            </ul>
+                        </li></p>
+                        <li><b>Generate In-House Folio Limit Report:</b></p>
+                            <ul>
+                                <li>In iHMS, go to: <b>Reports → In House → In House Folio Limit Report → PRINT</b>.</li>
+                                </p>
+                                <li>Highlight amounts in the far right column <b><u><i>exceeding</i></u></b> $100.</li>
+                                </p>
+                                <li>Note any amounts <b><u><i>under</i></u></b> $100 in the left column for further review.</li>
+                                </p>
+                            </ul>
+                        </li></p>
+                        <li><b>Process the Top-Up:</b></p>
+                            <ul>
+                                <li>Check the TSP number on the Bond docket attached to the Guest Registration Card.</li>
+                                </p>
+                                <li>Use the corresponding terminal to process the Top-Up:</li>
+                                </p>
+                                <li>On the Eftpos terminal: <b>Menu → Search Transactions → Enter 4-digit card number → View → Select the transaction with the same time → Adjust → Update the amount → Submit</b>.</li>
+                                </p>
+                                <li>Attach the Top-Up docket to the Guest Registration Card.</li>
+                                </p>
+                            </ul>
+                        </li></p>
                     </ol>
-                    
+
                     <h5 class="section-title bg-white text-start text-primary pe-3">Note:</h5>
                     <ul>
-                    <li>If a Top-Up is declined, inform your Duty Manager and create a Cash item in the Additional Items section with the remark "***Top-Up Declined***".</li></p>
-                    <li>If the guest is staying multiple additional days, prepare the "Pre-Authorisation Top-Up Declined" letter (located at <b>M:\Operations\Front Office\Reception\Templates\Templates for guest letters</b>) to be delivered during <a href="Walk.html">Floor Walk</a>.</li></p>
+                        <li>If a Top-Up is declined, inform your Duty Manager and create a Cash item in the Additional Items section with the remark "***Top-Up Declined***".</li></p>
+                        <li>If the guest is staying multiple additional days, prepare the "Pre-Authorisation Top-Up Declined" letter (located at <b>M:\Operations\Front Office\Reception\Templates\Templates for guest letters</b>) to be delivered during <a href="Walk.html">Floor Walk</a>.</li></p>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
-        
+
     <!-- Main Page End -->
 
     <!-- Footer Start -->
@@ -182,9 +205,7 @@
             <div class="copyright">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">HGC Melbourne Knowledge Portal</a>, All Rights Reserved.
-
-                        Designed By Andrew Edwards 2024
+                        &copy; <a class="border-bottom" href="#">HGC Melbourne Knowledge Portal</a>, All Rights Reserved. Designed By Andrew Edwards 2024
                     </div>
                 </div>
             </div>
@@ -192,10 +213,8 @@
     </div>
     <!-- Footer End -->
 
-
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

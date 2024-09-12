@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Posting Transactions</title>
+    <title>Posting Charges To Folios</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -46,118 +46,128 @@
     </div>
     <!-- Spinner End -->
 
-
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
-        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <h2 class="m-0 text-primary"><img src="img/NEW.jpg" width="110" height="75"></h2>
-        </a>
-        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <div class="nav-item nav-link">
-<div class="search-container">
-                        <input type="text" id="searchInput" placeholder="Search...">
-                        <button id="searchButton">Search</button>
-                        <div id="results"></div>
+    <!-- Navbar Wrapper Start -->
+    <div class="navbar-wrapper">
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+            <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+                <h2 class="m-0 text-primary"><img src="img/NEW.jpg" width="110" height="75"></h2>
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <div class="nav-item nav-link">
+                        <div class="search-container">
+                            <input type="text" id="searchInput" placeholder="Search...">
+                            <button id="searchButton">Search</button>
+                            <div id="results"></div>
+                        </div>
                     </div>
-                </div>    
-                <a href="index.html"  class="nav-item nav-link active">Home</a>
-                <a href="GSA.html" class="nav-item nav-link">Guest Services Agent</a>
-                <a href="NA.html" class="nav-item nav-link">Night Audit</a>
-                <a href="Res.html" class="nav-item nav-link">Reservations</a>
-                <a href="General.html" class="nav-item nav-link">General Knowledge</a>
-                <div class="nav-item dropdown">
-                    <a href="contacts.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Contacts</a>
-                    <div class="dropdown-menu fade-down m-0" style="right:0">
-                        <a href="StaffContacts.html" class="dropdown-item">Staff Contacts</a>
-                        <a href="ContractorContacts.html" class="dropdown-item">Contractor Contacts</a>
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="GSA.html" class="nav-item nav-link">Guest Services Agent</a>
+                    <a href="NA.html" class="nav-item nav-link">Night Audit</a>
+                    <a href="Res.html" class="nav-item nav-link">Reservations</a>
+                    <a href="General.html" class="nav-item nav-link">General Knowledge</a>
+                    <div class="nav-item dropdown">
+                        <a href="contacts.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Contacts</a>
+                        <div class="dropdown-menu fade-down m-0" style="right:0">
+                            <a href="StaffContacts.html" class="dropdown-item">Staff Contacts</a>
+                            <a href="ContractorContacts.html" class="dropdown-item">Contractor Contacts</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </nav>
-    <!-- Navbar End -->
+        </nav>
+        <!-- Navbar End -->
+
+        <!-- Back Button -->
+        <button class="back-button" onclick="history.back()">
+            <i class="bi bi-arrow-left"></i>
+        </button>
+    </div>
+    <!-- Navbar Wrapper End -->
 
     <!-- Main Page Start -->
 
     <div class="container-xxl py-5">
-
-        <button onclick="history.back()">Back</button></p>
-
         <div class="container">
             <div>
                 <div class="col wow fadeInUp" data-wow-delay="0.1s" style="min-height: 50px;">
                 </div>
                 <div class="col wow fadeInUp" data-wow-delay="0.3s">
-                    <h2 class="section-title bg-white text-start text-primary pe-3">Posting Transactions</h2>
+                    <h2 class="section-title bg-white text-start text-primary pe-3">Posting Charges To Folios</h2>
                     <p class="mb-4">Accurate transaction posting in iHMS is crucial for maintaining balanced financial records and ensuring precise accounting for all hotel revenue.</p>
 
                     <h5>Room Payments</h5>
                     <p class="mb-4">When guests pay for their rooms, record the payment in the folio.</p>
                     <ol>
-                    <li>Open the Guest Folio in iHMS.</li></p>
-                    <li>Navigate to the "Transactions" tab.</li></p>
-                    <li>Right-click and choose "Payment", or select the "Payment" button at the top of the tab.</li></p>
-                    <li>Enter the payment amount and select the correct payment type (e.g., Amex, Visa/MasterCard).</li></p>
-                    <li>Add a remark with the last 6 digits of the RRN number (e.g., "TRANS - 123456").</li></p>
-                    <img src="" alt="">
-                    <li>For companies exempt from credit card surcharges (e.g., Woolworths, DFFH, Inchcape), select the "Opt Out" option.</li></p>
+                        <li>Open the Guest Folio in iHMS.</li></p>
+                        <li>Navigate to the "Transactions" tab.</li></p>
+                        <li>Right-click and choose "Payment", or select the "Payment" button at the top of the tab.</li></p>
+                        <li>Enter the payment amount and select the correct payment type (e.g., Amex, Visa/MasterCard).</li></p>
+                        <li>Add a remark with the last 6 digits of the RRN number (e.g., "TRANS - 123456").</li></p>
+                        <img src="" alt="">
+                        <li>For companies exempt from credit card surcharges (e.g., Woolworths, DFFH, Inchcape), select the "Opt Out" option.</li></p>
                     </ol>
-                    
+
                     <h5>Food and Beverage (F&B) Transactions</h5>
                     <p class="mb-4">The Front Office team is responsible for posting all F&B terminal dockets into iHMS.</p>
-                    
+
                     <h5>End-of-Day F&B Cash Up</h5>
                     <p class="mb-4">At the end of their shift, the F&B team will provide the Front Office with:</p>
                     <ul>
-                    <li>A payment summary sheet</li></p>
-                    <li>Cash</li></p>
-                    <li>Credit card receipts</li></p>
-                    <li>EFTPOS receipts</li></p>
+                        <li>A payment summary sheet</li></p>
+                        <li>Cash</li></p>
+                        <li>Credit card receipts</li></p>
+                        <li>EFTPOS receipts</li></p>
                     </ul>
-                    
+
                     <h5>Cash Handling</h5>
                     <ol>
-                    <li>Verify the total cash amount on the payment summary sheet against the actual cash received.</li></p>
-                    <li>Place the cash in a cash drop envelope and hand it over to the Duty Manager.</li></p>
-                    <li>Post the cash amount in iHMS:</li></p>
-                    <ul>
-                    <li>Open iHMS: <b>Front Desk → Manage House Account</b>.</li></p>
-                    <li>Search for "Folio" and ensure the search parameter is set to "Stay Date".</li></p>
-                    <li>Open the Cash folio and go to the "Transactions" tab.</li></p>
-                    <li>Right-click and choose "Payment", or select the "Payment" button at the top of the tab.</li></p>
-                    <li>Enter the total amount of cash in the pop-up window.</li></p>
-                    </ul>
+                        <li>Verify the total cash amount on the payment summary sheet against the actual cash received.</li></p>
+                        <li>Place the cash in a cash drop envelope and hand it over to the Duty Manager.</li></p>
+                        <li>Post the cash amount in iHMS:</li></p>
+                        <ul>
+                            <li>Open iHMS: <b>Front Desk → Manage House Account</b>.</li>
+                            </p>
+                            <li>Search for "Folio" and ensure the search parameter is set to "Stay Date".</li>
+                            </p>
+                            <li>Open the Cash folio and go to the "Transactions" tab.</li>
+                            </p>
+                            <li>Right-click and choose "Payment", or select the "Payment" button at the top of the tab.</li>
+                            </p>
+                            <li>Enter the total amount of cash in the pop-up window.</li>
+                            </p>
+                        </ul>
                     </ol>
-                    
+
                     <h5>Credit Card Processing</h5>
                     <ol>
-                    <li>Sort card payment receipts by type (Amex, Debit Card, MasterCard, Visa).</li></p>
-                    <li>Open iHMS: <b>Front Desk → Manage House Account</b>.</li></p>
-                    <li>Search for "Folio" and ensure the search parameter is set to "Stay Date".</li></p>
-                    <li>Select the relevant payment type folio.</li></p>
-                    <li>In the folio, navigate to the "Transactions" tab, right-click, and select "Payment", or select the "Payment" button at the top of the tab.</li></p>
-                    <li>Post each docket individually, being sure to enter the exact amount.</li></p>
-                    <li>Check the "Opt-Out" box to prevent adding a credit card fee.</li></p>
-                    <li>Repeat for all receipts of that payment type until the folio balance is zero.</li></p>
+                        <li>Sort card payment receipts by type (Amex, Debit Card, MasterCard, Visa).</li></p>
+                        <li>Open iHMS: <b>Front Desk → Manage House Account</b>.</li></p>
+                        <li>Search for "Folio" and ensure the search parameter is set to "Stay Date".</li></p>
+                        <li>Select the relevant payment type folio.</li></p>
+                        <li>In the folio, navigate to the "Transactions" tab, right-click, and select "Payment", or select the "Payment" button at the top of the tab.</li></p>
+                        <li>Post each docket individually, being sure to enter the exact amount.</li></p>
+                        <li>Check the "Opt-Out" box to prevent adding a credit card fee.</li></p>
+                        <li>Repeat for all receipts of that payment type until the folio balance is zero.</li></p>
                     </ol>
-                    
+
                     <p class="mb-4">If the balance is not zero:</p>
                     <ol>
-                    <li>Double-check all posted payments.</li></p>
-                    <li>Reverse any incorrect payment entries as "ERROR" and re-post the correct amount.</li></p>
-                    <li>If there is still a discrepancy, alert your Duty Manager.</li></p>
+                        <li>Double-check all posted payments.</li></p>
+                        <li>Reverse any incorrect payment entries as "ERROR" and re-post the correct amount.</li></p>
+                        <li>If there is still a discrepancy, alert your Duty Manager.</li></p>
                     </ol>
-                    
+
                     <p class="mb-4">Repeat the above steps for each payment type until all charges are posted and all folio balances are zero.</p>
                 </div>
             </div>
         </div>
     </div>
-        
+
     <!-- Main Page End -->
 
     <!-- Footer Start -->
@@ -185,9 +195,7 @@
             <div class="copyright">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">HGC Melbourne Knowledge Portal</a>, All Rights Reserved.
-
-                        Designed By Andrew Edwards 2024
+                        &copy; <a class="border-bottom" href="#">HGC Melbourne Knowledge Portal</a>, All Rights Reserved. Designed By Andrew Edwards 2024
                     </div>
                 </div>
             </div>
@@ -195,10 +203,8 @@
     </div>
     <!-- Footer End -->
 
-
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

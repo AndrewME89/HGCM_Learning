@@ -17,7 +17,7 @@
 
 /* Removing conflicting styles for presentation area */
 #presentation-area {
-  width: 1000px;
+  width: 10000px;
   height: 650px;
   position: relative;
   background: #e20118; /* Matches with the primary color */
@@ -126,18 +126,16 @@
 }
 
 .content .title {
-  font-size: 3em;
   color: #e20118; /* Matches with the primary color */
 }
 
 .content .sub-title {
-  font-size: 1.75em;
   color: #e20118; /* Matches with the primary color */
 }
 
 .content p {
-  font-size: 18px;
   margin-bottom: 1rem;
+  font-size: 16px;
 }
 
 /* Slide */

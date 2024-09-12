@@ -12,7 +12,8 @@
     <link href="img/favicon.ico" rel="icon">
 
     <!-- Font Awesome Icon CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -54,968 +55,1069 @@
     </div>
     <!-- Spinner End -->
 
-
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
-        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <h2 class="m-0 text-primary"><img src="img/NEW.jpg" width="110" height="75"></h2>
-        </a>
-        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <div class="nav-item nav-link">
-<div class="search-container">
-                        <input type="text" id="searchInput" placeholder="Search...">
-                        <button id="searchButton">Search</button>
-                        <div id="results"></div>
+    <!-- Navbar Wrapper Start -->
+    <div class="navbar-wrapper">
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+            <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+                <h2 class="m-0 text-primary"><img src="img/NEW.jpg" width="110" height="75"></h2>
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <div class="nav-item nav-link">
+                        <div class="search-container">
+                            <input type="text" id="searchInput" placeholder="Search...">
+                            <button id="searchButton">Search</button>
+                            <div id="results"></div>
+                        </div>
                     </div>
-                </div>    
-                <a href="index.html"  class="nav-item nav-link active">Home</a>
-                <a href="GSA.html" class="nav-item nav-link">Guest Services Agent</a>
-                <a href="NA.html" class="nav-item nav-link">Night Audit</a>
-                <a href="Res.html" class="nav-item nav-link">Reservations</a>
-                <a href="General.html" class="nav-item nav-link">General Knowledge</a>
-                <div class="nav-item dropdown">
-                    <a href="contacts.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Contacts</a>
-                    <div class="dropdown-menu fade-down m-0" style="right:0">
-                        <a href="StaffContacts.html" class="dropdown-item">Staff Contacts</a>
-                        <a href="ContractorContacts.html" class="dropdown-item">Contractor Contacts</a>
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="GSA.html" class="nav-item nav-link">Guest Services Agent</a>
+                    <a href="NA.html" class="nav-item nav-link">Night Audit</a>
+                    <a href="Res.html" class="nav-item nav-link">Reservations</a>
+                    <a href="General.html" class="nav-item nav-link">General Knowledge</a>
+                    <div class="nav-item dropdown">
+                        <a href="contacts.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Contacts</a>
+                        <div class="dropdown-menu fade-down m-0" style="right:0">
+                            <a href="StaffContacts.html" class="dropdown-item">Staff Contacts</a>
+                            <a href="ContractorContacts.html" class="dropdown-item">Contractor Contacts</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </nav>
-    <!-- Navbar End -->
+        </nav>
+        <!-- Navbar End -->
+
+        <!-- Back Button -->
+        <button class="back-button" onclick="history.back()">
+            <i class="bi bi-arrow-left"></i>
+        </button>
+    </div>
+    <!-- Navbar Wrapper End -->
 
     <!-- Main Page Start -->
 
     <div class="container-xxl py-5">
-
-      <button onclick="history.back()">Back</button></p>
-      
         <div class="container">
             <h2 class="section-title bg-white text-start text-primary pe-3">Night Audit Manual</h2>
-    <!-- Slideshow Start -->
+            <!-- Slideshow Start -->
             <div class="container-slideshow">
                 <div id="presentation-area">
-                  <section class="presentation">
-                    <div class="slide show">
-                          <!-- Slide 01 -->
-                      <div class="heading">
-                        Beginning Your Shift
-                      </div>
-                      <div class="content">
-                        <p class="mb-4">Before you can begin work on the pre-roll tasks, you must first ensure that the following tasks have been addressed:</p>
-                        <ul>
-                        <li>Clock in to Roubler</li></p>
-                        <li>Complete handover with the PM shift</li></p>
-                        <li>Count the till</li></p>
-                        <li>Login to iHMS</li></p>
-                        <li>Check/action emails and Duty Log where necessary</li></p>
-                        <li>Check for Wake Up calls and set alarms in the Reception Phone</li></p>
-                        <li>Lock the front door and put up the sign</li></p>
-                      </ul>
-                      </div>
-                    </div>
-              
-                          <!-- Slide 02 -->
-                    <div class="slide">
-                      <div class="heading">
-                        Clocking into Roubler
-                      </div>
-                      <div class="content">
-                        <p class="mb-4">At the start of each shift, you must clock in to Roubler.<br>This will ensure that your hours are logged, and you are paid appropriately.</p>
-                        <ul>
-                          <li>Use the pin provided in your Roubler onboarding email to sign in to Roubler</li></p>
-                          <li>Select "Start Shift"</li></p>
-                          <li>Wait for the app to take your picture</li></p>
-                        </ul>
-                      </div>
-                    </div>
-              
-                          <!-- Slide 03 -->
-                    <div class="slide">
-                      <div class="heading">
-                        Complete handover with the PM shift
-                      </div>
-                      <div class="content">
-                        <p class="mb-4">The PM shift will have various notes to pass on at the end of their shift</p>
-                        <p class="mb-4">These may involve rooms that are Checking Out after roll, problem guests, and tasks which they didn't get around to through their shift.</p>
-                        <p class="mb-4">Take note of the items you need to follow up on or be aware of, and address them as needed.</p>
-                      </div>
-                    </div>
-              
-                          <!-- Slide 04 -->
-                    <div class="slide">
-                      <div class="heading">
-                        Counting the Till
-                      </div>
-                      <div class="content">
-                        <p class="mb-4">During your shift, the till must be counted <u><b>twice;</b></u> once at the beginning of your shift, and once at the end. This is to ensure that the till is balanced at all times</p>
-                        <p class="mb-4">Count the GSA float, the total should be $400. Inform the Duty Manager if there is any discrepancy</p>
-                        <p class="mb-4">Open the document:
-                            <b>M:\Operations\Front Office\New Shift Balance UPDATED JULY 2023.xlsm</b></p>
-                        <p class="mb-4">Change the sheet to the "Fast Track" tab.</p>
-                        <p class="mb-4">Clear the figures from the previous shift, then enter the float amount by denomination in the “Till Count” section of the spreadsheet and save it.</p>
-                        <p class="mb-4">Leave this sheet open, as you will be using it later.</p>
-                      </div>
-                    </div>
-              
-                          <!-- Slide 05 -->
-                    <div class="slide">
-                      <div class="heading">
-                        Login to iHMS
-                      </div>
-                      <div class="content">
-                        <p class="mb-4">Open the iHMS bookmark in Google Chrome</p>
-                        <p class="mb-4">Enter "HGCM" as the Property ID</p>
-                        <p class="mb-4">Enter your username & password</p>
-                      </div>
-                    </div>
-              
-                          <!-- Slide 06 -->
-                    <div class="slide">
-                      <div class="heading">
-                        Check/action emails and Duty Log where necessary
-                      </div>
-                      <div class="content">
-                        <p class="mb-4">Emails will come in throughout your shift, and must be actioned as soon as possible to ensure guest satisfaction, as well as maintaining clear communication across all departments.</p>
-                        <p class="mb-4">Promotions, expected deliveries, printouts, Function information and plenty of other correspondance will come throught the Reception email, and it is important that we keep on top of it.</p>
-                        <p class="mb-4">There should be an icon for Outlook on the Taskbar, or it can be searched if necessary.</p>
-                        <p class="mb-4">Answer all emails you are able to, and forward anything you're unsure of to the relevant department.</p>
-                        <p class="mb-4">Once an email has been actioned, move it to the correct folder to ensure the inbox is always as clear as possible.</p>
-                      </div>
-                    </div>
-              
-                          <!-- Slide 07 -->
-                    <div class="slide">
-                      <div class="heading">
-                        Check for Wake Up calls and set alarms
-                      </div>
-                      <div class="content">
-                      <p class="mb-4">Check the Wake Up Call sheet - which is hanging up on the left side of the front desk - for any wakeup calls in the morning.</p>
-                      <p class="mb-4">If there are any wake up calls to make, set alarms on the Reception phone for each time and room requiring a wake up call.</p>
-                      <p class="mb-4">Ensure to also set an alarm for 04:00am to remind yourself to turn on the buffet.</p>
-                      </div>
-                    </div>
-              
-                          <!-- Slide 08 -->
-                    <div class="slide">
-                      <div class="heading">
-                        Put Up The Door Sign And Lock The Front Door
-                      </div>
-                      <div class="content">
-                      <p class="mb-4">At 11:00pm the door will have to be locked using the key at the left side of reception.</p>
-                      <p class="mb-4">The sign for the door can be found in the drawer directly under the till</p>
-                      <p class="mb-4">When a guest enters by buzzing instead of using their room key, perform a security-check by asking to check their key card.</p>
-                      </div>
-                    </div>
-                                      
-                          <!-- Slide 09 -->
-                    <div class="slide">
-                      <div class="heading">
-                        Knowledge Check
-                      </div>
-                      <div class="content">
-                      <form>
-                        <div class="row">
-                          <div class="column">
-                              <label for="name">Name:</label><br>
-                              <input type="text" id="name" name="name"><br><br>
-                            
-                              <label for="question01">What time should the front door be locked?</label><br>
-                              <input type="text" id="answer01" name="answer01"><br><br>
-                              
-                              <label for="question01">The till should always be how much?</label><br>
-                              <input type="text" id="answer02" name="answer02"><br><br>
-                          </div>
-
-                          <div class="column">
-                              <label for="question01">Where is the Wake Up Call Sheet kept?</label><br>
-                              <input type="text" id="answer03" name="answer03"><br><br>
-                              
-                              <label for="question01">What time should the buffet be turned on?</label><br>
-                              <input type="text" id="answer04" name="answer04"><br><br>
-                              
-                              <label for="question01">Name one thing you should note from the PM Shift handover</label><br>
-                              <input type="text" id="answer05" name="answer05"><br><br>
-                          </div>
+                    <section class="presentation">
+                        <div class="slide show">
+                            <!-- Slide 01 -->
+                            <div class="heading">
+                                Beginning Your Shift
+                            </div>
+                            <div class="content">
+                                <p class="mb-4">Before you can begin work on the pre-roll tasks, you must first ensure that the following tasks have been addressed:</p>
+                                <div class="row">
+                                    <div class="column">
+                                        <ul>
+                                            <li>Clock in to Roubler</li></p>
+                                            <li>Complete handover with the PM shift</li></p>
+                                            <li>Count the till</li></p>
+                                            <li>Login to iHMS</li></p>
+                                        </ul>
+                                    </div>
+                                    <div class="column">
+                                        <ul>
+                                            <li>Check/action emails and Duty Log where necessary</li></p>
+                                            <li>Check for Wake Up calls and set alarms in the Reception Phone</li></p>
+                                            <li>Lock the front door and put up the sign</li></p>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <input type="submit" value="Submit">
-                      </form>
-                      <script id="ratufa_loader" src="https://www.ratufa.io/c/ld.js?f=kfa7xzjb&n=n1.ratufa.io"></script>
-                      </div>
-                    </div>
-              
-                          <!-- Slide 10 -->
-                    <div class="slide">
-                      <div class="heading">
-                        But what is "Roll"?
-                      </div>
-                      <div class="content">
-                      <p class="mb-4">“Roll” is when the system is balanced and updated for the next day of trade.</p>
-                      <p class="mb-4">Certain tasks must be performed before the Duty Manager can roll the system, and the system must be rolled before you can
-                        finish your tasks; so it is important to work in unison with your Duty Manager to ensure all requirements are met before you
-                        can continue with your shift.</p>
-                      <p class="mb-4">Generally, we aim to have the system rolled at 01:30am, giving us plenty of time at the end of the night to deal with any further issues which may arise.</p>
-                      <p class="mb-4">There will be occasions where system roll is delayed, so while rolling at 01:30am is a preference, it is not necessarily a requirement.</p>
-                      </div>
-                    </div>
-              
-                          <!-- Slide 11 -->
-                    <div class="slide">
-                      <div class="heading">
-                        BEFORE Roll
-                      </div>
-                      <div class="content">
-                      <p class="mb-4">These are the tasks which must be completed before the Duty Manager can Roll the system for the next day.</p>
-                      <p class="mb-4">It is important to
-                        complete these tasks first, as the other tasks involved in your role can either only be done after roll, or are not important to the
-                        rolling process.</p>
-                      <div class="row">
-                        <div class="column">
-                          <ul>
-                            <li>Check for Pending Arrivals, Departures & Room Moves</li></p>
-                            <li>Print the AR Pending Report & account for all transactions</li></p>
-                            <li>Print out In House Checklist 1 & 2</li></p>
-                            <li>Organise the Black Folder</li></p>
-                            <li>Balance VIP Parking</li></p>
-                            <li>Post Encore Cash & Credit Card transactions</li></p>
-                          </ul>
-                        </div>
-                        <div class="column">
-                          <ul>
-                            <li>Update Guest Registration Cards</li></p>
-                            <li>Check for Back to back (B2B) bookings & update Tasks accordingly</li></p>
-                            <li>Address any Pending Arrivals</li></p>
-                            <li>Audit Transactions for the day</li></p>
-                            <li>Balance your shift</li></p>
-                            <li>Complete Audit and Cash Drop</li></p>
-                          </ul> 
-                        </div>
-                      </div>
-                    </div>
-                          </div>
-                    
-                          <!-- Slide 12 -->
-                    <div class="slide">
-                      <div class="heading">
-                        Check for Pending Arrivals, Departures & Room Moves
-                      </div>
-                      <div class="content">
-                        <p class="mb-4">The system cannot be rolled if there are still Check Ins, Check Outs or Room Moves waiting in the system.</p>
-                        <p class="mb-4">While you will address the Pending Arrivals, the Duty Manager will take care of any Room Moves or Pending Departures.</p>
-                        <p class="mb-4">In iHMS select:</p>
-                      <ul>
-                          <li><b>Reports → Before Night Audit Reports → Expected Arrival Summary → PRINT</b> the first page and check against the Guest
-                          Registration Cards in the box</li></p>
-                          <li><b>Reports → Before Night Audit Reports → Expected Departure Summary → PRINT</b> (unless empty) & give to Duty Manager</li></p>
-                          <li><b>Reports → HouseKeeping → Live Scheduled Room Change → PRINT</b> (unless empty) & give to Duty Manager</li></p>
-                      </ul>
-                      </div>
-                    </div>
-                          
-                          <!-- Slide 13 -->
-                    <div class="slide">
-                      <div class="heading">
-                        Print the AR Pending Report & account for all transactions
-                      </div>
-                      <div class="content">
-                      <p class="mb-4">The AR Pending Report is a list of all of the Direct Bill transactions for the day.</p>
-                      <p class="mb-4">You are required to print this report and ensure that the correct authorisation paperwork is accounted for.</p>
-                      <p class="mb-4">In iHMS, select:</p>
-                        <ul>
-                          <li><b>Reports → Accounts → AR Pending Report → PRINT</b>.</li></p>    </ul>
-                        <p class="mb-4">Ideally, the required paperwork for this report will be in the "DBILL" section of the Black Folder.</p>
-                          <p class="mb-4">If any of the paperwork is missing, search for it in the following places:</p>
-                          <ul>
-                          <li><b>M:\Reservation Chargebacks</b></li></p>
-                          <li><b>M:\Reservations Permanent Auth\*this year*</b></li></p>    </ul>
-                      <p class="mb-4">If you are still unable to find the correct paperwork, search the Folio Voucher number, Guest Name or Folio Number in the <b>Reservations</b> email</p>
-                      <p class="mb-4">Highlight the Room Number, Folio Number & the amount billed on the AR Pending Report, and set it aside</p>
-                      </div>
-                    </div>
-                                
-                          <!-- Slide 14 -->
-                    <div class="slide">
-                      <div class="heading">
-                        Print out In House Checklist 1 & 2 Part 1
-                      </div>
-                      <div class="content">
-                      <p class="mb-4">In iHMS select:</p>
-                        <ul>
-                          <li><b>Reports → In House → In House Checklist 1 → PRINT.</b> Keep this checklist aside, as you’ll be using it to note any changes
-                            required on Inhouse Checklist 2</li></p>
-                          <li><b>Reports → In House → In House Checklist 2</b>. Do NOT print the report yet.</li></p>
-                          <li>Using the Binocular tool at the top of the window, search "INT PEND". This will show you all rooms with Segment errors that need to be corrected.</li></p>
-                          <li>On the Checklist 1 printout, write "SEG" and note all INT PEND errors below it.</li></p>
-                          <li>Returning to the search box, type "NOT APP". Check that the Nationality and Country are the same for each Region saying "Not Applicable". If for example the Nationality says "China" but the Country says "Australia" note it down on Checklist 1 under the heading "REG".</li></p>
-                          <li>Use the search function to search for "AUSTRALIA". Ideally, there should be no instances where the Nationality and Country are different. If they are, note it on Checklist 1 under the heading "NAT".</li></p>    </ul>
-                      </div>
-                    </div>
-                                      
-                          <!-- Slide 15 -->
-                    <div class="slide">
-                      <div class="heading">
-                        Print out In House Checklist 1 & 2 Part 2
-                      </div>
-                      <div class="content">
-                      <p class="mb-4">Now the errors you've noted down need to be fixed:</p>
-                        <ul>
-                          <li>Open the folio for the first room noted under your SEG heading</li></p>
-                          <li>Go to the "Marketing" tab</li></p>
-                          <li>Change the Mkt Seg 4 dropdown to "Int Leis"</li></p>
-                          <li>Continue down the list until all rooms have been updated</li><br>
-                          <li>Region errors are fixed by entering the folio and changing the Region field in the Corporate tab. Australian Regions should always be an Australian state. Other countries should be noted as "Not Applicable"</li><br>
-                          <li>Nationality errors are where the Country & Nationality on the folio do not match. Open the required folio, and change the Nationality or Country to match the other.</li></p>
-                        </ul>
-                          <p class="mb-4">Note: If the Region is an Australian state, then both the Country & Nationality should be Australia. If the Region is "Not Applicable", the Country & Nationality should be a different country.</p>
-                      </div>
-                    </div>
-                                            
-                          <!-- Slide 16 -->
-                    <div class="slide">
-                      <div class="heading">
-                        Organising the Black Folder Part 1
-                      </div>
-                      <div class="content">
-                      <p class="mb-4">Beneath the left computer there is a cupboard labelled “DAILY TRANSACTION FOLDER”, in there you will find the Black Folder.
-                        The contents of the folder will need to be organised to make the auditing process easier.
-                      </p>
-                      <p class="mb-4">Utilise the back bench space to arrange your items as follows:</p>
-                        <ul>
-                          <li>To the far left, place any paperwork found in the “DBILL” section of the folder. Your AR Pending Report goes with this paperwork.</li></p>
-                          <li>To the right of that will go the “AMEX” section, then “EFTPOS”, “JBC” & “UNION” (if any) and “VISA/MC”</li></p>    </ul>
-                        <p class="mb-4">The back wall should now have neat piles from left to right as follows:</p>
-                        <p style="text-align:center;"><b>AR Pending Report → American Express → Eftpos → JBC → UNION → Visa/MasterCard</b></p>
-                        <p class="mb-4">Items from the “BALANCE” section can be placed in the right-most corner, which will be the “Day Bag” pile.</p>
-                      </div>
-                    </div>
-
-                           <!-- Slide 17 -->
-                    <div class="slide">
-                      <div class="heading">
-                        Organising the Black Folder Part 2
-                      </div>
-                      <div class="content">
-                      <p class="mb-4">There will be two reports from F & B, one colourful one for Footlights and one for Encore. The Footlights report can go with the Visa/Mastercard paperwork.</p>
-                      <p class="mb-4">Check the payments taken for the day on the Encore report, and photocopy an extra for each pile along the back wall where Encore took a payment of that type.</p>
-                      <p class="mb-4">For example; if Encore took an Amex payment, an Eftpos payment and a Visa/Mastercard payment, you will need three copies of the report in total; one for the Amex pile, one for the Eftpos pile, and one for the Visa/Mastercard pile.</p>
-                      <p class="mb-4">Room Service slips can be kept aside to be attached to the Room Service Supper & Delivery Reports during the Audit.</p>
-                      </div>
-                    </div>
-
-                            <!-- Slide 18 -->
-                    <div class="slide">
-                      <div class="heading">
-                        Balance VIP Parking
-                      </div>
-                      <div class="content">
-                      <p class="mb-4">You will receive the VIP Parking sheet between 11:00pm - 12:30am, depending on the day.</p>
-                        <ul>
-                          <li>In iHMS, look up the guest surname shown on the VIP Car Park sheet (check the Sharing Guest name as well). Select the “Additional Items” tab in the guest folio.</li></p>
-                          <li>Type “Car” into the “Stock” section, then select “Car Park - Corporate” or “Car Park - Guest” and press enter.</li></p>
-                          <li>Type the car registration under “Description” and note the room number on the Parking sheet.</li></p>
-                        </ul>
-                          <p class="mb-4">When all the guests on the VIP Car Park sheet have been entered into iHMS:</p>
-                          <div class="c"><b>Reports → In House → In House Additional Items Report → *Today’s Date* → Double-click “Car Park - Guest” → PRINT.</b></div></p>
-                          <div class="c"><b>Reports → In House → In House Additional Items Report → *Today’s Date* → Double-click “Car Park - Corporate” → PRINT.</b></div></p>
-                          <div class="c"><b>Reports → Before Night Audit Reports → Transaction for Business Day → PRINT any “Car Parking” sections.</b></div></p>
-                          <p class="mb-4">Photocopy the VIP Car Park sheet (double-sided & colour). Give the photocopy and other printouts to the Duty Manager and place the original VIP Car Parking sheet on top of the water cooler or printer.</p>
-                      </div>
-                    </div>
-
-                            <!-- Slide 19 -->
-                    <div class="slide">
-                      <div class="heading">
-                        Post Encore Cash & Credit Card transactions
-                      </div>
-                      <div class="content">
-                      <p class="mb-4"></p>
-                        <ul>
-                          <li>Check that the cash handed over by the Encore team is correct and place it into a cash envelope, making sure to write the correct details on the envelope.</li></p>
-                          <li>Search "FOLIO" in iHMS. This will bring up all of the folios where payments are posted.</li></p>
-                          <li>Double-click into the required Folio (AMEX/CASH/VISA etc)</li></p>
-                          <li>Select the "Transactions" tab.</li></p>
-                          <li>Right-Click and select "Payment".</li></p>
-                          <li>Enter the payment amount in the “Pay Amount” section.</li></p>
-                          <li>Check the "Opt-Out" box.</li></p>
-                          <li>Enter "TRANS - [last 6 digits of RRN on receipt]" in remark section, then press Enter. EG: Trans - 123456</li></p>
-                          <li>When all dockets have been posted, click “OK” in the top left, all folios should now = $0.00</li></p>
-                        </ul>
-                      </div>
-                    </div>
-
-                            <!-- Slide 20 -->
-                    <div class="slide">
-                      <div class="heading">
-                        Troubleshooting Cash & Credit Card Errors
-                      </div>
-                      <div class="content">
-                      <p class="mb-4">If any of the folios have a dollar amount remaining on them, the first step is to go back to the Transactions tab in that folio and check that you haven’t missed a payment, or posted it more than once.</p>
-                      <p class="mb-4">If all dockets have been entered correctly, check if there are any “CC Surcharge” postings. If there are, this means the “Opt-Out” box was not checked when posting a payment.</p>
-                      <p class="mb-4">To correct these errors, follow the steps in the section “<a href="reversals.html">Reversals & Error Corrections</a>”.</p>
-                      <p class="mb-4">If neither of these is an issue, check if there is a dollar amount present on the RAPTOR POSTING ERROR folio. If there is, see the <a href="NATips.html">Correcting “Raptor Posting Errors”</a> section</p>
-                      <p class="mb-4">If you still can’t find the issue, request assistance from your Duty Manager.</p>
-                      </div>
-                    </div>
-
-                            <!-- Slide 21 -->
-                    <div class="slide">
-                      <div class="heading">
-                        Update Guest Registration Cards
-                      </div>
-                      <div class="content">
-                      <p class="mb-4">Occasionally you will find Guest Registration Cards in the pigeonholes between the computers. You will notice that each pigeonhole is labelled, such as cards to be filed, cards to be updated and cards that need to be followed up on. You must check that these have been updated correctly in iHMS</p>
-                        <ul>
-                          <li>Update the Phone Number and Email address.</li></p>
-                          <li>Ensure that the “Payment Status” drop down has been updated to “Pre-Authorisation Obtained” and the “Deposit Amount” has been updated accordingly.</li></p>
-                          <li>Check that the Sharing Guest has been added into the “Guests” tab.</li></p>
-                          <li>Check that the Pre-Auth ID has been entered in the “Communications” tab, and update any other notes in the Remarks section, such as if the bond is being covered by another room, etc.</li></p>
-                          <li>Once all of these things have been updated, initial the CARD and UPD section on the bottom right of the Guest Registration Card and file it in the correct box under the bench on the right.</li></p>
-                        </ul>
-                        <div class="note">Note: Registration cards left in the "Follow Up" pigeonhole should be returned there after the details have been checked and updated.</p>
-                          This is because these guests need further attention for some reason, and will be followed up by Day Shift.</div>
-                      </div>
-                    </div>
-
-                            <!-- Slide 22 -->
-                    <div class="slide">
-                      <div class="heading">
-                        Check for Back to back (B2B) bookings & update Tasks accordingly
-                      </div>
-                      <div class="content">
-                      <p class="mb-4">Occasionally, a guest will choose to extend their stay, meaning that they will be a Back-to-Back - or B2B - booking.</p>
-                      <p class="mb-4">You will need to check for any B2B bookings and ensure the Task List is updated accordingly:</p>
-                        <ul>
-                          <li>In iHMS set the date to the new Check In date.</li></p>
-                          <li>Sort the guest names alphabetically.</li></p>
-                          <li>Look for surnames in <b>blue</b> which have the same surname above or below in <b>red</b>. Confirm that the first name is the same, and then right-click on the <b>blue</b> folio.</li></p>
-                          <li>Select "Add Message" from the options</li></p>
-                          <li>Change the "Type" dropdown to "Task"</li></p>
-                          <li>In the "Action" section, change the "To" dropdown to "Night Audit".</li></p>
-                          <li>Change the Date to the incoming Check In date.</li></p>
-                          <li>Write "B2B" in the message box and click "Next".</li></p>
-                        </ul>
-                      </div>
-                    </div>
-
-                            <!-- Slide 23 -->
-                    <div class="slide">
-                      <div class="heading">
-                        Address any Pending Arrivals
-                      </div>
-                      <div class="content">
-                      <p class="mb-4">If there are folios that have not been Checked In, the system cannot roll. You must attempt to take a Pre Authorisation for the first night’s stay for each room that has yet to arrive. This is best done at around
-                        12:30 to ensure that guests have time to update their payment details if required.</p>
-                        <p class="mb-4">On the Eftpos terminal:</p>
-                        <ul>
-                          <li>Enter the amount for the first night's stay.</li></p>
-                          <li>Select "Other" on the bottom left of the screen, then select "Pre-Authorisation".</li></p>
-                          <li>Choose the "Manual" option. This will prompt you to enter the card details as shown on the reservation.</li></p>
-                          <li>Enter the Card expiry date, then click through the CCV section, selecting "Unspecified" as the reason one wasn't provided.</li></p>
-                        </ul>
-                        <p class="mb-4">If the payment is declined, the reservation will be cancelled as a "No Show".</p>
-                        <p class="mb-4">If the payment is approved, the folio will be Checked In, changing the VIP code to "NOSHOW" and writing a remark such as "No Show (NON) pre auth taken for one night".</p>
-                        <p class="mb-4">Single night reservations will be charged and checked out, while multiple-night stays will need to be followed up by the AM team.</p>
-                      </div>
-                    </div>
-
-                            <!-- Slide 24 -->
-                    <div class="slide">
-                      <div class="heading">
-                        Audit Transactions for the day Part 1
-                      </div>
-                      <div class="content">
-                      <p class="mb-4">The most important part of the Night Audit role is the Audit itself. It is important that everything in the venue is balanced, otherwise the system cannot roll.</p>
-                      <p class="mb-4">In iHMS select:</p>  
-                      <ul>
-                          <li><b>Reports → Before Night Audit Reports → Transaction For Business Day → “Charge Date” Start & End Range Both Set To
-                            Today → “Postcode Range” Start At “Accomodation” → “Postcode Range” End At “Visa/Mastercard” → Enter → PRINT</b></li></p>
-                          <li>These reports should be arranged as follows:</li></p>
-                      </ul>
-
-                        <table class="center" style="width: 100%;" cellspacing="2%" cellpadding="2%">
-                        <colgroup>
-                            <col style="width: auto;">
-                            <col style="width: auto;">
-                            <col style="width: auto;">
-                        </colgroup>
-                        <tbody>
-                        <thead>
-                            <tr style="background-color: #e20118; color: white;">
-                              <th style="text-align: center;"><h5>To Keep:</h5></th>
-                              <th style="text-align: center;"><h5>To Duty Manager:</h5></td>
-                              <th style="text-align: center;"><h5>To the Day Bag:</h5></td>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                            <td>American Express</td>
-                            <td><u><b>ALL</b></u> ENCORE pages</td>
-                            <td rowspan="4">Everything else</td>
-                            </tr>
-                            <tr>
-                            <td>Eftpos</td>
-                            <td><u><b>ALL</b></u> FOOTLIGHTS pages</td>
-                            </tr>
-                            <tr>
-                            <td>Visa/MasterCard</td>
-                            <td><u><b>ALL</b></u> ROOM SERVICE pages <u><b>EXCEPT</b></u> "Supper" & "Delivery" pages</td>
-                            </tr>
-                            <tr>
-                            <td>(Any card payments)</td>
-                            <td>Movies</td>
-                            </tr>
-                        </tbody>
-                        </table>
-                        <br>
-                        <p class="mb-4">Once these reports have been placed in the Day Bag pile, you can move this pile to the Back Office, under the label “Day Bag”, which is between the two computers.</p>
-                      </div>
-                    </div>
-
-                            <!-- Slide 25 -->
-                    <div class="slide">
-                      <div class="heading">
-                        Audit Transactions for the day Part 2
-                      </div>
-                      <div class="content">
-                        <p class="mb-4">Unstaple any payment receipts from the previous shifts Transaction for Business Day Reports and place them neatly back on the pile they came from. Throw away any previous Transaction for Business Day Reports to avoid any confusion, as you have just printed out the updated one.</p>
-                        <p class="mb-4">Organise the payment receipts by room number as stated by each page of the Transaction for Business Day Report and highlight the amount & transaction number on the Transaction for Business Day Report page</p>
-                        <p class="mb-4">Neatly staple the payment receipts to the corresponding Transaction for Business Day Report page (ie AMEX receipts to the American Express page, etc)</p>
-                        <p class="mb-4">Once completed, create a new Day Bag pile with the transactions sorted alphabetically (AR Pending on top, Visa/Mastercard at the bottom)</p>
-                      </div>
-                    </div>
-
-                            <!-- Slide 26 -->
-                    <div class="slide">
-                      <div class="heading">
-                        Balancing your shift
-                      </div>
-                      <div class="content">
-                        <ol type="1">
-                          <li>If you haven't already, enter the till count for the start of your shift in the "GSA Till Count Shift Start" section. Then, enter the updated till count in the "GSA Till Count Shift End" section.</p>
-                          <li>Print a Settlement Report from each Eftpos terminal: <b>Menu → Reports → Settlement Enquiry → Print</b>.</p>
-                          Enter these details into the "Sub Totals Report" section, under the correct TSP number. (TSP numbers are on the front of each terminal).</p>
-                          <li>In iHMS go to <b>Reports → Accounts → Tax Breakdown Summary</b>. Enter today's date and print the report.</p>
-                              <p class="mb-4">These figures need to be entered in the "iHMS CC Totals" section, found in the mid-left of the spreadsheet.</li></p>
-                          <li>If you have taken Cash, enter the figures into the "iHMS Cash Totals"  → "Cash Figure" section. Provide the cash breakdown in the "Cash Banking" section.</li></p>
-                          <li>If there are any Refunds, enter them in the Refunds section below the "iHMS Cash Totals" box.</li></p>
-                          <li>Print the Balancing sheet to the Back Office printer, in full colour.</li></p>    </ol>
-                          <p class="mb-4">The "Variance - EFTpos vs iHMS" section should all be green. If there are any discrepancies, the spreadsheet will tell you where to look. If you are unable to discern where the variance is, ask your Duty Manager for assistance.</p>
-                      </div>
-                    </div>
-
-                            <!-- Slide 27 -->
-                    <div class="slide">
-                      <div class="heading">
-                        Balancing Example
-                      </div>
-                      <div class="content">
-                      <p class="mb-4">Below you will find an example of a correctly filled out balance sheet, marked in accordance with the previous steps.</p>
-                      <p class="mb-4">Note the green boxes in each section. This spreadsheet is perfectly balanced.</p>
-                        <img class="center" src="img/FastTrack.jpg" alt="Completed Balance" height="85%">
-                      </div>
-                    </div>
-
-                            <!-- Slide 28 -->
-                    <div class="slide">
-                      <div class="heading">
-                        Complete Audit and Cash Drop
-                      </div>
-                      <div class="content">
-                      <p class="mb-4">Complete any outstanding tasks, such as printing missing Eftpos receipts, tidying your workspace, or handing cash or reports to your Duty Manager.</p>
-                      <p class="mb-4">Print the Transaction History for each Eftpos Terminal: <b>Menu  → Transaction History  → Print icon (top right)  → Print</b>.</p>
-                      <p class="mb-4">Settle the Eftpos machines: <b>Menu  → Settings  → Account  → Settlement  → Settle Now  → "Yes".</b></p>
-                      <p class="mb-4">Staple these printouts to the top of your Balance sheet, with the Tax Breakdown Summary stapled to the back, as shown in the next section.</p>
-                      <p class="mb-4">Print your shift balancing report: <b>Reports → Management Reports → Transaction by Staff → *Your Name* → *Date* PRINT</b></p>
-                      <p class="mb-4">End your shift in iHMS: <b>Setup → End shift</b></p>
-                      <p class="mb-4">Enter the figures as shown on the Transaction by Staff sheet. Once your shift is ended, advise your Duty Manager that you are ready to roll.</p>
-                      </div>
-                    </div>
-
-                            <!-- Slide 29 -->
-                    <div class="slide">
-                      <div class="heading">
-                        Completed Balance sheet
-                      </div>
-                      <div class="content">
-                      <p class="mb-4">This is how your final Balance sheet should look:</p>
-                      <img class="center" src="img/FinalBalance.jpg" alt="Completed Balance" height="85%">
-                      </div>
-                    </div>
-
-                            <!-- Slide 30 -->
-                    <div class="slide">
-                      <div class="heading">
-                        AFTER Roll
-                      </div>
-                      <div class="content">
-                      <p class="mb-4">These tasks can only be completed after roll, as certain things - such as parking, room charges etc - will not update until the system has been rolled over to the next day of trade</p>
-                        <ul>
-                          <li>Login to iHMS and Start Shift</li></p>
-                          <li>Top Ups</li></p>
-                          <li>Chargebacks</li></p>
-                          <li>Turn on the Buffet</li></p>
-                          <li>Floor walk</li></p>
-                        </ul>
-                      </div>
-                    </div>
-
-                            <!-- Slide 31 -->
-                    <div class="slide">
-                      <div class="heading">
-                        Top Ups Part 1
-                      </div>
-                      <div class="content">
-                      <p class="mb-4">When a guest has incidentals that amount to more than their $100.00 bond, we have to “Top Up” the bond to match.</p>
-                      <p class="mb-4">For example, if a guest had dinner in Encore totaling $123.00, their bond will have to be Topped Up by $23.00.</p>
-                        <ul>
-                          <li>Right-Click into each Checked In folio and select "Check Out View".</li></p>
-                          <li>Check the “Instruction” tab for any notes about charges. ACB rooms will have All Charges made to the company or CC on file. RO covers Room Only, etc. See <a href="SpexGuide.html">Communications Guide</a> for more information.</li></p>
-                          <li>Arrange the charges as follows:</li></p>
-                            <ul>
-                              <li><div  class="a">Accommodation in the <b>top left</b>.</div></li></p>          <li><div  class="a">Incidentals (Room Service, Cash Bond, Encore, Footlights, etc) in the <b>top right</b>.</div></li></p>          <li><div  class="a">Mistakes and $0 charges in the <b>bottom left</b>.</div></li></p>        </ul>
-                          </ul>
-                        <div class="note">Note: if the bottom left ledger doesn't allow you to add things to it, you need to create a “DUMMY” ledger.</p>Select the Guest’s name in the top right then use the down arrow on the keyboard. Type “DUMMY” into the field and click the three dots to the right.</p>A pop-up will come up, select the “Guest” radio button and click “SEARCH”. Double click the first option, which will state the country as Aruba.</div>
-                      </div>
-                    </div>
-
-                            <!-- Slide 32 -->
-                    <div class="slide">
-                      <div class="heading">
-                        Top Ups Part 2
-                      </div>
-                      <div class="content">
-                      <p class="mb-4">After the charges have been arranged correctly, check the guest name in the top right of the pop-up to see if they require a Top Up (If ledger is OVER $100, top up by the amount that is over)</p>
-                        <ul>
-                          <li>In iHMS, select: <b>Reports → In House → In House Folio Limit Report → PRINT.</b></li></p>
-                          <li>Highlight amounts in the <b>far right</b> column  that are over $100 and keep an eye out for amounts <b>under</b> $100 in the left column, as these are odd and will need to be checked.</li></p>
-                          <li>Check the TSP number on the Bond docket attatched to the required Guest Registration Card, and use the corresponding terminal to proceed with the Top Up:</li></p>
-                          <li>On the Eftpos terminal: <b>Menu → Search Transactions → Enter 4-digit card number → View → Select transaction with same time → Adjust → update the amount → Submit.</b></li></p>
-                          <li>Attach the Top Up docket to the Guest Registraion Card.</li></p>
-                        </ul>
-                        <div class="note">Note: If a Top Up is declined, advise your Duty Manager, then create a Cash item in the Additional Items section with a remark saying ***Top Up Declined***.</p>If the guest is staying multiple further days, prepare the below letter to be dropped off during Floor Walk:</br><b>M:\Operations\Front Office\Reception\Templates\Templates for guest letters\Pre-Authorisation Top Up Declined (Draft).docx</b></div>
-                      </div>
-                    </div>
-
-                            <!-- Slide 33 -->
-                    <div class="slide">
-                      <div class="heading">
-                        Chargebacks Part 1
-                      </div>
-                      <div class="content">
-                      <p class="mb-4">You will need to charge all CC and DBA rooms that are checking out today.</p>
-                      <p class="mb-4">To determine which rooms will need to be charged, print the Folio Communications by Check Out Date Report at:</p>
-                      <p class="mb-4"><b>Reports → In House → Folio Communication by Check Out Date Report → *Ensure Date Is Correct* → PRINT.</b></p>
-                      <p class="mb-4">Highlight any "CC", "TRNSFR" "DBA" and "DBC" rooms. These are the rooms you will charge during this process.</p>
-                      <h5>CC Charges</h5>
-                        <ul>
-                          <li>Open SiteMinder in Google Chrome and login. Use the Voucher Number in the bottom left of the guest folio to search SiteMinder, then open the reservation.</li></p>
-                          <li>Scroll down to the Credit Card details (bottom right of screen). If neede, click the eye icon to show the card details.</li></p>
-                          <li>On the MOTO terminal: <b>Enter the amount to be charged → Other → Manual Card Entry → Mail Order.</b></li></p>
-                          <li>Use the card details provided by SiteMinder to complete the transaction.</li></p>
-                          <li>Post the payment to the guest folio as you did with the Encore transactions earlier, writing the room number on the front of the payment docket, and the folio number on the back.</li></p>
-                        </ul>
-                      </div>
-                    </div>
-
-                            <!-- Slide 34 -->
-                    <div class="slide">
-                      <div class="heading">
-                        Chargebacks Part 2
-                      </div>
-                      <div class="content">
-                        <p class="mb-4">DBA and DBC rooms are rooms that will be charged to an account, such as a business or even the hotel itself.</p>
-                      <h5>DBA / DBC Charges</h5>
-                        <ul>
-                          <li>In the Transactions tab of the guest folio, right-click and select Payment.</li></p>
-                          <li>Change the Payment Type dropdown to DBILL, then click next.</li></p>
-                          <li>If a Credit Stop/Cash Only error appears, you will need to email Reservations with the Folio number, guest name and a polite request to look into it.</li></p>
-                        </ul>
-                        <h5>Rooms marked "Transfer to":</h5>
-                        <ul>
-                          <li>Check the name of the folio the charges are to be transferred <b>TO</b> and note the folio number, then open the folio that needs to be transferred.</li></p>
-                          <li>In the “Transactions” tab hold down “Ctrl” and select the items with a cost beside them, leaving the $0.00 items unselected</li></p>
-                          <li>Right click and select “Transfer”</li></p>
-                          <li>In the “To Folio” section, begin typing the surname of the folio the charges are being moved to, check that the folio number is correct then - when you are certain you are transferring to the correct folio - click “Next”.</li></p>
-                          <li></li></p>
-                        </ul>
-                      </div>
-                    </div>
-
-                            <!-- Slide 35 -->
-                    <div class="slide">
-                      <div class="heading">
-                        Turning on the Buffet
-                      </div>
-                      <div class="content">
-                      <p class="mb-4">At 4:00am the Buffet needs to be turned on for the Breakfast team</p>
-                        <ul>
-                          <li>In the first cupboard under the buffet, flip the red switch.</li></p>
-                          <li>In the third cupboard down, turn the dial to “HIGH”.</li></p>
-                          <li>Flip the green switch on the plate warmer</li></p>
-                        </ul>
-                      </div>
-                    </div>
-
-                            <!-- Slide 36 -->
-                    <div class="slide">
-                      <div class="heading">
-                        Floor Walk
-                      </div>
-                      <div class="content">
-                      <p class="mb-4">After turning on the Buffet, it's time to do floor walk.</p>
-                      <p class="mb-4">Grab one of the trolleys from F & B, any letters you need to drop at rooms, and the Green Stay Checklist your Duty Manager gave you.</p>
-                      <p class="mb-4">You must visit <b>every</b> floor, collecting Room Service trays, dropping letters and making a note of any rooms with a Green Stay hanger on the door.</p>
-                      <p class="mb-4">You should also Note any Maintenance issues and hand them over to your Duty Manager, along with the Green Stay rooms, when you return from the walk.</p>
-                      <p class="mb-4">Take the Room Service trays to the kitchen, clean any leftovers into the bin and arrange the dishes nicely for the Kitchen Staff.</p>
-                      <p class="mb-4">Return the trolley to where you found it.</p>
-                      </div>
-                    </div>
-
-                            <!-- Slide 37 -->
-                    <div class="slide">
-                      <div class="heading">
-                        Before OR After Roll
-                      </div>
-                      <div class="content">
-                      <p class="mb-4">There are a few tasks that can be done at any stage throughout the night, and are great for utilising your time while waiting for the Parking sheet or Encore documents:</p>
-                        <ul>
-                          <li>Print The Expected Departure Summary Report</li></p>
-                          <li>Print The Folio Communication By Check Out Date Report</li></p>
-                          <li>Organise The Departure Reg Cards For The AM Shift</li></p>
-                          <li>Pre-Auth Cancellations For The Previous Day</li></p>
-                          <li>Action Room Service as Required (Night Owl Menu)</li></p>
-                          <li>Prepare For The AM Shift</li></p>
-                        </ul>
-                      </div>
-                    </div>
-
-                            <!-- Slide 38 -->
-                    <div class="slide">
-                      <div class="heading">
-                        Print The Expected Departure Summary Report
-                      </div>
-                      <div class="content">
-                        <p class="mb-4">(If you are doing this before roll, make sure to update the date to <b>tomorrow</b>)</p>
-                        <p class="mb-4"><b>Reports → Departures → Expected Departure Summary → *Ensure Date Is Correct* →</b> PRINT.</p>
-                        <p class="mb-4">Staple together, fold in half and put in the departures box</p>
-                        <div class="note">Note: Use this list or the "Folio Communications by Check Out Date Report" to collect the reg cards which need to be moved to the Departures box for the morning team.</div>
-                      </div>
-                    </div>
-
-                            <!-- Slide 39 -->
-                    <div class="slide">
-                      <div class="heading">
-                        Print The Folio Communication By Check Out Date Report
-                      </div>
-                      <div class="content">
-                        <p class="mb-4">(If you are doing this before roll, make sure to update the date to <b>tomorrow</b>)</p>
-                        <p class="mb-4"><b>Reports → In House → Folio Communication by Check Out Date Report → *Ensure Date Is Correct* →</b> PRINT.</p>
-                        <p class="mb-4">Highlight any "CC", "TRNSFR" "DBA" and "DBC" rooms.</p>
-                        <p class="mb-4">These rooms will be paid using the "MOTO" Eftpos machine and the details provided on the guests' registration card</p>
-                        <div class="note">Note: Use this list or the "Expected Departure Summary Report" to collect the reg cards which need to be moved to the Departures box for the morning team</div>
-                      </div>
-                    </div>
-
-                            <!-- Slide 40 -->
-                    <div class="slide">
-                      <div class="heading">
-                        Organise The Departure Reg Cards For The AM Shift
-                      </div>
-                      <div class="content">
-                        <p class="mb-4">Part of the Night GSA role is preparing the Departures bin for the AM team.</p>
-                        <p class="mb-4">Use the Expected Departure Summary Report or the Folio Communications by Check Out Date Report to remove the required Guest Reg Cards from the storage bins under the desk.</p>
-                        <p class="mb-4">Organise these Reg Cards into each section of the black Departure bin to the left of the middle computer</p>
-                      </div>
-                    </div>
-
-                            <!-- Slide 41 -->
-                    <div class="slide">
-                      <div class="heading">
-                        Pre-Auth Cancellations For The Previous Day
-                      </div>
-                      <div class="content">
-                        <p class="mb-4">The Guest Registration Cards for the day's Departures will be next to the right-most computer</p>
-                        <p class="mb-4">You will find the Pre-Auth dockets for each room's bond attached to the back of each Guest Registration Card.</p>
-                        <p class="mb-4">Go through and <b>Cancel</b> all Pre-Auths from yesterday's check-outs on the eftpos terminal:</p>
-                        <p class="mb-4"><b>Menu→Search Transactions →Enter 4-digit card number →Select same time →Cancel →Not Specified→ Submit.</b></p>
-                        <p class="mb-4">Staple the cancellation docket to the back of the Guest Registration Card.</p>
-                        <p class="mb-4">When all have been cancelled, wrap a Rubber Band around the pile and put it in the bottom drawer of the filing cabinet in the Back Office.</p>
-                        <div class="note">Note: Do NOT cancel any pre-auth for rooms with issues or outstanding balance.</div>
-                      </div>
-                    </div>
-
-                            <!-- Slide 42 -->
-                    <div class="slide">
-                      <div class="heading">
-                        Action Room Service as Required (Night Owl Menu)
-                      </div>
-                      <div class="content">
-                        <p class="mb-4">If any guests call for room service it is your job to prepare and cook the room service and take it to the room.</p>
-                        <p class="mb-4">The Night Owl menu is available 22:00 - 11:00; there are instructions in the kitchen for how to prepare each dish.</p>
-                        <p class="mb-4">If you are ever unsure about a meal or drink, ask the Night Manager.</p>
-                        <p class="mb-4">When you take the order, make sure to check if the guest is paying cash or having the items charged to the room, if the guest is paying cash, take payment for the room service on delivery.</p>
-                        <p class="mb-4">If it's a room charge, make sure to Manual Post all of the items under the correct codes in iHMS (&ldquo;Room Service Food Supper&rdquo; = Food, &ldquo;Room Service Beverage Supper&rdquo; = Drinks & &ldquo;Room Service Delivery Fee&rdquo; is always $5.00)</p>
-                        <div class="note">Note: Our Liquor License ends at 01:00am Monday - Saturday, and 11:00pm on Sunday's. This means that we<b>cannot</b>serve alcohol after those times</div>
-                      </div>
-                    </div>
-
-                            <!-- Slide 43 -->
-                    <div class="slide">
-                      <div class="heading">
-                        Prepare For The AM Shift
-                      </div>
-                      <div class="content">
-                        <p class="mb-4">Top up the paper in all of the printers. If you run out of paper reams, use the red GSA bracelet in the key box to go up to the admin offices to find another box</p>
-                        <p class="mb-4">Refill all of the staplers. Staples can be found in the drawer beneath the middle computer</p>
-                        <p class="mb-4">Top up the business cards on the counter. More cards can be found in the cupboard under the middle computer</p>
-                        <p class="mb-4">Tidy the back office and luggage room</p>
-                        <p class="mb-4">Ensure there are enough pre-printed Misc. slips, Bond Information slips, Charge/Reversal Slips and Room Service slips. Where necessary, print and cut more to size using the templates in:</p>
-                        <p class="mb-4"><b>M:\Operations\Front Office\Reception\Templates\Templates for FO</b></p>
-                      </div>
-                    </div>
-
-                            <!-- Slide 44 -->
-                    <div class="slide">
-                      <div class="heading">
-                        End of Shift
-                      </div>
-                      <div class="content">
-                      <p class="mb-4">At the End of your shift, you will need to do the following:</p>
-                        <ul>
-                          <li>General Cleaning</li></p>
-                          <li>Remove Door Sign And Open the front Door</li></p>
-                          <li>Count till ($400)</li></p>
-                          <li>Balance Your Shift</li></p>
-                          <li>Complete Handover with AM team</li></p>
-                          <li>File Checklist in the correct folder</li></p>
-                          <li>Sign out of Roubler</li></p>
-                        </ul>
-                      </div>
-                    </div>
-
-                            <!-- Slide 45 -->
-                    <div class="slide">
-                      <div class="heading">
-                        General Cleaning
-                      </div>
-                      <div class="content">
-                      <p class="mb-4">There are a few small cleaning jobs which should be performed every night:</p>
-                        <ul>
-                          <li>Vacuum the Reception area and Back Office.</li></p>
-                          <li>Wipe down the Reception benches and the tabletops in the Lobby area.</li></p>
-                          <li>Clear away any staff dishes.</li></p>
-                          <li>Clean up the cupboard under the stairs</li></p>
-                          <li>Tidy the Luggage Storage Area, including removing stickers from the ground.</li></p>
-                        </ul>
-                      </div>
-                    </div>
-
-                            <!-- Slide 46 -->
-                    <div class="slide">
-                      <div class="heading">
-                        Remove Door Sign And Count the Till
-                      </div>
-                      <div class="content">
-                        <h5>Remove the Door Sign & Open the Door</h5>
-                          <p class="mb-4">At around 07:00 am, the front door can be unlocked.</p>
-                          <p class="mb-4">Remove the sign, and turn the key clockwise to "Auto".</p>
-                          <p class="mb-4">Return the sign to it's spot underneath the till.</p>
-
-                        <h5>Count till ($400)</h5>
-                          <p class="mb-4">As you did earlier in the night, count your till to ensure it balances to $400.</p>
-                          <p class="mb-4">Invetigate any discrepancies.</p>
-                          <p class="mb-4">Alert your Duty Manager if there are any variances.</p>
-                          <p class="mb-4">Update the till float register</p>
-                      </div>
-                    </div>
-
-                            <!-- Slide 47 -->
-                    <div class="slide">
-                      <div class="heading">
-                        Balance Your Shift
-                      </div>
-                      <div class="content">
-                        <p class="mb-4">As before, use the Balancing spreadsheet to balance your shift</p>
-                        <p class="mb-4">This time, change the tab to "Night Morning".</p>
-                        <p class="mb-4">Print any Eftpos Settlment Enquiries with figures on them and fill in the correct TSP details. <b>DO NOT</b> settle the terminals this time.</p>
-                        <p class="mb-4">Complete the sheet in exactly the same way, print off the Tax Breakdown Summary and staple it to the back.</p>
-                        <p class="mb-4">Staple the Settlment Enquiries in the top left and sign at the bottom.</p>
-                        <p class="mb-4">File this away in the Balance section of the Black Folder.</p>
-                      </div>
-                    </div>
-
-                            <!-- Slide 48 -->
-                    <div class="slide">
-                      <div class="heading">
-                        Complete Handover with AM team
-                      </div>
-                      <div class="content">
-                        <p class="mb-4">Complete hand over with the incoming shift Duty Manager; ensure you make them aware of anything that needs following up from your shift or anything they need to be aware of and remember.</p>
-                        <p class="mb-4">Also do a handover with the AM shift GSA; pass on any information that will be important on their shift.</p>
-                        <p class="mb-4">Important items to handover are:</p>
-                          <ul>
-                            <li>ACB rooms that will need to be charged by the AM team</li></p>
-                            <li>No Shows that need to be followed up on</li></p>
-                            <li>Anything your Duty Manager suggests to pass to the AM team.</li></p>
-                          </ul>
-                      </div>
-                    </div>
-
-                            <!-- Slide 49 -->
-                    <div class="slide">
-                      <div class="heading">
-                        File Checklist & Sign Out of Roubler
-                      </div>
-                      <div class="content">
-                      <p class="mb-4">Ensure any extra paperwork like the Task List is stapled to the back of your checklist and file it in the correct folder in the cupboard in the back office. Ensure you file it under the correct date (yesterday’s date)</p>
-                      <p class="mb-4">Use the pin provided in your Roubler onboarding email to clock out of Roubler.</p>
-                      </div>
-                    </div>
-
-                            <!-- Slide 50 -->
-                    <div class="slide">
-                      <div class="heading">
                         
-                      </div>
-                      <div class="content">
-                        <p class="mb-4">Night Audit can be a mentally demanding task, and can seem very daunting in the beginning.</p>
-                        <p class="mb-4">It is important to remember that mistakes are how we learn, and you'll have many opportunities to learn how to fix any problems you come across.</p>
-                        <p class="mb-4">Always be sure to <b>ask</b> if you're not sure about something, and be willing to learn something new wherever possible.</p>
-                        <p class="mb-4">For more information on how to address issues you may come across, see the <a href="NATips.html">Night Audit Tips & Tricks</a> page.</p>
-                      </div>
-                    </div>
+                        <!-- Slide 02 -->
+                        <div class="slide">
+                            <div class="heading">
+                                Clocking into Roubler & Completing Handover
+                            </div>
+                            <div class="content">
+                                <h5>Clocking into Roubler</h5>
+                                <p class="mb-4">At the start of each shift, you must clock in to Roubler to ensure your hours are accurately recorded for payroll purposes.</p>
+                                <ol>
+                                <li>Use the PIN provided in your Roubler onboarding email to sign in.</li></p>
+                                <li>Select "Start Shift".</li></p>
+                                <li>Wait for the app to capture your picture.</li></p>
+                                </ol>
+                                
+                                <h5>Completing Handover with the PM Shift</h5>
+                                <p class="mb-4">The PM shift will have important information to share at the end of their shift. This may include:</p>
+                                <ul>
+                                <li>Rooms checking out after the system rollover</li></p>
+                                <li>Guests who may require special attention</li></p>
+                                <li>Tasks that were not completed during their shift</li></p>
+                                </ul>
+                                
+                                <p class="mb-4">Carefully note any items that need your attention and address them accordingly during your shift.</p>
+                            </div>
+                        </div>
 
-                  </section>
-              
-                  <section class="counter">
-                    1 of 50
-                  </section>
-              
-                  <section class="navigation">
-              
-                    <button id="small-screen" class="btn-screen">
-                      <i class="fas fa-compress"></i>
-                    </button>
-              
-                    <button id="left-btn" class="btn">
-                      <i class="fas fa-solid fa-caret-left"></i>
-                    </button>
-              
-                    <button id="right-btn" class="btn">
-                      <i class="fa-solid fa-caret-right"></i>
-                    </button>
-                  </section>
+                        <!-- Slide 03 -->
+                        <div class="slide">
+                            <div class="heading">
+                                Counting the Till & Login to iHMS
+                            </div>
+                            <div class="content">
+                                <h5>Counting the Till</h5>
+                                <p class="mb-4">During your shift, it's necessary to count the till twice: once at the beginning and once at the end. This ensures the till remains balanced throughout your shift.</p>
+                                
+                                <ol>
+                                <li>Count the GSA float; the total should be $400. Inform the Duty Manager if there's any discrepancy.</li></p>
+                                <li>Open the document: M:\Operations\Front Office\New Shift Balance UPDATED JULY 2023.xlsm</li></p>
+                                <li>Switch to the "Fast Track" tab.</li></p>
+                                <li>Clear the previous shift's figures.</li></p>
+                                <li>Enter the float amount, broken down by denomination, in the "Till Count" section of the spreadsheet.</li></p>
+                                <li>Save the spreadsheet and keep it open for later use.</li></p>
+                                </ol>
+                                
+                                <h5>Logging into iHMS</h5>
+                                <ol>
+                                <li>Open the iHMS bookmark in Google Chrome.</li></p>
+                                <li>Enter "HGCM" as the Property ID.</li></p>
+                                <li>Enter your username and password.</li></p>
+                                </ol>
+                            </div>
+                        </div>
+
+                        <!-- Slide 04 -->
+                        <div class="slide">
+                            <div class="heading">
+                                Check Emails & Wake Up Calls
+                            </div>
+                            <div class="content">
+                                <h4>Check/action Emails and Duty Log where necessary</h4>
+                                <p class="mb-4">Emails will come in throughout your shift and must be actioned as soon as possible to ensure guest satisfaction, as well as maintaining clear communication across all departments.</p>
+                                <p class="mb-4">Promotions, expected deliveries, printouts, Function information, and plenty of other correspondence will come through the Reception email, and it is important that we keep on top of it.</p>
+                                <p class="mb-4">There should be an icon for Outlook on the Taskbar, or it can be searched if necessary.</p>
+                                <p class="mb-4">Answer all emails you are able to, and forward anything you're unsure of to the relevant department.</p>
+                                <p class="mb-4">Once an email has been actioned, move it to the correct folder to ensure the inbox is always as clear as possible.</p>
+
+                                <h4>Check for Wake Up Calls and Set Alarms</h4>
+                                <p class="mb-4">Check the Wake Up Call sheet — which is hanging up on the left side of the front desk — for any wakeup calls in the morning.</p>
+                                <p class="mb-4">If there are any wake-up calls to make, set alarms on the Reception phone for each time and room requiring a wake-up call.</p>
+                                <p class="mb-4">Ensure to also set an alarm for 04:00 am to remind yourself to turn on the buffet.</p>
+                            </div>
+                        </div>
+
+                        <!-- Slide 05 -->
+                        <div class="slide">
+                            <div class="heading">
+                                Put Up The Door Sign And Lock The Front Door
+                            </div>
+                            <div class="content">
+                                <p class="mb-4">At 11:00pm the door will have to be locked using the key at the left side of reception.</p>
+                                <p class="mb-4">The sign for the door can be found in the drawer directly under the till</p>
+                                <p class="mb-4">When a guest enters by buzzing instead of using their room key, perform a security-check by asking to check their key card.</p>
+                            </div>
+                        </div>
+
+                        <!-- Slide 06 -->
+                        <div class="slide">
+                            <div class="heading">
+                                But what is "Roll"?
+                            </div>
+                            <div class="content">
+                                <p class="mb-4">“Roll” is when the system is balanced and updated for the next day of trade.</p>
+                                <p class="mb-4">Certain tasks must be performed before the Duty Manager can roll the system, and the system must be rolled before you can finish your tasks; so it is important to work in unison with your Duty Manager to ensure all requirements
+                                    are met before you can continue with your shift.</p>
+                                <p class="mb-4">Generally, we aim to have the system rolled at 01:30am, giving us plenty of time at the end of the night to deal with any further issues which may arise.</p>
+                                <p class="mb-4">There will be occasions where system roll is delayed, so while rolling at 01:30am is a preference, it is not necessarily a requirement.</p>
+                            </div>
+                        </div>
+
+                        <!-- Slide 07 -->
+                        <div class="slide">
+                            <div class="heading">
+                                BEFORE Roll
+                            </div>
+                            <div class="content">
+                                <p class="mb-4">These are the tasks which must be completed before the Duty Manager can Roll the system for the next day.</p>
+                                <p class="mb-4">It is important to complete these tasks first, as the other tasks involved in your role can either only be done after roll, or are not important to the rolling process.</p>
+                                <div class="row">
+                                    <div class="column">
+                                        <ul>
+                                            <li>Check for Pending Arrivals, Departures & Room Moves</li>
+                                            </p>
+                                            <li>Print the AR Pending Report & account for all transactions</li>
+                                            </p>
+                                            <li>Print out In House Checklist 1 & 2</li>
+                                            </p>
+                                            <li>Organise the Black Folder</li>
+                                            </p>
+                                            <li>Balance VIP Parking</li>
+                                            </p>
+                                            <li>Post Encore Cash & Credit Card transactions</li>
+                                            </p>
+                                        </ul>
+                                    </div>
+                                    <div class="column">
+                                        <ul>
+                                            <li>Update Guest Registration Cards</li>
+                                            </p>
+                                            <li>Check for Back to back (B2B) bookings & update Tasks accordingly</li>
+                                            </p>
+                                            <li>Address any Pending Arrivals</li>
+                                            </p>
+                                            <li>Audit Transactions for the day</li>
+                                            </p>
+                                            <li>Balance your shift</li>
+                                            </p>
+                                            <li>Complete Audit and Cash Drop</li>
+                                            </p>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 08 -->
+                        <div class="slide">
+                            <div class="heading">
+                                Check for Pending Arrivals, Departures & Room Moves
+                            </div>
+                            <div class="content">
+                                <p class="mb-4">The system cannot be rolled if there are still Check Ins, Check-outs or Room Moves waiting in the system.</p>
+                                <p class="mb-4">While you will address the Pending Arrivals, the Duty Manager will take care of any Room Moves or Pending Departures.</p>
+                                <p class="mb-4">In iHMS select:</p>
+                                <ul>
+                                    <li><b>Reports → Before Night Audit Reports → Expected Arrival Summary → PRINT</b> the first page and check against the Guest Registration Cards in the box</li>
+                                    </p>
+                                    <li><b>Reports → Before Night Audit Reports → Expected Departure Summary → PRINT</b> (unless empty) & give to Duty Manager</li>
+                                    </p>
+                                    <li><b>Reports → HouseKeeping → Live Scheduled Room Change → PRINT</b> (unless empty) & give to Duty Manager</li>
+                                    </p>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Slide 09 -->
+                        <div class="slide">
+                            <div class="heading">
+                                Print the AR Pending Report & account for all transactions
+                            </div>
+                            <div class="content">
+                                <p class="mb-4">The AR Pending Report is a list of all of the Direct Bill transactions for the day.</p>
+                                <p class="mb-4">You are required to print this report and ensure that the correct authorisation paperwork is accounted for.</p>
+                                <p class="mb-4">In iHMS, select:</p>
+                                <ul>
+                                    <li><b>Reports → Accounts → AR Pending Report → PRINT</b>.</li>
+                                    </p>
+                                </ul>
+                                <p class="mb-4">Ideally, the required paperwork for this report will be in the "DBILL" section of the Black Folder.</p>
+                                <p class="mb-4">If any of the paperwork is missing, search for it in the following places:</p>
+                                <ul>
+                                    <li><b>M:\Reservation Chargebacks</b></li>
+                                    </p>
+                                    <li><b>M:\Reservations Permanent Auth\*this year*</b></li>
+                                    </p>
+                                </ul>
+                                <p class="mb-4">If you are still unable to find the correct paperwork, search the Folio Voucher number, Guest Name or Folio Number in the <b>Reservations</b> email</p>
+                                <p class="mb-4">Highlight the Room Number, Folio Number & the amount billed on the AR Pending Report, and set it aside</p>
+                            </div>
+                        </div>
+
+                        <!-- Slide 10 -->
+                        <div class="slide">
+                            <div class="heading">
+                                Print out In House Checklist 1 & 2 Part 1
+                            </div>
+                            <div class="content">
+                                <p class="mb-4">In iHMS select:</p>
+                                <ul>
+                                    <li><b>Reports → In House → In House Checklist 1 → PRINT.</b> Keep this checklist aside, as you’ll be using it to note any changes required on Inhouse Checklist 2</li>
+                                    </p>
+                                    <li><b>Reports → In House → In House Checklist 2</b>. Do NOT print the report yet.</li>
+                                    </p>
+                                    <li>Using the Binocular tool at the top of the window, search "INT PEND". This will show you all rooms with Segment errors that need to be corrected.</li>
+                                    </p>
+                                    <li>On the Checklist 1 printout, write "SEG" and note all INT PEND errors below it.</li>
+                                    </p>
+                                    <li>Returning to the search box, type "NOT APP". Check that the Nationality and Country are the same for each Region saying "Not Applicable". If for example the Nationality says "China" but the Country says "Australia"
+                                        note it down on Checklist 1 under the heading "REG".</li>
+                                    </p>
+                                    <li>Use the search function to search for "AUSTRALIA". Ideally, there should be no instances where the Nationality and Country are different. If they are, note it on Checklist 1 under the heading "NAT".</li>
+                                    </p>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Slide 11 -->
+                        <div class="slide">
+                            <div class="heading">
+                                Print out In House Checklist 1 & 2 Part 2
+                            </div>
+                            <div class="content">
+                                <p class="mb-4">Now the errors you've noted down need to be fixed:</p>
+                                <ul>
+                                    <li>Open the folio for the first room noted under your SEG heading</li>
+                                    </p>
+                                    <li>Go to the "Marketing" tab</li>
+                                    </p>
+                                    <li>Change the Mkt Seg 4 dropdown to "Int Leis"</li>
+                                    </p>
+                                    <li>Continue down the list until all rooms have been updated</li>
+                                    <br>
+                                    <li>Region errors are fixed by entering the folio and changing the Region field in the Corporate tab. Australian Regions should always be an Australian state. Other countries should be noted as "Not Applicable"</li>
+                                    <br>
+                                    <li>Nationality errors are where the Country & Nationality on the folio do not match. Open the required folio, and change the Nationality or Country to match the other.</li>
+                                    </p>
+                                </ul>
+                                <p class="mb-4">Note: If the Region is an Australian state, then both the Country & Nationality should be Australia. If the Region is "Not Applicable", the Country & Nationality should be a different country.</p>
+                            </div>
+                        </div>
+
+                        <!-- Slide 12 -->
+                        <div class="slide">
+                            <div class="heading">
+                                Organising the Black Folder
+                            </div>
+                            <div class="content">
+                                <p class="mb-4">Beneath the left computer there is a cupboard labelled “DAILY TRANSACTION FOLDER”, in there you will find the Black Folder. The contents of the folder will need to be organised to make the auditing process easier.
+                                </p>
+                                <p class="mb-4">Utilise the back bench space to arrange your items as follows:</p>
+                                <ul>
+                                    <li>To the far left, place any paperwork found in the “DBILL” section of the folder. Your AR Pending Report goes with this paperwork.</li>
+                                    </p>
+                                    <li>To the right of that will go the “AMEX” section, then “EFTPOS”, “JBC” & “UNION” (if any) and “VISA/MC”</li>
+                                    </p>
+                                </ul>
+                                <p class="mb-4">The back wall should now have neat piles from left to right as follows:</p>
+                                <p style="text-align:center;"><b>AR Pending Report → American Express → Eftpos → JBC → UNION → Visa/MasterCard</b></p>
+                                <p class="mb-4">Items from the “BALANCE” section can be placed in the right-most corner, which will be the “Day Bag” pile.</p>
+                                <p class="mb-4">There will be two reports from F & B, one colourful one for Footlights and one for Encore. The Footlights report can go with the Visa/Mastercard paperwork.</p>
+                                <p class="mb-4">Check the payments taken for the day on the Encore report, and photocopy an extra for each pile along the back wall where Encore took a payment of that type.</p>
+                                <p class="mb-4">For example; if Encore took an Amex payment, an Eftpos payment and a Visa/Mastercard payment, you will need three copies of the report in total; one for the Amex pile, one for the Eftpos pile, and one for the Visa/Mastercard
+                                    pile.</p>
+                                <p class="mb-4">Room Service slips can be kept aside to be attached to the Room Service Supper & Delivery Reports during the Audit.</p>
+                            </div>
+                        </div>
+
+                        <!-- Slide 13 -->
+                        <div class="slide">
+                            <div class="heading">
+                                Balance VIP Parking
+                            </div>
+                            <div class="content">
+                                <p class="mb-4">You will receive the VIP Parking sheet between 11:00pm - 12:30am, depending on the day.</p>
+                                <ul>
+                                    <li>In iHMS, look up the guest surname shown on the VIP Car Park sheet (check the Sharing Guest name as well). Select the “Additional Items” tab in the guest folio.</li>
+                                    </p>
+                                    <li>Type “Car” into the “Stock” section, then select “Car Park - Corporate” or “Car Park - Guest” and press enter.</li>
+                                    </p>
+                                    <li>Type the car registration under “Description” and note the room number on the Parking sheet.</li>
+                                    </p>
+                                </ul>
+                                <p class="mb-4">When all the guests on the VIP Car Park sheet have been entered into iHMS:</p>
+                                <div class="c"><b>Reports → In House → In House Additional Items Report → *Today’s Date* → Double-click “Car Park - Guest” → PRINT.</b></div>
+                                </p>
+                                <div class="c"><b>Reports → In House → In House Additional Items Report → *Today’s Date* → Double-click “Car Park - Corporate” → PRINT.</b></div>
+                                </p>
+                                <div class="c"><b>Reports → Before Night Audit Reports → Transaction for Business Day → PRINT any “Car Parking” sections.</b></div>
+                                </p>
+                                <p class="mb-4">Photocopy the VIP Car Park sheet (double-sided & colour). Give the photocopy and other printouts to the Duty Manager and place the original VIP Car Parking sheet on top of the water cooler or printer.</p>
+                            </div>
+                        </div>
+
+                        <!-- Slide 14 -->
+                        <div class="slide">
+                            <div class="heading">
+                                Post Encore Cash & Credit Card transactions
+                            </div>
+                            <div class="content">
+                                <p class="mb-4"></p>
+                                <ul>
+                                    <li>Check that the cash handed over by the Encore team is correct and place it into a cash envelope, making sure to write the correct details on the envelope.</li>
+                                    </p>
+                                    <li>Search "FOLIO" in iHMS. This will bring up all of the folios where payments are posted.</li>
+                                    </p>
+                                    <li>Double-click into the required Folio (AMEX/CASH/VISA etc)</li>
+                                    </p>
+                                    <li>Select the "Transactions" tab.</li>
+                                    </p>
+                                    <li>Right-Click and select "Payment".</li>
+                                    </p>
+                                    <li>Enter the payment amount in the “Pay Amount” section.</li>
+                                    </p>
+                                    <li>Check the "Opt-Out" box.</li>
+                                    </p>
+                                    <li>Enter "TRANS - [last 6 digits of RRN on receipt]" in remark section, then press Enter. EG: Trans - 123456</li>
+                                    </p>
+                                    <li>When all dockets have been posted, click “OK” in the top left, all folios should now = $0.00</li>
+                                    </p>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Slide 15 -->
+                        <div class="slide">
+                            <div class="heading">
+                                Troubleshooting Cash & Credit Card Errors
+                            </div>
+                            <div class="content">
+                                <p class="mb-4">If any of the folios have a dollar amount remaining on them, the first step is to go back to the Transactions tab in that folio and check that you haven’t missed a payment, or posted it more than once.</p>
+                                <p class="mb-4">If all dockets have been entered correctly, check if there are any “CC Surcharge” postings. If there are, this means the “Opt-Out” box was not checked when posting a payment.</p>
+                                <p class="mb-4">To correct these errors, follow the steps in the section “<a href="reversals.html">Reversals & Error Corrections</a>”.</p>
+                                <p class="mb-4">If neither of these is an issue, check if there is a dollar amount present on the RAPTOR POSTING ERROR folio. If there is, see the <a href="NATips.html">Correcting “Raptor Posting Errors”</a> section</p>
+                                <p class="mb-4">If you still can’t find the issue, request assistance from your Duty Manager.</p>
+                            </div>
+                        </div>
+
+                        <!-- Slide 16 -->
+                        <div class="slide">
+                            <div class="heading">
+                                Update Guest Registration Cards
+                            </div>
+                            <div class="content">
+                                <p class="mb-4">Occasionally you will find Guest Registration Cards in the pigeonholes between the computers. You will notice that each pigeonhole is labelled, such as cards to be filed, cards to be updated and cards that need to be followed
+                                    up on. You must check that these have been updated correctly in iHMS</p>
+                                <ul>
+                                    <li>Update the Phone Number and Email address.</li>
+                                    </p>
+                                    <li>Ensure that the “Payment Status” drop down has been updated to “Pre-Authorisation Obtained” and the “Deposit Amount” has been updated accordingly.</li>
+                                    </p>
+                                    <li>Check that the Sharing Guest has been added into the “Guests” tab.</li>
+                                    </p>
+                                    <li>Check that the Pre-Auth ID has been entered in the Check Out Instructions on the "Corporate" tab, and update any other notes in the Remarks section, such as if the bond is being covered by another room, etc.</li>
+                                    </p>
+                                    <li>Once all of these things have been updated, initial the CARD and UPD section on the bottom right of the Guest Registration Card and file it in the correct box under the bench on the right.</li>
+                                    </p>
+                                </ul>
+                                <div class="note">Note: Registration cards left in the "Follow Up" pigeonhole should be returned there after the details have been checked and updated.</p>
+                                    This is because these guests need further attention for some reason, and will be followed up by Day Shift.</div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 17 -->
+                        <div class="slide">
+                            <div class="heading">
+                                Check for Back to back (B2B) bookings & update Tasks accordingly
+                            </div>
+                            <div class="content">
+                                <p class="mb-4">Occasionally, a guest will choose to extend their stay, meaning that they will be a Back-to-Back - or B2B - booking.</p>
+                                <p class="mb-4">You will need to check for any B2B bookings and ensure the Task List is updated accordingly:</p>
+                                <ul>
+                                    <li>In iHMS set the date to the new Check In date.</li>
+                                    </p>
+                                    <li>Sort the guest names alphabetically.</li>
+                                    </p>
+                                    <li>Look for surnames in <b>blue</b> which have the same surname above or below in <b>red</b>. Confirm that the first name is the same, and then right-click on the <b>blue</b> folio.</li>
+                                    </p>
+                                    <li>Select "Add Message" from the options</li>
+                                    </p>
+                                    <li>Change the "Type" dropdown to "Task"</li>
+                                    </p>
+                                    <li>In the "Action" section, change the "To" dropdown to "Night Audit".</li>
+                                    </p>
+                                    <li>Change the Date to the incoming Check In date.</li>
+                                    </p>
+                                    <li>Write "B2B" in the message box and click "Next".</li>
+                                    </p>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Slide 18 -->
+                        <div class="slide">
+                            <div class="heading">
+                                Address any Pending Arrivals
+                            </div>
+                            <div class="content">
+                                <p class="mb-4">If there are folios that have not been Checked In, the system cannot roll. You must attempt to take a Pre-Authorisation for the first night’s stay for each room that has yet to arrive. This is best done at around 12:30
+                                    to ensure that guests have time to update their payment details if required.</p>
+                                <p class="mb-4">On the Eftpos terminal:</p>
+                                <ul>
+                                    <li>Enter the amount for the first night's stay.</li>
+                                    </p>
+                                    <li>Select "Other" on the bottom left of the screen, then select "Pre-Authorisation".</li>
+                                    </p>
+                                    <li>Choose the "Manual" option. This will prompt you to enter the card details as shown on the reservation.</li>
+                                    </p>
+                                    <li>Enter the Card expiry date, then click through the CCV section, selecting "Unspecified" as the reason one wasn't provided.</li>
+                                    </p>
+                                </ul>
+                                <p class="mb-4">If the payment is declined, the reservation will be cancelled as a "No Show".</p>
+                                <p class="mb-4">If the payment is approved, the folio will be Checked In, changing the VIP code to "NOSHOW" and writing a remark such as "No Show (NON) pre-authorisation taken for one night".</p>
+                                <p class="mb-4">Single night reservations will be charged and checked out, while multiple-night stays will need to be followed up by the AM team.</p>
+                            </div>
+                        </div>
+
+                        <!-- Slide 19 -->
+                        <div class="slide">
+                            <div class="heading">
+                                Audit Transactions for the day Part 1
+                            </div>
+                            <div class="content">
+                                <p class="mb-4">The most important part of the Night Audit role is the Audit itself. It is important that everything in the venue is balanced, otherwise the system cannot roll.</p>
+                                <p class="mb-4">In iHMS select:</p>
+                                <ul>
+                                    <li><b>Reports → Before Night Audit Reports → Transaction For Business Day → “Charge Date” Start & End Range Both Set To
+                            Today → “Postcode Range” Start At “Accomodation” → “Postcode Range” End At “Visa/Mastercard” → Enter → PRINT</b></li>
+                                    </p>
+                                    <li>These reports should be arranged as follows:</li>
+                                    </p>
+                                </ul>
+
+                                <table class="center" style="width: 100%;" cellspacing="2%" cellpadding="2%">
+                                    <colgroup>
+                                        <col style="width: auto;">
+                                            <col style="width: auto;">
+                                                <col style="width: auto;">
+                                    </colgroup>
+                                    <tbody>
+                                        <thead>
+                                            <tr style="background-color: #e20118; color: white;">
+                                                <th style="text-align: center;">
+                                                    <h5>To Keep:</h5></th>
+                                                <th style="text-align: center;">
+                                                    <h5>To Duty Manager:</h5></td>
+                                                    <th style="text-align: center;">
+                                                        <h5>To the Day Bag:</h5></td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>American Express</td>
+                                                <td><u><b>ALL</b></u> ENCORE pages</td>
+                                                <td rowspan="4">Everything else</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Eftpos</td>
+                                                <td><u><b>ALL</b></u> FOOTLIGHTS pages</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Visa/MasterCard</td>
+                                                <td><u><b>ALL</b></u> ROOM SERVICE pages <u><b>EXCEPT</b></u> "Supper" & "Delivery" pages</td>
+                                            </tr>
+                                            <tr>
+                                                <td>(Any card payments)</td>
+                                                <td>Movies</td>
+                                            </tr>
+                                        </tbody>
+                                </table>
+                                <br>
+                                <p class="mb-4">Once these reports have been placed in the Day Bag pile, you can move this pile to the Back Office, under the label “Day Bag”, which is between the two computers.</p>
+                            </div>
+                        </div>
+
+                        <!-- Slide 20 -->
+                        <div class="slide">
+                            <div class="heading">
+                                Audit Transactions for the day Part 2
+                            </div>
+                            <div class="content">
+                                <p class="mb-4">Unstaple any payment receipts from the previous shifts Transaction for Business Day Reports and place them neatly back on the pile they came from. Throw away any previous Transaction for Business Day Reports to avoid any
+                                    confusion, as you have just printed out the updated one.</p>
+                                <p class="mb-4">Organise the payment receipts by room number as stated by each page of the Transaction for Business Day Report and highlight the amount & transaction number on the Transaction for Business Day Report page</p>
+                                <p class="mb-4">Neatly staple the payment receipts to the corresponding Transaction for Business Day Report page (ie AMEX receipts to the American Express page, etc)</p>
+                                <p class="mb-4">Once completed, create a new Day Bag pile with the transactions sorted alphabetically (AR Pending on top, Visa/Mastercard at the bottom)</p>
+                            </div>
+                        </div>
+
+                        <!-- Slide 21 -->
+                        <div class="slide">
+                            <div class="heading">
+                                Balancing your shift
+                            </div>
+                            <div class="content">
+                                <ol type="1">
+                                    <li>If you haven't already, enter the till count for the start of your shift in the "GSA Till Count Shift Start" section. Then, enter the updated till count in the "GSA Till Count Shift End" section.</p>
+                                        <li>Print a Settlement Report from each Eftpos terminal: <b>Menu → Reports → Settlement Enquiry → Print</b>.</p>
+                                            Enter these details into the "Sub Totals Report" section, under the correct TSP number. (TSP numbers are on the front of each terminal).</p>
+                                            <li>In iHMS go to <b>Reports → Accounts → Tax Breakdown Summary</b>. Enter today's date and print the report.</p>
+                                                <p class="mb-4">These figures need to be entered in the "iHMS CC Totals" section, found in the mid-left of the spreadsheet.</li>
+                                            </p>
+                                            <li>If you have taken Cash, enter the figures into the "iHMS Cash Totals" → "Cash Figure" section. Provide the cash breakdown in the "Cash Banking" section.</li>
+                                            </p>
+                                            <li>If there are any Refunds, enter them in the Refunds section below the "iHMS Cash Totals" box.</li>
+                                            </p>
+                                            <li>Print the Balancing sheet to the Back Office printer, in full colour.</li>
+                                            </p>
+                                </ol>
+                                <p class="mb-4">The "Variance - EFTpos vs iHMS" section should all be green. If there are any discrepancies, the spreadsheet will tell you where to look. If you are unable to discern where the variance is, ask your Duty Manager for assistance.</p>
+                            </div>
+                        </div>
+
+                        <!-- Slide 22 -->
+                        <div class="slide">
+                            <div class="heading">
+                                Balancing Example
+                            </div>
+                            <div class="content">
+                                <p class="mb-4">Below you will find an example of a correctly filled out balance sheet, marked in accordance with the previous steps.</p>
+                                <p class="mb-4">Note the green boxes in each section. This spreadsheet is perfectly balanced.</p>
+                                <img class="center" src="img/FastTrack.jpg" alt="Completed Balance" height="85%">
+                            </div>
+                        </div>
+
+                        <!-- Slide 23 -->
+                        <div class="slide">
+                            <div class="heading">
+                                Complete Audit and Cash Drop
+                            </div>
+                            <div class="content">
+                                <p class="mb-4">Complete any outstanding tasks, such as printing missing Eftpos receipts, tidying your workspace, or handing cash or reports to your Duty Manager.</p>
+                                <p class="mb-4">Print the Transaction History for each Eftpos Terminal: <b>Menu  → Transaction History  → Print icon (top right)  → Print</b>.</p>
+                                <p class="mb-4">Settle the Eftpos machines: <b>Menu  → Settings  → Account  → Settlement  → Settle Now  → "Yes".</b></p>
+                                <p class="mb-4">Staple these printouts to the top of your Balance sheet, with the Tax Breakdown Summary stapled to the back, as shown in the next section.</p>
+                                <p class="mb-4">Print your shift balancing report: <b>Reports → Management Reports → Transaction by Staff → *Your Name* → *Date* PRINT</b></p>
+                                <p class="mb-4">End your shift in iHMS: <b>Setup → End shift</b></p>
+                                <p class="mb-4">Enter the figures as shown on the Transaction by Staff sheet. Once your shift is ended, advise your Duty Manager that you are ready to roll.</p>
+                            </div>
+                        </div>
+
+                        <!-- Slide 24 -->
+                        <div class="slide">
+                            <div class="heading">
+                                Completed Balance sheet
+                            </div>
+                            <div class="content">
+                                <p class="mb-4">This is how your final Balance sheet should look:</p>
+                                <img class="center" src="img/FinalBalance.jpg" alt="Completed Balance" height="85%">
+                            </div>
+                        </div>
+
+                        <!-- Slide 25 -->
+                        <div class="slide">
+                            <div class="heading">
+                                AFTER Roll
+                            </div>
+                            <div class="content">
+                                <p class="mb-4">These tasks can only be completed after roll, as certain things - such as parking, room charges etc - will not update until the system has been rolled over to the next day of trade</p>
+                                <ul>
+                                    <li>Login to iHMS and Start Shift</li>
+                                    </p>
+                                    <li>Top Ups</li>
+                                    </p>
+                                    <li>Chargebacks</li>
+                                    </p>
+                                    <li>Turn on the Buffet</li>
+                                    </p>
+                                    <li>Floor walk</li>
+                                    </p>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Slide 26 -->
+                        <div class="slide">
+                            <div class="heading">
+                                Top Ups Part 1
+                            </div>
+                            <div class="content">
+                                <p class="mb-4">When a guest has incidentals that amount to more than their $100.00 bond, we have to “Top Up” the bond to match.</p>
+                                <p class="mb-4">For example, if a guest had dinner in Encore totaling $123.00, their bond will have to be Topped Up by $23.00.</p>
+                                <ul>
+                                    <li>Right-Click into each Checked In folio and select "Check-out View".</li>
+                                    </p>
+                                    <li>Check the “Instruction” tab for any notes about charges. ACB rooms will have All Charges made to the company or CC on file. RO covers Room Only, etc. See <a href="SpexGuide.html">Special Instructions Guide</a> for more
+                                        information.</li>
+                                    </p>
+                                    <li>Arrange the charges as follows:</li>
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            <div class="a">Accommodation in the <b>top left</b>.</div>
+                                        </li>
+                                        </p>
+                                        <li>
+                                            <div class="a">Incidentals (Room Service, Cash Bond, Encore, Footlights, etc) in the <b>top right</b>.</div>
+                                        </li>
+                                        </p>
+                                        <li>
+                                            <div class="a">Mistakes and $0 charges in the <b>bottom left</b>.</div>
+                                        </li>
+                                        </p>
+                                    </ul>
+                                </ul>
+                                <div class="note">Note: if the bottom left ledger doesn't allow you to add things to it, you need to create a “DUMMY” ledger.</p>Select the Guest’s name in the top right then use the down arrow on the keyboard. Type “DUMMY” into the field
+                                    and click the three dots to the right.</p>A pop-up will come up, select the “Guest” radio button and click “SEARCH”. Double click the first option, which will state the country as Aruba.</div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 27 -->
+                        <div class="slide">
+                            <div class="heading">
+                                Top Ups Part 2
+                            </div>
+                            <div class="content">
+                                <p class="mb-4">After the charges have been arranged correctly, check the guest name in the top right of the pop-up to see if they require a Top Up (If ledger is OVER $100, top up by the amount that is over)</p>
+                                <ul>
+                                    <li>In iHMS, select: <b>Reports → In House → In House Folio Limit Report → PRINT.</b></li>
+                                    </p>
+                                    <li>Highlight amounts in the <b>far right</b> column that are over $100 and keep an eye out for amounts <b>under</b> $100 in the left column, as these are odd and will need to be checked.</li>
+                                    </p>
+                                    <li>Check the TSP number on the Bond docket attatched to the required Guest Registration Card, and use the corresponding terminal to proceed with the Top Up:</li>
+                                    </p>
+                                    <li>On the Eftpos terminal: <b>Menu → Search Transactions → Enter 4-digit card number → View → Select transaction with same time → Adjust → update the amount → Submit.</b></li>
+                                    </p>
+                                    <li>Attach the Top Up docket to the Guest Registraion Card.</li>
+                                    </p>
+                                </ul>
+                                <div class="note">Note: If a Top Up is declined, advise your Duty Manager, then create a Cash item in the Additional Items section with a remark saying ***Top Up Declined***.</p>If the guest is staying multiple further days, prepare the
+                                    below letter to be dropped off during Floor Walk:</br><b>M:\Operations\Front Office\Reception\Templates\Templates for guest letters\Pre-Authorisation Top Up Declined (Draft).docx</b></div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 28 -->
+                        <div class="slide">
+                            <div class="heading">
+                                Chargebacks Part 1
+                            </div>
+                            <div class="content">
+                                <p class="mb-4">You will need to charge all CC and DBA rooms that are checking out today.</p>
+                                <p class="mb-4">To determine which rooms will need to be charged, print the Folio Special Instructions by Check-out Date Report at:</p>
+                                <p class="mb-4"><b>Reports → In House → Folio Special Instructions by Check-out Date Report → *Ensure Date Is Correct* → PRINT.</b></p>
+                                <p class="mb-4">Highlight any "CC", "TRNSFR" "DBA" and "DBC" rooms. These are the rooms you will charge during this process.</p>
+                                <h5>CC Charges</h5>
+                                <ul>
+                                    <li>Open SiteMinder in Google Chrome and login. Use the Voucher Number in the bottom left of the guest folio to search SiteMinder, then open the reservation.</li>
+                                    </p>
+                                    <li>Scroll down to the Credit Card details (bottom right of screen). If neede, click the eye icon to show the card details.</li>
+                                    </p>
+                                    <li>On the MOTO terminal: <b>Enter the amount to be charged → Other → Manual Card Entry → Mail Order.</b></li>
+                                    </p>
+                                    <li>Use the card details provided by SiteMinder to complete the transaction.</li>
+                                    </p>
+                                    <li>Post the payment to the guest folio as you did with the Encore transactions earlier, writing the room number on the front of the payment docket, and the folio number on the back.</li>
+                                    </p>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Slide 29 -->
+                        <div class="slide">
+                            <div class="heading">
+                                Chargebacks Part 2
+                            </div>
+                            <div class="content">
+                                <p class="mb-4">DBA and DBC rooms are rooms that will be charged to an account, such as a business or even the hotel itself.</p>
+                                <h5>DBA / DBC Charges</h5>
+                                <ul>
+                                    <li>In the Transactions tab of the guest folio, right-click and select Payment.</li>
+                                    </p>
+                                    <li>Change the Payment Type dropdown to DBILL, then click next.</li>
+                                    </p>
+                                    <li>If a Credit Stop/Cash Only error appears, you will need to email Reservations with the Folio number, guest name and a polite request to look into it.</li>
+                                    </p>
+                                </ul>
+                                <h5>Rooms marked "Transfer to":</h5>
+                                <ul>
+                                    <li>Check the name of the folio the charges are to be transferred <b>TO</b> and note the folio number, then open the folio that needs to be transferred.</li>
+                                    </p>
+                                    <li>In the “Transactions” tab hold down “Ctrl” and select the items with a cost beside them, leaving the $0.00 items unselected</li>
+                                    </p>
+                                    <li>Right click and select “Transfer”</li>
+                                    </p>
+                                    <li>In the “To Folio” section, begin typing the surname of the folio the charges are being moved to, check that the folio number is correct then - when you are certain you are transferring to the correct folio - click “Next”.</li>
+                                    </p>
+                                    </p>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Slide 30 -->
+                        <div class="slide">
+                            <div class="heading">
+                                Turning on the Buffet
+                            </div>
+                            <div class="content">
+                                <p class="mb-4">At 4:00am the Buffet needs to be turned on for the Breakfast team</p>
+                                <ul>
+                                    <li>In the first cupboard under the buffet, flip the red switch.</li>
+                                    </p>
+                                    <li>In the third cupboard down, turn the dial to “HIGH”.</li>
+                                    </p>
+                                    <li>Flip the green switch on the plate warmer</li>
+                                    </p>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Slide 31 -->
+                        <div class="slide">
+                            <div class="heading">
+                                Floor Walk
+                            </div>
+                            <div class="content">
+                                <p class="mb-4">After turning on the Buffet, it's time to do floor walk.</p>
+                                <p class="mb-4">Grab one of the trolleys from F & B, any letters you need to drop at rooms, and the Green Stay Checklist your Duty Manager gave you.</p>
+                                <p class="mb-4">You must visit <b>every</b> floor, collecting Room Service trays, dropping letters and making a note of any rooms with a Green Stay hanger on the door.</p>
+                                <p class="mb-4">You should also Note any Maintenance issues and hand them over to your Duty Manager, along with the Green Stay rooms, when you return from the walk.</p>
+                                <p class="mb-4">Take the Room Service trays to the kitchen, clean any leftovers into the bin and arrange the dishes nicely for the Kitchen Staff.</p>
+                                <p class="mb-4">Return the trolley to where you found it.</p>
+                            </div>
+                        </div>
+
+                        <!-- Slide 32 -->
+                        <div class="slide">
+                            <div class="heading">
+                                Before OR After Roll
+                            </div>
+                            <div class="content">
+                                <p class="mb-4">There are a few tasks that can be done at any stage throughout the night, and are great for utilising your time while waiting for the Parking sheet or Encore documents:</p>
+                                <ul>
+                                    <li>Print The Expected Departure Summary Report</li>
+                                    </p>
+                                    <li>Print The Folio Special Instructions By Check-out Date Report</li>
+                                    </p>
+                                    <li>Organise The Departure Reg Cards For The AM Shift</li>
+                                    </p>
+                                    <li>Pre-Auth Cancellations For The Previous Day</li>
+                                    </p>
+                                    <li>Action Room Service as Required (Night Owl Menu)</li>
+                                    </p>
+                                    <li>Prepare For The AM Shift</li>
+                                    </p>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Slide 33 -->
+                        <div class="slide">
+                            <div class="heading">
+                                Print Reports for Departures
+                            </div>
+                            <div class="content">
+                                <!-- Expected Departure Summary Report -->
+                                <div class="section">
+                                    <h4>Print The Expected Departure Summary Report</h4>
+                                    <p class="mb-4">(If you are doing this before roll, make sure to update the date to <b>tomorrow</b>)</p>
+                                    <p class="mb-4"><b>Reports → Departures → Expected Departure Summary → *Ensure Date Is Correct* →</b> PRINT.</p>
+                                    <p class="mb-4">Staple together, fold in half and put in the departures box.</p>
+                                    <div class="note">Note: Use this list or the "Folio Special Instructions by Check-out Date Report" to collect the reg cards which need to be moved to the Departures box for the morning team.</div>
+                                </div>
+
+                                <!-- Folio Special Instructions By Check-out Date Report -->
+                                <div class="section">
+                                    <h4>Print The Folio Special Instructions By Check-out Date Report</h4>
+                                    <p class="mb-4">(If you are doing this before roll, make sure to update the date to <b>tomorrow</b>)</p>
+                                    <p class="mb-4"><b>Reports → In House → Folio Special Instructions by Check-out Date Report → *Ensure Date Is Correct* →</b> PRINT.</p>
+                                    <p class="mb-4">Highlight any "CC", "TRNSFR", "DBA", and "DBC" rooms.</p>
+                                    <p class="mb-4">These rooms will be paid using the "MOTO" Eftpos machine and the details provided on the guests' registration card.</p>
+                                    <div class="note">Note: Use this list or the "Expected Departure Summary Report" to collect the reg cards which need to be moved to the Departures box for the morning team.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 34 -->
+                        <div class="slide">
+                            <div class="heading">
+                                Organise The Departure Reg Cards For The AM Shift
+                            </div>
+                            <div class="content">
+                                <p class="mb-4">Part of the Night GSA role is preparing the Departures bin for the AM team.</p>
+                                <p class="mb-4">Use the Expected Departure Summary Report or the Folio Special Instructions by Check-out Date Report to remove the required Guest Reg Cards from the storage bins under the desk.</p>
+                                <p class="mb-4">Organise these Reg Cards into each section of the black Departure bin to the left of the middle computer</p>
+                            </div>
+                        </div>
+
+                        <!-- Slide 35 -->
+                        <div class="slide">
+                            <div class="heading">
+                                Pre-Auth Cancellations For The Previous Day
+                            </div>
+                            <div class="content">
+                                <p class="mb-4">The Guest Registration Cards for the day's Departures will be next to the right-most computer</p>
+                                <p class="mb-4">You will find the Pre-Auth dockets for each room's bond attached to the back of each Guest Registration Card.</p>
+                                <p class="mb-4">Go through and <b>Cancel</b> all Pre-Auths from yesterday's check-outs on the eftpos terminal:</p>
+                                <p class="mb-4"><b>Menu→Search Transactions →Enter 4-digit card number →Select same time →Cancel →Not Specified→ Submit.</b></p>
+                                <p class="mb-4">Staple the cancellation docket to the back of the Guest Registration Card.</p>
+                                <p class="mb-4">When all have been cancelled, wrap a Rubber Band around the pile and put it in the bottom drawer of the filing cabinet in the Back Office.</p>
+                                <div class="note">Note: Do NOT cancel any pre-auth for rooms with issues or outstanding balance.</div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 36 -->
+                        <div class="slide">
+                            <div class="heading">
+                                Action Room Service as Required (Night Owl Menu)
+                            </div>
+                            <div class="content">
+                                <p class="mb-4">If any guests call for room service it is your job to prepare and cook the room service and take it to the room.</p>
+                                <p class="mb-4">The Night Owl menu is available 22:00 - 11:00; there are instructions in the kitchen for how to prepare each dish.</p>
+                                <p class="mb-4">If you are ever unsure about a meal or drink, ask the Night Manager.</p>
+                                <p class="mb-4">When you take the order, make sure to check if the guest is paying cash or having the items charged to the room, if the guest is paying cash, take payment for the room service on delivery.</p>
+                                <p class="mb-4">If it's a room charge, make sure to Manual Post all of the items under the correct codes in iHMS (&ldquo;Room Service Food Supper&rdquo; = Food, &ldquo;Room Service Beverage Supper&rdquo; = Drinks & &ldquo;Room Service
+                                    Delivery Fee&rdquo; is always $5.00)</p>
+                                <div class="note">Note: Our Liquor License ends at 01:00am Monday - Saturday, and 11:00pm on Sunday's. This means that we<b>cannot</b>serve alcohol after those times</div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 37 -->
+                        <div class="slide">
+                            <div class="heading">
+                                Prepare For The AM Shift
+                            </div>
+                            <div class="content">
+                                <p class="mb-4">Top up the paper in all of the printers. If you run out of paper reams, use the red GSA bracelet in the key box to go up to the admin offices to find another box</p>
+                                <p class="mb-4">Refill all of the staplers. Staples can be found in the drawer beneath the middle computer</p>
+                                <p class="mb-4">Top up the business cards on the counter. More cards can be found in the cupboard under the middle computer</p>
+                                <p class="mb-4">Tidy the back office and luggage room</p>
+                                <p class="mb-4">Ensure there are enough pre-printed Misc. slips, Bond Information slips, Charge/Reversal Slips and Room Service slips. Where necessary, print and cut more to size using the templates in:</p>
+                                <p class="mb-4"><b>M:\Operations\Front Office\Reception\Templates\Templates for FO</b></p>
+                            </div>
+                        </div>
+
+                        <!-- Slide 38 -->
+                        <div class="slide">
+                            <div class="heading">
+                                End of Shift
+                            </div>
+                            <div class="content">
+                                <p class="mb-4">At the End of your shift, you will need to do the following:</p>
+                                <ul>
+                                    <li>General Cleaning</li>
+                                    </p>
+                                    <li>Remove Door Sign And Open the front Door</li>
+                                    </p>
+                                    <li>Count till ($400)</li>
+                                    </p>
+                                    <li>Balance Your Shift</li>
+                                    </p>
+                                    <li>Complete Handover with AM team</li>
+                                    </p>
+                                    <li>File Checklist in the correct folder</li>
+                                    </p>
+                                    <li>Sign out of Roubler</li>
+                                    </p>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Slide 39 -->
+                        <div class="slide">
+                            <div class="heading">
+                                General Cleaning
+                            </div>
+                            <div class="content">
+                                <p class="mb-4">There are a few small cleaning jobs which should be performed every night:</p>
+                                <ul>
+                                    <li>Vacuum the Reception area and Back Office.</li>
+                                    </p>
+                                    <li>Wipe down the Reception benches and the tabletops in the Lobby area.</li>
+                                    </p>
+                                    <li>Clear away any staff dishes.</li>
+                                    </p>
+                                    <li>Clean up the cupboard under the stairs</li>
+                                    </p>
+                                    <li>Tidy the Luggage Storage Area, including removing stickers from the ground.</li>
+                                    </p>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Slide 40 -->
+                        <div class="slide">
+                            <div class="heading">
+                                Remove Door Sign And Count the Till
+                            </div>
+                            <div class="content">
+                                <h5>Remove the Door Sign & Open the Door</h5>
+                                <p class="mb-4">At around 07:00 am, the front door can be unlocked.</p>
+                                <p class="mb-4">Remove the sign, and turn the key clockwise to "Auto".</p>
+                                <p class="mb-4">Return the sign to it's spot underneath the till.</p>
+
+                                <h5>Count till ($400)</h5>
+                                <p class="mb-4">As you did earlier in the night, count your till to ensure it balances to $400.</p>
+                                <p class="mb-4">Invetigate any discrepancies.</p>
+                                <p class="mb-4">Alert your Duty Manager if there are any variances.</p>
+                                <p class="mb-4">Update the till float register</p>
+                            </div>
+                        </div>
+
+                        <!-- Slide 41 -->
+                        <div class="slide">
+                            <div class="heading">
+                                Balance Your Shift
+                            </div>
+                            <div class="content">
+                                <p class="mb-4">As before, use the Balancing spreadsheet to balance your shift</p>
+                                <p class="mb-4">This time, change the tab to "Night Morning".</p>
+                                <p class="mb-4">Print any Eftpos Settlment Enquiries with figures on them and fill in the correct TSP details. <b>DO NOT</b> settle the terminals this time.</p>
+                                <p class="mb-4">Complete the sheet in exactly the same way, print off the Tax Breakdown Summary and staple it to the back.</p>
+                                <p class="mb-4">Staple the Settlment Enquiries in the top left and sign at the bottom.</p>
+                                <p class="mb-4">File this away in the Balance section of the Black Folder.</p>
+                            </div>
+                        </div>
+
+                        <!-- Slide 42 -->
+                        <div class="slide">
+                            <div class="heading">
+                                Complete Handover with AM team
+                            </div>
+                            <div class="content">
+                                <p class="mb-4">Complete hand over with the incoming shift Duty Manager; ensure you make them aware of anything that needs following up from your shift or anything they need to be aware of and remember.</p>
+                                <p class="mb-4">Also do a handover with the AM shift GSA; pass on any information that will be important on their shift.</p>
+                                <p class="mb-4">Important items to handover are:</p>
+                                <ul>
+                                    <li>ACB rooms that will need to be charged by the AM team</li>
+                                    </p>
+                                    <li>No Shows that need to be followed up on</li>
+                                    </p>
+                                    <li>Anything your Duty Manager suggests to pass to the AM team.</li>
+                                    </p>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Slide 43 -->
+                        <div class="slide">
+                            <div class="heading">
+                                File Checklist & Sign Out of Roubler
+                            </div>
+                            <div class="content">
+                                <p class="mb-4">Ensure any extra paperwork like the Task List is stapled to the back of your checklist and file it in the correct folder in the cupboard in the back office. Ensure you file it under the correct date (yesterday’s date)</p>
+                                <p class="mb-4">Use the pin provided in your Roubler onboarding email to clock out of Roubler.</p>
+                            </div>
+                        </div>
+
+                        <!-- Slide 44 -->
+                        <div class="slide">
+                            <div class="heading">
+                                In closing
+                            </div>
+                            <div class="content">
+                                <p class="mb-4">Night Audit can be a mentally demanding task, and can seem very daunting in the beginning.</p>
+                                <p class="mb-4">It is important to remember that mistakes are how we learn, and you'll have many opportunities to learn how to fix any problems you come across.</p>
+                                <p class="mb-4">Always be sure to <b>ask</b> if you're not sure about something, and be willing to learn something new wherever possible.</p>
+                                <p class="mb-4">For more information on how to address issues you may come across, see the <a href="NATips.html">Night Audit Tips & Tricks</a> page.</p>
+                            </div>
+                        </div>
+
+                    </section>
+
+                    <section class="counter">
+                        1 of 50
+                    </section>
+
+                    <section class="navigation">
+
+                        <button id="small-screen" class="btn-screen">
+                            <i class="fas fa-compress"></i>
+                        </button>
+
+                        <button id="left-btn" class="btn">
+                            <i class="fas fa-solid fa-caret-left"></i>
+                        </button>
+
+                        <button id="right-btn" class="btn">
+                            <i class="fa-solid fa-caret-right"></i>
+                        </button>
+                    </section>
                 </div>
-              </div>
+            </div>
 
         </div>
     </div>
-        
+
     <!-- Main Page End -->
 
     <!-- Footer Start -->
@@ -1043,9 +1145,7 @@
             <div class="copyright">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">HGC Melbourne Knowledge Portal</a>, All Rights Reserved.
-
-                        Designed By Andrew Edwards 2024
+                        &copy; <a class="border-bottom" href="#">HGC Melbourne Knowledge Portal</a>, All Rights Reserved. Designed By Andrew Edwards 2024
                     </div>
                 </div>
             </div>
@@ -1053,10 +1153,8 @@
     </div>
     <!-- Footer End -->
 
-
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

@@ -46,47 +46,52 @@
     </div>
     <!-- Spinner End -->
 
-
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
-        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <h2 class="m-0 text-primary"><img src="img/NEW.jpg" width="110" height="75"></h2>
-        </a>
-        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <div class="nav-item nav-link">
-<div class="search-container">
-                        <input type="text" id="searchInput" placeholder="Search...">
-                        <button id="searchButton">Search</button>
-                        <div id="results"></div>
+    <!-- Navbar Wrapper Start -->
+    <div class="navbar-wrapper">
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+            <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+                <h2 class="m-0 text-primary"><img src="img/NEW.jpg" width="110" height="75"></h2>
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <div class="nav-item nav-link">
+                        <div class="search-container">
+                            <input type="text" id="searchInput" placeholder="Search...">
+                            <button id="searchButton">Search</button>
+                            <div id="results"></div>
+                        </div>
                     </div>
-                </div>    
-                <a href="index.html"  class="nav-item nav-link active">Home</a>
-                <a href="GSA.html" class="nav-item nav-link">Guest Services Agent</a>
-                <a href="NA.html" class="nav-item nav-link">Night Audit</a>
-                <a href="Res.html" class="nav-item nav-link">Reservations</a>
-                <a href="General.html" class="nav-item nav-link">General Knowledge</a>
-                <div class="nav-item dropdown">
-                    <a href="contacts.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Contacts</a>
-                    <div class="dropdown-menu fade-down m-0" style="right:0">
-                        <a href="StaffContacts.html" class="dropdown-item">Staff Contacts</a>
-                        <a href="ContractorContacts.html" class="dropdown-item">Contractor Contacts</a>
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="GSA.html" class="nav-item nav-link">Guest Services Agent</a>
+                    <a href="NA.html" class="nav-item nav-link">Night Audit</a>
+                    <a href="Res.html" class="nav-item nav-link">Reservations</a>
+                    <a href="General.html" class="nav-item nav-link">General Knowledge</a>
+                    <div class="nav-item dropdown">
+                        <a href="contacts.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Contacts</a>
+                        <div class="dropdown-menu fade-down m-0" style="right:0">
+                            <a href="StaffContacts.html" class="dropdown-item">Staff Contacts</a>
+                            <a href="ContractorContacts.html" class="dropdown-item">Contractor Contacts</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </nav>
-    <!-- Navbar End -->
+        </nav>
+        <!-- Navbar End -->
+
+        <!-- Back Button -->
+        <button class="back-button" onclick="history.back()">
+            <i class="bi bi-arrow-left"></i>
+        </button>
+    </div>
+    <!-- Navbar Wrapper End -->
 
     <!-- Main Page Start -->
 
     <div class="container-xxl py-5">
-
-        <button onclick="history.back()">Back</button></p>
-
         <div class="container">
             <div>
                 <div class="col wow fadeInUp" data-wow-delay="0.1s" style="min-height: 50px;">
@@ -97,46 +102,50 @@
 
                     <h5>Procedure</h5>
                     <ol>
-                    <li>Identify the error:</p>
-                    <ul>
-                    <li>What is the error(s) that needs reversing?</li></p>
-                    <li>Which folio has it been posted to?</li></p>
-                    </ul>
-                    </li></p>
-                    <li>Determine the type of error:</p>
-                    <ul>
-                    <li>Is it a payment error or a manual posting error?</li></p>
-                    </ul>
-                    </li></p>
-                    <li>Determine whether the error is positive or negative:</p>
-                    <ul>
-                    <li>Do you need to make the change as a positive or a negative to correct the error?</li></p>
-                    </ul>
-                    </li></p>
+                        <li>Identify the error:</p>
+                            <ul>
+                                <li>What is the error(s) that needs reversing?</li>
+                                </p>
+                                <li>Which folio has it been posted to?</li>
+                                </p>
+                            </ul>
+                        </li></p>
+                        <li>Determine the type of error:</p>
+                            <ul>
+                                <li>Is it a payment error or a manual posting error?</li>
+                                </p>
+                            </ul>
+                        </li></p>
+                        <li>Determine whether the error is positive or negative:</p>
+                            <ul>
+                                <li>Do you need to make the change as a positive or a negative to correct the error?</li>
+                                </p>
+                            </ul>
+                        </li></p>
                     </ol>
-                    
+
                     <h5>Reversing a Payment Error</h5>
                     <ol>
-                    <li>Right-click in the Transactions tab and select "Payment".</li></p>
-                    <li>If a payment has been posted incorrectly, ensure there is a <b><u><i>minus</i></u></b> sign before the amount to be reversed, and enter the amount.</li></p>
-                    <li>Ensure the payment type is correct. For example, if the incorrect posting was B/M/V, then the correction must also be of the payment type B/M/V.</li></p>
-                    <li>Write a remark in the remarks section.</li></p>
-                    <p class="mb-4">If this is a simple payment reversal, type "ERROR." If there has been a refund for some reason, provide a brief description, such as: "30% discount due to hot water issues."</p>
-                    <p class="mb-4">This ensures the Night Audit team understands the reason for the reversal.</p>
-                    <li>Re-post the payment correctly.</li></p>
+                        <li>Right-click in the Transactions tab and select "Payment".</li></p>
+                        <li>If a payment has been posted incorrectly, ensure there is a <b><u><i>minus</i></u></b> sign before the amount to be reversed, and enter the amount.</li></p>
+                        <li>Ensure the payment type is correct. For example, if the incorrect posting was B/M/V, then the correction must also be of the payment type B/M/V.</li></p>
+                        <li>Write a remark in the remarks section.</li></p>
+                        <p class="mb-4">If this is a simple payment reversal, type "ERROR." If there has been a refund for some reason, provide a brief description, such as: "30% discount due to hot water issues."</p>
+                        <p class="mb-4">This ensures the Night Audit team understands the reason for the reversal.</p>
+                        <li>Re-post the payment correctly.</li></p>
                     </ol>
                     <h5 class="section-title bg-white text-start text-primary pe-3">Note:</h5>
                     <p class="mb-4">It's <b><u><i>not</i></u></b> always necessary to reverse a credit card surcharge. If a surcharge was applied but the payment type is incorrect, leave the surcharge in place as it still applies, just to a different payment type.</p>
-                    
+
                     <h5>Reversing a Manual Posting</h5>
                     <ol>
-                    <li>Right-click in the Transactions tab and select “Manual Post”.</li></p>
-                    <li>Select the correct posting code, for example, “Car Park Guest”.</li></p>
-                    <li>Write a brief explanation in the remark section.</li></p>
-                    <p class="mb-4">For example, “Guest did not park 02/09”. This ensures the Night Audit team understands the reason for the reversal.</p>
-                    <li>Re-post the charge correctly.</li></p>
+                        <li>Right-click in the Transactions tab and select “Manual Post”.</li></p>
+                        <li>Select the correct posting code, for example, “Car Park Guest”.</li></p>
+                        <li>Write a brief explanation in the remark section.</li></p>
+                        <p class="mb-4">For example, “Guest did not park 02/09”. This ensures the Night Audit team understands the reason for the reversal.</p>
+                        <li>Re-post the charge correctly.</li></p>
                     </ol>
-                    
+
                     <h5 class="section-title bg-white text-start text-primary pe-3">Note:</h5>
                     <p class="mb-4">You <b><u><i>must</i></u></b> reverse a Manual Posting on the same code that the incorrect posting was made on.</p>
                     <p class="mb-4">For example, if the error was a manual posting of $5.00 to “Food & Beverage Credit”, you need to post the reversal of <span style="color: #e20118;">- $5.00</span> on “Food & Beverage Credit”.</p>
@@ -144,7 +153,7 @@
             </div>
         </div>
     </div>
-        
+
     <!-- Main Page End -->
 
     <!-- Footer Start -->
@@ -172,9 +181,7 @@
             <div class="copyright">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">HGC Melbourne Knowledge Portal</a>, All Rights Reserved.
-
-                        Designed By Andrew Edwards 2024
+                        &copy; <a class="border-bottom" href="#">HGC Melbourne Knowledge Portal</a>, All Rights Reserved. Designed By Andrew Edwards 2024
                     </div>
                 </div>
             </div>
@@ -182,10 +189,8 @@
     </div>
     <!-- Footer End -->
 
-
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

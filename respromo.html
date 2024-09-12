@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Promotions</title>
+    <title>Reservation Promotions</title>
 
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
@@ -49,57 +49,62 @@
     </div>
     <!-- Spinner End -->
 
-
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
-        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <h2 class="m-0 text-primary"><img src="img/NEW.jpg" width="110" height="75"></h2>
-        </a>
-        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <div class="nav-item nav-link">
-<div class="search-container">
-                        <input type="text" id="searchInput" placeholder="Search...">
-                        <button id="searchButton">Search</button>
-                        <div id="results"></div>
+    <!-- Navbar Wrapper Start -->
+    <div class="navbar-wrapper">
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+            <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+                <h2 class="m-0 text-primary"><img src="img/NEW.jpg" width="110" height="75"></h2>
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <div class="nav-item nav-link">
+                        <div class="search-container">
+                            <input type="text" id="searchInput" placeholder="Search...">
+                            <button id="searchButton">Search</button>
+                            <div id="results"></div>
+                        </div>
                     </div>
-                </div>    
-                <a href="index.html"  class="nav-item nav-link active">Home</a>
-                <a href="GSA.html" class="nav-item nav-link">Guest Services Agent</a>
-                <a href="NA.html" class="nav-item nav-link">Night Audit</a>
-                <a href="Res.html" class="nav-item nav-link">Reservations</a>
-                <a href="General.html" class="nav-item nav-link">General Knowledge</a>
-                <div class="nav-item dropdown">
-                    <a href="contacts.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Contacts</a>
-                    <div class="dropdown-menu fade-down m-0" style="right:0">
-                        <a href="StaffContacts.html" class="dropdown-item">Staff Contacts</a>
-                        <a href="ContractorContacts.html" class="dropdown-item">Contractor Contacts</a>
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="GSA.html" class="nav-item nav-link">Guest Services Agent</a>
+                    <a href="NA.html" class="nav-item nav-link">Night Audit</a>
+                    <a href="Res.html" class="nav-item nav-link">Reservations</a>
+                    <a href="General.html" class="nav-item nav-link">General Knowledge</a>
+                    <div class="nav-item dropdown">
+                        <a href="contacts.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Contacts</a>
+                        <div class="dropdown-menu fade-down m-0" style="right:0">
+                            <a href="StaffContacts.html" class="dropdown-item">Staff Contacts</a>
+                            <a href="ContractorContacts.html" class="dropdown-item">Contractor Contacts</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </nav>
-    <!-- Navbar End -->
+        </nav>
+        <!-- Navbar End -->
+
+        <!-- Back Button -->
+        <button class="back-button" onclick="history.back()">
+            <i class="bi bi-arrow-left"></i>
+        </button>
+    </div>
+    <!-- Navbar Wrapper End -->
 
     <!-- Main Page Start -->
 
     <div class="container-xxl py-5">
-
-        <button onclick="history.back()">Back</button></p>
-
         <div class="container">
             <div>
                 <div class="col wow fadeInUp" data-wow-delay="0.1s" style="min-height: 50px;">
                 </div>
                 <div class="col wow fadeInUp" data-wow-delay="0.3s">
-                    <h2 class="section-title bg-white text-start text-primary pe-3">Promotions</h2>
+                    <h2 class="section-title bg-white text-start text-primary pe-3">Reservation Promotions</h2>
                     <p class="mb-4">The most up-to-date promotional details can be found in the following location:</p>
 
                     <ul>
-                    <li><b>M Drive → Operations → Reservations → Promotions & Calculators → Promotional Calculator</b>.</p>
+                        <li><b>M Drive → Operations → Reservations → Promotions & Calculators → Promotional Calculator</b>.</p>
                     </ul>
 
                     <table class="center" style="width: 100%;" cellspacing="2%" cellpadding="2%">
@@ -115,117 +120,118 @@
                         </colgroup>
                         <thead>
                             <tr style="background-color: #e20118; color: white; font-size: large;">
-                                <th style="text-align: center;" colspan="8"><h5>Reservation Promotions Cheat Sheet</h5></th>
+                                <th style="text-align: center;" colspan="8">
+                                    <h5>Reservation Promotions Cheat Sheet</h5></th>
                             </tr>
                         </thead>
                         <tbody>
-                          <tr>
-                            <td colspan="4" style="background-color: #e20118; color: white; font-size: large;"><b>Public - Advanced Purchases Rates</b></td>
-                            <td colspan="5" style="background-color: #e20118; color: white; font-size: large;"><b>Secret - Expedia / Booking.com</b></td>
-                          </tr>
-                          <tr>
-                            <td style="font-weight: bold; color: #e20118;">Promo name</td>
-                            <td style="font-weight: bold; color: #e20118;">%</td>
-                            <td style="font-weight: bold; color: #e20118;">Description</td>
-                            <td style="font-weight: bold; color: #e20118;">Cancellation</td>
-                            <td style="font-weight: bold; color: #e20118;">Promo name</td>
-                            <td style="font-weight: bold; color: #e20118;">%</td>
-                            <td style="font-weight: bold; color: #e20118;">Description</td>
-                            <td style="font-weight: bold; color: #e20118;">Cancellation</td>
-                          </tr>
-                          <tr>
-                            <td>AP - 7 days</td>
-                            <td>15%</td>
-                            <td>All room types</td>
-                            <td>No CXL</td>
-                            <td>Stay 2</td>
-                            <td>15%</td>
-                            <td>All room types</td>
-                            <td>No CXL</td>
-                          </tr>
-                          <tr>
-                            <td>AP - 28 days</td>
-                            <td>20%</td>
-                            <td>MLOS 2 days</td>
-                            <td>No CXL</td>
-                            <td>Stay 3</td>
-                            <td>20%</td>
-                            <td>All room types</td>
-                            <td>No CXL</td>
-                          </tr>
-                          <tr>
-                            <td>AP - 90 days</td>
-                            <td>25%</td>
-                            <td>MLOS 2 days</td>
-                            <td>No CXL</td>
-                            <td>Stay 5</td>
-                            <td>25%</td>
-                            <td>All room types</td>
-                            <td>No CXL</td>
-                          </tr>
-                          <tr>
-                            <td style="color: #e20118;" colspan="10"><b>MLOS - Minimum Length of Stay</b></td>
-                          </tr>
-                          <tr>
-                            <td colspan="4" style="background-color: #e20118; color: white; font-size: large;"><b>Public - Stay & Save</b></td>
-                            <td colspan="5" style="background-color: #e20118; color: white; font-size: large;"><b>Secret - HGC Website</b></td>
-                          </tr>
-                          <tr>
-                            <td style="font-weight: bold; color: #e20118;">Promo name</td>
-                            <td style="font-weight: bold; color: #e20118;">%</td>
-                            <td style="font-weight: bold; color: #e20118;">Description</td>
-                            <td style="font-weight: bold; color: #e20118;">Cancellation</td>
-                            <td style="font-weight: bold; color: #e20118;">Promo name</td>
-                            <td style="font-weight: bold; color: #e20118;">%</td>
-                            <td style="font-weight: bold; color: #e20118;">Description</td>
-                            <td style="font-weight: bold; color: #e20118;">Cancellation</td>
-                          </tr>
-                          <tr>
-                            <td>Stay 3</td>
-                            <td>15%</td>
-                            <td>All room types</td>
-                            <td>No CXL</td>
-                            <td>Stay 2</td>
-                            <td>20%</td>
-                            <td>All room types</td>
-                            <td>No CXL</td>
-                          </tr>
-                          <tr>
-                            <td>Stay 5</td>
-                            <td>20%</td>
-                            <td>All room types</td>
-                            <td>No CXL</td>
-                            <td>Stay 3</td>
-                            <td>25%</td>
-                            <td>All room types</td>
-                            <td>No CXL</td>
-                          </tr>
-                          <tr>
-                            <td colspan="4" style="background-color: #e20118; color: white; font-size: large;"><b>Standard Programs</b></td>
-                            <td colspan="4" style="background-color: #e20118; color: white; font-size: large;"><b>Quoting Tips</b></td>
-                        </tr>
-                        <tr>
-                            <td colspan="4">Booking.com, Expedia & GC Rewards members receive an additional 10% off the public rates.</td>
-                            <td colspan="4">Utilise the HGC Website when quoting the secret deals to guests. By clicking on the "Promotions" tab and then HGCM it will load all of our secret deals.</td>                            
-                        </tr>
-                        <tr>
-                          <td colspan="4">Booking.com Business Bookers receive an additional 5% off BAR, Saver & AP 7</td>
-                          <td colspan="4">Remember guests can be members of particular OTA sites. Being a member of these sites allows guests to get an extra discount which we can always match.</td>
-                      </tr>
-                      <tr>
-                          <td colspan="8"><span style="color: #e20118;"><b>***Never tell a guest to call back - always try your best to help***</b></span></td>
-                      </tr>
-                      <tr>
-                          <td colspan="8">Last resort: get contact details from the guest (phone & email) for the Reservations team to call back</td>
-                      </tr>
-                      
+                            <tr>
+                                <td colspan="4" style="background-color: #e20118; color: white; font-size: large;"><b>Public - Advanced Purchases Rates</b></td>
+                                <td colspan="5" style="background-color: #e20118; color: white; font-size: large;"><b>Secret - Expedia / Booking.com</b></td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold; color: #e20118;">Promo name</td>
+                                <td style="font-weight: bold; color: #e20118;">%</td>
+                                <td style="font-weight: bold; color: #e20118;">Description</td>
+                                <td style="font-weight: bold; color: #e20118;">Cancellation</td>
+                                <td style="font-weight: bold; color: #e20118;">Promo name</td>
+                                <td style="font-weight: bold; color: #e20118;">%</td>
+                                <td style="font-weight: bold; color: #e20118;">Description</td>
+                                <td style="font-weight: bold; color: #e20118;">Cancellation</td>
+                            </tr>
+                            <tr>
+                                <td>AP - 7 days</td>
+                                <td>15%</td>
+                                <td>All room types</td>
+                                <td>No CXL</td>
+                                <td>Stay 2</td>
+                                <td>15%</td>
+                                <td>All room types</td>
+                                <td>No CXL</td>
+                            </tr>
+                            <tr>
+                                <td>AP - 28 days</td>
+                                <td>20%</td>
+                                <td>MLOS 2 days</td>
+                                <td>No CXL</td>
+                                <td>Stay 3</td>
+                                <td>20%</td>
+                                <td>All room types</td>
+                                <td>No CXL</td>
+                            </tr>
+                            <tr>
+                                <td>AP - 90 days</td>
+                                <td>25%</td>
+                                <td>MLOS 2 days</td>
+                                <td>No CXL</td>
+                                <td>Stay 5</td>
+                                <td>25%</td>
+                                <td>All room types</td>
+                                <td>No CXL</td>
+                            </tr>
+                            <tr>
+                                <td style="color: #e20118;" colspan="10"><b>MLOS - Minimum Length of Stay</b></td>
+                            </tr>
+                            <tr>
+                                <td colspan="4" style="background-color: #e20118; color: white; font-size: large;"><b>Public - Stay & Save</b></td>
+                                <td colspan="5" style="background-color: #e20118; color: white; font-size: large;"><b>Secret - HGC Website</b></td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bold; color: #e20118;">Promo name</td>
+                                <td style="font-weight: bold; color: #e20118;">%</td>
+                                <td style="font-weight: bold; color: #e20118;">Description</td>
+                                <td style="font-weight: bold; color: #e20118;">Cancellation</td>
+                                <td style="font-weight: bold; color: #e20118;">Promo name</td>
+                                <td style="font-weight: bold; color: #e20118;">%</td>
+                                <td style="font-weight: bold; color: #e20118;">Description</td>
+                                <td style="font-weight: bold; color: #e20118;">Cancellation</td>
+                            </tr>
+                            <tr>
+                                <td>Stay 3</td>
+                                <td>15%</td>
+                                <td>All room types</td>
+                                <td>No CXL</td>
+                                <td>Stay 2</td>
+                                <td>20%</td>
+                                <td>All room types</td>
+                                <td>No CXL</td>
+                            </tr>
+                            <tr>
+                                <td>Stay 5</td>
+                                <td>20%</td>
+                                <td>All room types</td>
+                                <td>No CXL</td>
+                                <td>Stay 3</td>
+                                <td>25%</td>
+                                <td>All room types</td>
+                                <td>No CXL</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4" style="background-color: #e20118; color: white; font-size: large;"><b>Standard Programs</b></td>
+                                <td colspan="4" style="background-color: #e20118; color: white; font-size: large;"><b>Quoting Tips</b></td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">Booking.com, Expedia & GC Rewards members receive an additional 10% off the public rates.</td>
+                                <td colspan="4">Utilise the HGC Website when quoting the secret deals to guests. By clicking on the "Promotions" tab and then HGCM it will load all of our secret deals.</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">Booking.com Business Bookers receive an additional 5% off BAR, Saver & AP 7</td>
+                                <td colspan="4">Remember guests can be members of particular OTA sites. Being a member of these sites allows guests to get an extra discount which we can always match.</td>
+                            </tr>
+                            <tr>
+                                <td colspan="8"><span style="color: #e20118;"><b>***Never tell a guest to call back - always try your best to help***</b></span></td>
+                            </tr>
+                            <tr>
+                                <td colspan="8">Last resort: get contact details from the guest (phone & email) for the Reservations team to call back</td>
+                            </tr>
+
                         </tbody>
-                      </table>
+                    </table>
                 </div>
             </div>
         </div>
     </div>
-        
+
     <!-- Main Page End -->
 
     <!-- Footer Start -->
@@ -253,9 +259,7 @@
             <div class="copyright">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">HGC Melbourne Knowledge Portal</a>, All Rights Reserved.
-
-                        Designed By Andrew Edwards 2024
+                        &copy; <a class="border-bottom" href="#">HGC Melbourne Knowledge Portal</a>, All Rights Reserved. Designed By Andrew Edwards 2024
                     </div>
                 </div>
             </div>
@@ -263,10 +267,8 @@
     </div>
     <!-- Footer End -->
 
-
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

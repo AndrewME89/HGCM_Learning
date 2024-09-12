@@ -52,47 +52,52 @@
     </div>
     <!-- Spinner End -->
 
-
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
-        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <h2 class="m-0 text-primary"><img src="img/NEW.jpg" width="110" height="75"></h2>
-        </a>
-        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <div class="nav-item nav-link">
-<div class="search-container">
-                        <input type="text" id="searchInput" placeholder="Search...">
-                        <button id="searchButton">Search</button>
-                        <div id="results"></div>
+    <!-- Navbar Wrapper Start -->
+    <div class="navbar-wrapper">
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+            <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+                <h2 class="m-0 text-primary"><img src="img/NEW.jpg" width="110" height="75"></h2>
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <div class="nav-item nav-link">
+                        <div class="search-container">
+                            <input type="text" id="searchInput" placeholder="Search...">
+                            <button id="searchButton">Search</button>
+                            <div id="results"></div>
+                        </div>
                     </div>
-                </div>    
-                <a href="index.html"  class="nav-item nav-link active">Home</a>
-                <a href="GSA.html" class="nav-item nav-link">Guest Services Agent</a>
-                <a href="NA.html" class="nav-item nav-link">Night Audit</a>
-                <a href="Res.html" class="nav-item nav-link">Reservations</a>
-                <a href="General.html" class="nav-item nav-link">General Knowledge</a>
-                <div class="nav-item dropdown">
-                    <a href="contacts.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Contacts</a>
-                    <div class="dropdown-menu fade-down m-0" style="right:0">
-                        <a href="StaffContacts.html" class="dropdown-item">Staff Contacts</a>
-                        <a href="ContractorContacts.html" class="dropdown-item">Contractor Contacts</a>
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="GSA.html" class="nav-item nav-link">Guest Services Agent</a>
+                    <a href="NA.html" class="nav-item nav-link">Night Audit</a>
+                    <a href="Res.html" class="nav-item nav-link">Reservations</a>
+                    <a href="General.html" class="nav-item nav-link">General Knowledge</a>
+                    <div class="nav-item dropdown">
+                        <a href="contacts.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Contacts</a>
+                        <div class="dropdown-menu fade-down m-0" style="right:0">
+                            <a href="StaffContacts.html" class="dropdown-item">Staff Contacts</a>
+                            <a href="ContractorContacts.html" class="dropdown-item">Contractor Contacts</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </nav>
-    <!-- Navbar End -->
+        </nav>
+        <!-- Navbar End -->
+
+        <!-- Back Button -->
+        <button class="back-button" onclick="history.back()">
+            <i class="bi bi-arrow-left"></i>
+        </button>
+    </div>
+    <!-- Navbar Wrapper End -->
 
     <!-- Main Page Start -->
 
     <div class="container-xxl py-5">
-
-        <button onclick="history.back()">Back</button></p>
-
         <div class="container">
             <div>
                 <div class="col wow fadeInUp" data-wow-delay="0.1s" style="min-height: 50px;">
@@ -101,9 +106,11 @@
                     <h2 class="section-title bg-white text-start text-primary pe-3">Tips for Night Auditors</h2>
                     <h5>Codes to Look Out For</h5>
 
-                    <p class="mb-4"><b>(B1)/(B2) etc.</b> - The "B" signifies breakfast, and the number denotes how many people it's for. When in brackets, it's included in the room rate. If you see breakfast charges on the folio and are unsure, consult your Duty Manager before proceeding with a Top Up or Chargeback.</p>
+                    <p class="mb-4"><b>(B1)/(B2) etc.</b> - The "B" signifies breakfast, and the number denotes how many people it's for. When in brackets, it's included in the room rate. If you see breakfast charges on the folio and are unsure, consult your Duty Manager
+                        before proceeding with a Top Up or Chargeback.</p>
 
-                    <p class="mb-4"><b>ACB</b> - This code means "All Charges Back." Skip Chargebacks for these rooms and notify the AM team. This is because the guest might have additional charges (phone calls, movies, etc.) and it's preferable to process them in one payment.</p>
+                    <p class="mb-4"><b>ACB</b> - This code means "All Charges Back." Skip Chargebacks for these rooms and notify the AM team. This is because the guest might have additional charges (phone calls, movies, etc.) and it's preferable to process them in one
+                        payment.</p>
 
                     <p class="mb-4"><b>POA</b> - "Pay On Arrival" means guests must pay for their bond and accommodation at check-in. Once paid, change "POA" to "PP" (prepaid).</p>
 
@@ -129,7 +136,7 @@
                     <li>Search the guest's surname in iHMS.</li></p>
                     <li>Open the new booking with "R" in the "Status" column.</li></p>
                     <li>Untick the "Do Not Move" box.</li></p>
-                    <li>Change the "Room Type" to "VIRTUAL" and check in. Click "OK."</li></p>
+                    <li>Change the "Room Type" to "VIRTUAL" and check-in. Click "OK."</li></p>
                     <li>Open the old booking.</li></p>
                     <li>In the "Transactions" tab, hold "Ctrl" and select items with a cost, excluding $0.00 items.</li></p>
                     <li>Right-click and select "Transfer."</li></p>
@@ -227,13 +234,13 @@
                     <li>Put the cards in a wallet with room number and check-out date, and give it to the guest.</li></p>
                     </ol>
 
-                    <h5>Check Outs</h5>
+                    <h5>Check-outs</h5>
 
                     <ol>
                     <li>Confirm the guest's room number and last name.</li></p>
-                    <li>Right-click their folio, select "Check Out...", then "OK."</li></p>
+                    <li>Right-click their folio, select "Check-out...", then "OK."</li></p>
                     <li>Check for outstanding payments. Proceed to "Completing Bond Payments" if needed.</li></p>
-                    <li>Once all ledgers are at $0.00, select "Check Out" and approve pop-ups.</li></p>
+                    <li>Once all ledgers are at $0.00, select "Check-out" and approve pop-ups.</li></p>
                     </ol>
 
                     <h5>Completing Bond Payments</h5>
@@ -296,10 +303,8 @@
     </div>
     <!-- Footer End -->
 
-
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

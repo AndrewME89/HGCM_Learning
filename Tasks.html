@@ -46,47 +46,52 @@
     </div>
     <!-- Spinner End -->
 
-
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
-        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <h2 class="m-0 text-primary"><img src="img/NEW.jpg" width="110" height="75"></h2>
-        </a>
-        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <div class="nav-item nav-link">
-<div class="search-container">
-                        <input type="text" id="searchInput" placeholder="Search...">
-                        <button id="searchButton">Search</button>
-                        <div id="results"></div>
+    <!-- Navbar Wrapper Start -->
+    <div class="navbar-wrapper">
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+            <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+                <h2 class="m-0 text-primary"><img src="img/NEW.jpg" width="110" height="75"></h2>
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <div class="nav-item nav-link">
+                        <div class="search-container">
+                            <input type="text" id="searchInput" placeholder="Search...">
+                            <button id="searchButton">Search</button>
+                            <div id="results"></div>
+                        </div>
                     </div>
-                </div>    
-                <a href="index.html"  class="nav-item nav-link active">Home</a>
-                <a href="GSA.html" class="nav-item nav-link">Guest Services Agent</a>
-                <a href="NA.html" class="nav-item nav-link">Night Audit</a>
-                <a href="Res.html" class="nav-item nav-link">Reservations</a>
-                <a href="General.html" class="nav-item nav-link">General Knowledge</a>
-                <div class="nav-item dropdown">
-                    <a href="contacts.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Contacts</a>
-                    <div class="dropdown-menu fade-down m-0" style="right:0">
-                        <a href="StaffContacts.html" class="dropdown-item">Staff Contacts</a>
-                        <a href="ContractorContacts.html" class="dropdown-item">Contractor Contacts</a>
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="GSA.html" class="nav-item nav-link">Guest Services Agent</a>
+                    <a href="NA.html" class="nav-item nav-link">Night Audit</a>
+                    <a href="Res.html" class="nav-item nav-link">Reservations</a>
+                    <a href="General.html" class="nav-item nav-link">General Knowledge</a>
+                    <div class="nav-item dropdown">
+                        <a href="contacts.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Contacts</a>
+                        <div class="dropdown-menu fade-down m-0" style="right:0">
+                            <a href="StaffContacts.html" class="dropdown-item">Staff Contacts</a>
+                            <a href="ContractorContacts.html" class="dropdown-item">Contractor Contacts</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </nav>
-    <!-- Navbar End -->
+        </nav>
+        <!-- Navbar End -->
+
+        <!-- Back Button -->
+        <button class="back-button" onclick="history.back()">
+            <i class="bi bi-arrow-left"></i>
+        </button>
+    </div>
+    <!-- Navbar Wrapper End -->
 
     <!-- Main Page Start -->
 
     <div class="container-xxl py-5">
-
-        <button onclick="history.back()">Back</button></p>
-
         <div class="container">
             <div>
                 <div class="col wow fadeInUp" data-wow-delay="0.1s" style="min-height: 50px;">
@@ -94,89 +99,105 @@
                 <div class="col wow fadeInUp" data-wow-delay="0.3s">
                     <h2 class="section-title bg-white text-start text-primary pe-3">Setting Tasks</h2>
                     <p class="mb-4">Tasks can be set up for guest requests, jobs, or undertakings to be actioned by an individual or department.</p>
-
-                    <h6 class="mb-4">Example tasks:</h6>
+                    <p class="mb-4">Example tasks:</p>
                     <ul>
                         <li>Back to Back (B2B)</li></p>
-                        <li>Set up bottle of sparkling prior to arrival</li></p>
+                        <li>Arrange birthday or anniversary amenities</li></p>
                         <li>Follow up missing chargeback</li></p>
-                        <li>Please place a foam pillow and bathrobes on arrival</li></p>
-                        <li>Please remove foam pillow after guest departure</li></p>
+                        <li>Place a foam pillow and bathrobes on arrival</li></p>
+                        <li>Remove foam pillow after guest departure</li></p>
                         <li>Following up payment</li></p>
                     </ul>
-                    
-                    <h5 class="mb-4">Procedure</h5>
-                    <h6 class="mb-4">Setting up a Task:</h6>
-                    <ol type="1">
+                    </p>
+
+                    <h5>Procedure</h5>
+                    <h6>Setting up a Task:</h6>
+                    <ol>
                         <li>Right-click on the folio that requires a task.</li></p>
-                        <li>Click ‘Add Message’.</li></p>
-                        <img class="center" src="img/SetTask02.png" width="80%"> </p>
-                        <li>Set the type from Message to Task (using the drop-down menu) and ensure Status is “Open”.</li></p>
-                        <li>Down further is the Action box:</li></p>
-                        <ol type="a">
-                            <li>Choose the relevant department or team member to assign the task to.</li></p>
-                            <li>Choose the correct date the task needs to be actioned on.</li></p>
-                            <li>In the text box at the bottom, write down the task required.</li></p>
-                        </ol>
-                        <img class="center" src="img/SetTask03.png"></p>
-                        <li>Click the ‘Next’ button.</li></p>
-                        <li>The set task will appear in the Corporate tab in the Reservation Message section of the window.</li></p>
-                        <img class="center" src="img/SetTask06.png" width="80%"> </p>
-                        <li>You will see the reservation now has a yellow highlighted box under the T/M column in folio view.</li></p>
-                        <img class="center" src="img/SetTask10.png"></p>
+                        <li>Click "Add Message".</li></p>
                     </ol>
-                    
-                    <h5 class="section-title bg-white text-start text-primary pe-3">Note:</h5>
-                    <p class="mb-4">Tasks can also be set up from the Communication tab.</p>
-                    <ol type="1">
+                    <img class="center" src="img/SetTask02.png" width="75%"> </p>
+                    <ol start="3">
+                        <li>Set the type from Message to Task using the drop-down menu and ensure Status is “Open”.</li></p>
+                        <li>Down further is the Department box:</li></p>
+                        <ul>
+                            <li>Choose the relevant department or team member to assign the task to.</li>
+                            </p>
+                            <li>Choose the correct date that the task needs to be actioned on.</li>
+                            </p>
+                            <li>In the text box at the bottom, write down the task required.</li>
+                            </p>
+                        </ul>
+                    </ol>
+                    <img class="center" src="img/SetTask03.png"></p>
+                    <ol start="5">
+                        <li>Click the "Save & Exit" button.</li></p>
+                        <li>The set task will appear in the Corporate tab in the Reservation Message section of the window.</li></p>
+                    </ol>
+                    <img class="center" src="img/SetTask06.png" width="75%"> </p>
+                    <ol start="7">
+                        <li>You will see the reservation now has a yellow highlighted box under the T/M column in folio view.</li></p>
+                    </ol>
+                    <img class="center" src="img/SetTask10.png"></p>
+                    <ol start="8">
                         <li>With the folio open, select the Reservation Message dropdown.</li></p>
                         <li>Select Add New.</li></p>
-                        <img class="center" src="img/SetTask04.png" width="100%"> </p>
+                    </ol>
+                    <img class="center" src="img/SetTask04.png" width="75%"> </p>
+                    <ol start="10">
                         <li>Follow the above steps to set up a task.</li></p>
                     </ol>
-                    
-                    <h6 class="mb-4">Viewing Tasks</h6>
-                    <ol type="1">
+
+                    <h6>Viewing Tasks</h6>
+                    <ol>
                         <li>Right-click on the folio that has the highlighted icon next to the name.</li></p>
-                        <li>Click ‘View Message’.</li></p>
-                        <img class="center" src="img/SetTask05.png"></p>
-                        <li>The window below will pop up.</li></p>
-                        <img class="center" src="img/SetTask03.png"></p>
-                        <li>You can check who created the task and when by clicking on History.</li></p>
-                        <li>Browse through different Tasks under the same folio using the arrows.</li></p>
-                        <li>Click ‘Cancel’ to close the window.</li></p>
+                        <li>Click "View Message".</li></p>
                     </ol>
-                    
-                    <h5 class="section-title bg-white text-start text-primary pe-3">Note:</h5>
+                    <img class="center" src="img/SetTask05.png"></p>
+                    <ol start="3">
+                        <li>The window below will pop up.</li></p>
+                    </ol>
+                    <img class="center" src="img/SetTask03.png"></p>
+                    <ol start="4">
+                        <li>Browse through different Tasks under the same folio using the "Next" and "Back" buttons.</li></p>
+                        <li>Click "Exit" to close the window.</li></p>
+                    </ol>
+                    <h5 class='section-title bg-white text-start text-primary pe-3'>Note:</h5>
                     <p class="mb-4">Tasks can also be viewed in the message box in the Communication tab.</p>
-                    
-                    <h6 class="mb-4">Closing a Task</h6>
-                    <p class="mb-4">Once the task is done/actioned, the person responsible for it must close the task.</p>
-                    <ol type="1">
-                        <li>Right-click on the folio that has a Light Globe Icon next to the name.</li></p>
-                        <li>Click ‘View Message’.</li></p>
+
+                    <h6>Closing a Task</h6>
+                    <ol>
+                        <li>Once the task is done/actioned, the person responsible for it must close the task.</li></p>
+                        <li>Right-click on the folio associated with the task.</li></p>
+                        <li>Click "View Message".</li></p>
                         <li>The window below will pop up.</li></p>
-                        <img class="center" src="img/SetTask03.png"></p>
-                        <li>Change the status from "Open" to "Closed".</li></p>
-                        <img class="center" src="img/SetTask07.png"></p>
-                        <li>Click ‘Next’ to confirm.</li></p>
                     </ol>
-                    
-                    <h6 class="mb-4">Printing Task List</h6>
-                    <ol type="1">
-                        <li>To print the task list, click Reports → Reservations → Task List by Action Date.</li></p>
-                        <li>Select today's (or the required) date in both fields.</li></p>
-                        <img class="center" src="img/SetTask08.png"></p>
+                    <img class="center" src="img/SetTask03.png"></p>
+                    <ol start="5">
+                        <li>Change the status from "Open" to "Close".</li></p>
+                    </ol>
+                    <img class="center" src="img/SetTask07.png"></p>
+                    <ol start="6">
+                        <li>Click "Save & Exit" to confirm.</li></p>
+                    </ol>
+
+                    <h6>Printing Task List</h6>
+                    <ol>
+                        <li>To print the task list, click <b>Reports → Reservations → Task List by Action Date</b>.</li></p>
+                        <li>Select the required date in both fields.</li></p>
+                    </ol>
+                    <img class="center" src="img/SetTask08.png"></p>
+                    <ol start="3">
                         <li>Select "Open" as the Active Status.</li></p>
                         <li>Click OK.</li></p>
                         <li>This will generate the task list.</li></p>
-                        <img class="center" src="img/SetTask09.png"></p>
                     </ol>
+                    <img class="center" src="img/SetTask09.png"></p>
                 </div>
             </div>
         </div>
     </div>
-        
+
     <!-- Main Page End -->
 
     <!-- Footer Start -->
@@ -204,9 +225,7 @@
             <div class="copyright">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">HGC Melbourne Knowledge Portal</a>, All Rights Reserved.
-
-                        Designed By Andrew Edwards 2024
+                        &copy; <a class="border-bottom" href="#">HGC Melbourne Knowledge Portal</a>, All Rights Reserved. Designed By Andrew Edwards 2024
                     </div>
                 </div>
             </div>
@@ -214,10 +233,8 @@
     </div>
     <!-- Footer End -->
 
-
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

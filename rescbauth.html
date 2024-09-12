@@ -52,47 +52,52 @@
     </div>
     <!-- Spinner End -->
 
-
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
-        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <h2 class="m-0 text-primary"><img src="img/NEW.jpg" width="110" height="75"></h2>
-        </a>
-        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <div class="nav-item nav-link">
-<div class="search-container">
-                        <input type="text" id="searchInput" placeholder="Search...">
-                        <button id="searchButton">Search</button>
-                        <div id="results"></div>
+    <!-- Navbar Wrapper Start -->
+    <div class="navbar-wrapper">
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+            <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+                <h2 class="m-0 text-primary"><img src="img/NEW.jpg" width="110" height="75"></h2>
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <div class="nav-item nav-link">
+                        <div class="search-container">
+                            <input type="text" id="searchInput" placeholder="Search...">
+                            <button id="searchButton">Search</button>
+                            <div id="results"></div>
+                        </div>
                     </div>
-                </div>    
-                <a href="index.html"  class="nav-item nav-link active">Home</a>
-                <a href="GSA.html" class="nav-item nav-link">Guest Services Agent</a>
-                <a href="NA.html" class="nav-item nav-link">Night Audit</a>
-                <a href="Res.html" class="nav-item nav-link">Reservations</a>
-                <a href="General.html" class="nav-item nav-link">General Knowledge</a>
-                <div class="nav-item dropdown">
-                    <a href="contacts.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Contacts</a>
-                    <div class="dropdown-menu fade-down m-0" style="right:0">
-                        <a href="StaffContacts.html" class="dropdown-item">Staff Contacts</a>
-                        <a href="ContractorContacts.html" class="dropdown-item">Contractor Contacts</a>
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="GSA.html" class="nav-item nav-link">Guest Services Agent</a>
+                    <a href="NA.html" class="nav-item nav-link">Night Audit</a>
+                    <a href="Res.html" class="nav-item nav-link">Reservations</a>
+                    <a href="General.html" class="nav-item nav-link">General Knowledge</a>
+                    <div class="nav-item dropdown">
+                        <a href="contacts.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Contacts</a>
+                        <div class="dropdown-menu fade-down m-0" style="right:0">
+                            <a href="StaffContacts.html" class="dropdown-item">Staff Contacts</a>
+                            <a href="ContractorContacts.html" class="dropdown-item">Contractor Contacts</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </nav>
-    <!-- Navbar End -->
+        </nav>
+        <!-- Navbar End -->
+
+        <!-- Back Button -->
+        <button class="back-button" onclick="history.back()">
+            <i class="bi bi-arrow-left"></i>
+        </button>
+    </div>
+    <!-- Navbar Wrapper End -->
 
     <!-- Main Page Start -->
 
     <div class="container-xxl py-5">
-
-        <button onclick="history.back()">Back</button></p>
-
         <div class="container">
             <div>
                 <div class="col wow fadeInUp" data-wow-delay="0.1s" style="min-height: 50px;">
@@ -103,8 +108,8 @@
                     <p class="mb-4">This form authorizes the hotel to charge a credit card that cannot be physically presented at check-in or one that is not owned by the guest. The following must be provided with the completed form:</p>
 
                     <ul>
-                    <li>Copy of the card owner's valid photo ID.</p>
-                    <li>Front and back copy of the nominated card.</p>
+                        <li>Copy of the card owner's valid photo ID.</p>
+                            <li>Front and back copy of the nominated card.</p>
                     </ul>
                     <img src="img/ccauth.png" class="center"></p>
 
@@ -117,27 +122,29 @@
                     <h5>Credit Application Form</h5>
                     <p class="mb-4">Companies requesting to establish a credit account with the hotel should complete this form. The accounts team will handle the application, process invoices, and manage payment collection from the company.</p>
 
-                    <p class="mb-4">Once a company's credit account is set up, check-in and payment instructions will automatically default to "Direct Bill" (DB) unless otherwise specified during the reservation process. Companies can also choose to provide permanent authorisation to utilise their credit facility for all bookings.</p>
+                    <p class="mb-4">Once a company's credit account is set up, check-in and payment instructions will automatically default to "Direct Bill" (DB) unless otherwise specified during the reservation process. Companies can also choose to provide permanent
+                        authorisation to utilise their credit facility for all bookings.</p>
                     <img src="img/creditapp01.2.png" class="center"></p>
 
                     <h5>Accessing Forms</h5>
 
                     <ul>
-                    <li>Chargeback forms can be accessed and saved at: <b>M:\Reservation Chargebacks\</b> along with other chargebacks from OTA bookings.</li></p>
-                    <li>Credit Card Authorisation and Permanent Authorisation forms are available at: <b>M:\Operations\Reservations\Payments - Forms & Details</b>.</li></p>
+                        <li>Chargeback forms can be accessed and saved at: <b>M:\Reservation Chargebacks\</b> along with other chargebacks from OTA bookings.</li></p>
+                        <li>Credit Card Authorisation and Permanent Authorisation forms are available at: <b>M:\Operations\Reservations\Payments - Forms & Details</b>.</li></p>
                     </ul>
 
                     <h5>Important Reminders</h5>
 
                     <ul>
-                    <li>The credit card authorisation form and all required supporting documents must be submitted to the hotel before or upon the guest's arrival. If the authorisation form is not received in time, the guest must provide the full accommodation fee and bond on their own credit card before receiving room keys.</li></p>
-                    <li>Carefully verify that the name, signature, and credit card details on the authorisation form match before accepting it.</li></p>
+                        <li>The credit card authorisation form and all required supporting documents must be submitted to the hotel before or upon the guest's arrival. If the authorisation form is not received in time, the guest must provide the full accommodation
+                            fee and bond on their own credit card before receiving room keys.</li></p>
+                        <li>Carefully verify that the name, signature, and credit card details on the authorisation form match before accepting it.</li></p>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
-        
+
     <!-- Main Page End -->
 
     <!-- Footer Start -->
@@ -165,9 +172,7 @@
             <div class="copyright">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">HGC Melbourne Knowledge Portal</a>, All Rights Reserved.
-
-                        Designed By Andrew Edwards 2024
+                        &copy; <a class="border-bottom" href="#">HGC Melbourne Knowledge Portal</a>, All Rights Reserved. Designed By Andrew Edwards 2024
                     </div>
                 </div>
             </div>
@@ -175,10 +180,8 @@
     </div>
     <!-- Footer End -->
 
-
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

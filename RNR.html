@@ -46,47 +46,52 @@
     </div>
     <!-- Spinner End -->
 
-
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
-        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <h2 class="m-0 text-primary"><img src="img/NEW.jpg" width="110" height="75"></h2>
-        </a>
-        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <div class="nav-item nav-link">
-<div class="search-container">
-                        <input type="text" id="searchInput" placeholder="Search...">
-                        <button id="searchButton">Search</button>
-                        <div id="results"></div>
+    <!-- Navbar Wrapper Start -->
+    <div class="navbar-wrapper">
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+            <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+                <h2 class="m-0 text-primary"><img src="img/NEW.jpg" width="110" height="75"></h2>
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <div class="nav-item nav-link">
+                        <div class="search-container">
+                            <input type="text" id="searchInput" placeholder="Search...">
+                            <button id="searchButton">Search</button>
+                            <div id="results"></div>
+                        </div>
                     </div>
-                </div>    
-                <a href="index.html"  class="nav-item nav-link active">Home</a>
-                <a href="GSA.html" class="nav-item nav-link">Guest Services Agent</a>
-                <a href="NA.html" class="nav-item nav-link">Night Audit</a>
-                <a href="Res.html" class="nav-item nav-link">Reservations</a>
-                <a href="General.html" class="nav-item nav-link">General Knowledge</a>
-                <div class="nav-item dropdown">
-                    <a href="contacts.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Contacts</a>
-                    <div class="dropdown-menu fade-down m-0" style="right:0">
-                        <a href="StaffContacts.html" class="dropdown-item">Staff Contacts</a>
-                        <a href="ContractorContacts.html" class="dropdown-item">Contractor Contacts</a>
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="GSA.html" class="nav-item nav-link">Guest Services Agent</a>
+                    <a href="NA.html" class="nav-item nav-link">Night Audit</a>
+                    <a href="Res.html" class="nav-item nav-link">Reservations</a>
+                    <a href="General.html" class="nav-item nav-link">General Knowledge</a>
+                    <div class="nav-item dropdown">
+                        <a href="contacts.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Contacts</a>
+                        <div class="dropdown-menu fade-down m-0" style="right:0">
+                            <a href="StaffContacts.html" class="dropdown-item">Staff Contacts</a>
+                            <a href="ContractorContacts.html" class="dropdown-item">Contractor Contacts</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </nav>
-    <!-- Navbar End -->
+        </nav>
+        <!-- Navbar End -->
+
+        <!-- Back Button -->
+        <button class="back-button" onclick="history.back()">
+            <i class="bi bi-arrow-left"></i>
+        </button>
+    </div>
+    <!-- Navbar Wrapper End -->
 
     <!-- Main Page Start -->
 
     <div class="container-xxl py-5">
-
-        <button onclick="history.back()">Back</button></p>
-
         <div class="container">
             <div>
                 <div class="col wow fadeInUp" data-wow-delay="0.1s" style="min-height: 50px;">
@@ -94,75 +99,78 @@
                 <div class="col wow fadeInUp" data-wow-delay="0.3s">
                     <h2 class="section-title bg-white text-start text-primary pe-3">Room Not Ready (RNR) Procedure</h2>
                     <p class="mb-4">This procedure outlines the steps to accommodate guests requesting check-in before the standard time, ensuring a seamless experience and operational efficiency.</p>
-                    
+
                     <h5>Guest Arrival:</h5>
                     <ol>
-                    <li>Greet the guest warmly and acknowledge their early arrival. Example:</li></p>
-                    <p class="mb-4">“Good morning! Welcome to Hotel Grand Chancellor. We are delighted to have you here. I understand you are here for check-in, and I am happy to assist you. Let me quickly check if your room is ready for you. Please bear with me for just a moment.”</p>
-                    <li>If the room is not ready, politely inform the guest and inquire if they'd like to complete the check-in process (registration card and payment) while waiting.</li></p>
-                    <p class="mb-4">“Thank you for your patience. Unfortunately, it seems your room is not yet available. However, we can still proceed with the check-in process if you have a few moments to spare. Would you be able to fill out the registration card and make the necessary payment now? This way, we can ensure everything is ready for you once your room is prepared.”</p>
-                    <ul>
-                    <h5 class="section-title bg-white text-start text-primary pe-3">Note:</h5>
-                    <li>For corporate guests arriving early solely to store luggage, avoid pressuring them to complete check-in. They may prefer to do so later after work.</li></p>
-                    <li>Prioritize leisure guests to minimize potential lines and delays at the standard check-in time.</li></p>
-                    </ul></p>
+                        <li>Greet the guest warmly and acknowledge their early arrival. Example:</li></p>
+                        <p class="mb-4">“Good morning! Welcome to Hotel Grand Chancellor. We are delighted to have you here. I understand you are here for check-in, and I am happy to assist you. Let me quickly check if your room is ready for you. Please bear with me
+                            for just a moment.”</p>
+                        <li>If the room is not ready, politely inform the guest and inquire if they'd like to complete the check-in process (registration card and payment) while waiting.</li></p>
+                        <p class="mb-4">“Thank you for your patience. Unfortunately, it seems your room is not yet available. However, we can still proceed with the check-in process if you have a few moments to spare. Would you be able to fill out the registration card
+                            and make the necessary payment now? This way, we can ensure everything is ready for you once your room is prepared.”</p>
                     </ol>
-                    
+                            <h5 class="section-title bg-white text-start text-primary pe-3">Note:</h5>
+                            <p class="mb-4">For corporate guests arriving early solely to store luggage, avoid pressuring them to complete check-in. They may prefer to do so later after work.</p>
+                            <p class="mb-4">Prioritize leisure guests to minimize potential lines and delays at the standard check-in time.</p>
+
                     <h5>Full Check-In Procedure:</h5>
                     <p class="mb-4">If the guest agrees to complete the check-in process:</p>
                     <ul>
-                    <li>Guide them through filling out the registration card and processing the payment.</li></p>
-                    <li>Address any questions or concerns they may have.</li></p>
+                        <li>Guide them through filling out the registration card and processing the payment.</li></p>
+                        <li>Address any questions or concerns they may have.</li></p>
                     </ul>
-                    
+
                     <h5>Luggage Storage:</h5>
                     <ol>
-                    <li>Offer to store their luggage until the room is ready.</li></p>
-                    <p class="mb-4">“Now that we've completed the check-in process, would you like us to store your luggage for you until your room is ready? This way, you can explore the area or relax in our common areas without having to worry about your belongings.”</p>
-                    <li>If they accept, tag and store their luggage securely in the designated area.</li></p>
+                        <li>Offer to store their luggage until the room is ready.</li></p>
+                        <p class="mb-4">“Now that we've completed the check-in process, would you like us to store your luggage for you until your room is ready? This way, you can explore the area or relax in our common areas without having to worry about your belongings.”</p>
+                        <li>If they accept, tag and store their luggage securely in the designated area.</li></p>
                     </ol>
-                    
+
                     <h5>Continuous Communication with Housekeeping:</h5>
                     <ol>
-                    <li>Once the guest leaves, communicate with Housekeeping via WhatsApp to prioritize cleaning their room.</li></p>
-                    
-                    <h6>Example message:</h6>
+                        <li>Once the guest leaves, communicate with Housekeeping via WhatsApp to prioritize cleaning their room.</li></p>
+
+                        <h6>Example message:</h6>
                         <p class="mb-4">"We need [Room number] to be prioritized."</p>
-                    <li>Housekeeping will notify you on the same platform when the room is ready.</li></p>
-                    <li>Upon receiving notification, contact the guest using their preferred method.</li></p>
-                    
-                    <h6>Example message:</h6>
+                        <li>Housekeeping will notify you on the same platform when the room is ready.</li></p>
+                        <li>Upon receiving notification, contact the guest using their preferred method.</li></p>
+
+                        <h6>Example message:</h6>
                         <p class="mb-4">"Great news! Your room is now ready for check-in. We have just received confirmation from our housekeeping team."</p>
-                    <li>Provide instructions on collecting their key and luggage.</li></p>
-                    
-                    <h6>Example message:</h6>
-                        <p class="mb-4">"You can collect your room key and retrieve your luggage from the reception area. Our staff will be happy to assist you. Just head over to the front desk, and they will provide you with your key and help you with your luggage if it has been stored with us. If you need any further assistance, please do not hesitate to ask!”</p>
-                    <li>If unable to reach the guest, proceed to the next step.</li></p>
+                        <li>Provide instructions on collecting their key and luggage.</li></p>
+
+                        <h6>Example message:</h6>
+                        <p class="mb-4">"You can collect your room key and retrieve your luggage from the reception area. Our staff will be happy to assist you. Just head over to the front desk, and they will provide you with your key and help you with your luggage if
+                            it has been stored with us. If you need any further assistance, please do not hesitate to ask!”</p>
+                        <li>If unable to reach the guest, proceed to the next step.</li></p>
                     </ol>
-                    
+
                     <h5>Check-In Process:</h5>
                     <ol>
-                    <li>Once the room is confirmed clean and ready, check the guest into the room in the hotel management system.</li></p>
-                    <li>Generate the room key only after confirming room readiness to prevent unnecessary key cutting and potential room move complications.</li></p>
-                    <li>Ensure the key is prepared for the guest's return.</li></p>
+                        <li>Once the room is confirmed clean and ready, check the guest into the room in the hotel management system.</li></p>
+                        <li>Generate the room key only after confirming room readiness to prevent unnecessary key cutting and potential room move complications.</li></p>
+                        <li>Ensure the key is prepared for the guest's return.</li></p>
                     </ol>
-                    
+
                     <h5>Guest Welcome:</h5>
                     <ol>
-                    <li>Warmly welcome the guest back upon their return and finalize the check-in process.</li></p>
-                    <h6>Example:</h6>
-                        <p class="mb-4">“Now that you have returned, let us finalize your check-in process. I have your room key ready for you, and if there is anything else you need assistance with, please feel free to let me know. We want to ensure your stay with us is as comfortable and enjoyable as possible.”
-                    </p>
-                    <li>Hand over the room key and address any additional requests or inquiries they may have.</li></p>
+                        <li>Warmly welcome the guest back upon their return and finalize the check-in process.</li></p>
+                        <h6>Example:</h6>
+                        <p class="mb-4">“Now that you have returned, let us finalize your check-in process. I have your room key ready for you, and if there is anything else you need assistance with, please feel free to let me know. We want to ensure your stay with us
+                            is as comfortable and enjoyable as possible.”
+                        </p>
+                        <li>Hand over the room key and address any additional requests or inquiries they may have.</li></p>
                     </ol>
-                    
+
                     <h5 class="section-title bg-white text-start text-primary pe-3">Note:</h5>
-                    <p class="mb-4">Handle early check-in situations professionally and empathetically to ensure guest satisfaction and uphold the hotel's reputation for excellent service. Regular staff training and communication are key to consistent and effective execution of this SOP.</p>
+                    <p class="mb-4">Handle early check-in situations professionally and empathetically to ensure guest satisfaction and uphold the hotel's reputation for excellent service. Regular staff training and communication are key to consistent and effective execution
+                        of this SOP.</p>
                 </div>
             </div>
         </div>
     </div>
-        
+
     <!-- Main Page End -->
 
     <!-- Footer Start -->
@@ -190,9 +198,7 @@
             <div class="copyright">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">HGC Melbourne Knowledge Portal</a>, All Rights Reserved.
-
-                        Designed By Andrew Edwards 2024
+                        &copy; <a class="border-bottom" href="#">HGC Melbourne Knowledge Portal</a>, All Rights Reserved. Designed By Andrew Edwards 2024
                     </div>
                 </div>
             </div>
@@ -200,10 +206,8 @@
     </div>
     <!-- Footer End -->
 
-
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

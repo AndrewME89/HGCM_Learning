@@ -32,7 +32,7 @@
     <link href="css/style.css" rel="stylesheet">
 
     <!-- Searchbar Stylesheet -->
-    <link href="css/searchbar.css" rel="stylesheet">    
+    <link href="css/searchbar.css" rel="stylesheet">
 
 </head>
 
@@ -45,47 +45,52 @@
     </div>
     <!-- Spinner End -->
 
-
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
-        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <h2 class="m-0 text-primary"><img src="img/NEW.jpg" width="110" height="75"></h2>
-        </a>
-        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <div class="nav-item nav-link">
-<div class="search-container">
-                        <input type="text" id="searchInput" placeholder="Search...">
-                        <button id="searchButton">Search</button>
-                        <div id="results"></div>
+    <!-- Navbar Wrapper Start -->
+    <div class="navbar-wrapper">
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+            <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+                <h2 class="m-0 text-primary"><img src="img/NEW.jpg" width="110" height="75"></h2>
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <div class="nav-item nav-link">
+                        <div class="search-container">
+                            <input type="text" id="searchInput" placeholder="Search...">
+                            <button id="searchButton">Search</button>
+                            <div id="results"></div>
+                        </div>
                     </div>
-                </div>    
-                <a href="index.html"  class="nav-item nav-link active">Home</a>
-                <a href="GSA.html" class="nav-item nav-link">Guest Services Agent</a>
-                <a href="NA.html" class="nav-item nav-link">Night Audit</a>
-                <a href="Res.html" class="nav-item nav-link">Reservations</a>
-                <a href="General.html" class="nav-item nav-link">General Knowledge</a>
-                <div class="nav-item dropdown">
-                    <a href="contacts.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Contacts</a>
-                    <div class="dropdown-menu fade-down m-0" style="right:0">
-                        <a href="StaffContacts.html" class="dropdown-item">Staff Contacts</a>
-                        <a href="ContractorContacts.html" class="dropdown-item">Contractor Contacts</a>
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="GSA.html" class="nav-item nav-link">Guest Services Agent</a>
+                    <a href="NA.html" class="nav-item nav-link">Night Audit</a>
+                    <a href="Res.html" class="nav-item nav-link">Reservations</a>
+                    <a href="General.html" class="nav-item nav-link">General Knowledge</a>
+                    <div class="nav-item dropdown">
+                        <a href="contacts.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Contacts</a>
+                        <div class="dropdown-menu fade-down m-0" style="right:0">
+                            <a href="StaffContacts.html" class="dropdown-item">Staff Contacts</a>
+                            <a href="ContractorContacts.html" class="dropdown-item">Contractor Contacts</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </nav>
-    <!-- Navbar End -->
+        </nav>
+        <!-- Navbar End -->
+
+        <!-- Back Button -->
+        <button class="back-button" onclick="history.back()">
+            <i class="bi bi-arrow-left"></i>
+        </button>
+    </div>
+    <!-- Navbar Wrapper End -->
 
     <!-- Main Page Start -->
 
     <div class="container-xxl py-5">
-
-        <button onclick="history.back()">Back</button></p>
-
         <div class="container">
             <div>
                 <div class="col wow fadeInUp" data-wow-delay="0.1s" style="min-height: 50px;">
@@ -100,42 +105,55 @@
                         <li>
                             <h6>Update the Corporate Tab</h6>
                             <ul>
-                                <li>Enter the guest's email address in the "EMail" section.</li></p>
-                                <li>Update the "Tel (Home/HP)" section with the provided mobile number.</li></p>
-                            </ul> 
+                                <li>Enter the guest's email address in the "EMail" section.</li>
+                                </p>
+                                <li>Update the "Tel (Home/HP)" section with the provided mobile number.</li>
+                                </p>
+                            </ul>
                             <img class="center" src="img/UpdateReg01.png"></p>
                             <p class="mb-4">Aside from these personal details, you will also need to update the bond type & amount, and enter the Pre-Authorisation number in the Communications.</p>
-                            <li>Modify the "Payment Status" dropdown:</li></p>
+                            <li>Modify the "Payment Status" dropdown:</li>
+                            </p>
                             <ul>
-                                <li>If a Pre-Authorisation has been taken as a bond, select "Pre-Authorisation Obtained."</li></p>
-                                <li>If the bond was paid (Cash, Amex, Visa/Mastercard, etc.), leave the dropdown on "Deposit Paid."</li></p>
-                            </ul> 
+                                <li>If a Pre-Authorisation has been taken as a bond, select "Pre-Authorisation Obtained."</li>
+                                </p>
+                                <li>If the bond was paid (Cash, Amex, Visa/Mastercard, etc.), leave the dropdown on "Deposit Paid."</li>
+                                </p>
+                            </ul>
                             <img class="center" src="img/UpdateReg02.png"></p>
-                            <li>Enter the bond amount in the designated box.</li></p>
+                            <li>Enter the bond amount in the designated box.</li>
+                            </p>
                             <img class="center" src="img/UpdateReg03.png"></p>
                         </li>
                         <li>
                             <h6>Update the Other Guest Tab</h6>
                             <ul>
-                                <li>Enter the sharing guest's first and last name.</li></p>
-                            </ul> 
+                                <li>Enter the sharing guest's first and last name.</li>
+                                </p>
+                            </ul>
                             <img class="center" src="img/UpdateReg04.png"></p>
                         </li>
                         <li>
                             <h6>Update the Communication Tab</h6>
                             <ul>
-                                <li>In the "Check Out" section, enter the Pre-Authorisation number beneath the total booking amount.</li></p>
+                                <li>In the "Check-out" section, enter the Pre-Authorisation number beneath the total booking amount.</li>
+                                </p>
                                 <img class="center" src="img/UpdateReg05.png"></p>
                             </ul>
                         </li>
                         <li>
                             <h6>Post Payment (if applicable)</h6>
                             <ul>
-                                <li>If a payment was taken for the reservation, post it in the "Transactions" tab.</li></p>
-                                <li>Right-click and select "Payment."</li></p>
-                                <li>Enter the payment amount.</li></p>
-                                <li>Write the Transaction ID (last 6 digits of the RRN) in the "Remarks" field.</li></p>
-                                <li>Click "Next."</li></p>
+                                <li>If a payment was taken for the reservation, post it in the "Transactions" tab.</li>
+                                </p>
+                                <li>Right-click and select "Payment."</li>
+                                </p>
+                                <li>Enter the payment amount.</li>
+                                </p>
+                                <li>Write the Transaction ID (last 6 digits of the RRN) in the "Remarks" field.</li>
+                                </p>
+                                <li>Click "Next."</li>
+                                </p>
                                 <img class="center" src="img/UpdateReg06.png"></p>
                             </ul>
                         </li>
@@ -144,7 +162,7 @@
             </div>
         </div>
     </div>
-        
+
     <!-- Main Page End -->
 
     <!-- Footer Start -->
@@ -172,9 +190,7 @@
             <div class="copyright">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">HGC Melbourne Knowledge Portal</a>, All Rights Reserved.
-
-                        Designed By Andrew Edwards 2024
+                        &copy; <a class="border-bottom" href="#">HGC Melbourne Knowledge Portal</a>, All Rights Reserved. Designed By Andrew Edwards 2024
                     </div>
                 </div>
             </div>
@@ -182,10 +198,8 @@
     </div>
     <!-- Footer End -->
 
-
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

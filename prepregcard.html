@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Preparing Arriving Guest Registration Cards</title>
+    <title>Printing Registration Cards For the Next Day</title>
 
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
@@ -49,93 +49,98 @@
     </div>
     <!-- Spinner End -->
 
-
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
-        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <h2 class="m-0 text-primary"><img src="img/NEW.jpg" width="110" height="75"></h2>
-        </a>
-        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <div class="nav-item nav-link">
-<div class="search-container">
-                        <input type="text" id="searchInput" placeholder="Search...">
-                        <button id="searchButton">Search</button>
-                        <div id="results"></div>
+    <!-- Navbar Wrapper Start -->
+    <div class="navbar-wrapper">
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+            <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+                <h2 class="m-0 text-primary"><img src="img/NEW.jpg" width="110" height="75"></h2>
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <div class="nav-item nav-link">
+                        <div class="search-container">
+                            <input type="text" id="searchInput" placeholder="Search...">
+                            <button id="searchButton">Search</button>
+                            <div id="results"></div>
+                        </div>
                     </div>
-                </div>    
-                <a href="index.html"  class="nav-item nav-link active">Home</a>
-                <a href="GSA.html" class="nav-item nav-link">Guest Services Agent</a>
-                <a href="NA.html" class="nav-item nav-link">Night Audit</a>
-                <a href="Res.html" class="nav-item nav-link">Reservations</a>
-                <a href="General.html" class="nav-item nav-link">General Knowledge</a>
-                <div class="nav-item dropdown">
-                    <a href="contacts.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Contacts</a>
-                    <div class="dropdown-menu fade-down m-0" style="right:0">
-                        <a href="StaffContacts.html" class="dropdown-item">Staff Contacts</a>
-                        <a href="ContractorContacts.html" class="dropdown-item">Contractor Contacts</a>
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="GSA.html" class="nav-item nav-link">Guest Services Agent</a>
+                    <a href="NA.html" class="nav-item nav-link">Night Audit</a>
+                    <a href="Res.html" class="nav-item nav-link">Reservations</a>
+                    <a href="General.html" class="nav-item nav-link">General Knowledge</a>
+                    <div class="nav-item dropdown">
+                        <a href="contacts.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Contacts</a>
+                        <div class="dropdown-menu fade-down m-0" style="right:0">
+                            <a href="StaffContacts.html" class="dropdown-item">Staff Contacts</a>
+                            <a href="ContractorContacts.html" class="dropdown-item">Contractor Contacts</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </nav>
-    <!-- Navbar End -->
+        </nav>
+        <!-- Navbar End -->
+
+        <!-- Back Button -->
+        <button class="back-button" onclick="history.back()">
+            <i class="bi bi-arrow-left"></i>
+        </button>
+    </div>
+    <!-- Navbar Wrapper End -->
 
     <!-- Main Page Start -->
 
     <div class="container-xxl py-5">
-
-        <button onclick="history.back()">Back</button></p>
-
         <div class="container">
             <div>
                 <div class="col wow fadeInUp" data-wow-delay="0.1s" style="min-height: 50px;">
                 </div>
                 <div class="col wow fadeInUp" data-wow-delay="0.3s">
-                    <h2 class="section-title bg-white text-start text-primary pe-3">Preparing Arriving Guest Registration Cards</h2>
+                    <h2 class="section-title bg-white text-start text-primary pe-3">Printing Registration Cards For the Next Day</h2>
                     <p class="mb-4">The PM team is responsible for preparing registration cards for guests arriving the following day.</p>
 
                     <h5>Printing Registration Cards</h5>
                     <ol>
-                    <li> In iHMS, navigate to Reports → In-House → Batch Registration.</li></p>
-                    <li> Select the relevant date.</li></p>
-                    <li> Move both "C" and "G" values to the "Selected Values" section.</li></p>
-                    <li> Sort the list by guest name.</li></p>
-                    <li> Print the registration cards on A5-sized paper using the back-office printer.</li></p>
+                        <li> In iHMS, navigate to Reports → In-House → Batch Registration.</li></p>
+                        <li> Select the relevant date.</li></p>
+                        <li> Move both "C" and "G" values to the "Selected Values" section.</li></p>
+                        <li> Sort the list by guest name.</li></p>
+                        <li> Print the registration cards on A5-sized paper using the back-office printer.</li></p>
                     </ol>
 
                     <h5>Printing the Arrival Chargeback Report</h5>
                     <ol>
-                    <li> In iHMS, go to <b>Reports → Arrivals → Charge Back Report</b>.</li></p>
-                    <li> Select the appropriate date.</li></p>
-                    <li> Sort the report by guest name.</li></p>
-                    <li> Print the report.</li></p>
-                    <li> Review the report and highlight any instructions with DBA, DBC, or CC. Inform the Duty Manager of any AA instructions.</li></p>
+                        <li> In iHMS, go to <b>Reports → Arrivals → Charge Back Report</b>.</li></p>
+                        <li> Select the appropriate date.</li></p>
+                        <li> Sort the report by guest name.</li></p>
+                        <li> Print the report.</li></p>
+                        <li> Review the report and highlight any instructions with DBA, DBC, or CC. Inform the Duty Manager of any AA instructions.</li></p>
                     </ol>
 
                     <h5>Printing Chargebacks</h5>
                     <ol>
-                    <li> Access the folder <b>M:\Reservation Chargeback's\</b> and select the appropriate year, month, and date.</li></p>
-                    <li> Print the chargeback and any related paperwork based on the highlighted Charge Back Report.</li></p>
-                    <li> If any paperwork is missing, check the reservation email or notify the Duty Manager for follow-up.</li></p>
+                        <li> Access the folder <b>M:\Reservation Chargeback's\</b> and select the appropriate year, month, and date.</li></p>
+                        <li> Print the chargeback and any related paperwork based on the highlighted Charge Back Report.</li></p>
+                        <li> If any paperwork is missing, check the reservation email or notify the Duty Manager for follow-up.</li></p>
                     </ol>
 
                     <h5>Preparing Registration Cards</h5>
                     <ol>
-                    <li> Highlight relevant details on each registration card as instructed.</li></p>
-                    <li> Attach the chargeback and/or related paperwork to the corresponding registration cards.</li></p>
-                    <li> Place a gold star sticker on the top right corner of the registration card for VIPs, returning guests, and GC Rewards members.</li></p>
-                    <li> Place the registration cards in the arrival box, sorted alphabetically by the guest's last name.</li></p>
-                    <li> File the Charge Back Report in the designated chargeback folder in the back office.</li></p>
-                    </ol> 
+                        <li> Highlight relevant details on each registration card as instructed.</li></p>
+                        <li> Attach the chargeback and/or related paperwork to the corresponding registration cards.</li></p>
+                        <li> Place a gold star sticker on the top right corner of the registration card for VIPs, returning guests, and GC Rewards members.</li></p>
+                        <li> Place the registration cards in the arrival box, sorted alphabetically by the guest's last name.</li></p>
+                        <li> File the Charge Back Report in the designated chargeback folder in the back office.</li></p>
+                    </ol>
                 </div>
             </div>
         </div>
     </div>
-        
+
     <!-- Main Page End -->
 
     <!-- Footer Start -->
@@ -163,9 +168,7 @@
             <div class="copyright">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">HGC Melbourne Knowledge Portal</a>, All Rights Reserved.
-
-                        Designed By Andrew Edwards 2024
+                        &copy; <a class="border-bottom" href="#">HGC Melbourne Knowledge Portal</a>, All Rights Reserved. Designed By Andrew Edwards 2024
                     </div>
                 </div>
             </div>
@@ -173,10 +176,8 @@
     </div>
     <!-- Footer End -->
 
-
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
