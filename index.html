@@ -33,11 +33,25 @@
     <!-- Searchbar Stylesheet -->
     <link href="css/searchbar.css" rel="stylesheet">
 
-    <!-- Searchbar Stylesheet -->
-    <link href="css/searchbar.css" rel="stylesheet">
-    
-    <!-- Google Verification -->
-    <meta name="google-site-verification" content="cRrwhV6szYAF8lr3spj4sVFLhHjIKYHH6Vb-P1irnOk" />
+    <!-- Table Stylesheet -->
+    <link href="css/ExcelSheetStylesheet.css" rel="stylesheet">
+
+    <!-- Login Stylesheet -->
+    <link href="css/login.css" rel="stylesheet">
+
+    <style>
+
+.background-container {
+    background-image: url('img/01 ARCHIVE/EXTERIOR3.jpg');
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the image */
+    height: 100vh; /* Full height of the viewport */
+    display: flex; /* Use Flexbox to center the content */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    position: relative; /* For positioning of the login container */
+}
+    </style>
 
 </head>
 
@@ -50,153 +64,22 @@
     </div>
     <!-- Spinner End -->
 
+    <!-- Main Page Start -->
 
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
-        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <h2 class="m-0 text-primary"><img src="img/NEW.jpg" width="110" height="75"></h2>
-        </a>
-        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-0">  
-                <div class="nav-item nav-link">
-<div class="search-container">
-                        <input type="text" id="searchInput" placeholder="Search...">
-                        <button id="searchButton">Search</button>
-                        <div id="results"></div>
-                    </div>
-                </div>    
-                <a href="index.html"  class="nav-item nav-link active">Home</a>
-                <a href="GSA.html" class="nav-item nav-link">Guest Services Agent</a>
-                <a href="NA.html" class="nav-item nav-link">Night Audit</a>
-                <a href="Res.html" class="nav-item nav-link">Reservations</a>
-                <a href="General.html" class="nav-item nav-link">General Knowledge</a>
-                <div class="nav-item dropdown">
-                    <a href="contacts.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Contacts</a>
-                    <div class="dropdown-menu fade-down m-0" style="right:0">
-                        <a href="StaffContacts.html" class="dropdown-item">Staff Contacts</a>
-                        <a href="ContractorContacts.html" class="dropdown-item">Contractor Contacts</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </nav>
-    <!-- Navbar End -->
-
-
-    <!-- About Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
-                    <div class="position-relative h-100">
-                        <a class="position-relative d-block overflow-hidden" href="iHMS.html">
-                                <img class="img-fluid" src="img/EXTERIOR3.jpg" alt="">
-                                <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
-                                    <h5 class="m-0">Introducing iHMS</h5>
-                                </div>
-                            </a>
-                    </div>
-                </div>
-
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <h3 class="section-title bg-white text-start text-primary pe-3">Welcome to the HGC Melbourne</h3>
-                    <h3 class="section-title bg-white text-start text-primary pe-3">Knowledge Portal</h3></p>
-                    <p class="mb-4">The Knowledge Portal is a collection of procedural documentation and manuals to assist you in gaining the knowledge and skills required here at HGC Melbourne.</p>
-                    <p class="mb-4">These Standard Operating Procedures (SOPs) should be followed at all times to ensure consistent service of guests, while maintaining correct operating standards.</p>
-					<p class="mb-4">Using these SOPs will ensure you are prepared for anything, regardless of your role here at HGC Melbourne.</p>
-                    <p class="mb-4">To start, lets take a look at <a href="iHMS.html"><i class="fa fa-arrow-right text-primary me-2"></i>iHMS</a></p>
-				</div>
-            </div>
+    <div class="background-container">
+        <div class="login-container">
+            <h2>Login</h2>
+            <form id="loginForm" action="/login" method="POST">
+                <input type="text" id="username" name="username" placeholder="Username" required>
+                <input type="password" id="password" name="password" placeholder="Password" required>                
+                <button type="submit">Login</button></p>
+            </form>            
+            <p><a href="forgot_password.html">Forgot Password?</a></p>
+            <p><a href="register.html">Register New User</a></p>
         </div>
     </div>
-    <!-- About End -->
 
-    <!-- Categories Start -->
-    <div class="container-xxl category">
-        <div class="container">
-            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h4 class="section-title bg-white text-center text-primary px-3">Manuals & Standard Operating Procedures</h4>
-            </div>
-            <div class="row g-3">
-                <div class="col-lg-7 col-md-6">
-                    <div class="row g-3">
-                        <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
-                            <a class="position-relative d-block overflow-hidden" href="GSA.html">
-                                <img class="img-fluid" src="img/LOBBY2.jpg" alt="">
-                                <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
-                                    <h5 class="m-0">Guest Services Agent</h5>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
-                            <a class="position-relative d-block overflow-hidden" href="NA.html">
-                                <img class="img-fluid" src="img/LOBBY1.jpg" alt="">
-                                <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
-                                    <h5 class="m-0">Night Audit</h5>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
-                            <a class="position-relative d-block overflow-hidden" href="Res.html">
-                                <img class="img-fluid" src="img/LOBBY3.jpg" alt="">
-                                <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
-                                    <h5 class="m-0">Reservations</h5>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s" style="min-height: 350px;">
-                    <a class="position-relative d-block h-100 overflow-hidden" href="General.html">
-                        <img class="img-fluid position-absolute w-100 h-100" src="img/EXTERIOR2.jpg" alt="" style="object-fit: cover;">
-                        <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin:  1px;">
-                            <h5 class="m-0">General Knowledge</h5>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Categories End -->
-        
-
-    <!-- Footer Start -->
-    <div style="background-color:black" class="container-fluid text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-md-6">
-                    <h4 class="text-white mb-3">Quick Links</h4>
-                    <a class="btn btn-link" href="index.html">Home</a>
-                    <a class="btn btn-link" href="GSA.html">Guest Services Agent</a>
-                    <a class="btn btn-link" href="NA.html">Night Audit</a>
-                    <a class="btn btn-link" href="Res.html">Reservations</a>
-                    <a class="btn btn-link" href="General.html">General Knowledge</a>
-                    <a class="btn btn-link" href="StaffContacts.html">Contacts</a>
-                </div>
-                <div class="col-md-6">
-                    <h4 class="text-white mb-3">Contact</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>131 Lonsdale Street, Melbourne 3000</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>(03) 9656 4000</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>https://www.grandchancellorhotels.com/hotel-grand-chancellor-melbourne</p>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="copyright">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">HGC Melbourne Knowledge Portal</a>, All Rights Reserved.
-
-                        Designed By Andrew Edwards 2024
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Footer End -->
+    <!-- Main Page End -->
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
@@ -208,10 +91,13 @@
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="js/searchbar.js"></script>
 
-    <!-- Template Javascript -->
+    <!-- Custom Javascript -->
+    <script src="js/searchbar.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/users.js" defer></script>
+    <script src="js/login.js" defer></script>
+
 </body>
 
 </html>
