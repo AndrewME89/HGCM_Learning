@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login Page</title>
+
+<!-- Template Stylesheet -->
+<link href="css/style.css" rel="stylesheet">
+
+    <!-- Login Stylesheet -->
+    <link href="css/login.css" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="login-container">
+    <h2>Login</h2>
+    <form id="login-form">
+        <input type="text" id="username" placeholder="Username" required><br>
+        <input type="password" id="password" placeholder="Password"
+ required><br>
+        <button type="submit">Login</button></p>
+        <a href="GEM_forgot_password.html" style="text-align: center; color: #e20118;">Forgot Password</a>
+    </form>
+</div>
+
+<script>
+const loginForm = document.getElementById('login-form');
+
+// Hardcoded users (you can add more later)
+const users = [
+  { username: 'Andrew Edwards', password: 'Password1989', role: 'DM' },
+  { username: 'admin', password: 'adminpassword', role: 'GSA' } 
+];
+
+loginForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+
+    if (authenticateUser(username, password)) {
+        // Store user data in local storage
+        localStorage.setItem('loggedInUser', username);
+        localStorage.setItem('userRole', getUserRole(username));
+
+        // Redirect based on role
+        const userRole = localStorage.getItem('userRole');
+        if (userRole === 'admin') {
+            window.location.href = 'index.html'; // Replace with your actual admin page
+        } else {
+            window.location.href = 'index.html'; 
+        }
+    } else {
+        alert('Invalid username or password');
+    }
+});
+
+function authenticateUser(username, password) {
+  const user = users.find(u => u.username === username && u.password === password);
+  return user !== undefined; 
+}
+
+function getUserRole(username) {
+  const user = users.find(u => u.username === username);
+  return user ? user.role : null; 
+}
+
+// In your login.html script
+fetch('/.netlify/functions/login', { 
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify({ username, password })
+})
+.then(response => response.json())
+.then(data => {
+  if (data.success) {
+    // Handle successful login (store user data, redirect)
+  } else {
+    // Handle login failure (display error message)
+  }
+});
+</script>
+
+</body>

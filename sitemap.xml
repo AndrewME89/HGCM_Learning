@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
+		<loc>https://www.andrewme89.github.io/HGCM_Learning/GEM_login.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2024-09-27</lastmod>
+	</url>
+	<url>
+		<loc>https://www.andrewme89.github.io/HGCM_Learning/GEM_forgot_password.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2024-09-27</lastmod>
+	</url>
+	<url>
+		<loc>https://www.andrewme89.github.io/HGCM_Learning/GEM_reset_password.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2024-09-27</lastmod>
+	</url>
+	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/iHMS.html</loc>
 		<lastmod>2024-09-12</lastmod>
 	</url>
@@ -394,7 +409,7 @@
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/General.html</loc>
-		<lastmod>2024-09-12</lastmod>
+		<lastmod>2024-09-14</lastmod>
 	</url>
 	<url>
 		<loc>https://www.andrewme89.github.io/HGCM_Learning/emails.html</loc>

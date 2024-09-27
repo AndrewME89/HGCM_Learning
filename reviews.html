@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Responding to Online Reviews</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Searchbar Stylesheet -->
+    <link href="css/searchbar.css" rel="stylesheet">
+
+    <!-- Table Stylesheet -->
+    <link href="css/ExcelSheetStylesheet.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div style="background-color:#e20118" id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar Wrapper Start -->
+    <div class="navbar-wrapper">
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+            <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+                <h2 class="m-0 text-primary"><img src="img/NEW.jpg" width="110" height="75"></h2>
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <div class="nav-item nav-link">
+                        <div class="search-container">
+                            <input type="text" id="searchInput" placeholder="Search...">
+                            <button id="searchButton">Search</button>
+                            <div id="results"></div>
+                        </div>
+                    </div>
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="GSA.html" class="nav-item nav-link">Guest Services Agent</a>
+                    <a href="NA.html" class="nav-item nav-link">Night Audit</a>
+                    <a href="Res.html" class="nav-item nav-link">Reservations</a>
+                    <a href="General.html" class="nav-item nav-link">General Knowledge</a>
+                    <div class="nav-item dropdown">
+                        <a href="contacts.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Contacts</a>
+                        <div class="dropdown-menu fade-down m-0" style="right:0">
+                            <a href="StaffContacts.html" class="dropdown-item">Staff Contacts</a>
+                            <a href="ContractorContacts.html" class="dropdown-item">Contractor Contacts</a>
+                        </div>
+                    </div>
+                </div>
+        </nav>
+        <!-- Navbar End -->
+
+        <!-- Back Button -->
+        <button class="back-button" onclick="history.back()">
+            <i class="bi bi-arrow-left"></i>
+        </button>
+        </div>
+        <!-- Navbar Wrapper End -->
+
+        <!-- Main Page Start -->
+
+        <div class="container-xxl py-5">
+
+            <div class="container">
+                <div>
+                    <div class="col wow fadeInUp" data-wow-delay="0.1s" style="min-height: 50px;">
+                        <div class="col wow fadeInUp" data-wow-delay="0.3s">
+                            <h2 class="section-title bg-white text-start text-primary pe-3">Responding to Online Reviews</h2>
+                            <p class="mb-4">Guest reviews significantly impact our venue’s reputation. To uphold a positive image, it is crucial to respond to online reviews promptly and consistently. This includes reviews posted on platforms such as Expedia.com and Booking.com.</p>
+
+                            <h5 style="color: #2c3e50;">Response Time:</h5>
+                            <p class="mb-4">All reviews should be acknowledged within 24-48 hours of posting. To ensure timely responses, review platforms should be checked at least twice daily.</p>
+                    
+                            <h5 style="color: #2c3e50;">Professional Tone:</h5>
+                            <p class="mb-4">In all responses, maintain a professional, polite, and positive tone. Address guests by name whenever possible and reference specific details from their review to show that their feedback has been carefully read and considered.</p>
+
+                            <h5 style="color: #2c3e50;">Follow the steps below to respond to guest reviews:</h5>
+
+                            <h6>Booking.com</h6>
+                        
+                            <ol>
+                                <li><b>Login:</b> Access your <a href="https://account.booking.com/sign-in?op_token=EgVvYXV0aCKyAQoUNlo3Mm9IT2QzNk5uN3prM3BpcmgSCWF1dGhvcml6ZRoaaHR0cHM6Ly9hZG1pbi5ib29raW5nLmNvbS8qOnsiYXV0aF9hdHRlbXB0X2lkIjoiNGFlNjcyMmQtMDEwZi00OTI1LTgyNDUtZmY3Yzg1N2U5Y2Y5In0yK1dOS2RmRjB6aWNEMVA1Ulcyc1RrTzBuLXZ6WFdma1lYMDgzTm9kSWFXYjA6BFMyNTZCBGNvZGUqEjCFlOKWu6AnOgBCAFjGyZq3Bg">Booking.com</a> account using your credentials.</li></p>
+                                <li><b>Navigate to Reviews:</b> Go to the "Guest Reviews" section, then select "Guest Reviews."</li></p>
+                                <img src="img/reviews01.png" class="center">
+                                <li><b>Filter Reviews:</b> Click on "Without Replies" to view reviews that require your attention.</li></p>
+                                <img src="img/reviews02.png" class="center">
+                            </ol>
+                        
+                            <h6>Expedia.com</h6>
+                        
+                            <ol>
+                                <li><b>Login:</b> Log in to your <a href="https://www.expediapartnercentral.com/Account/Logon?signedOff=true">Expedia.com</a> account.</li></p>
+                                <li><b>Navigate to Reviews:</b> You have two options:</p>
+                                    <ul>
+                                        <li>Go to "Guest Relations" and then "Post-Stay Review."</li></p>
+                                        <li>Go to "Guest Relations" and then "In-House feedback."</li></p>
+                                        <img src="img/reviews03.png" class="center">
+                                    </ul>
+                                </li>
+                                <li><b>Respond:</b> Click the "Respond" button to address the guest feedback.</li></p>
+                            </ol>
+                    
+                            <h5 style="color: #2c3e50;">Responding to Positive Reviews</h5>
+                    
+                            <ol style="margin-bottom: 20px;">
+                                <li><b>Acknowledge and Thank:</b> Express appreciation to the guest for their positive feedback and for choosing Hotel Grand Chancellor Melbourne.</p></li>
+                                <li><b>Highlight Specifics:</b> Mention specific aspects of their stay that they enjoyed to demonstrate that their review was thoroughly read.</p>
+                                <li><b>Invite Back:</b> Extend an invitation for the guest to return and experience more of what the hotel has to offer.</p></li>
+                                    <p class="mb-4"><b>Example:</b></p>
+                                    <blockquote style="border-left: 2px solid #ddd; padding-left: 10px; margin: 10px 0;">
+                                        <p class="mb-4">Hi [Guest’s Name],</p>
+                                        <p class="mb-4">Thank you so much for your kind words! We're thrilled to hear you enjoyed [specific aspect of their stay].</p>
+                                        <p class="mb-4">Your feedback is greatly appreciated, and we hope to welcome you back to Hotel Grand Chancellor Melbourne soon. Safe travels!</p>
+                                        <p style="margin-top: 20px; font-style: italic; color: #777;">Kind Regards,<br>The Team at Hotel Grand Chancellor Melbourne</p>
+                                    </blockquote>
+                                </li>
+                            </ol>
+                    
+                            <h5 style="color: #2c3e50;">Responding to Negative Reviews</h5>
+                    
+                            <ol style="margin-bottom: 20px;">
+                                <li>
+                                    <b>Acknowledge and Apologize:</b></p>
+                                    <ul>
+                                        <li><b>Show Empathy:</b> Acknowledge the guest’s concerns and apologize for any inconveniences they experienced.</li></p>
+                                        <li><b>Take Responsibility:</b> If applicable, admit any shortcomings and assure the guest that their feedback will be used to drive improvements.</li></p>
+                                <li>
+                                    <b>Provide a Solution:</b> If possible, offer a solution or explain the steps being taken to prevent a recurrence of the problem.</p>
+                                </li>
+                                    </ul>
+                                    <p class="mb-4"><b>Example:</b></p>
+                                    <blockquote style="border-left: 2px solid #ddd; padding-left: 10px; margin: 10px 0;">
+                                        <p class="mb-4">Hi [Guest’s Name],</p>
+                                        <p class="mb-4">Thank you for sharing your feedback. We're sorry to hear that your experience did not meet your expectations.</p>
+                                        <p class="mb-4">Please accept our sincere apologies for [specific issue]. We are addressing this matter with our team to ensure it is resolved.</p>
+                                        <p class="mb-4">Your comfort is very important to us, and we hope you will consider giving us another chance to serve you better in the future.</p>
+                                        <p style="margin-top: 20px; font-style: italic; color: #777;">Kind Regards,<br>The Team at Hotel Grand Chancellor Melbourne</p>
+                                    </blockquote>
+                                </li>
+                                <li>
+                                    <b>Invite Offline Resolution:</b> For complex issues, offer to discuss the matter further via phone or email to resolve it privately.</p>
+                                    <p class="mb-4"><b>Example Addition:</b></p>
+                                    <blockquote style="border-left: 2px solid #ddd; padding-left: 10px; margin: 10px 0;">
+                                        <p class="mb-4">Please feel free to contact me directly at [contact information] so we can discuss this further and ensure your concerns are addressed.</p>
+                                        <p style="margin-top: 20px; font-style: italic; color: #777;">Kind Regards,<br>The Team at Hotel Grand Chancellor Melbourne</p>
+                                    </blockquote>
+                                </li>
+                            </ol>
+                            <h3 class="mb-4">Response Templates</h3>
+
+                            <h4>Positive Reviews</h4><br>
+
+                            <h5>Personalised Service</h5>
+                            <blockquote style="border-left: 2px solid #ddd; padding-left: 10px; margin: 10px 0;">
+                            <p class="mb-4">Dear [Guest Name],</p>
+                            <p class="mb-4">Thank you for your kind words about our personalised service.</p>
+                            <p class="mb-4">We're delighted to hear that our team went above and beyond to make your stay memorable.</p>
+                            <p class="mb-4">We believe in creating a warm and welcoming atmosphere where every guest feels valued and appreciated.</p>
+                            <p class="mb-4">We will be sure to share your compliments with our staff, who take pride in providing exceptional service.</p>
+                            <p style="margin-top: 20px; font-style: italic; color: #777;">Kind Regards,</p>
+                            <p style="margin-top: 20px; font-style: italic; color: #777;">The Team at Hotel Grand Chancellor Melbourne</p>
+                            </blockquote>
+
+                            <h5>Local Recommendations</h5>
+                            <blockquote style="border-left: 2px solid #ddd; padding-left: 10px; margin: 10px 0;">
+                            <p class="mb-4">Dear [Guest Name],</p>
+                            <p class="mb-4">We're thrilled that you found our local recommendations helpful!</p>
+                            <p class="mb-4">We strive to provide our guests with insider knowledge about the best attractions, restaurants, and activities in the area.</p>
+                            <p class="mb-4">We believe that experiencing the local culture and hidden gems is an essential part of any travel experience.</p>
+                            <p class="mb-4">We're glad we could contribute to making your stay even more enjoyable.</p>
+                            <p style="margin-top: 20px; font-style: italic; color: #777;">Kind Regards,</p>
+                            <p style="margin-top: 20px; font-style: italic; color: #777;">The Team at Hotel Grand Chancellor Melbourne</p>
+                            </blockquote>
+
+                            <h5>Good Experience with Staff</h5>
+                            <blockquote style="border-left: 2px solid #ddd; padding-left: 10px; margin: 10px 0;">
+                            <p class="mb-4">Dear [Guest Name],</p>
+                            <p class="mb-4">Thank you for your kind words about our staff.</p>
+                            <p class="mb-4">We are thrilled to hear that they made your stay enjoyable.</p>
+                            <p class="mb-4">We pride ourselves on providing exceptional service, and your feedback reinforces our commitment to excellence.</p>
+                            <p class="mb-4">We will be sure to share your compliments with the team.</p>
+                            <p style="margin-top: 20px; font-style: italic; color: #777;">Kind Regards,</p>
+                            <p style="margin-top: 20px; font-style: italic; color: #777;">The Team at Hotel Grand Chancellor Melbourne</p>
+                            </blockquote>
+
+                            <h5>Quick & Efficient Check-in Process</h5>
+                            <blockquote style="border-left: 2px solid #ddd; padding-left: 10px; margin: 10px 0;">
+                            <p class="mb-4">Dear [Guest Name],</p>
+                            <p class="mb-4">We appreciate your feedback regarding our check-in process.</p>
+                            <p class="mb-4">We understand that a seamless arrival sets the tone for a great stay, and we are glad we were able to provide that for you.</p>
+                            <p class="mb-4">We will continue to streamline our procedures to ensure all guests experience a quick and efficient check-in.</p>
+                            <p style="margin-top: 20px; font-style: italic; color: #777;">Kind Regards,</p>
+                            <p style="margin-top: 20px; font-style: italic; color: #777;">The Team at Hotel Grand Chancellor Melbourne</p>
+                            </blockquote>
+
+                            <h5>Good Food</h5>
+                            <blockquote style="border-left: 2px solid #ddd; padding-left: 10px; margin: 10px 0;">
+                            <p class="mb-4">Dear [Guest Name],</p>
+                            <p class="mb-4">Thank you for your positive feedback about our food.</p>
+                            <p class="mb-4">We are delighted to hear that you enjoyed your dining experience.</p>
+                            <p class="mb-4">Our culinary team takes pride in creating delicious and memorable meals, and your compliments are greatly appreciated.</p>
+                            <p style="margin-top: 20px; font-style: italic; color: #777;">Kind Regards,</p>
+                            <p style="margin-top: 20px; font-style: italic; color: #777;">The Team at Hotel Grand Chancellor Melbourne</p>
+                            </blockquote>
+                            
+                            <h5>Good View</h5>
+                            <blockquote style="border-left: 2px solid #ddd; padding-left: 10px; margin: 10px 0;">
+                            <p class="mb-4">Dear [Guest Name],</p>
+                            <p class="mb-4">We are glad you enjoyed the view from your room!</p>
+                            <p class="mb-4">We are fortunate to be located in a beautiful area, and we're happy that you were able to appreciate it.</p>
+                            <p class="mb-4">We hope the stunning scenery added to the enjoyment of your stay.</p>
+                            <p style="margin-top: 20px; font-style: italic; color: #777;">Kind Regards,</p>
+                            <p style="margin-top: 20px; font-style: italic; color: #777;">The Team at Hotel Grand Chancellor Melbourne</p>
+                            </blockquote>
+                            
+                            <h5>Nearby Amenities & Nightlife (Location)</h5>
+                            <blockquote style="border-left: 2px solid #ddd; padding-left: 10px; margin: 10px 0;">
+                            <p class="mb-4">Dear [Guest Name],</p>
+                            <p class="mb-4">Thank you for highlighting our convenient location.</p>
+                            <p class="mb-4">We are pleased that you were able to take advantage of the nearby amenities and nightlife during your stay.</p>
+                            <p class="mb-4">We strive to provide our guests with easy access to the best the city has to offer.</p>
+                            <p style="margin-top: 20px; font-style: italic; color: #777;">Kind Regards,</p>
+                            <p style="margin-top: 20px; font-style: italic; color: #777;">The Team at Hotel Grand Chancellor Melbourne</p>
+                            </blockquote>
+                            
+                            <h5>Clean, Pleasant Rooms</h5>
+                            <blockquote style="border-left: 2px solid #ddd; padding-left: 10px; margin: 10px 0;">
+                            <p class="mb-4">Dear [Guest Name],</p>
+                            <p class="mb-4">We appreciate your positive comments about our rooms.</p>
+                            <p class="mb-4">Cleanliness and comfort are top priorities for us, and we're delighted to hear that we met your expectations.</p>
+                            <p class="mb-4">We will continue to maintain high standards to ensure all guests enjoy a pleasant and relaxing stay.</p>
+                            <p style="margin-top: 20px; font-style: italic; color: #777;">Kind Regards,</p>
+                            <p style="margin-top: 20px; font-style: italic; color: #777;">The Team at Hotel Grand Chancellor Melbourne</p>
+                            </blockquote>
+                            
+                            <h5>Generic Response to a Positive Review</h5>
+                            <blockquote style="border-left: 2px solid #ddd; padding-left: 10px; margin: 10px 0;">
+                            <p class="mb-4">Dear [Guest Name],</p>
+                            <p class="mb-4">Thank you for taking the time to share your positive experience.</p>
+                            <p class="mb-4">We are thrilled to hear that you enjoyed your stay with us.</p>
+                            <p class="mb-4">Your feedback is valuable, and we appreciate your kind words. We look forward to welcoming you back in the future!</p>
+                            <p style="margin-top: 20px; font-style: italic; color: #777;">Kind Regards,</p>
+                            <p style="margin-top: 20px; font-style: italic; color: #777;">The Team at Hotel Grand Chancellor Melbourne</p>
+                            </blockquote>
+                            
+                            <h4>Negative Reviews</h4></p>
+
+                            <h5>Pool & Gym Closure</h5>
+                            <blockquote style="border-left: 2px solid #ddd; padding-left: 10px; margin: 10px 0;">
+                            <p class="mb-4">Dear [Guest Name],</p>
+                            <p class="mb-4">Thank you for sharing your feedback about the closure of our pool and gym during your recent stay.</p>
+                            <p class="mb-4">We sincerely apologise for any inconvenience this caused.</p>
+                            <p class="mb-4">We understand these amenities are an important part of the guest experience, and we are working diligently to reopen them as soon as possible.</p>
+                            <p class="mb-4">We appreciate your understanding and hope to welcome you back when these facilities are fully operational.</p>
+                            <p style="margin-top: 20px; font-style: italic; color: #777;">Kind Regards,</p>
+                            <p style="margin-top: 20px; font-style: italic; color: #777;">The Team at Hotel Grand Chancellor Melbourne</p>
+                            </blockquote>
+                            
+                            <h5>Hot Water Problems</h5>
+                            <blockquote style="border-left: 2px solid #ddd; padding-left: 10px; margin: 10px 0;">
+                            <p class="mb-4">Dear [Guest Name],</p>
+                            <p class="mb-4">We are very sorry to hear that you experienced hot water issues during your stay.</p>
+                            <p class="mb-4">We understand how frustrating this can be.</p>
+                            <p class="mb-4">Please know that we have taken immediate steps to address the problem and ensure it does not happen again.</p>
+                            <p class="mb-4">We appreciate you bringing this to our attention and hope you will give us another chance to provide you with a comfortable and enjoyable stay in the future.</p>
+                            <p style="margin-top: 20px; font-style: italic; color: #777;">Kind Regards,</p>
+                            <p style="margin-top: 20px; font-style: italic; color: #777;">The Team at Hotel Grand Chancellor Melbourne</p>
+                            </blockquote>
+                            
+                            <h5>Poor Experience with Staff</h5>
+                            <blockquote style="border-left: 2px solid #ddd; padding-left: 10px; margin: 10px 0;">
+                            <p class="mb-4">Dear [Guest Name],</p>
+                            <p class="mb-4">We are disappointed to learn that you had a negative experience with our staff.</p>
+                            <p class="mb-4">We take pride in providing exceptional service, and your feedback is concerning.</p>
+                            <p class="mb-4">We will address this with our team to ensure that all guests receive the warm and welcoming experience they deserve.</p>
+                            <p class="mb-4">We apologise for any discomfort or inconvenience this may have caused and hope you will consider staying with us again so we can demonstrate our commitment to excellent service.</p>
+                            <p style="margin-top: 20px; font-style: italic; color: #777;">Kind Regards,</p>
+                            <p style="margin-top: 20px; font-style: italic; color: #777;">The Team at Hotel Grand Chancellor Melbourne</p>
+                            </blockquote>
+                            
+                            <h5>Food Complaint</h5>
+                            <blockquote style="border-left: 2px solid #ddd; padding-left: 10px; margin: 10px 0;">
+                            <p class="mb-4">Dear [Guest Name],</p>
+                            <p class="mb-4">Thank you for your honest feedback regarding your dining experience.</p>
+                            <p class="mb-4">We are sorry to hear that your meal did not meet your expectations.</p>
+                            <p class="mb-4">We value your input and will share your comments with our culinary team to ensure continuous improvement in the quality and presentation of our food.</p>
+                            <p class="mb-4">We hope you will give us another opportunity to impress you with our culinary offerings in the future.</p>
+                            <p style="margin-top: 20px; font-style: italic; color: #777;">Kind Regards,</p>
+                            <p style="margin-top: 20px; font-style: italic; color: #777;">The Team at Hotel Grand Chancellor Melbourne</p>
+                            </blockquote>
+                            
+                            <h5>Poor View</h5>
+                            <blockquote style="border-left: 2px solid #ddd; padding-left: 10px; margin: 10px 0;">
+                            <p class="mb-4">Dear [Guest Name],</p>
+                            <p class="mb-4">We understand your disappointment with the view from your room.</p>
+                            <p class="mb-4">While we try our best to accommodate room requests, availability can sometimes be limited.</p>
+                            <p class="mb-4">We appreciate your understanding and hope that other aspects of your stay were enjoyable.</p>
+                            <p class="mb-4">We encourage you to contact us directly when making future reservations to discuss room options and preferences.</p>
+                            <p style="margin-top: 20px; font-style: italic; color: #777;">Kind Regards,</p>
+                            <p style="margin-top: 20px; font-style: italic; color: #777;">The Team at Hotel Grand Chancellor Melbourne</p>
+                            </blockquote>
+                            
+                            <h5>Noise Complaint</h5>
+                            <blockquote style="border-left: 2px solid #ddd; padding-left: 10px; margin: 10px 0;">
+                            <p class="mb-4">Dear [Guest Name],</p>
+                            <p class="mb-4">We apologise for the noise disturbance during your stay.</p>
+                            <p class="mb-4">We strive to provide a peaceful and relaxing environment for all our guests.</p>
+                            <p class="mb-4">We will investigate the source of the noise and take appropriate action to minimise any future disruptions.</p>
+                            <p class="mb-4">Thank you for bringing this to our attention, and we hope you will give us another opportunity to provide you with a quiet and comfortable stay.</p>
+                            <p style="margin-top: 20px; font-style: italic; color: #777;">Kind Regards,</p>
+                            <p style="margin-top: 20px; font-style: italic; color: #777;">The Team at Hotel Grand Chancellor Melbourne</p>
+                            </blockquote>
+                            
+                            <h5>Lift Outage</h5>
+                            <blockquote style="border-left: 2px solid #ddd; padding-left: 10px; margin: 10px 0;">
+                            <p class="mb-4">Dear [Guest Name],</p>
+                            <p class="mb-4">We sincerely apologise for the inconvenience caused by the lift outage during your stay.</p>
+                            <p class="mb-4">We understand the difficulties this may have presented, especially for guests with mobility concerns.</p>
+                            <p class="mb-4">We are working diligently to resolve the issue and have implemented alternative solutions to assist guests during this time. We appreciate your patience and understanding.</p>
+                            <p style="margin-top: 20px; font-style: italic; color: #777;">Kind Regards,</p>
+                            <p style="margin-top: 20px; font-style: italic; color: #777;">The Team at Hotel Grand Chancellor Melbourne</p>
+                            </blockquote>
+                            
+                            <h5>Renovations</h5>
+                            <blockquote style="border-left: 2px solid #ddd; padding-left: 10px; margin: 10px 0;">
+                            <p class="mb-4">Dear [Guest Name],</p>
+                            <p class="mb-4">We apologise for any disruption caused by the ongoing renovations during your stay.</p>
+                            <p class="mb-4">We are continually investing in our property to enhance the guest experience. We appreciate your understanding and patience as we work to improve our facilities.</p>
+                            <p class="mb-4">We are confident that the end result will be worth the temporary inconvenience.</p>
+                            <p style="margin-top: 20px; font-style: italic; color: #777;">Kind Regards,</p>
+                            <p style="margin-top: 20px; font-style: italic; color: #777;">The Team at Hotel Grand Chancellor Melbourne</p>
+                            </blockquote>
+                            
+                            <h5>No Information Provided (But Want to Make Contact)</h5>
+                            <blockquote style="border-left: 2px solid #ddd; padding-left: 10px; margin: 10px 0;">
+                            <p class="mb-4">Dear [Guest Name],</p>
+                            <p class="mb-4">We are sorry to hear that your recent stay was not up to your expectations.</p>
+                            <p class="mb-4">We value your feedback and would like to learn more about your experience so we can make improvements.</p>
+                            <p class="mb-4">Please contact us directly at your earliest convenience to discuss this further. We appreciate your understanding and cooperation.</p>
+                            <p style="margin-top: 20px; font-style: italic; color: #777;">Kind Regards,</p>
+                            <p style="margin-top: 20px; font-style: italic; color: #777;">The Team at Hotel Grand Chancellor Melbourne</p>
+                            </blockquote>
+                            
+                            <h5>Billing & Payment Concerns</h5>
+                            <blockquote style="border-left: 2px solid #ddd; padding-left: 10px; margin: 10px 0;">
+                            <p class="mb-4">Dear [Guest Name],</p>
+                            <p class="mb-4">Thank you for bringing your billing concerns to our attention.</p>
+                            <p class="mb-4">We apologise for any confusion or inconvenience caused by unexpected charges or payment processing issues.</p>
+                            <p class="mb-4">We take these matters seriously and are committed to resolving them promptly.</p>
+                            <p class="mb-4">Please contact our front desk team directly, and we will be happy to review your bill and address any discrepancies.</p>
+                            <p class="mb-4">We value your patronage and want to ensure your experience with us is positive from start to finish.</p>
+                            <p style="margin-top: 20px; font-style: italic; color: #777;">Kind Regards,</p>
+                            <p style="margin-top: 20px; font-style: italic; color: #777;">The Team at Hotel Grand Chancellor Melbourne</p>
+                            </blockquote>
+                            
+                            <h5>Accessibility</h5>
+                            <blockquote style="border-left: 2px solid #ddd; padding-left: 10px; margin: 10px 0;">
+                            <p class="mb-4">Dear [Guest Name],</p>
+                            <p class="mb-4">We sincerely apologise for any challenges you faced regarding accessibility during your stay.</p>
+                            <p class="mb-4">We are dedicated to providing a comfortable and inclusive environment for all our guests.</p>
+                            <p class="mb-4">We are actively reviewing your feedback and working to improve our facilities and services to better accommodate guests with disabilities or limited mobility.</p>
+                            <p class="mb-4">We appreciate your understanding and patience as we strive to enhance accessibility throughout our hotel.</p>
+                            <p style="margin-top: 20px; font-style: italic; color: #777;">Kind Regards,</p>
+                            <p style="margin-top: 20px; font-style: italic; color: #777;">The Team at Hotel Grand Chancellor Melbourne</p>
+                            </blockquote>
+                            
+                            <h5>Wi-Fi</h5>
+                            <blockquote style="border-left: 2px solid #ddd; padding-left: 10px; margin: 10px 0;">
+                            <p class="mb-4">Dear [Guest Name],</p>
+                            <p class="mb-4">We apologise for the inconvenience caused by the issues you experienced with our Wi-Fi.</p>
+                            <p class="mb-4">We understand how important connectivity and convenience are, especially during your stay.</p>
+                            <p class="mb-4">We are continuously working to upgrade our systems and address any technical difficulties.</p>
+                            <p class="mb-4">We appreciate your feedback and will take it into consideration as we strive to provide a seamless and enjoyable experience for all our guests.</p>
+                            <p style="margin-top: 20px; font-style: italic; color: #777;">Kind Regards,</p>
+                            <p style="margin-top: 20px; font-style: italic; color: #777;">The Team at Hotel Grand Chancellor Melbourne</p>
+                            </blockquote>
+                            
+                            <h5>Television Issues</h5>
+                            <blockquote style="border-left: 2px solid #ddd; padding-left: 10px; margin: 10px 0;">
+                                <p class="mb-4">Dear [Guest Name],</p>
+                                <p class="mb-4">Thank you for bringing the issues with the in-room television to our attention.</p>
+                                <p class="mb-4">We understand how important it is to have reliable and functional amenities during your stay, and we sincerely apologise for any inconvenience this may have caused.</p>
+                                <p class="mb-4">Our team is currently reviewing the situation and working to resolve any technical difficulties to ensure our televisions are fully operational for future guests.</p>
+                                <p class="mb-4">We appreciate your feedback and will use it to make improvements. We hope you will consider giving us another opportunity to provide you with a more enjoyable experience in the future.</p>
+                                <p style="margin-top: 20px; font-style: italic; color: #777;">Kind Regards,</p>
+                                <p style="margin-top: 20px; font-style: italic; color: #777;">The Team at Hotel Grand Chancellor Melbourne</p>
+                            </blockquote>
+                            
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Page End -->
+
+        <!-- Footer Start -->
+        <div style="background-color:black" class="container-fluid text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-md-6">
+                        <h4 class="text-white mb-3">Quick Links</h4>
+                        <a class="btn btn-link" href="index.html">Home</a>
+                        <a class="btn btn-link" href="GSA.html">Guest Services Agent</a>
+                        <a class="btn btn-link" href="NA.html">Night Audit</a>
+                        <a class="btn btn-link" href="Res.html">Reservations</a>
+                        <a class="btn btn-link" href="General.html">General Knowledge</a>
+                        <a class="btn btn-link" href="StaffContacts.html">Contacts</a>
+                    </div>
+                    <div class="col-md-6">
+                        <h4 class="text-white mb-3">Contact</h4>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>131 Lonsdale Street, Melbourne 3000</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>(03) 9656 4000</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>https://www.grandchancellorhotels.com/hotel-grand-chancellor-melbourne</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">HGC Melbourne Knowledge Portal</a>, All Rights Reserved. Designed By Andrew Edwards 2024
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="js/searchbar.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+
+</body>
+
+</html>
